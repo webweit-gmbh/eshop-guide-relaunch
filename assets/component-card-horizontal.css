@@ -1,0 +1,87 @@
+.card-horizontal-wrapper {
+  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  text-decoration: none;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .card-horizontal-wrapper:hover .card-horizontal__image img:first-child:not(:only-of-type) {
+    opacity: 0;
+  }
+  .card-horizontal-wrapper:hover .card-horizontal__image img:first-child:last-child {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  .card-horizontal-wrapper:hover .card-horizontal__image img + img {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 990px) {
+  .card-horizontal-wrapper {
+    gap: 2rem;
+  }
+}
+.card-horizontal-wrapper .price {
+  font-size: calc(var(--font-body-scale) * 1.2rem - 0.1rem);
+}
+@media only screen and (min-width: 750px) {
+  .card-horizontal-wrapper .price {
+    font-size: calc(var(--font-body-scale) * 1.4rem - 0.2rem);
+  }
+}
+
+.card-horizontal__image {
+  position: relative;
+  flex-shrink: 0;
+  width: 10rem;
+}
+@media screen and (min-width: 576px) {
+  .card-horizontal__image {
+    width: 16.2rem;
+  }
+}
+.card-horizontal__image img {
+  transition: transform var(--duration-long) ease, opacity var(--duration-long) ease;
+}
+.card-horizontal__image img + img {
+  opacity: 0;
+}
+.card-horizontal__image .media {
+  background-color: transparent;
+}
+.card-horizontal__information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 1;
+  padding-block: 1.6rem;
+  padding-right: 2rem;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.card-horizontal__title {
+  position: relative;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  letter-spacing: calc(var(--font-body-letter-spacing) * 0.1);
+}
+.card-horizontal__vendor {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.card-horizontal__vendor_link {
+  position: relative;
+  z-index: 2;
+  pointer-events: all;
+}
+.card-horizontal__vendor a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--duration-default);
+}
+.card-horizontal__vendor a:hover {
+  color: rgba(var(--color-foreground));
+}

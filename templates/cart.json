@@ -1,0 +1,102 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-subtitle-1": {
+          "type": "subtitle",
+          "settings": {
+            "subheading": "Subheading",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star"
+          }
+        },
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-title-1": {
+          "type": "title",
+          "settings": {
+            "heading": "Heading",
+            "heading_size": "h1",
+            "heading_line": "simple",
+            "line_color": "#1566E0",
+            "word_break": false,
+            "heading_animation": "none"
+          }
+        },
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-description-1": {
+          "type": "description",
+          "settings": {
+            "description": "Some description"
+          }
+        },
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "show_button_1": true,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-subtitle-1",
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-title-1",
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-description-1",
+        "template--15335004602429__d75c40e7-4781-423a-a8c1-a6f08964fe67-buttons-1"
+      ],
+      "settings": {
+        "layout": "overlay",
+        "header_overlay": false,
+        "block_type": "subtle",
+        "color_scheme": "",
+        "full_screen": true,
+        "overlay_opacity": 0.5,
+        "image_ratio": "16/9",
+        "object_fit": "cover",
+        "desktop_image_position": "after",
+        "mobile_image_position": "after",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "hero"
+  ]
+}

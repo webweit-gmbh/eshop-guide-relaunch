@@ -1,0 +1,287 @@
+.pricing-table__items {
+  display: grid;
+  gap: 2.4rem 1.6rem;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 990px) {
+  .pricing-table__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .pricing-table__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1536px) {
+  .pricing-table__items {
+    gap: 2.4rem;
+  }
+}
+.pricing-table__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+}
+@media screen and (min-width: 1536px) {
+  .pricing-table__item {
+    padding: 4rem;
+  }
+}
+.pricing-table__item_shadow {
+  box-shadow: 0px 8px 60px 0px rgba(var(--color-shadow), 0.1);
+}
+.pricing-table__item-header {
+  padding-bottom: 1.6rem;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-header {
+    padding-bottom: 3.4rem;
+  }
+}
+.pricing-table__item-title {
+  margin-top: 0;
+}
+.pricing-table__item-title:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.pricing-table__item-title_with-badge {
+  max-width: calc(50% - 1.6rem);
+}
+.pricing-table__item-price:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.pricing-table__item-price.accent {
+  color: rgba(var(--color-accent));
+}
+.pricing-table__item-description {
+  margin: 0;
+  margin-bottom: 1.6rem;
+  color: rgba(var(--color-foreground-secondary));
+}
+.pricing-table__item-list {
+  padding-top: 2.4rem;
+  margin-bottom: 2rem;
+}
+.pricing-table__item-list h1,
+.pricing-table__item-list h2,
+.pricing-table__item-list h3,
+.pricing-table__item-list h4,
+.pricing-table__item-list h5,
+.pricing-table__item-list h6 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-list h1,
+  .pricing-table__item-list h2,
+  .pricing-table__item-list h3,
+  .pricing-table__item-list h4,
+  .pricing-table__item-list h5,
+  .pricing-table__item-list h6 {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.pricing-table__item-list *:first-child {
+  margin-top: 0;
+}
+.pricing-table__item-list *:last-child {
+  margin-bottom: 0;
+}
+.pricing-table__item-list ul,
+.pricing-table__item-list ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-list ul,
+  .pricing-table__item-list ol {
+    gap: 1.6rem;
+  }
+}
+.pricing-table__item-list ul li,
+.pricing-table__item-list ol li {
+  font-weight: var(--font-heading-weight);
+}
+.pricing-table__item-list ol {
+  list-style-type: none;
+  counter-reset: num;
+}
+.pricing-table__item-list ol li::before {
+  content: counter(num) ".";
+  counter-increment: num;
+  margin-right: 0.6rem;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-list ol li::before {
+    margin-right: 1rem;
+  }
+}
+.pricing-table__item-list ul {
+  list-style: none;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-list ul {
+    gap: 1.2rem;
+  }
+}
+.pricing-table__item-list ul li::before {
+  content: "\e81b";
+  font-family: "icon-custom";
+  font-size: 122%;
+  font-weight: 500;
+  margin-right: 0.6rem;
+}
+@media screen and (min-width: 576px) {
+  .pricing-table__item-list ul li::before {
+    margin-right: 1rem;
+  }
+}
+.pricing-table__button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.pricing-table__badge {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  max-width: calc(50% - 1.6rem);
+  letter-spacing: var(--font-body-letter-spacing) em;
+}
+@media screen and (min-width: 1536px) {
+  .pricing-table__badge {
+    padding: 0.5rem 1rem;
+    gap: 0.4rem;
+    max-width: calc(50% - 2.4rem);
+  }
+}
+.pricing-table__badge .icon {
+  flex-shrink: 0;
+  color: inherit;
+}
+.pricing-table__custom-content {
+  padding-top: 2.4rem;
+  margin-top: auto;
+}
+.pricing-table__custom-content + .pricing-table__button {
+  margin-top: 4rem;
+}
+.pricing-table__icon {
+  margin-bottom: 1.6rem;
+}
+.pricing-table__icon--recommended .icon {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 750px) {
+  .pricing-table__icon--recommended .icon {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing-table__icon--recommended .icon {
+    font-size: 4rem;
+  }
+}
+.pricing-table__icon--normal .icon {
+  font-size: 2.8rem;
+}
+@media screen and (min-width: 750px) {
+  .pricing-table__icon--normal .icon {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing-table__icon--normal .icon {
+    font-size: 4rem;
+  }
+}
+.pricing-table__icon--small .icon {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 750px) {
+  .pricing-table__icon--small .icon {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing-table__icon--small .icon {
+    font-size: 3.2rem;
+  }
+}
+.pricing-table__icon--large .icon {
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 750px) {
+  .pricing-table__icon--large .icon {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing-table__icon--large .icon {
+    font-size: 4.8rem;
+  }
+}
+.pricing-table__icon--subtle {
+  color: rgba(var(--color-foreground), 0.14);
+}
+.pricing-table__icon--contrast {
+  color: rgba(var(--color-foreground));
+}
+.pricing-table__icon--colored {
+  color: rgba(var(--color-accent));
+}
+.pricing-table__icon--colored.pricing-table__icon--gradient {
+  color: var(--gradient-accent);
+}
+.pricing-table__add-heading:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.pricing-table__add-description {
+  color: rgba(var(--color-foreground-secondary));
+}
+
+.pricing-table__item-header .subtitle + .title {
+  margin-top: 0rem;
+}
+@media screen and (min-width: 750px) {
+  .pricing-table__item-header .subtitle + .title {
+    margin-top: 0rem;
+  }
+}
+
+.pricing-table__item-price.mt-4.h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-table__item-list ul li {
+  gap: 1rem;
+  line-height: 3.5rem;
+}
+
+.pricing-table__item-list ul li:before {
+  margin-top: -1px;
+}
+
+.pricing-table__item {
+  border-radius: 1.2rem!important;
+}
+
+.button-container {
+  margin-top: auto;
+}

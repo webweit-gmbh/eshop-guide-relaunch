@@ -1,0 +1,58 @@
+<nav class="header__inline-menu">
+  {%- if section.settings.menu != blank -%}
+    <ul class="list-menu list-menu--inline" role="list">
+      {%- for link in section.settings.menu.links -%}
+        {% liquid
+          assign mega_menu = false
+          assign mega_menu_tabs = false
+        %}
+
+        {% for block in section.blocks %}
+          {% liquid
+            assign mega_menu_trigger = block.settings.mega_menu_trigger | handle | strip
+            assign mega_menu_tabs_trigger = block.settings.mega_menu_tabs_trigger | handle | strip
+
+            if link.handle == mega_menu_trigger
+              assign mega_menu = true
+              assign mega_menu_tabs = false
+              assign shopify_attributes = block.shopify_attributes
+            elsif link.handle == mega_menu_tabs_trigger
+              assign mega_menu_tabs = true
+              assign mega_menu = false
+              assign shopify_attributes = block.shopify_attributes
+            endif
+          %}
+        {% endfor %}
+        <li
+          class="list-menu-item {% if mega_menu or mega_menu_tabs %}list-menu--megamenu {% elsif link.links != blank %}list-menu--submenu{% endif %}"
+          {{ shopify_attributes }}
+        >
+          <a
+            href="{{ link.url }}"
+            {% if settings.links_blank and link.type == "http_link" %}
+              target="_blank"
+            {% endif %}
+            class="header__menu-item {% if link.current %} header__menu-item--active{% endif %} list-menu__item link focus-inset"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+            aria-label="{{ link.title | escape }}"
+          >
+            <span title="{{ link.title | escape }}">
+              {{ link.title | escape }}
+            </span>
+          </a>
+          {% if mega_menu %}
+            {% render 'mega-menu-columns', link: link, blocks: section.blocks %}
+          {% elsif mega_menu_tabs %}
+            {% render 'mega-menu-tabs', link: link, blocks: section.blocks %}
+          {% elsif link.links != blank %}
+            {% render 'submenu', link: link %}
+          {% else %}
+
+          {% endif %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</nav>

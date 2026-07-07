@@ -1,0 +1,122 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_rB6Vpj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_NxY8cM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Kontaktanfrage war erfolgreich",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_xTGM6G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Deine Nachricht wurde erfolgreich versendet",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_nLqzmG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Schön, dass du uns geschrieben hast. Wir melden uns zeitnahe bei dir - versprochen. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_NxY8cM",
+        "heading_xTGM6G",
+        "text_nLqzmG"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_PF8qPY": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "shopify-deutschland",
+        "color_scheme": "",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 6,
+        "card_color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "This Sh…opify Hub is bananas",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Weitere Wissensbeiträge",
+        "custom_view_all_link": "",
+        "button_style": "simple",
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_rB6Vpj",
+    "featured_blog_PF8qPY"
+  ]
+}

@@ -1,0 +1,296 @@
+.compare__default {
+  position: relative;
+  display: flex;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .compare__default {
+    position: absolute;
+    inset: 0;
+  }
+}
+.compare__default::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color-overlay), var(--opacity_overlay));
+}
+.compare__default::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 0.25rem);
+  z-index: 2;
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  background-color: rgb(var(--color-background));
+}
+.compare__default svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.compare__default ~ .compare__text {
+  z-index: 2;
+}
+.compare__content {
+  background-color: transparent;
+}
+.compare__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .compare__container {
+    min-height: 32rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .compare__container {
+    min-height: 45rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .compare__container {
+    min-height: 64rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .compare__container {
+    min-height: 72rem;
+  }
+}
+.compare img-comparison-slider {
+  position: relative;
+  min-height: 28rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  color: rgb(var(--color-background)); /*For divider*/
+}
+@media screen and (min-width: 576px) {
+  .compare img-comparison-slider {
+    position: absolute;
+    inset: 0;
+    min-height: unset;
+  }
+}
+.compare img-comparison-slider .second {
+  min-height: 32rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 576px) {
+  .compare img-comparison-slider .second {
+    position: absolute;
+    inset: 0;
+    min-height: unset;
+  }
+}
+.compare img-comparison-slider.rendered {
+  outline: none;
+  width: 100%;
+}
+.compare__figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.compare__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.compare__figure::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color-overlay), var(--opacity_overlay));
+}
+.compare__text {
+  position: absolute;
+  max-width: 11.2rem;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.compare__text--left {
+  left: 2rem;
+  top: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .compare__text--left {
+    left: 3.2rem;
+    top: 3.2rem;
+    max-width: 27.4rem;
+  }
+}
+.compare__text--right {
+  right: 2rem;
+  top: 2rem;
+  text-align: right;
+}
+@media screen and (min-width: 1200px) {
+  .compare__text--right {
+    right: 3.2rem;
+    top: 3.2rem;
+    max-width: 27.4rem;
+  }
+}
+.compare__bottom {
+  max-width: 80rem;
+  padding-top: 2rem;
+  background-color: transparent;
+}
+@media screen and (min-width: 576px) {
+  .compare__bottom {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .compare__bottom {
+    padding: 3.2rem;
+  }
+}
+.compare__content-heading {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  pointer-events: none;
+}
+.compare__button {
+  margin-top: 0.8rem;
+}
+.compare__handle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  background-color: rgb(var(--color-background), 0.2);
+  color: rgb(var(--color-accent));
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .compare__handle {
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+}
+.compare__handle .compare__handle-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.compare__handle::after {
+  content: "";
+  position: absolute;
+  width: 71%;
+  height: 71%;
+  border-radius: 50%;
+  background-color: rgb(var(--color-background));
+  box-shadow: 0px 8px 30px 0px rgba(var(--color-shadow), 0.08);
+}
+.compare .icon-handle {
+  width: 1.5rem;
+  z-index: 1;
+}
+@media screen and (min-width: 750px) {
+  .compare .icon-handle {
+    width: auto;
+  }
+}
+
+.no-js .compare img-comparison-slider {
+  display: flex;
+  visibility: visible;
+}
+@media screen and (max-width: 575px) {
+  .no-js .compare img-comparison-slider {
+    position: relative;
+    overflow: hidden;
+  }
+}
+.no-js .compare img-comparison-slider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  height: 100%;
+  width: 0.5rem;
+  background-color: rgb(var(--color-background));
+  transform: translate(-50%, -50%);
+}
+.no-js .compare__figure {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+.no-js .compare__figure[slot=first] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+}
+.no-js .compare__figure[slot=second] {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+.no-js .compare__text {
+  z-index: 1;
+}
+.no-js .compare__handle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.divider:after {
+  border: none;
+  width: var(--divider-width);
+  background: linear-gradient(0deg, rgb(var(--color-background)) calc(50% - 4.2rem), transparent calc(50% - 4.2rem), transparent calc(50% + 4.2rem), rgb(var(--color-background)) calc(50% + 4.2rem));
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-scheme=auto] .compare img-comparison-slider {
+    color: rgb(var(--color-foreground));
+  }
+  [data-scheme=auto] .compare__handle {
+    color: #000;
+  }
+  [data-scheme=auto] .compare__handle::after {
+    background-color: rgb(var(--color-foreground));
+  }
+}
+[data-scheme=dark] .compare img-comparison-slider {
+  color: rgb(var(--color-foreground));
+}
+[data-scheme=dark] .compare__handle {
+  color: #000;
+}
+[data-scheme=dark] .compare__handle::after {
+  background-color: rgb(var(--color-foreground));
+}

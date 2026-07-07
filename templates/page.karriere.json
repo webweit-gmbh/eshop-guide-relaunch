@@ -1,0 +1,984 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_VVG6bj": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "background-1",
+        "background_image": "shopify://shop_images/Grafik_von_Olga.png",
+        "background_size": "cover",
+        "subheading": "E-Commerce Karriere",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h3",
+        "heading_style": "rounded",
+        "heading_line": "background",
+        "line_color": "#e1f8ff",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Shopify-Nerds wanted: E-Commerce Jobs, die Bock machen.",
+        "inner_heading_tag": "h1",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Keine leeren Versprechen, keine Bullshit-Bingo-Agentur, keine Überstunden. Bei uns bekommst du Flexibilität, Wertschätzung und einen Job, der unsere Kund:innen wirklich voranbringt.</p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/b601bf9922a4e954445b0fbae85d3fc7.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11.5,
+        "video_overlay_margin_bottom": 4.5,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "heading_width": 15,
+        "additional_custom_text": "Some text",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": true,
+        "button_label_2": "Den besten E-Commerce-Job finden.",
+        "button_link_2": "#jobs",
+        "button_style_2": "primary",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_AdeVRQ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_yHe4Cw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "This is us: Authentisch. Offen. Herzallerliebst.",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_R97zeg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das Eshop Home der Eshop Guides",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_hEgRGt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Manche Orte fühlen sich einfach richtig an. In unserem Eshop Home sind Offenheit, Teamgeist und Vertrauen die Design-Elemente, die uns beim Wachsen helfen. Hier wohnen Macher:innen, die nicht nur Shopify lieben, sondern auch einander stärken und unterstützen. Finde deinen Platz bei uns und gestalte mit. </p>",
+            "placement": "left"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yHe4Cw",
+        "heading_R97zeg",
+        "text_hEgRGt"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_ynnHdV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cVGPq7": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-migration",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Zu Shopify umziehen.",
+            "heading_tag": "h3",
+            "text": "<p>Wir bringen Shops sicher und nahtlos auf Shopify – ohne Stress, ohne Verluste. Ob kleineres Unternehmen oder großer Player: Unser modularer Ansatz sorgt dafür, dass jeder Wechsel perfekt zu den individuellen Bedürfnissen passt. </p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(190, 253, 95, 1), rgba(190, 253, 95, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_P7NDwg": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-rocket",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Shopify, aber besser.",
+            "heading_tag": "h3",
+            "text": "<p>Langsame Seiten, Conversion-Hürden oder ungenutzte Potenziale? Wir holen das Beste aus deinem Shopify-Shop heraus. Mit klugen A/B-Tests, Performance-Tuning und cleverem UX-Design machen wir Onlineshops nicht nur schneller, sondern auch erfolgreicher.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_9Hm4By": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-code",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Custom made for Shopify",
+            "heading_tag": "h3",
+            "text": "<p>Nach der Shopübergabe tauchen wir nicht einfach ab. Auf Wunsch begleiten wir dich weiterhin und passen deinen Store iterativ an neue Entwicklungen und sich verändernde Marktsituationen an.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1), rgba(139, 246, 149, 0.5) 99%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_cVGPq7",
+        "column_P7NDwg",
+        "column_9Hm4By"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 70,
+        "color_scheme": "scheme-375efabf-1879-43f1-a1af-9506648e85a1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#daffc1",
+        "scribble_size": 120,
+        "scribble_top": 50,
+        "heading": "E-Commerce einfach machen? Das ist unser #scribble-start#Architektenstück#scribble-end#.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "numbers_7id7U3": {
+      "type": "numbers",
+      "blocks": {
+        "column_AXLt7C": {
+          "type": "column",
+          "settings": {
+            "number": "50 +",
+            "heading": "Shopify Nerds",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_CrfeKg": {
+          "type": "column",
+          "settings": {
+            "number": "1095",
+            "heading": "Stunden",
+            "heading_tag": "h2",
+            "description": "gemeinsam beim After-Work",
+            "text_color": "",
+            "background_gradient": "",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_RfrwAr": {
+          "type": "column",
+          "settings": {
+            "number": "4.8",
+            "heading": "Sterne",
+            "heading_tag": "h2",
+            "description": "bei Kununu",
+            "text_color": "",
+            "background_gradient": "",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_AXLt7C",
+        "column_CrfeKg",
+        "column_RfrwAr"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#15576d",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Unser Zuhause wächst – und du passt #scribble-start#perfekt#scribble-end# rein",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "50 Leute, 1092 After-Work-Stunden – klingt, als wäre es hier ganz schön eng? Keine Sorge, wir besorgen mehr Stühle.",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_qe8chV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9y9TYX": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-graph",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Weiterbildung im eigenen Tempo",
+            "heading_tag": "h3",
+            "text": "<p>Wir geben dir Zeit und Budget, um dich weiterzuentwickeln – wie einen schönen Raum, den du nach deinem Geschmack einrichtest.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_VMTX4z": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Vorsorge mit Herz",
+            "heading_tag": "h3",
+            "text": "<p>Mit bis zu 1.440 € jährlich für die betriebliche Altersvorsorge sorgen wir dafür, dass du auch langfristig abgesichert bist.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_hKjabj": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-migration",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Das beste Design-Mittel: Flexibilität",
+            "heading_tag": "h3",
+            "text": "<p>Ob Home-Office, flexible Arbeitszeiten oder Workations – du arbeitest so, wie es für dich am besten ist.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_BP47TF": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-rocket",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Urban Sports Club & Jobrad",
+            "heading_tag": "h3",
+            "text": "<p>Bleib fit und mobil – wir unterstützen dich mit Sport-Membership und Leasingvorteilen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_tyjcVP": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Echte Werte, echte Gemeinschaft",
+            "heading_tag": "h3",
+            "text": "<p>Offenheit, Vertrauen und gegenseitige Unterstützung machen unser Zuhause aus – hier bist du wirklich willkommen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_9y9TYX",
+        "column_VMTX4z",
+        "column_hKjabj",
+        "column_BP47TF",
+        "column_tyjcVP"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-4",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle4",
+        "scribble_stroke_width": 7,
+        "scribble_color": "#15576d",
+        "scribble_size": 121,
+        "scribble_top": 50,
+        "heading": "Die #scribble-start#Kirschen#scribble-end# auf der Sahnetorte",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_zQewkP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_e7LrKe": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Freie Zimmer im Eshop-Home: Such dir deins aus.",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "OK, Traumjob!",
+            "button_link": "https://eshop-guide.jobs.personio.de/",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_e7LrKe"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "tertiary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "rich_text_iLn3pC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QYje6f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Freie Zimmer im Eshop-Home: Such dir deins aus.",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QYje6f"
+      ],
+      "settings": {
+        "anchor_id": "jobs",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_C7ecMf": {
+      "type": "custom-liquid",
+      "settings": {
+        "anchor_id": "",
+        "custom_liquid": "<iframe id=\"personio-iframe\" style=\"border: none;\" src=\"https://eshop-guide.jobs.personio.de\" width=\"100%\"></iframe>\n\n<script>\n  \twindow.addEventListener('message', function(e) {\n\t\tvar iframe = document.querySelector('#personio-iframe');\n\t\tvar eventName = e.data[0];\n\t\tvar data = e.data[1];\n\t\tswitch(eventName) {\n\t\t\tcase 'setHeight':\n\tiframe.style.height = data + 'px';\n\tdocument.querySelector('#specific-section').scrollIntoView({ behavior: 'smooth' });\n\tbreak;\n\n\t\t}\n\t}, false);\n</script>"
+      }
+    },
+    "custom_liquid_4EdjgW": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom Liquid",
+      "settings": {
+        "anchor_id": "",
+        "custom_liquid": "<div id=\"recruitee-careers\"></div>\n      <script type=\"text/javascript\">\n          var rtscript = document.createElement('script');\n          rtscript.type = 'text/javascript';\n          rtscript.onload = function() {\n            var widget = new RTWidget({ \n \"companies\": [],\n \"detailsMode\": \"popup\",\n \"language\": \"en\",\n \"departmentsFilter\": [],\n \"tagsFilter\": [],\n \"themeVars\": {\n   \"primary\": \"#5A1CB7\n\",\n   \"secondary\": \"#141217\n\",\n   \"text\": \"#5D566C\n\",\n   \"textDark\": \"#141217\n\",\n   \"fontFamily\": \"\\\"Helvetica Neue\\\", Helvetica, Arial, \\\"Lucida Grande\\\", sans-serif;\",\n   \"baseFontSize\": \"16px\"\n },\n \"flags\": {\n   \"showLocation\": true,\n   \"showCountry\": true,\n   \"showCity\": true,\n   \"showState\": true,\n   \"showLocationName\": true,\n   \"showWorkModel\": true,\n   \"groupByLocation\": false,\n   \"groupByState\": false,\n   \"groupByDepartment\": false,\n   \"groupByCompany\": false\n }\n }) };\n            rtscript.src = 'https://jobs-widget.recruiteecdn.com/widget.js';\n            document.body.appendChild(rtscript);\n      </script>"
+      }
+    },
+    "testimonials_7yUjk9": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_6TT7VE": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "\"Flexibilität zwischen Büro und Home Office ist zu 100% gegeben. Verständnis für private Termine nach Absprache sind absolut kein Problem.\"",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        },
+        "testimonials_slide_y6XGWw": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "",
+            "slide_text": "\"Super! Eine Firma, ein Team. Alle Unterstützen sich. Es gibt eine Philosophie, die auch gelebt wird und für alle nachvollziehbar ist.\n\nMan ist immer offen für Verbesserungsvorschläge, die die Zusammenarbeit und den Arbeitsalltag erleichtern.\"",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        },
+        "testimonials_slide_zaXGRw": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "",
+            "slide_text": "\"MEGA! Cooles Team ohne Ellbogenmentalität. Jede*r hilft jedem. Aber auch Spaß haben fällt hier sehr leicht. Mehr muss man dazu nicht sagen!\"",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_6TT7VE",
+        "testimonials_slide_y6XGWw",
+        "testimonials_slide_zaXGRw"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "full_slider",
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "",
+        "slide_text_size": "recommended",
+        "enable_navigation": true,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "steps_BGCjBq": {
+      "type": "steps",
+      "blocks": {
+        "step_XyMwBN": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "Hallo sagen",
+            "heading": "Zeig uns, wer du bist",
+            "heading_tag": "h3",
+            "text": "Schick uns deinen Lebenslauf – keine seitenlangen Anschreiben nötig. Uns interessiert, was dich begeistert und warum du zu uns passt. Nach deiner Bewerbung bekommst du innerhalb weniger Tage eine Rückmeldung.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_n9jmLe": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "Kennenlernen",
+            "heading": "Zeig uns, was du kannst",
+            "heading_tag": "h3",
+            "text": "Im Erstgespräch lernst du unsere HR-Managerin kennen. Wir sprechen über deinen Werdegang, deine Wünsche und unsere Werte – ganz entspannt und auf Augenhöhe. Wenn alles passt, geht’s weiter mit einem fachlichen Interview und einer kleinen Case Study.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_tC4P6z": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "Willkommen an Bord",
+            "heading": "Wir zeigen dir dein Zimmer",
+            "heading_tag": "h3",
+            "text": "Nach deiner Präsentation der Case Study lernst du dein Team kennen und wir klären die letzten Details. Passt es für beide Seiten? Dann bekommst du dein Angebot und deinen Platz in deinem neuen Zuhause.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_XyMwBN",
+        "step_n9jmLe",
+        "step_tC4P6z"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "boxed": false,
+        "layout": "columns",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "heading": "Dein Weg ins Eshop-Home: So läuft's ab",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "It takes two: Wir setzen auf Transparenz, Fairness und gute Gespräche, damit du uns und wir dich wirklich kennenlernen. Und natürlich wollen wir sehen, was du drauf hast.",
+        "text_align": "center",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_CEx3EV": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_BFm3QH": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BFm3QH"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-c0e32b1c-3a95-4898-bc50-c9dd2c0a7512",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Klingel doch mal durch",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Du bist begeistert und möchtest direkt loslegen? Dann schick uns deine Bewerbung, wir melden uns schnell und freuen uns darauf, dich kennenzulernen.</p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/eshopGuide_Portraits00529-2.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11.5,
+        "video_overlay_margin_bottom": 4.5,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Rebecca Kasprzak",
+        "heading_width": 15,
+        "additional_custom_text": "People & Culture Managerin",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach bewerben.",
+        "button_link": "#jobs",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_VVG6bj",
+    "rich_text_AdeVRQ",
+    "multicolumn_ynnHdV",
+    "numbers_7id7U3",
+    "multicolumn_qe8chV",
+    "multicolumn_zQewkP",
+    "rich_text_iLn3pC",
+    "custom_liquid_C7ecMf",
+    "custom_liquid_4EdjgW",
+    "testimonials_7yUjk9",
+    "steps_BGCjBq",
+    "image_with_text_CEx3EV"
+  ]
+}

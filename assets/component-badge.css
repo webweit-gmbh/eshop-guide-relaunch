@@ -1,0 +1,30 @@
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  text-transform: none;
+  word-break: break-word;
+  border-radius: 5rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.05);
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  overflow: hidden;
+}
+.badge .icon {
+  font-size: 1.5rem;
+}
+.badge .icon--subtle .icon {
+  color: rgba(var(--color-foreground), 0.14);
+}
+.badge .icon--colored .icon {
+  color: rgba(var(--color-accent));
+}
+.badge .icon--colored.icon--gradient {
+  color: var(--gradient-accent);
+}
+.badge span {
+  display: inline-flex;
+  align-items: center;
+}

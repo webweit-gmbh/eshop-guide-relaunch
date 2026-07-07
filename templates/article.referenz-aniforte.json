@@ -1,0 +1,1387 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_thEpqN": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_CWqjHT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "chart-3",
+            "svg_icon": "icon-EG-pricetag",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "1/3",
+            "heading_tag": "p",
+            "text": "der Entwicklungskosten gegenüber Shopsystemen",
+            "background_gradient": ""
+          }
+        },
+        "column_yhEzRd": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "rocket",
+            "svg_icon": "icon-EG-graph",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "50 %",
+            "heading_tag": "p",
+            "text": "verbesserte Conversion Rate nach der Migration",
+            "background_gradient": ""
+          }
+        },
+        "column_7AbfM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "phone-4",
+            "svg_icon": "icon-EG-money",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "15 %",
+            "heading_tag": "p",
+            "text": "Umsatzwachstum im ersten Jahr im neuen Shop",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CWqjHT",
+        "column_yhEzRd",
+        "column_7AbfM9"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": true,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Von Shopware zu Shopify Plus",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "AniForte verzeichnet nach Wechsel 50 % mehr Conversions im neuen Onlineshop",
+        "inner_heading_tag": "h1",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p><strong>Ergebnisse:</strong></p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "{{ article.image }}",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "all-height",
+        "overlay_opacity": 0.2,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "full_width": true,
+            "object_fit": "cover",
+            "blog_show_tags": true,
+            "blog_show_excerpt": false,
+            "blog_show_author": false,
+            "blog_show_date": false,
+            "image_height": "adapt",
+            "show_share": false,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "disabled": true,
+          "settings": {
+            "author_position": "",
+            "author_info": "",
+            "blog_show_author": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "aside_akdCzB": {
+          "type": "aside",
+          "settings": {
+            "banner_show": false,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Das Unternehmen",
+            "banner_color_scheme": "background-1",
+            "banner_label": "AniForte",
+            "banner_link": "https://www.aniforte.de_target=blank",
+            "informations_show": true,
+            "divider_color": "#4790b7",
+            "information_heading_1": "Unternehmen",
+            "information_value_1": "<p><a href=\"https://www.aniforte.de\" target=\"_blank\" title=\"Onlineshop von AniForte\"><strong>AniForte </strong></a></p>",
+            "information_heading_2": "Branche",
+            "information_value_2": "<p><strong>Tierbedarf</strong></p>",
+            "information_heading_3": "Alte Plattform",
+            "information_value_3": "<p><strong>Shopware 5</strong></p>",
+            "information_heading_4": "Neue Plattform",
+            "information_value_4": "<p><strong>Shopify Plus</strong></p>",
+            "information_heading_5": "Use Case",
+            "information_value_5": "<ul><li><strong>Shopify Migration</strong></li><li><strong>Performancesteigerung</strong></li><li><strong>Wachstum</strong></li></ul>",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "Laufzeit",
+            "information_value_7": "<p><strong>8 - 12 Wochen</strong></p>",
+            "information_heading_8": "Kosten",
+            "information_value_8": "<p><strong>25.000 - 50.000 €</strong></p>",
+            "information_heading_9": "Highlights",
+            "information_value_9": "<ul><li><strong>Speed-Score 90 </strong></li><li><strong>performantes PDF-Konzept</strong></li><li><strong>Custom Abo-Sektion</strong></li><li><strong>neue Cart Drawer</strong></li><li><strong>optimierte Blog-Search & User Flow</strong></li></ul>",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": false,
+            "posts_heading": "",
+            "posts_blog": "",
+            "tags_show": false,
+            "tags_heading": "Heading",
+            "newsletter_show": false,
+            "color_scheme": "background-1",
+            "newsletter_heading": "",
+            "newsletter_description": "Content",
+            "button_style": "primary",
+            "cta_show": true,
+            "cta_show_desktop": true,
+            "cta_show_mobile": false,
+            "cta_background_color": "#cbf3ff",
+            "cta_heading": "Hast du Lust, mit Shopify mehr zu erreichen?",
+            "cta_description": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite.</p>",
+            "show_button_1": true,
+            "button_label_1": "Jetzt anfragen",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer",
+        "aside_akdCzB"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "display_content_inside": true,
+        "header_transparent": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "opacity_overlay": 0.5,
+        "padding_top": "no-indent",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_x3Jb6w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dRJ4qd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inhaltsverzeichnis",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_PPEMkm": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li><a href=\"#1\" title=\"#1\">Wer ist AniForte?</a></li><li><a href=\"#2\" title=\"#2\">Von Strato, JTL, Afterbuy und Shopware zu Shopify Plus</a></li><li><a href=\"#3\" title=\"#3\">Performance-Probleme und Sicherheitslücken: Massive Schwierigkeiten mit Shopware</a></li><li><a href=\"#4\" title=\"#4\">Shopware 5 vs. Shopify Plus</a></li><li><a href=\"#5\" title=\"#5\">Die richtige Shopify Plus-Agentur finden</a></li><li><a href=\"#6\" title=\"#6\">50 % mehr Conversions und ein Umsatzplus von 15 %</a></li><li><a href=\"#7\" title=\"#7\">Wachstumssteigernde Shopify Plus Apps und Features</a></li><li><a href=\"#8\" title=\"#8\">Quo vadis, AniForte? - Pläne für die Unternehmenszukunft</a></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRJ4qd",
+        "text_PPEMkm"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "background-3",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "s",
+        "margin_bottom": "s",
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_MKc39j": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_yky3w8": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Ein kurzer Steckbrief",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_EL4ktJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das ist AniForte",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_eDK4AY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gegründet in 2013 verkaufte AniForte zunächst Tiernahrung aus heimischer Produktion und ohne Zusatzstoffe auf den Marktplätzen von eBay und Amazon. Dieses Angebot erweiterte sich sukzessive: Nahrungsergänzungsmittel für ein gesundes Tierleben, Pflegeprodukte für das tierische Wohlbefinden – nicht nur für Hund und Katze, sondern auch für Nager, Pferde und sogar Hühner.<br/><br/>Die Marke erwies sich schnell als so erfolgreich, dass ein eigener Onlineshop der einzige logische Schritt war. Dabei probierte AniForte zahlreiche Shopsysteme aus: den Strato Webshop, JTL, Afterbuy und zuletzt auch Shopware. Richtig glücklich wurde das Unternehmen allerdings mit keinem dieser Shop-Anbieter – dazu gleich mehr.<br/><br/>Heute hat AniForte seinen Sitz im schönen Brüggen, kurz vor der niederländischen Grenze. 65 Mitarbeiter:innen sind für das Unternehmen in der Produktion, der Logistik, dem Versand und im Office tätig – alles aus einer Hand, Qualität made in Germany.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yky3w8",
+        "heading_EL4ktJ",
+        "text_eDK4AY"
+      ],
+      "settings": {
+        "anchor_id": "1",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_with_text_a3Y7pY": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Aniforte_Produktseite.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_PDqVAj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_ptABaR": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Geschichte einer Reise",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_H6gAz7": {
+          "type": "heading",
+          "settings": {
+            "heading": "AniFortes Weg zu Shopify Plus und Eshop Guide",
+            "heading_tag": "h2",
+            "heading_size": "large"
+          }
+        },
+        "text_ptqKJp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Um Geschäftsprozesse wirklich verstehen zu können, ist es bekanntlich sinnvoll, die Hintergründe zu kennen. Daher werfen wir zunächst einen Blick darauf, welche Entscheidungen AniForte warum getroffen hat.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ptABaR",
+        "heading_H6gAz7",
+        "text_ptqKJp"
+      ],
+      "settings": {
+        "anchor_id": "2",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_RFAxBR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pJDHTz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Performance-Probleme und Sicherheitslücken: Massive Schwierigkeiten mit Shopware",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_JCCNzi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>AniForte im Jahr 2021: Seit über drei Jahren läuft der Shop des Unternehmens auf dem System von Shopware 5. Rumpelt, möchte man fast sagen, denn immer wieder kommt es zu massiven Performance-Problemen, die das Tagesgeschäft negativ beeinflussen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pJDHTz",
+        "text_JCCNzi"
+      ],
+      "settings": {
+        "anchor_id": "3",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "testimonials_KEPz7V": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_TBFf6P": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "“Mindestens einmal im Monat war unser Shop nicht zu erreichen.”",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_TBFf6P"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_cKdkWY": {
+      "type": "rich-text",
+      "blocks": {
+        "text_dDir6L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>„Das Zusammenspiel zwischen Shopware und unserem Webhoster lief alles andere als rund“, erklärt der Leiter des AniForte-Onlineshops Maik Fabri. „Mindestens einmal im Monat war unser Shop nicht zu erreichen. Aber selbst, wenn die Verbindung stabil blieb, war das Einkaufen in unserem Store kein Genuss. Die Seite lud extrem langsam. Der Pagespeed war eine Katastrophe.“<br/><br/></p><p><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/pagespeed-optimierung\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Pagespeed als Conversion Killer muss nicht sein. Wir zeigen dir, wie du ihn verbesserst<br/><br/></em></span></a></p><p>Als ob eine schlechte Performance und unzufriedene Kundschaft nicht ausreichen, kamen außerdem noch Lücken in der IT-Security hinzu. Maik verrät uns im Gespräch:</p><p>„Einmal hatten wir sogar eine DDoS-Attacke. Einen entsprechenden Schutz gab es auf den Servern unseres Rechenzentrums nicht. Den mussten wir mit der Unterstützung einer Agentur selbst installieren, während der Angriff lief. Was so ein Service kostet, kann sich vermutlich jeder denken.“<br/><br/>Insgesamt war das Team von AniForte alles andere als glücklich mit dem Ist-Zustand des eigenen Onlineshops. Vielleicht hätte ein Anbieterwechsel also ohnehin auf der Agenda gestanden, aber äußere Umstände sollten dem Unternehmen die Entscheidung abnehmen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_dDir6L"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_qYk4fy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_BtrCNb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Nerds erklären",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_pEwVTD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das ist eine DDoS-Attacke",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_ngERbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DDoS steht für Distributed Denial of Service. Bei so einem Angriff hat ein Hacker zuvor zahlreiche internetfähige Geräte gekapert. Von diesen schickt er auf Kommando gleichzeitig und dauerhaft etliche Anfragen an die Server eines Unternehmens. Unter dieser Last brechen die Rechner zusammen und sind für reguläre Anfragen – zum Beispiel von Kund:innen, Kreditinstituten oder der Logistik – nicht mehr zu erreichen.</p><p>In der Praxis folgt meist ein Erpresserbrief: Zahle mir Summe XY und die Attacke hört auf. DDoS-Angriffe sind vor allem deshalb so gefährlich, weil sie sich kaum zurückverfolgen lassen und der Datenstrom der Attacke die Server erst erreichen muss, bevor er analysiert und von normalen Anfragen getrennt werden kann.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BtrCNb",
+        "heading_pEwVTD",
+        "text_ngERbi"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_79QnPg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_y3bXYD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Goodbye Shopware, hello Shopify Plus",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_yxHUBA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entwicklungskosten und Angebot an Plugins sind ausschlaggebend",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_drR4Qd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Denn Shopware gab bekannt, dass der Support für Version 5 eingestellt würde. Kund:innen, die das System weiterhin nutzen wollten, waren gezwungen, auf Version 6 zu migrieren.</p><p>„Zahlreiche Plugins, die bei uns liefen, erhielten keine Updates mehr“, erinnert sich Maik. „Nach Rücksprache mit der Agentur, die uns damals betreute, wurde außerdem schnell klar, dass ein Umzug zu Shopware 6 nicht mit einem einfachen Klick auf einen Update-Button erledigt wäre. Wir standen also vor der Wahl, entweder einen komplett neuen Store unter Shopware 6 aufzusetzen oder zu einem anderen Anbieter zu wechseln.“</p><p><br/></p><p><em><strong>Lesetipp</strong></em><em>: </em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/shopware6-vs-shopify\"><span style=\"text-decoration:underline\"><em>Shopware 6 vs. Shopify – Ein ehrlicher Vergleich</em></span></a></p><p><br/></p><p>Dementsprechend holte sich AniForte Angebote ein. In die engere Wahl fielen Magento, Shopify und natürlich der Verbleib bei Shopware. Maik zu den Zahlen:</p><p>„Die Kosten für einen Magento-Shop lagen jenseits von Gut und Böse. Shopware lag finanziell im Mittelfeld, war aber immer noch sehr teuer. Am günstigsten war der Wechsel zu Shopify. Die Kosten für den Umzug lagen inklusive Neuaufsetzung, Entwicklung und Datenmigration unter 100.000 Euro. Das ist in etwa ein Drittel von dem, was wir für einen Shopware Store hätten investieren müssen.“<br/><br/>Allerdings war der Preis nur eines von zwei Argumenten, denn Maik erklärt weiter:</p><p>„Überzeugt hat uns außerdem das Angebot an Funktionen und Apps. Wenn du dir irgendeine Sonderfunktion für deinen Store wünschst, gibt es auf Shopify nicht nur eine Lösung, sondern gleich dutzende. Bei anderen Anbietern ist die Auswahl deutlich dürftiger.“<br/><br/>Am Ende entschied also der Faktor, auf den kluge Händler:innen sich immer verlassen, wenn sie vor die Wahl gestellt werden: das Preis-Leistungs-Verhältnis.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_y3bXYD",
+        "heading_yxHUBA",
+        "text_drR4Qd"
+      ],
+      "settings": {
+        "anchor_id": "4",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "s",
+        "margin_bottom": "s",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "image_with_text_JfFxTL": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "5",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Aniforte_Produkt_Warenkorb.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_nC6NAH": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_YnQqbj": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Welcome, Eshop Guide",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_reKtD4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shopify unterstützt bei der Agentursuche",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_Mqny93": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Und wie kommt Eshop Guide ins Bild? Maik erklärt, wie es nach der Entscheidung für Shopify weiterging:</p><p>„Nachdem wir Kontakt zu Shopify aufgenommen und unser Anliegen vorgetragen hatten, erhielten wir als größerer Shop, der schon recht erfolgreich agierte, eine umfassende Beratung. In deren Zuge entschieden wir uns nicht nur für <em>Shopify Plus</em>. Uns wurden auch die regionalen Shopify Partneragenturen vorgestellt – also deutschsprachige Agenturen, die sich in der Umsetzung großer Shopify-Projekte bereits bewährt haben.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_YnQqbj",
+        "heading_reKtD4",
+        "text_Mqny93"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "testimonials_xyVGhc": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_pzdKbU": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "“Wenn du zu irgendeinem Shopify-Thema googelst, kannst du davon ausgehen, dass Eshop Guide schon ein Tutorial dazu im Netz hat.”",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_pzdKbU"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_Yb64fy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_aFVEHg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir haben uns jede einzelne gründlich angesehen. Unsere Wahl fiel am Ende auf Eshop Guide; vor allem, weil wir den Eindruck hatten, dass dort der Service stimmt und das größte Know-How vorhanden ist. Wenn du nach Hilfe zu irgendeinem Shopify-Thema googelst, kannst du davon ausgehen, dass Eshop Guide schon ein Tutorial dazu im Netz hat. Das hat uns überzeugt.“<br/><br/>Wo Maik recht hat, hat er recht. Wir geben wirklich alles, um Shops noch besser zu machen. Aber genug der warmen Worte, denn was dich an dieser Stelle wirklich interessiert, ist, wie die Migration zu Shopify Plus lief und ob sich der Umzug für AniForte rentiert hat.<br/></p><h3>Keine besonderen Vorkommnisse: Problemlose Migration zu Shopify Plus</h3><p>Tatsächlich lief der Systemwechsel so reibungslos, dass es nicht viel zu berichten gibt. Mit dem Abschalten des Shops auf Shopware ging zeitgleich der Launch des Shopify-Shops einher. Ausfälle gab es keine, alle Stammdaten – von der Buchhaltung bis hin zu den Adressen der Kund:innen – konnten wir problemlos übertragen.<br/><br/>Maik erklärt zum Umzug: „Vermutlich hätten unsere Kundinnen und Kunden vom Systemwechsel gar nichts mitbekommen, wenn unser neuer Shop nicht ein so stark verbessertes User-Interface bieten würde:<br/><br/>Auf der Startseite können wir jetzt direkt die Highlights aus unserem Angebot präsentieren. Auf den PDPs finden sich Produktempfehlungen zu weiteren Artikeln aus unserem Sortiment. Die Such- und Filtermöglichkeiten haben sich dank der Search & Discovery App deutlich erweitert. Aus Datenschutzgründen mussten User:innen mit einem Account lediglich ein neues Passwort vergeben. Aber das war auch der einzige Wermutstropfen.\"<br/><br/><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/customer-lifetime-value\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Mit Langzeitkund:innen zu mehr Umsatz – verbessere die Customer Lifetime Value</em></span></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_aFVEHg"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_UaxLD9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rMDNEY": {
+          "type": "heading",
+          "settings": {
+            "heading": "50 % mehr Conversions und ein Umsatzplus von 15 %",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_Bfa6zD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Allerdings beschränken sich die Veränderungen nicht allein auf ein besseres Interface. Auch hinter den Kulissen arbeitet der neue AniForte-Shop jetzt deutlich performanter und sorgt so für die perfekte User Experience. Vorhang auf für Manuel:<br/><br/>„Eshop Guide hat für uns den App Core Web Vitals Booster implementiert und so den Page Speed deutlich verbessert. Alle Seiten laden jetzt blitzschnell; es ist einfach kein Vergleich zu unserem alten Shop. Das können wir auch an den Zahlen ablesen: Seit dem Relaunch hat sich unsere Conversion Rate um 50 Prozent verbessert.“<br/><br/>So große Auswirkungen, nur, weil die Seiten schneller laden? Auf jeden Fall! Denn durchschnittliche User:innen warten keine drei Sekunden auf den Aufbau einer Website, bevor sie abspringen. Lange Ladezeiten kosten einen Shop also jede Menge Conversions.<br/><br/></p><h3>Besserer Pagespeed, besserer Average Order Value (AOV)</h3><p>Und nicht nur das: Ein guter Pagespeed sorgt auch für eine verbesserte Average Order Value. Denn wo sich Seiten schneller aufbauen, macht das Einkaufen einfach mehr Spaß und die Besucher:innen sind eher bereit, zusätzliche Artikel in ihren Warenkorb zu legen. Kein Wunder, dass AniForte bereits im ersten Jahr nach dem Anbieterwechsel ein Umsatzwachstum von 15 Prozent verzeichnen konnte.<br/><br/></p><p><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/conversion-rate-optimierung-shopify-zahlungsmethoden\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>So steigerst auch du deine Conversion Rate – Maßnahmen zur Optimierung<br/></em></span></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rMDNEY",
+        "text_Bfa6zD"
+      ],
+      "settings": {
+        "anchor_id": "6",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "numbers_3FC8FL": {
+      "type": "numbers",
+      "blocks": {
+        "column_cWVVBe": {
+          "type": "column",
+          "settings": {
+            "number": "1/3",
+            "heading": "der Entwicklungskosten gegenüber Shopsystemen",
+            "heading_tag": "p",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(54deg, rgba(217, 255, 194, 1) 14%, rgba(217, 255, 194, 1) 85%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_rMx6fG": {
+          "type": "column",
+          "settings": {
+            "number": "50 %",
+            "heading": "verbesserte Conversion Rate nach der Migration",
+            "heading_tag": "p",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 1) 50%, rgba(147, 230, 255, 1) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_Ee3Vfh": {
+          "type": "column",
+          "settings": {
+            "number": "15 %",
+            "heading": "Umsatzwachstum im ersten Jahr im neuen Shop",
+            "heading_tag": "h5",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(181, 249, 187, 1), rgba(181, 249, 187, 1) 98%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cWVVBe",
+        "column_rMx6fG",
+        "column_Ee3Vfh"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#15576d",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Die #scribble-start#wichtigsten#scribble-end# Zahlen zur Shopify-Migration von AniForte",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_inBNkd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9tcFaA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shopify Plus macht’s möglich: Weitere umsatzsteigernde Shop-Features",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_qdiYPQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mehr Komfort beim Shopping, schnellere Ladezeiten – damit sind die Möglichkeiten noch lange nicht ausgereizt. Denn Shopify Plus erlaubt Anpassungen in allen Bereichen eines Onlineshops und bietet so die Möglichkeit, auch komplexere Features zu implementieren.<br/><br/>Was Manuel besonders begeistert: „Die interessanteste neue Funktion für unsere Kundinnen und Kunden ist meiner Meinung nach unser Abo-Service. Denn wer hat schon Lust, alle zwei Wochen sein Hundefutter nachzubestellen?<br/>Mit unseren Abos funktioniert alles vollautomatisch – und das nicht etwa umständlich per E-Mail. In einem eigenen Portal können Produkte an- und abgewählt, der Rhythmus der Lieferung geändert oder das Abo jederzeit gekündigt werden. Zehn Prozent unserer Bestellungen laufen inzwischen über diesen Dienst; Tendenz weiter steigend. So können wir mit einem festen Umsatz kalkulieren und unsere Kund:innen wissen, dass ihre nächste Lieferung auf jeden Fall rechtzeitig bei ihnen eintrifft.“<br/><br/>Darüber hinaus erhöhen Abos die Kundenbindung und führen tatsächlich zu mehr Weiterempfehlungen. Denn wenn die lieben Nachbarn sehen, dass nebenan mit perfekter Regelmäßigkeit ein Paket von AniForte eintrudelt, werden sie natürlich neugierig und fragen nach.<br/><br/>Außerdem haben wir den Shop unter anderem noch um diese Funktionen ergänzt:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9tcFaA",
+        "text_qdiYPQ"
+      ],
+      "settings": {
+        "anchor_id": "7",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_R3LPTj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qnzNE6": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Octane AI",
+            "heading_tag": "h3",
+            "text": "<p>Octane AI erstellt Quizzes rund um das Angebot eines Shops. So erfährst du nicht nur mehr über deine Kund:innen, sondern kannst ihnen auch die perfekte Produktempfehlung aussprechen. Dein Hund liebt Geflügel, ist acht Jahre alt und ein bisschen zu dick? Dann haben wir was für dich! Die Engagement-Zahlen sind top, denn wer erzählt nicht gerne über sein Tier?</p><p></p><p><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/aov\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Noch mehr Maßnahmen, um den Warenkorbwert zu erhöhen – so steigerst du die Average Order Value</em></span></a></p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_YJDdbk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Smile – Loyalty & Rewards",
+            "heading_tag": "h3",
+            "text": "<p>Smile implementiert ein Loyalitäts- und Belohnungsprogramm in einem Shop, fördert so wiederkehrende Einkäufe und steigert die Kundenbindung. Gerade in einem Store mit Verbrauchsgütern funktioniert diese umsatzsteigernde Maßnahme hervorragend: Nur noch zwei Bestellungen und deine Katze kann sich über ihr Snackpaket freuen! Eignet sich übrigens auch bestens dafür, dass Kund:innen noch mehr deiner Produkte kennenlernen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_AdJf9t": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Stoked – Inventory & Sold Count ",
+            "heading_tag": "h3",
+            "text": "<p>Als mittelständisches Unternehmen produziert AniForte seine Produkte selbst. Da kann es durchaus vorkommen, dass ein Artikel ausverkauft ist. Über die momentane Verfügbarkeit informiert Stoked und vermeidet so enttäuschte Tiere und Verbraucher:innen. Außerdem zeigt die App an, wie viele Einheiten eines Produktes bereits verkauft wurden und fördert so das Vertrauen der Kund:innen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_yxbTQV": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Und noch weitere Apps",
+            "heading_tag": "h3",
+            "text": "<p>Beachte bitte, dass diese Apps nur eine kleine Auswahl der erweiterten Funktionalitäten im AniForte-Store darstellen. Wenn du mehr wissen möchtest, probierst du den Shop am besten selbst aus. Denn manche Dinge muss man einfach erlebt haben, um sie zu verstehen.</p><p><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/shopify-warenkorb-anpassen\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Mit Shopify geht fast alles. Erfahre, wie sich jetzt auch der Checkout an deine Wünsche anpassen lässt</em></span></a></p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_qnzNE6",
+        "column_YJDdbk",
+        "column_AdJf9t",
+        "column_yxbTQV"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "separators",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "normal",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_nGkh78": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_bD8Dq4": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Als Nächstes wollen wir uns noch stärker auf personalisiertes Marketing konzentrieren. Dazu möchten wir unabhängig von Drittanbietern werden und all die Kund:inneninformationen, die in unserem Shop auflaufen, selbst sammeln und auswerten.\nUnser Ziel ist es, den Menschen ein noch besseres Einkaufserlebnis zu ermöglichen und ihnen etwa einen individuellen Newsletter anzubieten, der ausschließlich relevante Inhalte für sie und ihr Tier enthält.\nUmsatzwachstum um jeden Preis ist nicht unser Weg. Darunter leiden meist früher als später der Service und die Qualität der Produkte – und das ist für uns ein No-Go, wenn es um Tiere geht. Unser Ziel heißt deshalb gesundes Wachstum. 20 Prozent mehr Umsatz pro Jahr klingt realistisch und vor allem nachhaltig.“",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "image": "shopify://shop_images/Iphone_Mock_Up_frontal_Aniforte2.png",
+            "box_color": "#00486f",
+            "slide_name": "Manuel Steppat",
+            "slide_position": "E-Commerce Manager"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_bD8Dq4"
+      ],
+      "settings": {
+        "anchor_id": "8",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "Quo vadis, AniForte?",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "lines3",
+        "scribble_stroke_width": 4,
+        "scribble_color": "#befd5f",
+        "scribble_size": 100,
+        "scribble_top": 76,
+        "heading": "Pläne für die #scribble-start#Unternehmenszukunft#scribble-end#",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Damit bleibt eigentlich nur die Frage, wo die Reise hingehen soll. Ein letztes Mal der E-Commerce Manager von AniForte Manuel Steppat:",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_AHtfJj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NmBwez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir sind da – auch für dich",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_JFeYBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wenn wir sagen, dass bei AniForte alles zum Besten steht, ist das also keine Übertreibung, sondern eine schlichte Tatsache: Ein performanter Shop ohne Ausfälle, Features, die den Kund:innen einen echten Mehrwert bieten und ein starker Partner, der bereit ist für alle Zukunftspläne. Denn bei 25 Millionen Katzen- und Hundehalter:innen gibt es für AniForte noch reichlich Wachstumspotenzial; vielleicht sogar jenseits der 20-Prozent-Marke? Wir freuen uns auf jeden Fall, dabei sein zu dürfen.<br/><br/>Und auch dich unterstützen wir gerne. Erfahre im Detail, wie<a href=\"https://www.eshop-guide.de/pages/shopify-migration\" target=\"_blank\" title=\"Migration\"> <span style=\"text-decoration:underline\">eine Shop Migration</span></a> mit unserer Hilfe funktioniert oder schau dir an, wie wir deinen<a href=\"https://www.eshop-guide.de/pages/shopify-shop-optimieren\"> <span style=\"text-decoration:underline\">Store performanter und userfreundlicher</span></a> machen können. Wir sind gespannt auf deine Ideen. </p>"
+          }
+        },
+        "button_gnPV7j": {
+          "type": "button",
+          "settings": {
+            "button_label": "Einfach melden",
+            "button_link": "#contact",
+            "button_style": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NmBwez",
+        "text_JFeYBb",
+        "button_gnPV7j"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_pbxALY": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "referenzen",
+        "color_scheme": "background-1",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "background-1",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 9,
+        "card_color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Weitere Referenzen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": false,
+        "button_label": "Button label",
+        "custom_view_all_link": "",
+        "button_style": "primary",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_thEpqN",
+    "main",
+    "rich_text_x3Jb6w",
+    "rich_text_MKc39j",
+    "image_with_text_a3Y7pY",
+    "rich_text_PDqVAj",
+    "rich_text_RFAxBR",
+    "testimonials_KEPz7V",
+    "rich_text_cKdkWY",
+    "rich_text_qYk4fy",
+    "rich_text_79QnPg",
+    "image_with_text_JfFxTL",
+    "rich_text_nC6NAH",
+    "testimonials_xyVGhc",
+    "rich_text_Yb64fy",
+    "rich_text_UaxLD9",
+    "numbers_3FC8FL",
+    "rich_text_inBNkd",
+    "multicolumn_R3LPTj",
+    "testimonials_nGkh78",
+    "rich_text_AHtfJj",
+    "featured_blog_pbxALY"
+  ]
+}

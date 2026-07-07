@@ -1,0 +1,74 @@
+{%- comment -%}
+  Developer Notes - If you want to reuse this section in another theme:
+    - check if the css variable --header-height exists
+      -if not you may either set it or remove the settings "use_custom_scroll_offset" and always use custom offset
+    - adjust the breakpoints according to the theme
+{%- endcomment -%}
+
+{%- if section.settings.anchor_id != blank -%}
+  <div class="anchor-link" id="{{ section.settings.anchor_id }}">
+    {% style %}
+      {%- if section.settings.use_custom_scroll_offset -%}
+        #{{ section.settings.anchor_id }} {
+          scroll-margin-top: {{ section.settings.mobile_scroll_offset }}px;
+        }
+
+        @media (min-width: 768px) {
+          #{{ section.settings.anchor_id }} {
+            scroll-margin-top: {{ section.settings.desktop_scroll_offset }}px;
+          }
+        }
+      {%- else -%}
+        #{{ section.settings.anchor_id }} {
+          scroll-margin-top: var(--header-height);
+        }
+      {%- endif -%}
+    {% endstyle %}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Anchor-Link",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "This ID can be referenced in a link to scroll to a secific position on a page e.g. \"www.your-page.com#anchor-id\". Make sure its unique."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_scroll_offset",
+      "label": "Use custom scroll offset",
+      "info": "By default the scroll offset is set to header height",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "desktop_scroll_offset",
+      "label": "Desktop Scroll Offset",
+      "min": -100,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_scroll_offset",
+      "label": "Mobile Scroll Offset",
+      "min": -100,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Anchor-Link"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1666 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "hero_nynzkB": {
+      "type": "hero",
+      "blocks": {
+        "subtitle_aRmrK7": {
+          "type": "subtitle",
+          "settings": {
+            "subheading": "Strategy-Workshop für erfahrene Shopify-Teams",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon_type": "svg",
+            "subheading_icon": "star",
+            "subheading_svg_icon": "icon-EG-star",
+            "icon_color": ""
+          }
+        },
+        "title_GVybfk": {
+          "type": "title",
+          "settings": {
+            "heading": "Roadmap klar. Umsetzung fehlt? Willkommen in unserer Shopify-Werkstatt.",
+            "heading_tag": "h1",
+            "heading_size": "h1",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false
+          }
+        },
+        "description_GFMhjA": {
+          "type": "description",
+          "settings": {
+            "description": "Du weißt, wo du hinwillst, aber dir fehlt die Shopify-Manpower, um dorthin zu kommen? In unserem Strategy-Workshop nehmen wir dein aktuelles Setup auseinander, identifizieren Schwachstellen und zeigen dir, was du brauchst, um wirklich PS auf die Shopify-Straße zu bringen."
+          }
+        },
+        "buttons_y4wL9b": {
+          "type": "buttons",
+          "settings": {
+            "show_button_1": true,
+            "button_label_1": "Jetzt Termin sichern",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_aRmrK7",
+        "title_GVybfk",
+        "description_GFMhjA",
+        "buttons_y4wL9b"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "horizontal",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "background_color": "#d8f6ff",
+        "color_scheme": "",
+        "full_screen": false,
+        "image": "shopify://shop_images/optimierung.png",
+        "show_video": false,
+        "overlay_opacity": 0.5,
+        "image_ratio": "1/1",
+        "object_fit": "cover",
+        "desktop_image_position": "after",
+        "mobile_image_position": "after",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "logo_list_wEw8W4": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_ArFtBr": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Vorwerk.png",
+            "image_width": 140
+          }
+        },
+        "logo_BNGEGc": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/judith-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_iTgxK6": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/giesswein-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_6YQfVa": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/luisa_cerano-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_BcXwwj": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/titus-grey.png",
+            "image_width": 75
+          }
+        },
+        "logo_wCfbn3": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/wajos-grey.png",
+            "image_width": 125
+          }
+        }
+      },
+      "block_order": [
+        "logo_ArFtBr",
+        "logo_BNGEGc",
+        "logo_iTgxK6",
+        "logo_6YQfVa",
+        "logo_BcXwwj",
+        "logo_wCfbn3"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "horizontal-carousel",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 3000,
+        "speed_slider_2": 4000,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_qMazP7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_H4z8G3": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Roadmap vorhanden, aber kein Dev-Team</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_njqD4L": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Klarer Plan, aber keine Ressourcen </p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_jBG6Yi": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Aktuelle Agentur liefert zu wenig</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_EAnenB": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>UX veraltet, Conversion stagniert</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_GQ8fLN": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Stakeholder wollen Ergebnisse sehen</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_Y4MwYD": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Deine Kompetenz wird ständig von der wenig verfügbaren Zeit ausgebremst</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_VTCmA3": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Zu viel auf der To-do-Liste, zu wenig Umsetzung</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_UhA8Dt": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-fail",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Du denkst groß, aber kennst Shopify nicht gut genug</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_H4z8G3",
+        "column_njqD4L",
+        "column_jBG6Yi",
+        "column_EAnenB",
+        "column_GQ8fLN",
+        "column_Y4MwYD",
+        "column_VTCmA3",
+        "column_UhA8Dt"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "secondary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "row",
+        "icon_padding": 10,
+        "color_scheme": "scheme-c0e32b1c-3a95-4898-bc50-c9dd2c0a7512",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#ffffff",
+        "scribble_size": 119,
+        "scribble_top": 50,
+        "heading": "\"Wir kennen unsere Ziele, haben aber zu wenig Ressourcen, sie umzusetzen.\"",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Viele unserer Kund:innen wissen genau, was sie brauchen, aber ihnen fehlt die Umsetzungspower im Team oder die richtige Shopify-Kompetenz. <br><br>\nDu bist hier richtig, wenn du diesen Herausforderungen begegnest:",
+        "text_align": "left",
+        "icon_size": "large",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_HHmKAV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MTyzdL": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Analyse deines Shops, Themes & Setups</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_TeE8P4": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Setup auf Skalierung prüfen</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_BcFqTW": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Quick Wins identifizieren</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_GV3mgH": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Empfehlungen zur Roadmap-Priorisierung</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_DxmLx6": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Integrationen bewerten</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_dAcBBL": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-checkbox",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Realistische Potenziale aufzeigen</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_MTyzdL",
+        "column_TeE8P4",
+        "column_BcFqTW",
+        "column_GV3mgH",
+        "column_DxmLx6",
+        "column_dAcBBL"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "secondary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "row",
+        "icon_padding": 10,
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#ffffff",
+        "scribble_size": 119,
+        "scribble_top": 50,
+        "heading": "\"Was uns gefehlt hat: ein realistischer Blick von außen.\"",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "In unserer Werkstatt schauen wir unter die Motorhaube und sagen dir, was sich lohnt – und was nicht.",
+        "text_align": "left",
+        "icon_size": "large",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "animated_image_collage_THYGYK": {
+      "type": "animated-image-collage",
+      "blocks": {
+        "column_PW3KgC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.34.56.png",
+            "image_width": 420
+          }
+        },
+        "column_HgCxFD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.33.23.png",
+            "image_width": 420
+          }
+        },
+        "column_7zRexW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.33.52.png",
+            "image_width": 420
+          }
+        },
+        "column_jBKdGL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.33.52.png",
+            "image_width": 420
+          }
+        },
+        "column_diGnEN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.33.37.png",
+            "image_width": 420
+          }
+        },
+        "column_UJpUxe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.34.16.png",
+            "image_width": 420
+          }
+        },
+        "column_KagmGn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2025-06-25_um_15.33.07.png",
+            "image_width": 420
+          }
+        }
+      },
+      "block_order": [
+        "column_PW3KgC",
+        "column_HgCxFD",
+        "column_7zRexW",
+        "column_jBKdGL",
+        "column_diGnEN",
+        "column_UJpUxe",
+        "column_KagmGn"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "section_type": "right",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "background_gradient": "",
+        "header_overlay": false,
+        "header_transparent": false,
+        "column_to_show": 3,
+        "opacity_overlay": 0.3,
+        "full_width": true,
+        "icon_type": "icon_pack",
+        "icon_pack": "none",
+        "svg_icon": "none",
+        "icon_color_scheme": "",
+        "icon_style": "contrast",
+        "icon_fill_type": "gradient",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "subheading": "Iterative Optimierungen",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "GIESSWEIN – 14 % Wachstum pro Monat seit 6 Jahren mit Shopify und Eshop Guide als Partner.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Seit dem Wechsel zu Shopify Plus im Jahr 2016 verfolgt GIESSWEIN eine Strategie der stetigen Weiterentwicklung – mit beeindruckenden Resultaten: ein siebenstelliger Umsatz durch Cross-Selling-Maßnahmen, eine verbesserte Conversion Rate und ein leistungsstarker Onlineshop, der laufend um neue Funktionen ergänzt wird. Gemeinsam mit Eshop Guide wurde ein agiles Setup geschaffen, das bis heute als Grundlage für kontinuierliches Wachstum dient.",
+        "enable_subscribe": false,
+        "button_label_subscribe": "",
+        "color_scheme_subscribe": "",
+        "enable_box_shadow": true,
+        "button_style_subscribe": "primary",
+        "show_button": true,
+        "button_label": "Look at me.",
+        "button_link": "shopify://pages/giesswein-shopify-optimierung",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "pricing_table_EdXxMy": {
+      "type": "pricing-table",
+      "blocks": {
+        "price_8AR6Na": {
+          "type": "price",
+          "settings": {
+            "color_scheme": "",
+            "badge_text": "",
+            "icon_type": "icon_pack",
+            "badge_icon": "none",
+            "svg_badge_icon": "none",
+            "icon_color": "",
+            "badge_bg": "#19bc5b",
+            "badge_color": "#ffffff",
+            "heading": "Shopify Quick-Check",
+            "heading_tag": "h3",
+            "heading_price": "ab 5.000 €",
+            "description": "Euer Shopify-Setup im Schnelltest mit konkretem Output in nur einem Tag.",
+            "features_list": "<ul><li>1-Tages-Workshop</li><li>Audit von Setup, UX, Code</li><li>Priorisierte Handlungsempfehlungen </li></ul>",
+            "show_shadow": false,
+            "show_button": true,
+            "button_style": "primary",
+            "button_label": "Workshop buchen",
+            "button_link": "#contact"
+          }
+        },
+        "price_hMTQhm": {
+          "type": "price",
+          "settings": {
+            "color_scheme": "background-1",
+            "badge_text": "",
+            "icon_type": "icon_pack",
+            "badge_icon": "none",
+            "svg_badge_icon": "none",
+            "icon_color": "",
+            "badge_bg": "#15576d",
+            "badge_color": "#ffffff",
+            "heading": "Shopify Grand Inspection",
+            "heading_tag": "h3",
+            "heading_price": "ab 8.500 €",
+            "description": "Intensive Analyse und Strategieentwicklung für ambitionierte Teams mit klaren Zielen.",
+            "features_list": "<ul><li>2 Workshop-Tage + Analyse-Phase</li><li>Roadmap mit Quick-Wins & langfristigen Hebeln</li><li>Optional: Retainer-Empfehlung </li></ul>",
+            "show_shadow": true,
+            "show_button": true,
+            "button_style": "primary",
+            "button_label": "Deep Dive sichern",
+            "button_link": "#contact"
+          }
+        },
+        "price_8dtptg": {
+          "type": "price",
+          "settings": {
+            "color_scheme": "",
+            "badge_text": "",
+            "icon_type": "icon_pack",
+            "badge_icon": "none",
+            "svg_badge_icon": "none",
+            "icon_color": "",
+            "badge_bg": "#19bc5b",
+            "badge_color": "#ffffff",
+            "heading": "Shopify Enterprise Engineering",
+            "heading_tag": "h3",
+            "heading_price": "auf Anfrage",
+            "description": "Maßgeschneiderter Workshop für komplexe Setups und große Roadmaps.",
+            "features_list": "<ul><li>Vorbereitungssprints</li><li>Individuelle Agenda</li><li>Intensives Sparring & Szenarienplanung </li></ul>",
+            "show_shadow": false,
+            "show_button": true,
+            "button_style": "primary",
+            "button_label": "Jetzt anfragen",
+            "button_link": "#contact"
+          }
+        }
+      },
+      "block_order": [
+        "price_8AR6Na",
+        "price_hMTQhm",
+        "price_8dtptg"
+      ],
+      "name": "t:sections.pricing-table.name",
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Unsere Werkstatt-Pakete",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "heading_size_price": "h1",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_ynnHdV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cVGPq7": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Expertise aus dem Handgelenk",
+            "heading_tag": "h3",
+            "text": "<p>Ein Team aus Devs, UX, Config und Strategie schaut sich dein Setup an. Durch und durch Shopify-Profis.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_P7NDwg": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Workshops mit Ergebnissen",
+            "heading_tag": "h3",
+            "text": "<p>Wir hören nicht nur zu – wir liefern klare Empfehlungen und zeigen dir, wie du sie umsetzen kannst.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_9Hm4By": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Realität statt Vision Board",
+            "heading_tag": "h3",
+            "text": "<p>Unser Ziel: dass du mit einem realistischen Plan rausgehst, den alle Beteiligten auch wirklich stemmen können.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_cVGPq7",
+        "column_P7NDwg",
+        "column_9Hm4By"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "scheme-b50064c0-e2ad-4bf2-aeda-a0e816171f4f",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle3",
+        "scribble_stroke_width": 6,
+        "scribble_color": "#00486f",
+        "scribble_size": 116,
+        "scribble_top": 50,
+        "heading": "Warum sich der Termin lohnt",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Unsere Kund:innen erwirtschaften mehr als 500 Millionen Euro Umsatz. Wie machen sie das? Mit einer ehrlichen Bestandsaufnahme und einem realistischen Plan. Das sind unsere wichtigsten Komponenten dabei:",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "steps_ftGCYD": {
+      "type": "steps",
+      "blocks": {
+        "step_VNDG3m": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "#1",
+            "heading": "Ankunft: Check-in mit Empfang",
+            "heading_tag": "h3",
+            "text": "Wir lernen euer Setup, eure Ziele und Herausforderungen sowie die Bedürfnisse aller Stakeholder kennen.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_K7T4Ra": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "#2",
+            "heading": "Werkbank: Shop-Analyse live",
+            "heading_tag": "h3",
+            "text": "Wir analysieren euer Setup technisch und strategisch. Mit Tools, Know-how und einer offenen Haltung für eure Prozesse.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_WUJNzL": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "#3",
+            "heading": "Probefahrt: Quick-Wins & Potenziale",
+            "heading_tag": "h3",
+            "text": "Du bekommst konkrete Empfehlungen für Verbesserungen, die sofort Wirkung zeigen.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_fqA4F7": {
+          "type": "step",
+          "settings": {
+            "image_width": 500,
+            "number": "#4",
+            "heading": "Performance-Tuning: Realistische Roadmap",
+            "heading_tag": "h3",
+            "text": "Du gehst raus mit einem Plan, der nicht nur auf dem Papier funktioniert, sondern auf Shopify – mit uns als Profi-Crew.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_VNDG3m",
+        "step_K7T4Ra",
+        "step_WUJNzL",
+        "step_fqA4F7"
+      ],
+      "name": "t:sections.steps.name",
+      "settings": {
+        "anchor_id": "",
+        "boxed": false,
+        "layout": "collapsible",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "heading": "Was in unserer Shopify-Werkstatt passiert",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "So sieht dein Besuch bei uns aus – vom Empfang bis zur Übergabe der Empfehlungen hin zur Umsetzung.",
+        "text_align": "center",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_P9TexB": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_CLYFBk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CLYFBk"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Bereit für Vollgas auf Shopify?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Dann sichere dir jetzt einen der limitierten Termine, bevor die Hebebühne voll ist. </p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Patrick_2.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Patrick Rosenblatt",
+        "heading_width": 20,
+        "additional_custom_text": "Geschäftsführer & Shopify Experte",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Jetzt Workshop anfragen",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "rich_text_WNMwj7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YBUMn6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was andere über unsere Shopify-Werkstatt sagen",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_aPVMtr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ob kleiner Check-up oder Komplettumbau: Unsere Kund:innen schätzen vor allem, dass wir nicht nur analysieren, sondern mitanpacken:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YBUMn6",
+        "text_aPVMtr"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "s"
+      }
+    },
+    "case_studies_6WkMhd": {
+      "type": "case-studies",
+      "blocks": {
+        "case_slide_ei8zcp": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify://shop_images/Judith_Williams_Productpage_2.png",
+            "image_column_width": 35,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "image_in_front_of_overlay": false,
+            "heading": "",
+            "heading_tag": "p",
+            "text": "",
+            "quote": "„Wir hatten die Ideen – aber wir brauchten jemanden, der uns auf Augenhöhe berät und sie mit Shopify-Expertise auch umsetzt. Uns war klar: Trial & Error bringt uns nicht weiter. Wir wollten jemanden, der Entscheidungen absichert – und einfach macht.“",
+            "quote_size": "recommended",
+            "author_name": "Valentina Schurr",
+            "author_position": "Head of E-Commerce, Judith Williams Cosmetics",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        },
+        "case_slide_Umx3Hk": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify://shop_images/Giesswein_Macbook_Mockup.png",
+            "image_column_width": 45,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "image_in_front_of_overlay": true,
+            "heading": "",
+            "heading_tag": "p",
+            "text": "",
+            "quote": "„In allen Dimensionen braucht es die richtigen Partner. Man kann es also schon als Glück bezeichnen, dass wir auf Eshop Guide gestoßen sind. Denn uns war ziemlich schnell klar: Das passt. Fachlich wie menschlich.“",
+            "quote_size": "recommended",
+            "author_image": "shopify://shop_images/Giesswein_grey.png",
+            "author_name": "Markus Kapferer",
+            "author_position": "Head of E-Commerce, GIESSWEIN",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "",
+            "button_link": "",
+            "logo_width": 130
+          }
+        },
+        "case_slide_qaTHpU": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify://shop_images/Wajos_Produktempfehlungen.png",
+            "image_column_width": 35,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "image_in_front_of_overlay": false,
+            "heading": "",
+            "heading_tag": "p",
+            "text": "",
+            "quote": "„Wir wollten dem Wajos Shop einen Wachstumsschub verpassen und haben uns deshalb bei Eshop Guide für die Growth Component AOV Optimierung entschieden. Innerhalb weniger Wochen konnten wir so unseren durchschnittlichen Warenkorbwert erheblich steigern.“",
+            "quote_size": "recommended",
+            "author_image": "shopify://shop_images/Wajos_Logo_neutral.png",
+            "author_name": "Anna Kesseler",
+            "author_position": "E-Commerce Managerin, Wajos",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        }
+      },
+      "block_order": [
+        "case_slide_ei8zcp",
+        "case_slide_Umx3Hk",
+        "case_slide_qaTHpU"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "tabs_bottom",
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "image_ratio": "square",
+        "slide_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "tabs_color_scheme": "background-2",
+        "enable_navigation": true,
+        "navigation_color_scheme": "",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_bMxRUp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bBQiF6": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-jackpot",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "4,9 von 5 Sternen seit 10 Jahren",
+            "heading_tag": "h3",
+            "text": "<p>Als einer der ältesten Shopify-Agenturen in Deutschland wissen wir, wie deine Anforderungen bei Shopify umsetzbar werden und wie du im Projekt zufrieden bleibst.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_bwzcpk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-swear",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Hands-on statt Hochglanz",
+            "heading_tag": "h3",
+            "text": "<p>Wir packen mit an – und liefern nicht nur hübsche PowerPoints, sondern echte Umsetzungspläne, Manpower und offene Ohren immer, wenn es brennt.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_pD98ea": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-thumb",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Wir nehmen dich und dein Team mit",
+            "heading_tag": "h3",
+            "text": "<p>Als Shopify-Nerds lieben wir es, unser Wissen zu teilen und andere zu befähigen. Deshalb legen wir großen Wert darauf, dein Team zu schulen und ihm die Hintergründe jeder Maßnahme zu erklären. Selbst ist die Frau! Und der Mann!</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_bBQiF6",
+        "column_bwzcpk",
+        "column_pD98ea"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "Was uns ausmacht",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "lines1",
+        "scribble_stroke_width": 4,
+        "scribble_color": "#00486f",
+        "scribble_size": 108,
+        "scribble_top": 94,
+        "heading": "Das ist die Boxenstopp-Crew",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_CEx3EV": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_JAHb8w": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JAHb8w"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-c0e32b1c-3a95-4898-bc50-c9dd2c0a7512",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Boxengasse steht für dich bereit",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Buche jetzt deinen Termin oder melde dich bei uns – wir freuen uns auf die Rennfahrt mit dir.</p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Dominik_6fa9a078-5d7d-45dd-9223-1e263782e505.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Dominik Löwisch-Rückstein",
+        "heading_width": 20,
+        "additional_custom_text": "Shopify Experte",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Workshop buchen",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "xs",
+        "margin_bottom": "xs"
+      }
+    },
+    "collapsible_content_kgG4HQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_qUc4RJ": {
+          "type": "accordion",
+          "settings": {
+            "question": "Was passiert im Startegie-Workshop konkret?",
+            "heading_tag": "h3",
+            "answer": "<p>Weil sich in jedem Shop Potenzial für mehr Umsatz, mehr Wachstum und mehr Reichweite versteckt.</p><p>Start-ups kennen die meisten Tricks und Maßnahmen noch gar nicht und begehen Anfängerfehler. Etablierte Unternehmen neigen dazu, sWir analysieren euer bestehendes Setup, decken Pain Points und Potenziale auf und entwickeln gemeinsam einen realistischen, priorisierten Plan für eure nächsten Wachstumsziele.ich auf gewonnenen Meriten auszuruhen und verschenken so oft Chancen, noch erfolgreicher zu werden. Enterprises stehen ratlos vor der gläsernen Decke und wissen nicht, wie der nächste Schritt aussehen könnte.</p><p>Allen können wir mit unserer Erfahrung und Expertise weiterhelfen.</p>",
+            "opened": true
+          }
+        },
+        "accordion_nygC4Q": {
+          "type": "accordion",
+          "settings": {
+            "question": "Führt ihr den Startegie-Workshop auch remote durch?",
+            "heading_tag": "h3",
+            "answer": "<p>Ja, der Workshop kann sowohl remote als auch bei uns vor Ort stattfinden. Das klären wir individuell im Vorfeld.</p>",
+            "opened": false
+          }
+        },
+        "accordion_mEmNqg": {
+          "type": "accordion",
+          "settings": {
+            "question": "Wann lohnt sich ein Strategie-Workshop?",
+            "heading_tag": "h3",
+            "answer": "<p>Immer dann, wenn ihr Shopify schon nutzt, eine klare Roadmap habt, aber euch die Umsetzungspower, das Tech-Sparring oder die klare Priorisierung fehlt.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qUc4RJ",
+        "accordion_nygC4Q",
+        "accordion_mEmNqg"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "boxed",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Einfach beantwortet",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 11,
+        "scribble_color": "#00486f",
+        "scribble_size": 118,
+        "scribble_top": 50,
+        "heading": "Häufige Fragen zum #scribble-start#Strategie#scribble-end#-Workshop",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_nynzkB",
+    "logo_list_wEw8W4",
+    "multicolumn_qMazP7",
+    "multicolumn_HHmKAV",
+    "animated_image_collage_THYGYK",
+    "pricing_table_EdXxMy",
+    "multicolumn_ynnHdV",
+    "steps_ftGCYD",
+    "image_with_text_P9TexB",
+    "rich_text_WNMwj7",
+    "case_studies_6WkMhd",
+    "multicolumn_bMxRUp",
+    "image_with_text_CEx3EV",
+    "collapsible_content_kgG4HQ"
+  ]
+}

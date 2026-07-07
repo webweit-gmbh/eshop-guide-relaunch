@@ -1,0 +1,26 @@
+{%- liquid
+  capture class
+
+  endcapture
+  capture style
+
+    if text_color != blank
+      echo 'color: ' | append: text_color
+    endif
+
+  endcapture
+-%}
+
+{%- capture text_content -%}
+  {%- if apparition_effect and settings.heading_apparition contains 'split' and gradient == blank -%}
+    <split-lines>{{ content | strip | escape }}</split-lines>
+  {%- else -%}
+    {{- content | strip | escape -}}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if class != blank -%}
+  <span class="{{ class }}" style="{{ style }}">{{- text_content -}}</span>
+{%- else -%}
+  {{- text_content -}}
+{%- endif -%}

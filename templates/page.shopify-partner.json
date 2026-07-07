@@ -1,0 +1,1064 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_PppzmU": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_image": "shopify://shop_images/Grafik_von_Olga_0ae2e358-399a-45a9-bdbf-b5e03cc82bc0.png",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Die Elite-Partner der Shopify Welt.",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Im Leben wie im Business: Die Partnerwahl ist entscheidend. Mit unseren handverlesenen Shopify-Partnern baust du das perfekte Team zusammen.</p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Partner-Dave-Simon.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach Shopify-Partner finden.",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_iHF9tf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YGVyKk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-heart",
+            "icon_color": "#befd5f",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Perfekt eingespielt",
+            "heading_tag": "h3",
+            "text": "<p>Unsere Partner sind keine Zufallsbekanntschaften – wir arbeiten nur mit Technologieanbietern und Agenturen zusammen, die wirklich harmonieren. Das Ergebnis: nahtlose Integrationen, clevere Lösungen und ein E-Commerce-Auftritt, der wie aus einem Guss wirkt.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(190, 253, 95, 1), rgba(190, 253, 95, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_JaqgtG": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-swear",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Gemeinsam durch dick und dünn",
+            "heading_tag": "h3",
+            "text": "<p>Ob komplexe Schnittstellen oder knifflige Herausforderungen – mit unseren Partnern an deiner Seite gibt es kein Problem, das nicht gelöst wird. Denn wir setzen auf langjährige Verbindungen, die Stabilität und Zuverlässigkeit garantieren.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_MjHbKQ": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-jackpot",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Der perfekte Matchmaker",
+            "heading_tag": "h3",
+            "text": "<p>Egal, ob du datengetriebene Insights, Performance-Optimierung oder individuelle Apps brauchst – wir finden den Partner, der perfekt zu deinem Business passt. Und wenn’s mal kompliziert wird? Dann regeln wir das ganz diskret im Hintergrund.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1) 4%, rgba(139, 246, 149, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_YGVyKk",
+        "column_JaqgtG",
+        "column_MjHbKQ"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "Weil die besten Lösungen Teamwork brauchen.",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#befd5f",
+        "scribble_size": 113,
+        "scribble_top": 50,
+        "heading": "Better together: Shopify-#scribble-start#Partnerpower#scribble-end#",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Erfolg ist kein Solo-Projekt. Mit unserem Partnernetzwerk verbinden wir dich mit den Besten der Branche – von smarten Tools bis zu genialen Services.",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "logo_list_zPHedi": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_ja7txG": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/klaviyo-advisor-gold-badge-light.png",
+            "image_width": 180
+          }
+        },
+        "logo_r6GHxx": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/gorgias_logo_black.png",
+            "image_width": 140
+          }
+        },
+        "logo_TAnyfB": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Clearer.io_text_Blue.png",
+            "image_width": 140
+          }
+        },
+        "logo_3hDLXr": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/variant-b-rgb_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_xQ4Kfk": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Sublogo_schwarz.png",
+            "image_width": 115
+          }
+        },
+        "logo_xqUGbt": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Pathway_Logo_schwarz_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_7TM4m6": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/webimage-71DE3187-3682-4AD3-8E9D16043704E1A8.png",
+            "image_width": 140
+          }
+        },
+        "logo_zAGWDW": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/ICON_TEXT_black_letters_blue_icon_175fed9d-ef5c-4e1d-a23a-0baf5f50d2bc.png",
+            "image_width": 140
+          }
+        },
+        "logo_P9z9eY": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/01_Channable_logo_horizontal_color_main_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_Gkb8Aw": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Trusted-Shops_Logo_rounded.png",
+            "image_width": 140
+          }
+        },
+        "logo_3Y88dz": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Billbee-Logo-01.jpg",
+            "image_width": 140
+          }
+        },
+        "logo_MJx48p": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/advertace_logo_horizontal_blau_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_yEGagm": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/analyticsfreaks_black-turkise_2022_2.png",
+            "image_width": 140
+          }
+        },
+        "logo_rGp6TK": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "https://mailody.de/",
+            "image_1": "shopify://shop_images/Primaerlogo-Mailody-Black.png",
+            "image_width": 140
+          }
+        },
+        "logo_4gPhqW": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/BSO_Logo-4c_cropped.png",
+            "image_width": 140
+          }
+        },
+        "logo_MPdBLQ": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/inara_schreibt_logo_transparent_mini.png",
+            "image_width": 85
+          }
+        },
+        "logo_KabdW7": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Mailchimp_Marketing_Automation_Shopify_Logo_47f6a7e5-fc3e-405e-8dde-5ae260e8c977.png",
+            "image_width": 95
+          }
+        },
+        "logo_ChhVLi": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/spacedome-logo-rework_pfade-x7.png",
+            "image_width": 140
+          }
+        },
+        "logo_GnxY7T": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/DT-Logo-Signet-pos.png",
+            "image_width": 140
+          }
+        },
+        "logo_TGfLR8": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/WhatsApp_Image_2024-12-11_at_12.13.27_1.jpg",
+            "image_width": 140
+          }
+        },
+        "logo_czVPPE": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/logo_bob.png",
+            "image_width": 90
+          }
+        },
+        "logo_yhApWU": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Niko_Spies_C6.jpg",
+            "image_width": 140
+          }
+        },
+        "logo_LzXmUx": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/OutvioLogoTeal.png",
+            "image_width": 140
+          }
+        },
+        "logo_xgrXYD": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Nosto_hr_dark_blue_3.png",
+            "image_width": 140
+          }
+        },
+        "logo_WFXzky": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/logo-cleverreach-wort-bild-marke.svg",
+            "image_width": 140
+          }
+        },
+        "logo_JD4Tcj": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/604f5e3bc7a7b12a48883bb8_Returnista_Logo_2021-01_1_1.svg",
+            "image_width": 140
+          }
+        },
+        "logo_KLnNKX": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/hublify-logo-horizontal.svg",
+            "image_width": 140
+          }
+        },
+        "logo_kgfdn6": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/alaiko_Logo_RGB.png",
+            "image_width": 140
+          }
+        },
+        "logo_JQDT9T": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Descartes-pixi-Logo.png",
+            "image_width": 140
+          }
+        },
+        "logo_KnyKAP": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Sufio_logo_black_1.png",
+            "image_width": 90
+          }
+        },
+        "logo_YhRjhX": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/thanku-business-logo-bright-bg.png",
+            "image_width": 140
+          }
+        },
+        "logo_EKmJgk": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/GROWAVE_new_logo_RGB_white.jpg",
+            "image_width": 140
+          }
+        },
+        "logo_k9VXA3": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/3E6DAF93-C934-45A0-9631-83D0753D4D2D.png",
+            "image_width": 140
+          }
+        },
+        "logo_LMzQbh": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Logo.png",
+            "image_width": 140
+          }
+        },
+        "logo_6NgtnT": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/VOIDS_Logo_Weiss.png",
+            "image_width": 140
+          }
+        },
+        "logo_VjXTBM": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/blue_8.png",
+            "image_width": 140
+          }
+        },
+        "logo_deEzqX": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/63bbffbab4b459276d50a229_Logo_RGB_Main_NoSlogan.png",
+            "image_width": 140
+          }
+        },
+        "logo_QQMF9Q": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/02_burnt_Logo.png",
+            "image_width": 140
+          }
+        },
+        "logo_WdarU3": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/SH_Logo_transparent.png",
+            "image_width": 105
+          }
+        },
+        "logo_99KRVN": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/squadt-claim.svg",
+            "image_width": 120
+          }
+        },
+        "logo_VXzagQ": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/webstube-logo-gruen-schwarz.png",
+            "image_width": 120
+          }
+        },
+        "logo_9LTjqR": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Logo_Mawave.png",
+            "image_width": 140
+          }
+        },
+        "logo_agfUyi": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Main___Returnless-Logo-RGB-BluePink_3.webp",
+            "image_width": 140
+          }
+        },
+        "logo_H4jRhh": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/langify_logo_2.png",
+            "image_width": 85
+          }
+        },
+        "logo_VN83Bt": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/UpPromote_logo.png",
+            "image_width": 85
+          }
+        },
+        "logo_XgnKCf": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/icon-logo-black.png",
+            "image_width": 80
+          }
+        },
+        "logo_EzKMTF": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Logo_Transparency_-_PNG.png",
+            "image_width": 100
+          }
+        },
+        "logo_qMnMqb": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/peer-plan_e-fly-logo-4c-outline.png",
+            "image_width": 110
+          }
+        },
+        "logo_F7dJHW": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/logo_Horizontal_Blau_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_YbE33E": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Speed-Kit-Textlogo-blue-black.png",
+            "image_width": 140
+          }
+        }
+      },
+      "block_order": [
+        "logo_ja7txG",
+        "logo_r6GHxx",
+        "logo_TAnyfB",
+        "logo_3hDLXr",
+        "logo_xQ4Kfk",
+        "logo_xqUGbt",
+        "logo_7TM4m6",
+        "logo_zAGWDW",
+        "logo_P9z9eY",
+        "logo_Gkb8Aw",
+        "logo_3Y88dz",
+        "logo_MJx48p",
+        "logo_yEGagm",
+        "logo_rGp6TK",
+        "logo_4gPhqW",
+        "logo_MPdBLQ",
+        "logo_KabdW7",
+        "logo_ChhVLi",
+        "logo_GnxY7T",
+        "logo_TGfLR8",
+        "logo_czVPPE",
+        "logo_yhApWU",
+        "logo_LzXmUx",
+        "logo_xgrXYD",
+        "logo_WFXzky",
+        "logo_JD4Tcj",
+        "logo_KLnNKX",
+        "logo_kgfdn6",
+        "logo_JQDT9T",
+        "logo_KnyKAP",
+        "logo_YhRjhX",
+        "logo_EKmJgk",
+        "logo_k9VXA3",
+        "logo_LMzQbh",
+        "logo_6NgtnT",
+        "logo_VjXTBM",
+        "logo_deEzqX",
+        "logo_QQMF9Q",
+        "logo_WdarU3",
+        "logo_99KRVN",
+        "logo_VXzagQ",
+        "logo_9LTjqR",
+        "logo_agfUyi",
+        "logo_H4jRhh",
+        "logo_VN83Bt",
+        "logo_XgnKCf",
+        "logo_EzKMTF",
+        "logo_qMnMqb",
+        "logo_F7dJHW",
+        "logo_YbE33E"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "static",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Einfach verlässlich, erprobt und immer on point.",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#00486f",
+        "scribble_size": 105,
+        "scribble_top": 50,
+        "heading": "Unsere #scribble-start#Partner#scribble-end# im Shop(ify)-Crime",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 4000,
+        "speed_slider_2": 6000,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_9FHcNL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JB7UcP": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Partner gesucht: Du denkst, du ergänzt uns?",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Einfach vorstellen.",
+            "button_link": "#contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_JB7UcP"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": true,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_yrUGeE": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_zRwzMC": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "",
+            "slide_text": "We had a successful collaboration with Eshop Guide.\nOur project was completed successfully with a lot of consideration, freedom, discussion and transparency. I've had really positive interactions from the very beginning whether it was Dominik, Patrick, Christian, Alex or Max from Eshop Guide.\n\nBefore, during, and after the project, our priorities felt taken care of and met. Thanks to everyone who made it possible. I wholeheartedly recommend Eshop Guide for all Shopify topics.",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "Amit Kulkarni",
+            "slide_position": "Product Ownder E-Commerce, CLOUD7 GmbH"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_zRwzMC"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "layout": "full_slider",
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon_type": "svg",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "",
+        "slide_text_size": "recommended",
+        "enable_navigation": true,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_blog_zPqxJg": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "shopify-deutschland",
+        "color_scheme": "",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 6,
+        "card_color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Dieser Shopify Hub haut dich vom Hocker",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Alle Banger hier entlang",
+        "custom_view_all_link": "",
+        "button_style": "simple",
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_CEx3EV": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_bctFPK": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bctFPK"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-c0e32b1c-3a95-4898-bc50-c9dd2c0a7512",
+        "background_size": "auto",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Eshop-Partner gesucht & gefunden",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Ob Partneranfrage, Projektideen oder einfach Dominik sagen, was für ein dufte Typ er ist: Wir sind nur eine Nachricht entfernt. </p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Dominik.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Dominik Löwisch-Rückstein",
+        "additional_custom_text": "Eshop-Partner-Manager",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach Eshop-Partner werden.",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_PppzmU",
+    "multicolumn_iHF9tf",
+    "logo_list_zPHedi",
+    "multicolumn_9FHcNL",
+    "testimonials_yrUGeE",
+    "featured_blog_zPqxJg",
+    "image_with_text_CEx3EV"
+  ]
+}

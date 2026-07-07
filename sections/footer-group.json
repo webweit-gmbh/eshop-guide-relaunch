@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify://shop_images/eshop-guide-logo-claim.svg",
+            "logo_width": 230,
+            "description": "<p><strong>Shopify-Agentur für skalierbare Shops: </strong>Migration, Relaunch & Support für nachhaltigen Erfolg. Jetzt beraten lassen & E-Commerce einfach machen!</p><p>📥 <a href=\"#contact\" title=\"#contact\">Kontaktformular</a><br/>✉️ hello@eshop-guide.de<br/>📞 0234 5200 9735<br/>🏛️ Husemannplatz 5a | 44787 Bochum<br/>🏛️ Liegnitzer Straße 29 | 10999 Berlin</p>"
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Unsere Leistungen",
+            "heading_tag": "h2",
+            "menu": "footer",
+            "default_open": false
+          }
+        },
+        "link_list_EpiW9c": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Eshop Guide",
+            "heading_tag": "h2",
+            "menu": "footer-2",
+            "default_open": false
+          }
+        },
+        "link_list_qeFQhG": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Beliebte Themen",
+            "heading_tag": "h2",
+            "menu": "eshop-guide-footer-themen",
+            "default_open": false
+          }
+        },
+        "logo_footer_wjMKRL": {
+          "type": "logo_footer",
+          "settings": {
+            "proven_logo": "shopify://shop_images/badge-footer-proven-expert_2.png",
+            "proven_width": 100,
+            "proven_link": "https://www.provenexpert.com/eshop-guide-gmbh/",
+            "proven_link_target": "_blank",
+            "proven_link_name": "Proven Expert Bewertungen",
+            "proven_text": "basierend auf 239",
+            "proven_text1": "Bewertungen",
+            "proven_text_size": 10,
+            "shopify_logo": "shopify://shop_images/shopify_plus_white_2.png",
+            "shopify_logo1": "shopify://shop_images/shopify_expert_e896bb5d-ff4c-47cb-aebe-992907fbb07b.png",
+            "shopify_logo2": "shopify://shop_images/Badge_Premier_blk_transpLarge_3564bf48-6e0b-4a24-99ef-c6123c133c78.png",
+            "shopify_logo_width": 110,
+            "shopify_logo1_width": 85
+          }
+        },
+        "footer-3": {
+          "type": "subscribe",
+          "disabled": true,
+          "settings": {
+            "color_scheme_subscribe": "",
+            "enable_box_shadow": false,
+            "heading": "Wir haben das Wissen zum E.",
+            "heading_tag": "h3",
+            "text": "Unsere Shopify-Nerds stecken voller Wissen und teilen es gerne mit ihrer Community. Werde Teil der Eshop Guide-Welt und profitiere ebenfalls von all ihren Vorzügen.",
+            "additional_text": "Du kannst dich jederzeit abmelden. Mit der Eingabe deiner E‑Mail-Adresse erklärst du dich damit einverstanden, Marketing-E-Mails von Eshop Guide zu erhalten.",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-2",
+        "link_list_EpiW9c",
+        "link_list_qeFQhG",
+        "logo_footer_wjMKRL",
+        "footer-3"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_social": true,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "menu_bottom": "copyright",
+        "show_policy": false,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

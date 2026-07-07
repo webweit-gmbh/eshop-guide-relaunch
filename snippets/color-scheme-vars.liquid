@@ -1,0 +1,207 @@
+{% style %}
+  {% for scheme in settings.color_schemes -%}
+  {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
+  [data-scheme=dark] .color-{{ scheme.id }} {
+  	--color-background: 31, 31, 31;
+  	--color-overlay: 0, 0, 0;
+  	--gradient-background: rgb(31, 31, 31);
+  	--color-foreground: 255, 255, 255;
+  	--color-foreground-secondary: 142, 142, 143;
+  	--color-foreground-title: 255, 255, 255;
+  	--color-border-input: 53, 53, 53;
+  	--color-background-input: 74, 74, 76;
+  	--color-background-input-hover: 10, 10, 10;
+  	--color-border: 52, 52, 53;
+  	--color-announcement-bar: 0, 0, 0;
+  	--color-announcement-bar-background-1: 0, 0, 0;
+  	--color-link: 229, 229, 229;
+  	--alpha-link: 0.5;
+  	--color-button: 0, 0, 0;
+  	--color-button-hover: 36, 36, 36;
+  	--color-button-text: 255, 255, 255;
+  	--color-button-text-hover: 255, 255, 255;
+  	--color-button-secondary: 36, 36, 36;
+  	--color-button-secondary-hover: 0, 0, 0;
+  	--color-button-secondary-text: 255, 255, 255;
+  	--color-button-secondary-text-hover: 255, 255, 255;
+  	--color-button-tertiary: 52, 52, 53;
+  	--color-button-tertiary-hover: 36, 36, 36;
+  	--color-button-tertiary-text: 255, 255, 255;
+  	--color-button-tertiary-text-hover: 255, 255, 255;
+  	--alpha-button-background: 1;
+  	--alpha-button-border: 1;
+  	--color-social: 229, 229, 229;
+  	--color-placeholder-input: 229, 229, 229;
+  	--color-card-price-new: 229, 229, 229;
+  	--color-card-price-old: 169, 169, 169;
+  	--color-error-background: 0, 0, 0;
+  	--color-title-text: 255, 255, 255;
+		--color-shadow: 1, 22, 36;
+		--color-accent: 142, 142, 143;
+		--gradient-accent: #8E8E8F;
+  }
+  @media (prefers-color-scheme: dark) {
+  	[data-scheme=auto] .color-{{ scheme.id }} {
+  		--color-background: 31, 31, 31;
+  		--gradient-background: rgb(31, 31, 31);
+  		--color-overlay: 0, 0, 0;
+  		--color-foreground: 255, 255, 255;
+  		--color-foreground-secondary: 142, 142, 143;
+  		--color-foreground-title: 255, 255, 255;
+  		--color-border-input: 53, 53, 53;
+  		--color-background-input: 74, 74, 76;
+  		--color-background-input-hover: 10, 10, 10;
+  		--color-border: 52, 52, 53;
+  		--color-announcement-bar: 0, 0, 0;
+  		--color-announcement-bar-background-1: 0, 0, 0;
+  		--color-link: 229, 229, 229;
+  		--alpha-link: 0.5;
+  		--color-button: 0, 0, 0;
+  		--color-button-hover: 36, 36, 36;
+  		--color-button-text: 255, 255, 255;
+  		--color-button-text-hover: 255, 255, 255;
+  		--color-button-secondary: 36, 36, 36;
+  		--color-button-secondary-hover: 0, 0, 0;
+  		--color-button-secondary-text: 255, 255, 255;
+  		--color-button-secondary-text-hover: 255, 255, 255;
+  		--color-button-tertiary: 52, 52, 53;
+  		--color-button-tertiary-hover: 36, 36, 36;
+  		--color-button-tertiary-text: 255, 255, 255;
+  		--color-button-tertiary-text-hover: 255, 255, 255;
+  		--alpha-button-background: 1;
+  		--alpha-button-border: 1;
+  		--color-social: 229, 229, 229;
+  		--color-placeholder-input: 229, 229, 229;
+  		--color-card-price-new: 229, 229, 229;
+  		--color-card-price-old: 169, 169, 169;
+  		--color-error-background: 0, 0, 0;
+  		--color-title-text: 255, 255, 255;
+			--color-shadow: 1, 22, 36;
+			--color-accent: 142, 142, 143;
+			--gradient-accent: #8E8E8F;
+  	}
+  }
+  {% endfor %}
+  [data-scheme=dark] {
+  	--color-background: 31, 31, 31;
+  	--color-background-secondary: 24, 24, 24;
+  	--gradient-background: rgb(31, 31, 31);
+  	--color-overlay: 0, 0, 0;
+  	--color-foreground: 255, 255, 255;
+  	--color-foreground-secondary: 142, 142, 143;
+  	--color-foreground-title: 255, 255, 255;
+  	--color-border-input: 53, 53, 53;
+		--color-background-input: 74, 74, 76;
+		--color-background-input-hover: 10, 10, 10;
+  	--color-border: 52, 52, 53;
+  	--color-announcement-bar: 0, 0, 0;
+  	--color-announcement-bar-background-1: 0, 0, 0;
+  	--color-link: 229, 229, 229;
+  	--alpha-link: 0.5;
+  	--color-button: 0, 0, 0;
+  	--color-button-hover: 36, 36, 36;
+  	--color-button-text: 255, 255, 255;
+  	--color-button-text-hover: 255, 255, 255;
+  	--color-button-secondary: 36, 36, 36;
+  	--color-button-secondary-hover: 0, 0, 0;
+  	--color-button-secondary-text: 255, 255, 255;
+  	--color-button-secondary-text-hover: 255, 255, 255;
+  	--color-button-tertiary: 52, 52, 53;
+  	--color-button-tertiary-hover: 36, 36, 36;
+  	--color-button-tertiary-text: 255, 255, 255;
+  	--color-button-tertiary-text-hover: 255, 255, 255;
+  	--alpha-button-background: 1;
+  	--alpha-button-border: 1;
+  	--color-social: 229, 229, 229;
+  	--color-placeholder-input: 229, 229, 229;
+  	--color-card-price-new: 229, 229, 229;
+  	--color-card-price-old: 169, 169, 169;
+  	--color-error-background: 0, 0, 0;
+  	--color-title-text: 255, 255, 255;
+		--color-shadow: 1, 22, 36;
+		--color-accent: 142, 142, 143;
+		--gradient-accent: #8E8E8F;
+
+  	.color-background-1 {
+  		--color-background: 31, 31, 31;
+   	}
+  	.color-background-2 {
+  		--color-background: 24, 24, 24;
+			--color-background-secondary: 31, 31, 31;
+  		--gradient-background: rgb(24, 24, 24);
+  	}
+  	.color-background-3 {
+  		--color-background: 24, 24, 24;
+			--color-background-secondary: 31, 31, 31;
+  		--gradient-background: rgb(24, 24, 24);
+  	}
+  }
+  @media (prefers-color-scheme: dark) {
+  	[data-scheme=auto] {
+  		--color-background: 31, 31, 31;
+  		--color-background-secondary: 24, 24, 24;
+  		--gradient-background: rgb(31, 31, 31);
+  		--color-overlay: 0, 0, 0;
+  		--color-foreground: 255, 255, 255;
+  		--color-foreground-secondary: 142, 142, 143;
+  		--color-foreground-title: 255, 255, 255;
+  		--color-border-input: 53, 53, 53;
+  		--color-background-input: 74, 74, 76;
+  		--color-background-input-hover: 10, 10, 10;
+  		--color-border: 52, 52, 53;
+  		--color-announcement-bar: 0, 0, 0;
+  		--color-announcement-bar-background-1: 0, 0, 0;
+  		--color-link: 229, 229, 229;
+  		--alpha-link: 0.5;
+  		--color-button: 0, 0, 0;
+  		--color-button-hover: 36, 36, 36;
+  		--color-button-text: 255, 255, 255;
+  		--color-button-text-hover: 255, 255, 255;
+  		--color-button-secondary: 36, 36, 36;
+  		--color-button-secondary-hover: 0, 0, 0;
+  		--color-button-secondary-text: 255, 255, 255;
+  		--color-button-secondary-text-hover: 255, 255, 255;
+  		--color-button-tertiary: 52, 52, 53;
+  		--color-button-tertiary-hover: 36, 36, 36;
+  		--color-button-tertiary-text: 255, 255, 255;
+  		--color-button-tertiary-text-hover: 255, 255, 255;
+  		--alpha-button-background: 1;
+  		--alpha-button-border: 1;
+  		--color-social: 229, 229, 229;
+  		--color-placeholder-input: 229, 229, 229;
+  		--color-card-price-new: 229, 229, 229;
+  		--color-card-price-old: 169, 169, 169;
+  		--color-error-background: 0, 0, 0;
+  		--color-title-text: 255, 255, 255;
+			--color-shadow: 1, 22, 36;
+			--color-accent: 142, 142, 143;
+			--gradient-accent: #8E8E8F;
+
+  		.color-background-1 {
+  			--color-background: 31, 31, 31;
+  		}
+  		.color-background-2 {
+  			--color-background: 24, 24, 24;
+				--color-background-secondary: 31, 31, 31;
+  			--gradient-background: rgb(24, 24, 24);
+  		}
+  		.color-background-3 {
+  			--color-background: 24, 24, 24;
+				--color-background-secondary: 31, 31, 31;
+  			--gradient-background: rgb(24, 24, 24);
+  		}
+  	}
+  }
+
+	:root {
+		--color-blog-tag-text: {{ settings.blog_tag_text_color.red }}, {{ settings.blog_tag_text_color.green }}, {{ settings.blog_tag_text_color.blue }};
+		--color-blog-tag-background: {{ settings.blog_tag_background.red }}, {{ settings.blog_tag_background.green }}, {{ settings.blog_tag_background.blue }};
+		--color-blog-tag-hover-text: {{ settings.blog_tag_hover_text_color.red }}, {{ settings.blog_tag_hover_text_color.green }}, {{ settings.blog_tag_hover_text_color.blue }};
+		--color-blog-tag-hover-background: {{ settings.blog_tag_hover_background.red }}, {{ settings.blog_tag_hover_background.green }}, {{ settings.blog_tag_hover_background.blue }};
+
+		--color-article-tag-text: {{ settings.article_tag_text_color.red }}, {{ settings.article_tag_text_color.green }}, {{ settings.article_tag_text_color.blue }};
+		--color-article-tag-background: {{ settings.article_tag_background.red }}, {{ settings.article_tag_background.green }}, {{ settings.article_tag_background.blue }};
+		--color-article-tag-hover-text: {{ settings.article_tag_hover_text_color.red }}, {{ settings.article_tag_hover_text_color.green }}, {{ settings.article_tag_hover_text_color.blue }};
+		--color-article-tag-hover-background: {{ settings.article_tag_hover_background.red }}, {{ settings.article_tag_hover_background.green }}, {{ settings.article_tag_hover_background.blue }};
+	}
+{% endstyle %}

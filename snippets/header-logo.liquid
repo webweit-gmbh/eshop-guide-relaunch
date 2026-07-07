@@ -1,0 +1,91 @@
+{% comment %}
+	Example: {% render 'header-logo', tag: 'h1' %}
+{% endcomment %}
+
+{% style %}
+	@media screen and (max-width: 749px) {
+		.only_desktop{
+			display:none !important;
+		}
+	}
+	@media screen and (min-width: 749px) {
+		.only_mobile{
+			display:none !important;
+		}
+	}
+{% endstyle %}
+
+
+
+{%- assign image_size_mobile = section.settings.logo_width_mobile | append: 'x' -%}
+{%- assign image_size_2x_mobile = section.settings.logo_width_mobile | times: 2 | at_most: 5760 -%}
+
+{%- assign image_size_desktop = section.settings.logo_width_desktop | append: 'x' -%}
+{%- assign image_size_2x_desktop = section.settings.logo_width_desktop | times: 2 | at_most: 5760 -%}
+
+{%- if request.page_type == 'index' -%}
+<{{- tag }} class="header__heading">
+{%- endif -%}
+
+{{ state }}
+	<a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+		{%- if section.settings.logo != blank -%}
+
+			<img srcset="{{ section.settings.logo | image_url: width: image_size_desktop }} 1x, {{ section.settings.logo | image_url: width: image_size_2x_desktop }} 2x"
+						src="{{ section.settings.logo | image_url: width: image_size_desktop }}"
+						class="header__heading-logo only_desktop"
+						height="auto"
+				 		width="{{ section.settings.logo_width_desktop }}"
+						alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+						loading="">
+
+			<img srcset="{{ section.settings.logo | image_url: width: image_size_mobile }} 1x, {{ section.settings.logo | image_url: width: image_size_2x_mobile }} 2x"
+				 src="{{ section.settings.logo | image_url: width: image_size_mobile }}"
+				 class="header__heading-logo only_mobile"
+				 height="auto"
+				 width="{{ section.settings.logo_width_mobile }}"
+				 alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+				 loading="">
+
+
+			{%- if section.settings.logo_2 != blank -%}
+				<img srcset="{{ section.settings.logo_2 | image_url: width: image_size_desktop }} 1x, {{ section.settings.logo_2 | image_url: width: image_size_2x_desktop }} 2x"
+							src="{{ section.settings.logo_2 | image_url: width: image_size_desktop }}"
+							class="header__heading-logo header__heading-logo--overlay only_desktop"
+							height="auto"
+					 		width="{{ section.settings.logo_width_desktop }}"
+							alt="{{ section.settings.logo_2.alt | default: shop.name | escape }}"
+							loading="">
+
+				<img srcset="{{ section.settings.logo_2 | image_url: width: image_size_mobile }} 1x, {{ section.settings.logo_2 | image_url: width: image_size_2x_mobile }} 2x"
+					 src="{{ section.settings.logo_2 | image_url: width: image_size_mobile }}"
+					 class="header__heading-logo header__heading-logo--overlay only_mobile"
+					 height="auto"
+					 width="{{ section.settings.logo_width_mobile }}"
+					 alt="{{ section.settings.logo_2.alt | default: shop.name | escape }}"
+					 loading="">
+			{%- endif -%}
+		{%- elsif section.settings.logo_2 != blank -%}
+
+				<img srcset="{{ section.settings.logo_2 | image_url: width: image_size_desktop }} 1x, {{ section.settings.logo_2 | image_url: width: image_size_2x_desktop }} 2x"
+						src="{{ section.settings.logo_2 | image_url: width: image_size_desktop }}"
+						class="header__heading-logo header__heading-logo--overlay only_desktop"
+						height="auto"
+					 	width="{{ section.settings.logo_width_desktop }}"
+						alt="{{ section.settings.logo_2.alt | default: shop.name | escape }}"
+						loading="">
+
+				<img srcset="{{ section.settings.logo_2 | image_url: width: image_size_mobile }} 1x, {{ section.settings.logo_2 | image_url: width: image_size_2x_mobile }} 2x"
+					 src="{{ section.settings.logo_2 | image_url: width: image_size_mobile }}"
+					 class="header__heading-logo header__heading-logo--overlay only_mobile"
+					 height="auto"
+					 width="{{ section.settings.logo_width_mobile }}"
+					 alt="{{ section.settings.logo_2.alt | default: shop.name | escape }}"
+					 loading="">
+		{%- else -%}
+			<span>{{ shop.name }}</span>
+		{%- endif -%}
+	</a>
+{%- if request.page_type == 'index' -%}
+</{{- tag -}}>
+{%- endif -%}

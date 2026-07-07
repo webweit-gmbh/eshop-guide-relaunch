@@ -1,0 +1,230 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "full_width": false,
+            "object_fit": "cover",
+            "blog_show_tags": true,
+            "blog_show_excerpt": false,
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "image_height": "min",
+            "show_share": false,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "disabled": true,
+          "settings": {
+            "author_position": "",
+            "author_info": "",
+            "blog_show_author": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "aside_akdCzB": {
+          "type": "aside",
+          "disabled": true,
+          "settings": {
+            "banner_show": true,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Heading",
+            "banner_color_scheme": "background-3",
+            "banner_label": "Link label",
+            "banner_link": "",
+            "informations_show": false,
+            "divider_color": "#e6e8e9",
+            "information_heading_1": "Heading 1",
+            "information_value_1": "<p>Information 1</p>",
+            "information_heading_2": "Heading 2",
+            "information_value_2": "<p>Information 2</p>",
+            "information_heading_3": "",
+            "information_value_3": "",
+            "information_heading_4": "",
+            "information_value_4": "",
+            "information_heading_5": "",
+            "information_value_5": "",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "",
+            "information_value_7": "",
+            "information_heading_8": "",
+            "information_value_8": "",
+            "information_heading_9": "",
+            "information_value_9": "",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": false,
+            "posts_heading": "Heading",
+            "posts_blog": "",
+            "tags_show": false,
+            "tags_heading": "Heading",
+            "newsletter_show": true,
+            "color_scheme": "background-2",
+            "newsletter_heading": "Heading",
+            "newsletter_description": "Some text",
+            "button_style": "primary",
+            "cta_show": false,
+            "cta_show_desktop": true,
+            "cta_show_mobile": true,
+            "cta_background_color": "#e6e8e9",
+            "cta_heading": "Your CTA",
+            "cta_description": "<p>Description for your CTA</p>",
+            "show_button_1": true,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": true,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer",
+        "aside_akdCzB"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "display_content_inside": true,
+        "header_transparent": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "opacity_overlay": 0.5,
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "rich_text_A3PKpY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kfzWjF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hast du Lust, mehr mit Shopify zu erreichen?",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_3yWMGF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite, dein Umsatz zu skalieren.</p>"
+          }
+        },
+        "button_3mfEqq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Einfach anfragen.",
+            "button_link": "#contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kfzWjF",
+        "text_3yWMGF",
+        "button_3mfEqq"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "s",
+        "padding_top": "xs",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "shopify-deutschland",
+        "color_scheme": "",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 6,
+        "card_color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Heiße Themen aus der Shopify Welt",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Weitere Beiträge",
+        "custom_view_all_link": "shopify://blogs/shopify-blog-ueberblick",
+        "button_style": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_A3PKpY",
+    "featured_blog"
+  ]
+}

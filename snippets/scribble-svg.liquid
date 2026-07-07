@@ -1,0 +1,30 @@
+{% case scribble_style %}
+  {% when 'circle1' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="638" preserveAspectRatio="none" viewBox="0 0 1440 638" fill="none">
+      <path d="M602.536 73.9669C1445.2 -92.9486 1878.36 400.877 638.81 543.878C-549.88 681.011 231.736 -260.354 1252.54 108.894C1749.88 288.792 804.747 771.858 110.759 562.944" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+  {% when 'circle2' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1173" height="689" preserveAspectRatio="none" viewBox="0 0 1173 689" fill="none">
+      <path d="M607.362 98.4542C1225.62 -99.7917 1334.08 562.796 805.1 659.251C211.758 767.441 114.485 -126.238 850.489 39.4641C1386.76 160.199 622.102 935.239 29.7122 506.259" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+  {% when 'circle3' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1373" height="549" preserveAspectRatio="none"  viewBox="0 0 1373 549" fill="none">
+      <path d="M1349.3 362.92C1265.01 470.426 1076.02 539.749 786.66 539.749C433.001 539.749 23.7051 443.297 23.7051 272.8C23.7051 124.553 336.688 9.25073 682.616 9.25073C1077.96 9.25073 1292.11 130.966 1292.11 252.682C1292.11 374.397 1004.58 533.695 505.227 421.045" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}" stroke-linejoin="round"/>
+    </svg>
+  {% when 'circle4' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1570" height="334" preserveAspectRatio="none" viewBox="0 0 1570 334" fill="none">
+      <path d="M29.9363 274.348C1038.29 192.23 2266.42 231.337 763.507 282.165C-677.74 330.908 481.201 -150.001 1288.94 100.962C1913.7 295.073 1128.92 305.626 853.801 305.626" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+  {% when 'lines1' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1586" height="174" preserveAspectRatio="none" viewBox="0 0 1586 174" fill="none">
+      <path d="M21.893 95.2748C365.328 28.7753 1196.91 31.5759 1564.05 82.195C1229.12 76.4362 833.029 45.0123 430.887 102.306C754.732 88.1804 925.279 110.805 1067.22 135.848" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+  {% when 'lines2' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1571" height="150" preserveAspectRatio="none" viewBox="0 0 1571 150" fill="none">
+      <path d="M1556.35 59.7379C1214.11 132.131 382.598 143.624 14.6484 99.3229C349.625 99.324 886.657 88.8038 1287.76 24.6066" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+  {% when 'lines3' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="1630" height="140" preserveAspectRatio="none" viewBox="0 0 1630 140" fill="none">
+    <path d="M1585.85 51.1277C1243.61 123.521 412.1 135.014 44.1504 90.7127C379.127 90.7137 1036.96 87.4141 1438.06 23.2169C1133.67 71.9347 688.082 51.1277 213.098 51.1277" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}"/>
+    </svg>
+{% endcase %}

@@ -1,0 +1,1832 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_thEpqN": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_CWqjHT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "chart-3",
+            "svg_icon": "icon-EG-speed",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "3x",
+            "heading_tag": "p",
+            "text": "schnellerer Pagespeed auf den PDPs",
+            "background_gradient": ""
+          }
+        },
+        "column_yhEzRd": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "rocket",
+            "svg_icon": "icon-EG-graph",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "15 %",
+            "heading_tag": "p",
+            "text": "verbesserte Conversion Rate",
+            "background_gradient": ""
+          }
+        },
+        "column_7AbfM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "phone-4",
+            "svg_icon": "icon-EG-happy",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "0 Anrufe",
+            "heading_tag": "p",
+            "text": "bei der Hotline bezüglich Packstationen",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CWqjHT",
+        "column_yhEzRd",
+        "column_7AbfM9"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": true,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "So bleibt ein Schuh draus",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Wie beständige Optimierungsmaßnahmen für GIESSWEIN den Umsatz in immer neue Höhen treiben",
+        "inner_heading_tag": "h1",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p><strong>Ergebnisse</strong></p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "{{ article.image }}",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "all-height",
+        "overlay_opacity": 0.2,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "full_width": true,
+            "object_fit": "cover",
+            "blog_show_tags": true,
+            "blog_show_excerpt": true,
+            "blog_show_author": false,
+            "blog_show_date": false,
+            "image_height": "adapt",
+            "show_share": false,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "disabled": true,
+          "settings": {
+            "author_position": "",
+            "author_info": "",
+            "blog_show_author": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "aside_akdCzB": {
+          "type": "aside",
+          "settings": {
+            "banner_show": false,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Das Unternehmen",
+            "banner_color_scheme": "background-1",
+            "banner_label": "Giesswein",
+            "banner_link": "#",
+            "informations_show": true,
+            "divider_color": "#4790b7",
+            "information_heading_1": "Unternehmen",
+            "information_value_1": "<p><a href=\"https://www.giesswein.com\" target=\"_blank\" title=\"Onlineshop von Giesswein\"><strong>GIESSWEIN</strong></a></p>",
+            "information_heading_2": "Branche",
+            "information_value_2": "<p><strong>Fashion</strong></p>",
+            "information_heading_3": "",
+            "information_value_3": "",
+            "information_heading_4": "",
+            "information_value_4": "",
+            "information_heading_5": "Use Case",
+            "information_value_5": "<ul><li><strong>Shopify Optimierung</strong></li><li><strong>Performance Steigerung</strong></li><li><strong>Wachstum</strong></li></ul>",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "Laufzeit",
+            "information_value_7": "<p><strong>Seit 2018</strong></p>",
+            "information_heading_8": "",
+            "information_value_8": "",
+            "information_heading_9": "Highlights",
+            "information_value_9": "<ul><li><strong>Siebenstellige Umsatzbeträge über Cross-Sales auf Thank You-Page</strong></li><li><strong>Pagespeed verdreifacht</strong></li><li><strong>15 % CR-Steigerung durch die richtige Wortwahl</strong></li></ul>",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": false,
+            "posts_heading": "",
+            "posts_blog": "",
+            "tags_show": false,
+            "tags_heading": "Heading",
+            "newsletter_show": false,
+            "color_scheme": "background-1",
+            "newsletter_heading": "",
+            "newsletter_description": "Content",
+            "button_style": "primary",
+            "cta_show": true,
+            "cta_show_desktop": true,
+            "cta_show_mobile": false,
+            "cta_background_color": "#cbf3ff",
+            "cta_heading": "Hast du Lust, mit Shopify mehr zu erreichen?",
+            "cta_description": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite.</p>",
+            "show_button_1": true,
+            "button_label_1": "Jetzt anfragen",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer",
+        "aside_akdCzB"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "display_content_inside": true,
+        "header_transparent": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "opacity_overlay": 0.1,
+        "padding_top": "no-indent",
+        "padding_bottom": "s"
+      }
+    },
+    "rich_text_x3Jb6w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dRJ4qd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inhaltsverzeichnis",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_PPEMkm": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li><a href=\"#1\" title=\"#1\">Nicht für Pantoffelhelden: Das ist GIESSWEIN</a></li><li><a href=\"#2\" title=\"#2\">Fit wie ein Merinoturnschuh: Neue Features im GIESSWEIN-Shop</a></li><li><a href=\"#3\" title=\"#3\">#1 Siebenstelliger Umsatz mit Post-Purchase Cross Sells auf der Thank-You-Seite</a></li><li><a href=\"#4\" title=\"#4\">#2 Entlastung des Supports durch Packstation-App</a></li><li><a href=\"#5\" title=\"#5\">#3 Pagespeed vielfach gesteigert</a></li><li><a href=\"#6\" title=\"#6\">#4 Die Macht der richtigen Worte</a></li><li><a href=\"#7\" title=\"#7\">Umsatzwachstum durch kontinuierliche Optimierung</a></li><li><a href=\"#8\" title=\"#8\">So geht es weiter bei GIESSWEIN</a></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRJ4qd",
+        "text_PPEMkm"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "background-3",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "s",
+        "margin_bottom": "s",
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_MKc39j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_H6jV34": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nicht für Pantoffelhelden: Das ist GIESSWEIN",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_eDK4AY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Solltest du GIESSWEIN nicht kennen, wissen deine Füße nicht, wie gut sich ein Schuh anfühlen kann. Außerdem hast du eine der größten Erfolgsgeschichten im europäischen Online-Handel anscheinend einfach verschlafen.<br/><br/>Denn gegründet wurde das österreichische Unternehmen bereits 1954; im Repertoire von Anfang an hochwertige Wollprodukte. Zunächst Strickpullover, denn damals waren die Winter bekanntlich noch kalt, dann immer weitere Woll- und Walkwaren, bis GIESSWEIN in den 70er-Jahren schließlich zu Österreichs führendem Namen in Sachen Strickprodukte wurde.<br/><br/>Klingelt jetzt etwas? Falls nicht, dann erkundige dich in deinem Freundeskreis einfach mal bei allen Menschen, die es gemütlich lieben. Die kennen GIESSWEIN bestimmt, denn der Durchbruch als internationale Marke gelang im Jahr 1974 mit den ersten Hausschuhen aus Walk.<br/><br/>Über 50 Millionen Paar davon hat das Unternehmen bis heute hergestellt – und seine Produktpalette parallel ständig erweitert und an die Nachfrage angepasst. So kam 2017 etwa der erste Wollsneaker auf den Markt; finanziert durch eine Kampagne auf Kickstarter. Noch so eine Pioniertat.</p><p><br/>Heute bietet GIESSWEIN seinen Kund:innen eine breite Palette an Schuhen, Kleidung und Accessoires. Natürlich immer noch aus feinster Merinowolle, aber auch aus innovativen Materialien wie Pilzleder oder recyceltem PET. Geführt wird das Unternehmen weiterhin von der Familie Giesswein selbst. Am Steuer sitzen die Brüder Markus und Johannes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_H6jV34",
+        "text_eDK4AY"
+      ],
+      "settings": {
+        "anchor_id": "1",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_with_text_9dnJF8": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "2",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Giesswein_Startseite_iPhone.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_iPNFaq": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_gRhwRP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Fit wie ein Merinoturnschuh",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_kzPazy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Neue Features im GIESSWEIN-Shop",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_8TdnLe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seit wir GIESSWEIN bei der<a href=\"https://www.eshop-guide.de/blogs/referenzen/giesswein-successstory?_pos=2&_sid=085d3c85f&_ss=r\"> <span style=\"text-decoration:underline\">Migration zu Shopify Plus</span></a> begleiten durften, standen die Uhren natürlich nicht still. Gemeinsam mit der IT des Unternehmens und anderen Partnern testet Eshop Guide laufend neue Funktionen und Features, um KPI wie die Conversion Rate, den CLV oder den AOV weiter zu optimieren.</p><p>Es ist ein fortlaufender Prozess und nicht jede Idee funktioniert. Gerade bei so einem etablierten Shop wie GIESSWEIN können sich Zuwächse manchmal nur in einem sehr kleinen Prozentbereich bewegen.</p><p><em><strong>Lesetipp: Die wichtigsten KPI im Blick</strong></em></p><ul><li><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/aov\"><span style=\"text-decoration:underline\"><em>AOV: So steigerst du den Average Order Value bei Shopify</em></span></a></li><li><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/customer-lifetime-value\"><span style=\"text-decoration:underline\"><em>Customer Lifetime Value (CLV): So viel sind deine Kunden wert</em></span></a></li><li><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/cac-customer-acquisition-cost\"><span style=\"text-decoration:underline\"><em>Customer Aqcuisition Cost (CAC): Von den Kosten, sich Kund:innen zu angeln</em></span></a></li></ul><p>Aber immer wieder gibt es sie dann doch, die großen Erfolge, die einschlagen wie die sprichwörtliche Bombe. Dafür braucht es keinen Relaunch und kein Rad, das neu erfunden wird. Oft reichen Geistesblitze. So wie diese:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gRhwRP",
+        "heading_kzPazy",
+        "text_8TdnLe"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_wAbexW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_P3pHcT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "bag-3",
+            "svg_icon": "icon-EG-rocket",
+            "icon_color": "#daffc1",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Post-Purchase Cross Sells auf der Thank-You-Seite",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_ED8kec": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-star",
+            "icon_color": "#d9ffc2",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Entlastung des Supports durch Packstation App",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_CUAzM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-speed",
+            "icon_color": "#d9ffc2",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Pagespeed vielfach gestiegen",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_rJU8mb": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_color": "#d9ffc2",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "gradient",
+            "heading": "Die Macht der richtigen Worte",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_P3pHcT",
+        "column_ED8kec",
+        "column_CUAzM9",
+        "column_rJU8mb"
+      ],
+      "settings": {
+        "anchor_id": "3",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "scheme-98bdcfe2-7924-48ed-9d32-e0396f6746df",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "medium",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Neue Features im Überblick",
+        "heading_tag": "h3",
+        "heading_size": "h3",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_AAhHt8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_C3DGTB": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Herausforderung",
+            "heading_tag": "h3",
+            "text": "<p>„Vielen Dank für deinen Einkauf. Wir informieren dich, sobald deine Bestellung unser Lager verlässt.“ So oder so ähnlich sahen die meisten Thank-You-Pages in einem Shopify Store bislang aus. Die letzte Seite nach dem Checkout war ziemlich uninteressant und eignete sich für nicht viel mehr als ein wenig Höflichkeit gegenüber den Kund:innen.<br/><br/>Bis Shopify sich endlich ein Herz fasste und Programmierer:innen tiefe Eingriffe in Warenkorb und Checkout erlaubte. Checkout Extensibility nennt sich dieses neue System und erlaubt Anpassungen, die vorher gar nicht oder nur mit reichlich Tricks und Flickschusterei möglich waren.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_LAHQYC": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Lösung",
+            "heading_tag": "h3",
+            "text": "<p>Zu den spannendsten Optionen gehört dabei, Käufer:innen noch auf der Thank-You-Page ein Cross-Selling- oder Up-Selling-Angebot zu unterbreiten. Denn genau jetzt ist die FOMO, Fear Of Missing Out, besonders groß, das Gefühl, doch noch ein Schnäppchen geschlagen zu haben, dafür umso befriedigender: „Ach, hätte ich doch … Oh, ich kann ja noch!“<br/><br/>Dass dieses Konzept bei GIESSWEIN extrem gut funktioniert, ist vor allem dem Angebot des Unternehmens zu verdanken: Gerade Schuhe eignen sich hervorragend für das Cross-Selling. Denn vor Ort die exakt passenden Ersatzschnürsenkel zu bekommen, ist oft eine Qual und wer sagt schon nein, wenn es zu den warmen Pantoffeln noch ein Paar kuschelige Wollsocken zum Sonderpreis gibt?</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_UGneVT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Das Ergebnis in Zahlen",
+            "heading_tag": "h3",
+            "text": "<p>Der Umsatz-Rekord für Kund:innen, die zu ihrem Einkauf ein Cross-Selling-Angebot wahrgenommen haben, lag bislang im siebenstelligen Bereich.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Lesetipp: Checkout Extensibility im Detail – Möglichkeiten, Grenzen, Umsetzung",
+            "button_link": "shopify://blogs/shopify-deutschland/shopify-warenkorb-anpassen",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_C3DGTB",
+        "column_LAHQYC",
+        "column_UGneVT"
+      ],
+      "settings": {
+        "anchor_id": "3",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "Im Detail",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "#1: Siebenstelliger Umsatz mit Post-Purchase Cross Sells auf der Thank-You-Seite",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_EAJMFV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wxpJkb": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Herausforderung",
+            "heading_tag": "h3",
+            "text": "<p>Leider hat Checkout Extensibility nicht alles besser gemacht. Manch ein Workaround, der zuvor noch möglich war, funktioniert heute nicht mehr. Zu den prominentesten Opfern gehört dabei wohl die Möglichkeit, als Lieferadresse eine DHL Packstation anzugeben.<br/><br/>Für ein Unternehmen wie GIESSWEIN, das ein sehr breites Publikum anspricht, ist dieser Umstand natürlich besonders ärgerlich. Denn hier gehören die berufstätigen Eltern ebenso zur Zielgruppe, wie der umweltbewusste Student oder die aktive Rentnerin. Kurzum: Menschen, die zu den üblichen DHL Lieferzeiten nicht zu Hause sind.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_m448b4": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Lösung",
+            "heading_tag": "h3",
+            "text": "<p>Die Nachfrage nach dem Service blieb daher beständig hoch. Wenn im Kundenservice das Telefon klingelte, lautete die Frage viel zu oft: Liefert ihr auch an eine Packstation? Die Wartezeiten wurden länger, die Kund:innen ärgerlicher.<br/><br/>Bis Eshop Guide die Lösung implementieren konnte: Die DHL Packstation App aus dem Shopify App Store. Denn die integriert eine praktische Karte in den Checkout-Bereich, auf der User:innen die Packstation ihrer Wahl auswählen und anklicken können. Die Adresse wird anschließend automatisch übernommen und im Adressbuch gespeichert. Einfacher geht es nicht.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Zur App",
+            "button_link": "https://apps.shopify.com/dhl-packstation-2?locale=de&st_source=autocomplete",
+            "button_style": "primary"
+          }
+        },
+        "column_EbeDQE": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Das Ergebnis in Zahlen",
+            "heading_tag": "h3",
+            "text": "<p>Die Bedienung der DHL Packstation App funktioniert absolut intuitiv; das Programm leitet sämtliche Informationen an die DHL App oder Webseite weiter und informiert Bestellende so, dass ihr Auftrag erfolgreich entgegengenommen wurde. <br/><br/>Für den Kundenservice von GIESSWEIN heißt das: In den vergangenen Wochen und Monaten sind die Beschwerden, die sich um das Thema Packstation drehten, deutlich zurückgegangen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Lesetipp: Checkout Extensibility im Detail – Möglichkeiten, Grenzen, Umsetzung",
+            "button_link": "shopify://blogs/shopify-deutschland/shopify-warenkorb-anpassen",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_wxpJkb",
+        "column_m448b4",
+        "column_EbeDQE"
+      ],
+      "settings": {
+        "anchor_id": "4",
+        "full_width": false,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "Im Detail",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "#2: Entlastung des Supports durch Packstation App",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_4by8YW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NTpWKF": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Herausforderung",
+            "heading_tag": "h3",
+            "text": "<p>Zu den leidlichsten Themen bei Shopify gehört immer noch der Pagespeed. Zwar haben die Kanadier:innen in den letzten Jahren ordentlich an ihrem System gefeilt und die Ladegeschwindigkeit einer durchschnittlichen Shopseite erreicht, allerdings sah die Sache bei GIESSWEIN zuletzt ein wenig anders aus.<br/><br/>Denn gerade die Produktseiten des Unternehmens sind alles andere als durchschnittlich. Hochauflösende Fotos, sich abwechselnde Hintergründe, Größen- und Farbauswahl, Ziehharmonika-Menü mit zusätzlichen Informationen, Maßtabelle, Bildergalerie, hunderte Bewertungen – hier ist jede Menge los. Kein Wunder also, dass der Pagespeed oft in die Knie ging.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_Qaw8Jy": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Lösung",
+            "heading_tag": "h3",
+            "text": "<p>Deshalb setzte Team Eshop Guide sich mit der GIESSWEIN-IT zusammen und werkelte an einem umfassenden Konzept für performantere Produktseiten. Klar war, dass weder an der Qualität noch am Content der PDPs gerüttelt werden durfte. Die Lösung musste technischer Natur sein.<br/><br/>Implementiert wurden deshalb zahlreiche Maßnahmen, die den Pagespeed einer Seite deutlich verbessern können: Serverseitiges Tracking, um den Datenfluss nach außen möglichst kleinzuhalten, Lazy Loading um den Seitenaufbau zu beschleunigen und nichts zu laden, was nicht angezeigt wird oder das Partytown Skript, um die Ausführung überflüssiger Third-Party-Skripte zu unterbinden.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Zur App",
+            "button_link": "https://apps.shopify.com/dhl-packstation-2?locale=de&st_source=autocomplete",
+            "button_style": "primary"
+          }
+        },
+        "column_U8fKNR": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Das Ergebnis in Zahlen",
+            "heading_tag": "h3",
+            "text": "<p>Die Kombination aller Maßnahmen zeigte einen deutlichen Erfolg. Insgesamt hist der Pagespeed der PDP gestiegen – mit allen messbaren Konsequenzen, die dazugehören: Weniger Warenkorbabbrüche, ein höherer Average Order Value und bessere Bewertungen des Stores.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Lesetipp: Pagespeed verbessern, auch ohne Programmierkenntnisse – so geht’s",
+            "button_link": "shopify://blogs/shopify-deutschland/pagespeed-optimierung",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_NTpWKF",
+        "column_Qaw8Jy",
+        "column_U8fKNR"
+      ],
+      "settings": {
+        "anchor_id": "5",
+        "full_width": false,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "Im Detail",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "#3 Pagespeed vielfach gestiegen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_xyVGhc": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_pzdKbU": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Mit Eshop Guide haben wir eine Agentur gefunden, die auch die großen Aufgaben im Onlinehandel schnell und agil umsetzt, ohne alles gleich zu einem riesigen Projekt aufzublasen.“",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "Markus Kapferer",
+            "slide_position": "Head of E-Commerce, GIESSWEIN"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_pzdKbU"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_m7mARj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_et4QP8": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Herausforderung",
+            "heading_tag": "h3",
+            "text": "<p>Manchmal ist noch ein Feature hier und noch eine Funktion da schlicht zu viel des Guten. Denn irgendwann wirkt der Store einfach überfrachtet und unnötig kompliziert.<br/>Doch verkaufsfördernde Maßnahmen müssen gar nicht immer technischer Natur sein. Manchmal reichen ein bisschen Menschenkenntnis, ein wenig Händler:inneninstinkt und ein gewisses Gespür für Sprache aus, um den Umsatz anzukurbeln.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_3qaY48": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Die Lösung",
+            "heading_tag": "h3",
+            "text": "<p>Wenn du auf giesswein.com einen Artikel in den Warenkorb legst, tauchen in der Sidebar sieben kleine Worte auf: „Sehr gute Wahl. Dein Versand ist kostenlos.“ Und so einfach diese beiden Sätze auch klingen, so groß ist ihre Wirkung.<br/>Denn zunächst machen sie sich das Prinzip der positiven Verstärkung zunutze. Übertragen steht dort nämlich: Mit deinem Einkauf machst du alles richtig; du bekommst höchste Qualität zu einem angemessenen Preis. Gut aussehen tust du in den Schuhen sowieso. Also fang gar nicht erst an zu zweifeln.<br/><br/>Außerdem weisen sie abermals auf einen der wichtigsten Benefits bei einem Einkauf bei GIESSWEIN hin: den kostenlosen Versand. Denn treue Leser:innen unseres Contents wissen natürlich, dass Webshoppende nichts mehr hassen, als an der Kasse von Zusatzkosten überrascht zu werden. Ausdrücklich auf den Gratisversand aufmerksam zu machen, sorgt also dafür, dass der Checkout-Button mit einem guten Gefühl angeklickt wird.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Zur App",
+            "button_link": "https://apps.shopify.com/dhl-packstation-2?locale=de&st_source=autocomplete",
+            "button_style": "primary"
+          }
+        },
+        "column_xhBjGT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Das Ergebnis in Zahlen",
+            "heading_tag": "h3",
+            "text": "<p>So unglaublich es auch klingen mag, aber seit der kurze Text auf der Webseite steht, hat sich die Conversion Rate um bis zu 15 Prozent verbessert. Worte haben tatsächlich Macht und unsere Empfehlung kann nur lauten: Vertraue deine Texte immer Menschen an, die sich mit Sprache wirklich auskennen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Lesetipp: Conversion Rate optimieren – weitere Maßnahmen, die wirklich funktionieren",
+            "button_link": "shopify://blogs/shopify-deutschland/conversion-optimierung",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_et4QP8",
+        "column_3qaY48",
+        "column_xhBjGT"
+      ],
+      "settings": {
+        "anchor_id": "6",
+        "full_width": false,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "Im Detail",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "#4 Die Macht der richtigen Worte",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "numbers_3FC8FL": {
+      "type": "numbers",
+      "blocks": {
+        "column_cWVVBe": {
+          "type": "column",
+          "settings": {
+            "number": "3x",
+            "heading": "schnellerer Pagespeed auf den PDPs",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(54deg, rgba(217, 255, 194, 1) 14%, rgba(217, 255, 194, 1) 85%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_rMx6fG": {
+          "type": "column",
+          "settings": {
+            "number": "15 %",
+            "heading": "verbesserte Conversion Rate",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 1) 50%, rgba(147, 230, 255, 1) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_Ee3Vfh": {
+          "type": "column",
+          "settings": {
+            "number": "0Anrufe",
+            "heading": "bei der Hotline bezüglich Packstationen",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(181, 249, 187, 1), rgba(181, 249, 187, 1) 98%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cWVVBe",
+        "column_rMx6fG",
+        "column_Ee3Vfh"
+      ],
+      "settings": {
+        "anchor_id": "7",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ergebnisse in Zahlen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_YrcBmJ": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Checkout_Kombiangebot_GIESSWEIN.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_gxpFJC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JcDHWa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Umsatzwachstum durch kontinuierliche Optimierung",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_xAkqtK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seit dem Wechsel von Magento zu Shopify Plus im April 2016 hat GIESSWEIN beeindruckende Wachstumsraten verzeichnet. Laut Patrick Rosenblatt, Geschäftsführer von Eshop Guide, wuchs das Unternehmen von 2016 bis 2022 im Durchschnitt um 14 % pro Monat – ein bemerkenswerter Anstieg über sechs Jahre hinweg. </p><p>Dies unterstreicht den enormen Erfolg der Optimierungsmaßnahmen und des iterativen Ansatzes, den GIESSWEIN zusammen mit Eshop Guide verfolgt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JcDHWa",
+        "text_xAkqtK"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "testimonials_XXfJVh": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_YMA6tt": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "“Zwischen 2016 und 2022 wächst GIESSWEIN im Durchschnitt um 14 % pro Monat”.",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_YMA6tt"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_aYG6Ac": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KkXyTn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Agile Zusammenarbeit und fortlaufende Verbesserung",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_9AVCkM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seit 2021 hat Eshop Guide GIESSWEIN bei der Umsetzung von über 500 Anforderungen in einem agilen Sprint-Ansatz unterstützt. Diese Mikro-Optimierungen, gepaart mit kontinuierlichem A/B-Testing in Kooperation mit DRIP, haben maßgeblich dazu beigetragen, die Performance des Webshops zu steigern. <br/><br/>Durch die enge Zusammenarbeit mit der IT-Abteilung von GIESSWEIN und den Einsatz von Tools wie Asana, um den Fortschritt zu überwachen, konnte Eshop Guide gezielt Verbesserungen vorantreiben und dabei stets flexibel auf neue Herausforderungen reagieren.</p><h4>Technische Unterstützung und Effizienz</h4><p>Neben der Umsatzsteigerung zeichnete sich der Wechsel zu Shopify Plus durch eine wesentlich geringere Total Cost of Ownership (TCO) aus. Shopify bietet laut eigenen Angaben eine um 65 % geringere TCO im Vergleich zu anderen Plattformen. <br/><br/>Für GIESSWEIN bedeutete dies, nicht nur schneller und effizienter zu wachsen, sondern auch mit geringeren Kosten im Vergleich zu anderen Lösungen, was den wirtschaftlichen Erfolg zusätzlich stärkte.<br/><br/><strong>Der iterative Ansatz als Erfolgsfaktor</strong></p><p>Ein entscheidender Vorteil liegt in der agilen und iterativen Arbeitsweise, die es erlaubt, stetige Verbesserungen ohne große, einmalige Quantensprünge zu erzielen. <br/><br/>Die fortlaufenden A/B-Tests und Optimierungen, die gemeinsam mit dem Partner DRIP durchgeführt wurden, führten zu Hunderten von kleinen, aber signifikanten Änderungen im Shop. Diese stetige Optimierung ist einer der Hauptgründe, warum GIESSWEIN in einem hart umkämpften Markt kontinuierlich wachsen konnte.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KkXyTn",
+        "text_9AVCkM"
+      ],
+      "settings": {
+        "anchor_id": "8",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "testimonials_rBEfay": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_UTJwJ6": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "“Die stetige Optimierung ist einer der Hauptgründe, warum GIESSWEIN in einem hart umkämpften Markt kontinuierlich wachsen konnte”.",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_UTJwJ6"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "slide_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_qU7BVa": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Skalierung und Vision für die Zukunft",
+        "inner_heading_tag": "h3",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Das Wachstum von GIESSWEIN beschränkt sich nicht nur auf die Umsatzsteigerung. Das Unternehmen hat es geschafft, von einem klassischen B2B2C-Handelsmodell zu einem erfolgreichen D2C-Player zu transformieren, was nur wenigen Traditionsmarken gelingt. <br/></p><p>Der Erfolg von GIESSWEIN zeigt eindrucksvoll, wie technische Skalierung und kontinuierliche Anpassung an die Marktdynamik Hand in Hand gehen können.</p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Giesswein_Productpage_EN.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_LtFDpN": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_Wg9wqF": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Für den Erfolg im Onlinehandel braucht es ein bisschen Glück und vor allem den richtigen Partner. Zwischen uns und Eshop Guide hat es sofort gefunkt.“",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_Wg9wqF"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_4bqJrK": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_gBAbrb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Auf Schusters Rappen in die Zukunft",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_QjE6zN": {
+          "type": "heading",
+          "settings": {
+            "heading": "So geht es weiter bei GIESSWEIN",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_4pNXta": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Der Cross-Selling-Umsatz vervielfacht, die Packstationen nativ angebunden, den Pagespeed optimiert und die Conversion Rate gesteigert. Geht da überhaupt noch mehr? Aber selbstverständlich!<br/><br/>Denn GIESSWEIN wäre nicht GIESSWEIN, wenn nicht schon mit vollem Eifer an neuen Plänen getüftelt würde, um das Shoppingerlebnis weiter zu verbessern. So viel sei jetzt schon verraten: Es wird künstlich und es wird intelligent.<br/><br/>Aber keine Sorge, die Wollprofis aus Österreich basteln nicht an noch einem Sprachassistenten, der sich die Welt zusammenhalluziniert und persönliche Daten klaut. Denn gestartet wird zunächst hinter den Kulissen, um interne Prozesse noch performanter zu gestalten. Die Kund:innen werden zunächst nur wenig von der KI bemerken – von Ausnahmen, wie einem schnelleren Versand natürlich abgesehen.<br/><br/>Wenn es später Richtung Webseite geht, ist Eshop Guide auf jeden Fall mit dabei. Denn, um es mit den Worten von Markus Giesswein zu sagen: „In allen Dimensionen braucht es die richtigen Partner. Man kann es also schon als Glück bezeichnen, dass wir auf Eshop Guide gestoßen sind. Denn uns war ziemlich schnell klar: Das passt. Fachlich wie menschlich.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gBAbrb",
+        "heading_QjE6zN",
+        "text_4pNXta"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_AHtfJj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NmBwez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hol deinen Store aus den Kinderschuhen",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_JFeYBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selbst in den besten Webshops steckt also immer noch jede Menge Verbesserungspotenzial – vor allem dann, wenn sich erste Erfolge einstellen und die nächste Wachstumsphase beginnt.<br/><br/>Wenn du jetzt also denkst: „So einen coolen Shopify Plus Store wie GIESSWEIN hätte ich auch gerne“, dann machen wir das für dich möglich. Erzähle uns, was du planst und zusammen machen wir deine Idee zur Realität.<br/><br/>Solltest du dagegen noch gar nicht bei Shopify unterwegs sein, sondern bei einem anderen Anbieter herumdümpeln, dann gehen wir mit dir den selbstverständlich auch den allerersten Schritt und managen deine <a href=\"/pages/shopify-migration\" target=\"_blank\" title=\"Shopify Migration\">Migration zu Shopify</a>.</p>"
+          }
+        },
+        "button_gnPV7j": {
+          "type": "button",
+          "settings": {
+            "button_label": "Projekt besprechen",
+            "button_link": "#contact",
+            "button_style": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NmBwez",
+        "text_JFeYBb",
+        "button_gnPV7j"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_pbxALY": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "referenzen",
+        "color_scheme": "background-1",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "background-1",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 9,
+        "card_color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Weitere Referenzen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": false,
+        "button_label": "Button label",
+        "custom_view_all_link": "",
+        "button_style": "primary",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_thEpqN",
+    "main",
+    "rich_text_x3Jb6w",
+    "rich_text_MKc39j",
+    "image_with_text_9dnJF8",
+    "rich_text_iPNFaq",
+    "multicolumn_wAbexW",
+    "multicolumn_AAhHt8",
+    "multicolumn_EAJMFV",
+    "multicolumn_4by8YW",
+    "testimonials_xyVGhc",
+    "multicolumn_m7mARj",
+    "numbers_3FC8FL",
+    "image_with_text_YrcBmJ",
+    "rich_text_gxpFJC",
+    "testimonials_XXfJVh",
+    "rich_text_aYG6Ac",
+    "testimonials_rBEfay",
+    "image_with_text_qU7BVa",
+    "testimonials_LtFDpN",
+    "rich_text_4bqJrK",
+    "rich_text_AHtfJj",
+    "featured_blog_pbxALY"
+  ]
+}

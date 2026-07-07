@@ -1,0 +1,278 @@
+{% assign section_id = "#shopify-section-" | append: section.id %}
+{% style %}
+    .rolling-marquee__wrapper{
+        padding:0.5rem 0;
+        font-family: Madera, sans-serif;
+        font-style: normal
+    }
+    .rolling-marquee__element{
+        margin:0.5rem 0;
+        text-decoration:none;
+    }
+    .rolling-text-button__wrapper{
+        width: 100%;
+        display: flex;
+        padding:0 1rem;
+    }
+    .rolling-marquee__wrapper{
+        padding:0 !important;
+    }
+
+    {{ section_id }}{
+        padding-bottom:2rem;
+        padding-top:2rem;
+    }
+
+    .anchor{
+        text-decoration:none;
+    }
+{% endstyle %}
+
+{% render 'anchor', anchor_id: section.settings.anchor_id %}
+
+{% if section.settings.heading_text != blank %}
+
+    <{{ section.settings.heading_tag }} class="title h1">{{ section.settings.heading_text }}</{{ section.settings.heading_tag }}>
+
+{% endif %}
+{% for block in section.blocks %}
+    {% if block.settings.rolling_text != blank %}
+
+        {% style %}
+
+            {% case block.settings.marquee_direction %}
+                {% when "right" %}
+                    @keyframes marquee-{{ forloop.index }}-{{ section.id }} {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-100%);
+                        }
+                    }
+                {% when "left" %}
+                    @keyframes marquee-{{ forloop.index }}-{{ section.id }} {
+                        0% {
+                            transform: translateX(-100%);
+                        }
+                        100% {
+                            transform: translateX(0%);
+                        }
+                    }
+            {% endcase %}
+
+            {{ section_id }} .rolling-marquee__wrapper-{{ forloop.index }}  .marquee {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                overflow: hidden;
+                gap:1rem;
+                background:{{ block.settings.background_color }};
+                font-size:{{ block.settings.font-size }}px;
+                color:{{ block.settings.font_color }};
+                margin-bottom:1rem;
+            }
+
+            {{ section_id }} .rolling-marquee__wrapper-{{ forloop.index }}  .marquee span {
+                will-change: transform;
+                transform: translateX(0);
+                white-space: nowrap;
+                animation: marquee-{{ forloop.index }}-{{ section.id }} {{ block.settings.marquee_speed }}s linear infinite;
+            }
+
+            {{ section_id }} .rolling-marquee__wrapper-{{ forloop.index }} .rolling-text-button__wrapper-{{ forloop.index }}{
+                justify-content:  {{ block.settings.button_position }};
+            }
+        {% endstyle %}
+
+        {% if block.settings.enable_link_button == false and block.settings.rolling_text_link != blank %}
+            {% assign page_handle = block.settings.rolling_text_link %}
+            <a class="anchor" href="{{ pages[page_handle].url }}">
+        {% endif %}
+        <div class="rolling-marquee__wrapper rolling-marquee__wrapper-{{ forloop.index }}">
+            <div class="marquee marquee-{{ forloop.index }}">
+                {% for i in (1..10) %}
+                    <span>{{ block.settings.rolling_text | replace: "<p>" , " " | replace: "</p>" , "" }}&nbsp;</span>
+                {% endfor %}
+            </div>
+
+            {% if block.settings.enable_link_button and block.settings.button_text != blank %}
+                <div class="rolling-text-button__wrapper rolling-text-button__wrapper-{{ forloop.index }}">
+                    <a class="button button--{{ block.settings.button_type }} mdc-ripple-surface mdc-ripple-upgraded"
+                       href="{{ block.settings.button_link | default: "#" }}">
+                        {{ block.settings.button_text }}
+                    </a>
+                </div>
+            {% else %}
+
+
+            {% endif %}
+
+        </div>
+        {% if block.settings.enable_link_button == false and block.settings.rolling_text_link != blank %}</a>{% endif %}
+
+    {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Rolling Text",
+  "class": "rolling-text--section",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID"
+    },
+    {
+      "id": "heading_text",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "p", "label": "p" },
+        { "value": "h1", "label": "h1" },
+        { "value": "h2", "label": "h2" },
+        { "value": "h3", "label": "h3" },
+        { "value": "h4", "label": "h4" },
+        { "value": "h5", "label": "h5" },
+        { "value": "h6", "label": "h6" }
+      ],
+      "default": "h1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "id": "rolling_text",
+          "type": "richtext",
+          "label": "Text"
+        },
+        {
+          "id": "font-size",
+          "type": "range",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit":"px",
+          "label": "Font size",
+          "default": 15
+        },
+        {
+          "type": "url",
+          "id": "rolling_text_link",
+          "label": "Select a link"
+        },
+        {
+          "id": "marquee_direction",
+          "type": "select",
+          "label": "Animation side",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right to Left"
+            },
+            {
+              "value": "left",
+              "label": "Left to Right"
+            }
+          ],
+          "default": "right"
+        },
+        {
+          "id": "marquee_speed",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit":"s",
+          "label": "Animation speed",
+          "default": 15
+        },
+        {
+          "id": "font_color",
+          "type": "color",
+          "label": "Font color",
+          "default": "#00486f"
+        },
+        {
+          "id": "background_color",
+          "type": "color",
+          "label": "Background color"
+        },
+        {
+          "type": "header",
+          "content": "Button view"
+        },
+        {
+          "id": "enable_link_button",
+          "type": "checkbox",
+          "label": "Enable button",
+          "default": false
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button Text"
+        },
+        {
+          "id": "button_type",
+          "type": "select",
+          "label": "Button type",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "id": "button_position",
+          "type": "select",
+          "label": "Button position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rolling Text",
+      "category": "Text"
+    }
+  ]
+}
+
+{% endschema %}

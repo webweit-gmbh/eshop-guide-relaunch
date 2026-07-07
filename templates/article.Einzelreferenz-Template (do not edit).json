@@ -1,0 +1,1579 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_thEpqN": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_iTTe6h": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Ergebnisse:",
+            "heading_tag": "p",
+            "text": "",
+            "background_gradient": ""
+          }
+        },
+        "column_CWqjHT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "chart-3",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "31%",
+            "heading_tag": "p",
+            "text": "verbesserte Conversion Rate",
+            "background_gradient": ""
+          }
+        },
+        "column_yhEzRd": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "rocket",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "1,3 Sekunden",
+            "heading_tag": "p",
+            "text": "Pagespeed auf contentstarken Seiten",
+            "background_gradient": ""
+          }
+        },
+        "column_7AbfM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "phone-4",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "0 Anrufe",
+            "heading_tag": "p",
+            "text": "bei der Service-Hotline aufgrund tech. Probleme",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iTTe6h",
+        "column_CWqjHT",
+        "column_yhEzRd",
+        "column_7AbfM9"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": false,
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Nach Migration zu Shopify:",
+        "inner_subheading_tag": "p",
+        "inner_heading": "TITUS verzeichnet massiven Conversion-Rate-Sprung",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "{{ article.image }}",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "all-height",
+        "overlay_opacity": 0.2,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "full_width": false,
+            "blog_show_tags": true,
+            "blog_show_excerpt": false,
+            "blog_show_author": false,
+            "blog_show_date": false,
+            "image_height": "medium",
+            "show_share": false,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "disabled": true,
+          "settings": {
+            "author_position": "",
+            "author_info": "",
+            "blog_show_author": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "aside_akdCzB": {
+          "type": "aside",
+          "settings": {
+            "banner_show": false,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Das Unternehmen",
+            "banner_color_scheme": "background-1",
+            "banner_label": "Titus",
+            "banner_link": "#",
+            "informations_show": true,
+            "divider_color": "#e6e8e9",
+            "information_heading_1": "Unternehmen",
+            "information_value_1": "<p><a href=\"https://titus.de\" target=\"_blank\" title=\"https://titus.de\">Titus</a></p>",
+            "information_heading_2": "Branche",
+            "information_value_2": "<p>Skateboarding, Kleidung & Equipment</p>",
+            "information_heading_3": "Alte Plattform",
+            "information_value_3": "<p>Shopware 5</p>",
+            "information_heading_4": "Neue Plattform",
+            "information_value_4": "<p>Shopify Plus</p>",
+            "information_heading_5": "Heading 5",
+            "information_value_5": "<p>Text5</p>",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "",
+            "information_value_7": "",
+            "information_heading_8": "",
+            "information_value_8": "",
+            "information_heading_9": "",
+            "information_value_9": "",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": false,
+            "posts_heading": "",
+            "posts_blog": "",
+            "tags_show": false,
+            "tags_heading": "Heading",
+            "newsletter_show": false,
+            "color_scheme": "background-1",
+            "newsletter_heading": "",
+            "newsletter_description": "Content",
+            "button_style": "primary",
+            "cta_show": true,
+            "cta_background_color": "#cbf3ff",
+            "cta_heading": "Hast du Lust, mit Shopify mehr zu erreichen?",
+            "cta_description": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite.</p>",
+            "show_button_1": true,
+            "button_label_1": "Jetzt anfragen",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer",
+        "aside_akdCzB"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "header_transparent": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "opacity_overlay": 0.5,
+        "padding_top": "no-indent",
+        "padding_bottom": "l"
+      }
+    },
+    "rich_text_MKc39j": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eDK4AY": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Herausforderungen</h2><p>Seinen ersten Shop im Web eröffnete das Unternehmen bereits um die Jahrtausendwende. Damals noch ohne Bestellfunktion. Eigentlich wurde nur der Katalog ins Netz gestellt; wer etwas haben wollte, musste bei TITUS anrufen.<br/><br/>Es folgten weitere Iterationen mit immer mehr Funktionen; zunächst in Eigenregie und mithilfe rudimentärer Programmierkenntnisse von CEO Julius Dittmann. Mit steigender Bedeutung des Onlinehandels dann in Kooperation mit diversen Agenturen unter der Regie der stetig wachsenden, unternehmenseigenen IT-Abteilung.<br/><br/>Die letzte Station vor der Migration zu Shopify hieß für TITUS Shopware – und genau hier steigen wir tiefer ein.</p><p></p><h6>Klassischer Fehlstart: TITUS bei Shopware</h6><p>Denn bereits der Launch unter Shopware stand 2017 unter keinem guten Stern. Julius erinnert sich</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_eDK4AY"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "testimonials_iTzf7y": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_jdngqY": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Eigentlich  hatten wir uns gut vorbereitet, ein massives Lasten- und Pflichtenheft  angelegt, anderthalb Jahre Entwicklungszeit eingeplant. Dann kam der  Tag, an dem wir mit dem neuen Store live gingen und es funktionierte –  nichts.“",
+            "image": "shopify://shop_images/33c9091cfc827f5aa3d32555b22c685d.png",
+            "box_color": "#15c8e4",
+            "slide_name": "Julius Dittmann",
+            "slide_position": "CEO"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_jdngqY"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_GYNRn8": {
+      "type": "rich-text",
+      "blocks": {
+        "text_X8hLXM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In den kommenden Wochen hieß es daher Crunch Time für die TITUS-IT. Julius erklärt weiter: „Unser Lager und die verschiedenen Agenturen zu koordinieren war unglaublich aufwändig. Oft haben wir uns im Team nachts um eins noch eine Pizza bestellt und dann weitergearbeitet. Nach ein paar Monaten hatten wir dann endlich alles so weit, dass wir damit arbeiten konnten.“<br/><br/>Richtig zufrieden war Team TITUS danach allerdings auch nicht.</p><h6>Schlechte Performance und Warenkorbhänger</h6><p>Denn Michael Höcker, der Head of E-Commerce & Marketing von TITUS, stellt klar: </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_X8hLXM"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "testimonials_VKTNt8": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_njgEed": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Der Pagespeed war durchgehend ein Schwachpunkt des Stores. Außerdem gab es Bugs, die niemand in den Griff bekommen hat. Das häufigste Problem, mit dem sich unser Kundenservice beschäftigen musste: der Warenkorb hing sich auf und die Leute kamen nicht zum Checkout durch.“",
+            "box_color": "#15c8e4",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_njgEed"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_wAbexW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_P3pHcT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "bag-3",
+            "svg_icon": "icon-EG-rocket",
+            "icon_color": "#daffc1",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Schlechter Pagespeed",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_ED8kec": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-code",
+            "icon_color": "#d9ffc2",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Bugfehler beim Shopware",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_CUAzM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-cart",
+            "icon_color": "#d9ffc2",
+            "icon_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+            "icon_fill_type": "solid",
+            "heading": "Warenkorbhänger",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_P3pHcT",
+        "column_ED8kec",
+        "column_CUAzM9"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "scheme-98bdcfe2-7924-48ed-9d32-e0396f6746df",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "medium",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Überblick der Herausforderungen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_cKdkWY": {
+      "type": "rich-text",
+      "blocks": {
+        "text_dDir6L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Für Julius und seine Mannschaft stand deshalb bald fest: „Auf Dauer müssen wir die nächste Stufe zünden!“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_dDir6L"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "hero_mjdNKg": {
+      "type": "hero",
+      "settings": {
+        "anchor_id": "",
+        "layout": "overlay",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "full_screen": false,
+        "image": "shopify://shop_images/TITUS_-_iPhone_-_Shopify_1024x1024_aafad7a9-45a8-4df1-9316-6c5cc712e414.webp",
+        "show_video": false,
+        "overlay_opacity": 0,
+        "image_ratio": "16/9",
+        "object_fit": "contain",
+        "desktop_image_position": "after",
+        "mobile_image_position": "after",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_79QnPg": {
+      "type": "rich-text",
+      "blocks": {
+        "text_drR4Qd": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>Shopsystem- und Agentursuche: TITUS x Shopify x Eshop Guide</h6><p>Erneut  wurden Anforderungen gesammelt und priorisiert. Dann ging es 2023 auf  die Suche nach dem passenden Shopsystem und der richtigen  Partneragentur. Warum die Wahl dabei auf Shopify, respektive Eshop Guide  fiel, erklären Julius und Michael so:</p><h2>Entscheidung</h2><h4>Die perfekte Basis: Darum wurde es Shopify Plus</h4><p>„Bei  der Auswahl des Shopsystems war uns zunächst natürlich die Performance  wichtig. Ein guter Pagespeed allein kann bereits für eine verbesserte  Conversion Rate sorgen“, gibt Michael zu Protokoll.respektive Eshop Guide  fiel, erklären Julius und Michael so:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_drR4Qd"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "testimonials_xyVGhc": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_pzdKbU": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Außerdem  bietet Shopify ein stabiles Framework für Eigenentwicklungen. Wir haben  wirklich kompetente Mitarbeiter:innen mit verschiedenen Fachdisziplinen  im Haus – und diesen fällt die Arbeit natürlich wesentlich einfacher,  wenn es klare Rahmenbedingungen gibt und nicht jede einzelne  Schnittstelle von der Pike auf neu programmiert werden muss.“",
+            "box_color": "#15c8e4",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_pzdKbU"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_Yb64fy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_aFVEHg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Julius  ergänzt: „Es war zwar kein unmittelbares Auswahlkriterium, aber hätte  ich im Vorfeld gewusst, wie leicht die Internationalisierung mit Shopify  ist, dann hätte es weit oben auf unserer Liste mit Pro-Argumenten  gestanden.<br/>“Bei Shopify ist mit Multi-Currency und Multi-Language alles auf weltweiten Verkauf ausgelegt.”<br/><br/>Denn  während der Pandemie haben wir Thailand und Japan in die Liste unserer  Lieferländer aufgenommen. Das hat unter Shopware zwar auch irgendwie  geklappt, aber unter Shopify funktioniert eine Expansion in neue Märkte  deutlich einfacher. Das gesamte System ist mit Multi-Currency- und  Multi-Language-Support deutlich globaler ausgelegt.“</p><h4>Die perfekte Basis: Darum wurde es Shopify Plus</h4><p>Julius  weiter: „Selbstverständlich haben wir auch zahlreiche Agenturen als  Partner bei der Umsetzung kontaktiert. Für Eshop Guide haben wir uns aus  drei Gründen entschieden.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_aFVEHg"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "steps_iAQ7gB": {
+      "type": "steps",
+      "blocks": {
+        "step_BW4fL4": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "heading": "Spezialisierung auf Marketing und Technik",
+            "heading_tag": "h3",
+            "text": "Wir  waren auf der Suche nach einer Agentur, die sich nicht nur aufs  Marketing oder auf die technische Seite eines Onlineshops spezialisiert,  sondern beide Bereiche beherrscht. Eshop Guide bekommt diesen  Balanceakt sehr gut hin. Denn, was Marketing und Technik angeht, sind  wir bei TITUS ebenfalls gut aufgestellt und wollten ähnlich denkende  Partner, die das Projekt zügig vorantreiben.“\n<br><br>\n“Eshop Guide schafft den Balanceakt zwischen der Spezialisierung auf Marketing und Technik.”",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_dgXVed": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Langfristige Sichtweise",
+            "heading_tag": "h3",
+            "text": "„Außerdem  war es uns wichtig, eine Agentur zu finden, die unseren E-Commerce-Bereich befähigt, den Shop langfristig in Eigenregie zu führen und nur unterstützend eingreift, wenn es mal größere Probleme gibt. Auch das hat bei Eshop Guide komplett gestimmt.“\n<br><br>\n“Team  Eshop Guide und unsere Mannschaft haben einfach von Anfang genau diese  Einstellung geteilt und die gleiche Sprache gesprochen.“",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_dEK6qi": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "heading": "Teamspirit",
+            "heading_tag": "h3",
+            "text": "„Zuletzt  muss es natürlich auch menschlich passen, wenn man eine Partnerschaft  eingeht. Die besten Beziehungen im Leben sind die, bei denen beide  Seiten sich gegenseitig beeinflussen, supporten und weiterbringen. Team  Eshop Guide und unsere Mannschaft haben einfach von Anfang genau diese  Einstellung geteilt und die gleiche Sprache gesprochen.“",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_BW4fL4",
+        "step_dgXVed",
+        "step_dEK6qi"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "scroll",
+        "color_scheme": "background-2",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_zGKMHR": {
+      "type": "image-banner",
+      "settings": {
+        "anchor_id": "",
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/Titus-Banner_international.jpg",
+        "image_ratio": "adapt",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_MzzHLi": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_kYqpM3": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Bei  TITUS setzen wir Projekte als agile Sprints um. Eshop Guide verwendet  genau dieselbe Methode. Deshalb ging die Umsetzung nicht nur reibungslos  über die Bühne, sondern auch in Rekordzeit. Dank agiler Sprints konnten wir den Launch dreimal vorziehen.”",
+            "box_color": "#15c8e4",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_kYqpM3"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Umsetzung",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Die  Anforderungen der Stakeholder waren also klar und priorisiert, TITUS  und Eshop Guide befanden sich in den Startlöchern. Und dann? Ging alles  sehr schnell, denn Michael erklärt:",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_6K8MiH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_heAhb7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>„Insgesamt  haben wir so effizient gearbeitet, dass wir den Launch-Termin für den  neuen Shop dreimal vorziehen konnten – und das, obwohl bei uns im Haus  gerade zwei weitere Großprojekte laufen.“<br/><br/>Schnelle und problemlose Umsetzung des Projektes „Ein neuer Shop für TITUS“? Check! Aber welche Erfolge hat die Migration dem Unternehmen im Nachgang beschert?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_heAhb7"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "hero_wTm6mm": {
+      "type": "hero",
+      "settings": {
+        "anchor_id": "",
+        "layout": "overlay",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "full_screen": false,
+        "image": "shopify://shop_images/TITUS_-_iPhone_-_Shopify_1024x1024_aafad7a9-45a8-4df1-9316-6c5cc712e414.webp",
+        "show_video": false,
+        "overlay_opacity": 0,
+        "image_ratio": "16/9",
+        "object_fit": "contain",
+        "desktop_image_position": "after",
+        "mobile_image_position": "after",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "testimonials_wH8T9K": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_EYQyiq": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Der  neue Shop ist deutlich performanter als der alte. Die Seiten bauen sich  deutlich schneller auf. Selbst auf Seiten mit maximalem Content beträgt  der durchschnittliche Pagespeed nur 1,2 Sekunden. \n\nDas  schlägt sich insbesondere auf die Conversion Rate nieder. Bereits drei Monate nach Launch konnten wir unsere Conversions um 31 Prozent  steigern.”",
+            "box_color": "#15c8e4",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_EYQyiq"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ergebnisse",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Der Titus Store heute: 31 Prozent mehr Conversions und ein erleichterter Customer Support",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "s",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_6yJPU9": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Ad6zPz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Technische  Probleme gibt es auch keine. Niemand ruft mehr bei unserem Support an,  weil der Warenkorb sich aufgehängt hat. Das Team dort kann sich also  endlich wieder um seine Kernaufgaben kümmern und unsere Kundschaft  beraten. Warenkorbabbrüche und die Bounce Rate haben sich so natürlich  ebenfalls stark reduziert.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Ad6zPz"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "numbers_3FC8FL": {
+      "type": "numbers",
+      "blocks": {
+        "column_cWVVBe": {
+          "type": "column",
+          "settings": {
+            "number": "31 %",
+            "heading": "verbesserte Conversion Rate",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(54deg, rgba(217, 255, 194, 1) 14%, rgba(217, 255, 194, 1) 85%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_rMx6fG": {
+          "type": "column",
+          "settings": {
+            "number": "1.3Sekunden",
+            "heading": "Pagespeed auf contentstarken Seiten",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 1) 50%, rgba(147, 230, 255, 1) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_Ee3Vfh": {
+          "type": "column",
+          "settings": {
+            "number": "0Anrufe",
+            "heading": "bei der Service-Hotline aufgrund tech. Probleme",
+            "heading_tag": "h2",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(181, 249, 187, 1), rgba(181, 249, 187, 1) 98%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cWVVBe",
+        "column_rMx6fG",
+        "column_Ee3Vfh"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ergebnisse in Zahlen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "testimonials_XXfJVh": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_YMA6tt": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Der  neue Shop ist deutlich performanter als der alte. Die Seiten bauen sich  deutlich schneller auf. Selbst auf Seiten mit maximalem Content beträgt  der durchschnittliche Pagespeed nur 1,2 Sekunden.\n\nDas  schlägt sich insbesondere auf die Conversion Rate nieder. Bereits drei Monate nach Launch konnten wir unsere Conversions um 31 Prozent  steigern.”",
+            "box_color": "#15c8e4",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_YMA6tt"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_R3LPTj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qnzNE6": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Judge.me – Bewertungen und Reviews",
+            "heading_tag": "h3",
+            "text": "<p>Die Judge.me App ist eine auf Shopify  spezialisierte App für Produktbewertungen. Sie ermöglicht es außerdem  Unternehmen, ihre Kund:innen zu bitten, Bewertungen und Fotos oder  Videos von ihren Produkten zu erstellen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_YJDdbk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Searchanise – Gezieltes Suchen mit Filtern",
+            "heading_tag": "h3",
+            "text": "<p>Searchanise bohrt die Such- und Filterfunktionen eines Shopify-Stores noch einmal deutlich auf. Mit ihrer Hilfe lassen sich einzelne Produkte und Warenkategorien ganz nach Belieben sortieren, filtern und durchsuchen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_AdJf9t": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "magnalister – Multichannel-Handel auf einem Dashboard",
+            "heading_tag": "h3",
+            "text": "<p>Bei magnalister handelt es sich um  eine Software, die es erlaubt, Produkte direkt aus Shopify auf den  bekannten Onlinemarktplätzen wie Amazon, eBay oder Etsy zu verkaufen. Preisanpassungen, Rabatte oder Warenbestände werden dabei auf Wunsch  automatisch synchronisiert.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_yxbTQV": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Klaviyo – E-Mail- und Newslettermarketing",
+            "heading_tag": "h3",
+            "text": "<p>Klaviyo ist einer von zwei großen  Anbietern für automatisierte Newsletter im Onlinehandel (der andere ist  Mailchimp). Denn auch, wenn E-Mails nicht ganz so cool sind wie Werbung  über andere Kanäle, funktionieren sie immer noch bestens. Die eigene  Telefonnummer gibt kaum jemand gerne heraus, eine E-Mail-Adresse kann  man dagegen mal verraten.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_iJN7LE": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Channable – SEA-Optimierung",
+            "heading_tag": "h3",
+            "text": "<p>Wer viele Anzeigen auf zahlreichen  Kanälen schaltet, kann schon mal den Überblick verlieren. Läuft die  Kampagne auf Instagram noch? Und wie viel Budget haben wir diesen Monat  noch für YouTube übrig? Channable macht Schluss damit.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_F338bq": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Wishlist King – Einkaufszettel und mehr",
+            "heading_tag": "h3",
+            "text": "<p>Hier können Kund:innen ganz einfach  online ihren Merkzettel anlegen – auch ohne Anmeldung. Oder gleich  mehrere: einen für sich selbst und einen für die Verwandtschaft als  Weihnachtswunschzettel zum Beispiel. Für bessere Conversions sollte  Wishlist King immer mit dabei sein.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_qnzNE6",
+        "column_YJDdbk",
+        "column_AdJf9t",
+        "column_yxbTQV",
+        "column_iJN7LE",
+        "column_F338bq"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "tertiary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ein Blick ins Backend: Diese Apps laufen jetzt im TITUS-Store",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Eines der besten Features von Shopify  ist, dass sich Store mithilfe von Apps sehr einfach individualisieren  und um zusätzliche Funktionen erweitern lassen. Bei TITUS arbeiten jetzt unter anderem:",
+        "text_align": "left",
+        "icon_size": "normal",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_nGkh78": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_bD8Dq4": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Skateboarding ist vielfältig und immer in der Entwicklung. Der Style ändert sich, die Art, wie geskatet wird, ändert sich. Genauso ist es im Unternehmertum und mit dem, was wir bei TITUS machen: Wir befinden uns in einer konstanten Entwicklung. Unser Backlog ist ordentlich mit Ideen gefüllt - stay tuned.\n\nSucht nach Menschen, die euch dabei unterstützen, aus eurem Traum Realität zu machen.\n\nAllen anderen Händlerinnen und Händlern möchte ich außerdem Folgendes raten: Egal wie groß der Haufen Scheiße vor dir auch sein mag - KEEP PUSHING. Und sucht nach Menschen, die euch dabei unterstützen, aus eurem Traum Realität zu machen.”",
+            "image": "shopify://shop_images/33c9091cfc827f5aa3d32555b22c685d.png",
+            "box_color": "#00486f",
+            "slide_name": "Julius Dittmann",
+            "slide_position": "CEO"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_bD8Dq4"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Zurück in die Zukunft: TITUS rollt weiter",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Der TITUS-Store  performt inzwischen also nicht nur besser als Tony Hawk zu seinen  besten Zeiten; für alle Kundinnen und Kunden existieren außerdem  zahlreiche individuelle Features, die den Einkauf zu einem einzigartigen  Erlebnis machen.\n<br><br>\nAber was haben die Skateboarder:innen aus Westfalen als Nächstes geplant? Ein letztes Mal CEO Julius:",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "slide_text_size": "h6",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_AHtfJj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NmBwez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hast du Lust, mehr mit Shopify zu erreichen?",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_JFeYBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite, dein Umsatz zu skalieren.</p>"
+          }
+        },
+        "button_gnPV7j": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt anfragen",
+            "button_link": "#",
+            "button_style": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NmBwez",
+        "text_JFeYBb",
+        "button_gnPV7j"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "full_width": false,
+        "full_width_text": false,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_pbxALY": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "referenzen",
+        "color_scheme": "background-1",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "background-1",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 9,
+        "card_color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Weitere Referenzen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_thEpqN",
+    "main",
+    "rich_text_MKc39j",
+    "testimonials_iTzf7y",
+    "rich_text_GYNRn8",
+    "testimonials_VKTNt8",
+    "multicolumn_wAbexW",
+    "rich_text_cKdkWY",
+    "hero_mjdNKg",
+    "rich_text_79QnPg",
+    "testimonials_xyVGhc",
+    "rich_text_Yb64fy",
+    "steps_iAQ7gB",
+    "image_banner_zGKMHR",
+    "testimonials_MzzHLi",
+    "rich_text_6K8MiH",
+    "hero_wTm6mm",
+    "testimonials_wH8T9K",
+    "rich_text_6yJPU9",
+    "numbers_3FC8FL",
+    "testimonials_XXfJVh",
+    "multicolumn_R3LPTj",
+    "testimonials_nGkh78",
+    "rich_text_AHtfJj",
+    "featured_blog_pbxALY"
+  ]
+}

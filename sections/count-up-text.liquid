@@ -1,0 +1,258 @@
+{% render 'anchor', anchor_id: section.settings.anchor_id %}
+
+{%- if section.blocks.size > 0 -%}
+
+    <style>
+
+      .impact-text__text {
+        color:{{ section.settings.counter_text_color }};
+      }
+      .text--{{ section.id }} p{
+        color:{{ section.settings.text_color }} !important;
+      }
+
+    </style>
+
+
+    <div {% render 'section-properties' %}>
+        <div >
+            <div class="impact-text impact-text--{{ section.settings.text_alignment }}">
+                {%- for block in section.blocks -%}
+                    <div class="snap-center" {{ block.shopify_attributes }}>
+                        {%- if block.settings.title != blank -%}
+                            <{{ block.settings.heading_tag }} class="h2 title impact-text__text heading break-all">
+                                <impact-text {% if block.settings.animate_impact_text %}count-up="{{ block.settings.animate_impact_text_duration }}"{% endif %} reveal-js>
+                                    {%- render 'styled-text', content: block.settings.title, text_color: section.settings.heading_text_color -%}
+                                </impact-text>
+                            </{{ block.settings.heading_tag }}>
+                        {%- endif -%}
+
+                        {%- if block.settings.subheading != blank or block.settings.content != blank or block.settings.button_text != blank -%}
+                            <div class="impact-text__content">
+                                <div class="prose">
+                                    {%- if block.settings.subheading != blank -%}
+                                        <{{ block.settings.subheading_tag }} class="h5 title title--simple" style="color:{{ section.settings.sub_heading_text_color }};">{{ block.settings.subheading | escape }}</{{ block.settings.subheading_tag }}>
+                                    {%- endif -%}
+
+                                  <span class="text--{{ section.id }}">
+                                    {{- block.settings.content -}}
+                                  </span>
+
+
+                                    {%- if block.settings.button_text != blank -%}
+                                      {% render 'button',
+              block_id: block.id,
+              section_id: section.id,
+                                              link: block.settings.button_url,
+                                              label: block.settings.button_text,
+                                              style: section.settings.button_style,
+                                              class: 'aic'
+                                      %}
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                        {%- endif -%}
+                    </div>
+
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Count up text",
+  "class": "shopify-section--impact-text",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Impact text",
+          "info": "For best results, keep this text short and impactful.",
+          "default": "100%"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Showcase a benefit of your product"
+        },
+        {
+          "type": "select",
+          "id": "subheading_tag",
+          "label": "Subheading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link"
+        },
+        {
+          "type": "header",
+          "content": "Number animation"
+        },
+        {
+          "type": "paragraph",
+          "content": "Only number can be animated. Dots, commas and spaces can be used as separators."
+        },
+        {
+          "type": "checkbox",
+          "id": "animate_impact_text",
+          "label": "Show count up animation",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "animate_impact_text_duration",
+          "label": "Count up duration",
+          "min": 0.5,
+          "max": 5,
+          "step": 0.1,
+          "unit": "s",
+          "default": 2
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "group": "t:sections.all.button.button_style.group__1.label",
+          "value": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "group": "t:sections.all.button.button_style.group__1.label",
+          "value": "secondary",
+          "label": "t:sections.all.button.button_style.options__2.label"
+        },
+        {
+          "group": "t:sections.all.button.button_style.group__1.label",
+          "value": "tertiary",
+          "label": "t:sections.all.button.button_style.options__3.label"
+        },
+        {
+          "group": "t:sections.all.button.button_style.group__2.label",
+          "value": "simple",
+          "label": "t:sections.all.button.button_style.options__4.label"
+        },
+        {
+          "group": "t:sections.all.button.button_style.group__2.label",
+          "value": "simple_secondary",
+          "label": "t:sections.all.button.button_style.options__5.label"
+        },
+        {
+          "group": "t:sections.all.button.button_style.group__2.label",
+          "value": "simple_link",
+          "label": "t:sections.all.button.button_style.options__6.label"
+        }
+      ],
+      "default": "primary",
+      "label": "t:sections.all.button.button_style.label"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "counter_text_color",
+      "label": "Count up text"
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_text_color",
+      "label": "Sub heading text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Count up text",
+      "blocks": [
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

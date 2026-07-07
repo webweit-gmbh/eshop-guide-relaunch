@@ -1,0 +1,108 @@
+.disclosure {
+  position: relative;
+}
+
+.disclosure__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.disclosure__button:hover span,
+.disclosure__button:hover .icon {
+  opacity: 0.6;
+}
+
+.disclosure__list {
+  position: absolute;
+  bottom: 100%;
+  max-width: 25rem;
+  min-width: 100%;
+  width: max-content;
+  min-height: 8.2rem;
+  max-height: 19rem;
+  padding: 1.2rem;
+  color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-background-input));
+  border-radius: 1.2rem;
+  transform: translateY(-1rem);
+  z-index: 2;
+  overflow-y: auto;
+}
+.disclosure__list::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.disclosure__list::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-border));
+  border-radius: 2rem;
+}
+
+.disclosure__list .link {
+  padding: 1rem 2rem;
+  line-height: var(--font-body-line-height);
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  letter-spacing: calc(var(--font-body-letter-spacing) * 0.1);
+  text-transform: var(--font-body-text-transform);
+  border-radius: 0.6rem;
+  transition: background var(--duration-default);
+}
+.disclosure__list .link span {
+  gap: 0.4rem;
+}
+.disclosure__list .link:hover {
+  background-color: rgb(var(--color-foreground), 0.05);
+}
+
+.disclosure__item {
+  position: relative;
+}
+
+.disclosure__link {
+  display: block;
+  padding: 0.5rem 2.2rem;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.disclosure__link > span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#FooterLanguageList .disclosure__link > span {
+  display: inline;
+  width: unset;
+}
+
+.disclosure__link--active span::after {
+  width: 100%;
+}
+
+.localization-selector.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.localization-selector.link .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+.localization-selector.link span,
+.localization-selector.link .icon {
+  transition: opacity var(--duration-default);
+}
+.localization-selector.link .icon-caret {
+  flex: none;
+}

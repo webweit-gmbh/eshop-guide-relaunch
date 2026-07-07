@@ -1,0 +1,122 @@
+.video-banner.container .video-banner__wrapper {
+  padding-inline: 2rem;
+}
+@media screen and (min-width: 750px) {
+  .video-banner.container .video-banner__wrapper {
+    padding-inline: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-banner.container .video-banner__wrapper {
+    padding-inline: 6.4rem;
+  }
+}
+.video-banner__wrapper {
+  position: relative;
+  z-index: 2;
+  padding-block: 2rem;
+}
+@media screen and (min-width: 750px) {
+  .video-banner__wrapper {
+    padding-block: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-banner__wrapper {
+    padding-block: 6.4rem;
+  }
+}
+.video-banner__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+@media screen and (min-width: 990px) {
+  .video-banner__column--column {
+    flex-direction: column;
+    max-width: 45rem;
+  }
+}
+.video-banner__column--center {
+  text-align: center;
+  margin: 0 auto;
+}
+.video-banner__column--center .video-banner__column {
+  align-items: center;
+}
+.video-banner .banner__media {
+  overflow: visible;
+}
+.video-banner__subheading {
+  margin: 0;
+}
+.video-banner__title {
+  margin: 0;
+}
+.video-banner__titles + .video-banner__description {
+  margin: 0;
+}
+.video-banner__button {
+  margin-top: 0.8rem;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.banner--container {
+  padding-inline: 0;
+}
+@media screen and (min-width: 750px) {
+  .banner {
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  }
+  .banner--container {
+    padding-inline: 0;
+    border-radius: 0;
+  }
+}
+.banner--no-video {
+  flex-direction: row;
+  align-items: center;
+}
+.banner__media {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 750px) {
+  .banner__media {
+    position: absolute;
+    height: 100%;
+  }
+}
+.banner__media--cover video {
+  object-fit: cover;
+}
+.banner__overlay {
+  display: none !important;
+}
+@media screen and (min-width: 750px) {
+  .banner__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block !important;
+    z-index: 1;
+  }
+}
+
+.banner:not(:last-child) {
+  margin-bottom: 2.4rem;
+}

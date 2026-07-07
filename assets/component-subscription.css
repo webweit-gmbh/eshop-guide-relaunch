@@ -1,0 +1,17 @@
+.subscription {
+  max-width: 48rem;
+}
+.subscription__inner {
+  position: relative;
+  border-radius: var(--border-radius-button);
+}
+.subscription__button {
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  transform: translateY(-50%);
+}
+.subscription .field input[type=email] {
+  padding-right: 11rem;
+  min-height: 6rem;
+}

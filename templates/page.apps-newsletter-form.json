@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "logo_list_FCzJHB": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_iqfHip": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "https://www.eshop-guide.de/pages/go-idealo-web",
+            "image_1": "shopify://shop_images/idealo_Logo_blue.png",
+            "image_width": 160
+          }
+        },
+        "logo_9jXGKX": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": false,
+            "link": "https://www.eshop-guide.de/pages/go-lxo-web",
+            "image_1": "shopify://shop_images/Lexware_Office_Logo.png",
+            "image_width": 160
+          }
+        },
+        "logo_wCEXNR": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "https://www.eshop-guide.de/pages/go-sev-web",
+            "image_1": "shopify://shop_images/sevdesk_Logo.png",
+            "image_width": 200
+          }
+        },
+        "logo_mErjwg": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "https://www.eshop-guide.de/pages/go-dhl-web",
+            "image_1": "shopify://shop_images/DHL_Logo_89288f43-7168-434c-b20d-1240c68ee27c.png",
+            "image_width": 300
+          }
+        },
+        "logo_Ammg9q": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Widerruf_Button_Logo_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_bDMFzY": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "https://www.eshop-guide.de/pages/go-b2b-web",
+            "image_1": "shopify://shop_images/B2B_Europe_Logo.png",
+            "image_width": 130
+          }
+        }
+      },
+      "block_order": [
+        "logo_iqfHip",
+        "logo_9jXGKX",
+        "logo_wCEXNR",
+        "logo_mErjwg",
+        "logo_Ammg9q",
+        "logo_bDMFzY"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "vertical-carousel",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle4",
+        "scribble_stroke_width": 7,
+        "scribble_color": "#ffffff",
+        "scribble_size": 118,
+        "scribble_top": 50,
+        "heading": "#scribble-start#Shopify Apps #scribble-end#, die deinen Alltag einfacher machen.",
+        "heading_tag": "h1",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Wir entwickeln Apps für Shopify-Händler:innen – nahtlos integriert, DSGVO-konform und mit echtem Support aus Deutschland.",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 3000,
+        "speed_slider_2": 4000,
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "17822062482d179a98": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_rEaRt6": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-RPesC4\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_rEaRt6"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "include_margins": true
+      }
+    },
+    "rich_text_fwtgqk": {
+      "type": "rich-text",
+      "blocks": {
+        "button_dEAG3w": {
+          "type": "button",
+          "settings": {
+            "button_label": "Erfahre mehr über unsere Apps.",
+            "button_link": "shopify://pages/shopify-apps",
+            "button_style": "primary",
+            "placement": "left"
+          }
+        }
+      },
+      "block_order": [
+        "button_dEAG3w"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "logo_list_FCzJHB",
+    "main",
+    "17822062482d179a98",
+    "rich_text_fwtgqk"
+  ]
+}

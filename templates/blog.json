@@ -1,0 +1,254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_6HKjiR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_JET6fK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Shopify-Wissenmaschine",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_XXFXPk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Eshop Blog: Das größte Shopify-Wissen im DACH",
+            "heading_tag": "h1",
+            "heading_size": "large"
+          }
+        },
+        "text_fkynkp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entdecke aktuelle Blogbeiträge, praktische Guides und die besten Shopify & E-Commerce-Tipps von führenden Expert:innen der Branche. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JET6fK",
+        "heading_XXFXPk",
+        "text_fkynkp"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "aside": {
+          "type": "aside",
+          "settings": {
+            "informations_show": false,
+            "divider_color": "#e6e8e9",
+            "information_heading_1": "",
+            "information_value_1": "",
+            "information_heading_2": "",
+            "information_value_2": "",
+            "information_heading_3": "",
+            "information_value_3": "",
+            "information_heading_4": "",
+            "information_value_4": "",
+            "information_heading_5": "",
+            "information_value_5": "",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "",
+            "information_value_7": "",
+            "information_heading_8": "",
+            "information_value_8": "",
+            "information_heading_9": "",
+            "information_value_9": "",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": true,
+            "posts_heading": "",
+            "posts_blog": "",
+            "tags_show": true,
+            "tags_heading": "Beliebte Kategorien",
+            "newsletter_show": false,
+            "color_scheme": "",
+            "newsletter_heading": "",
+            "newsletter_description": "",
+            "button_style": "primary",
+            "banner_show": false,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Heading",
+            "banner_color_scheme": "",
+            "banner_label": "Link label",
+            "banner_link": "",
+            "cta_show": true,
+            "cta_background_color": "#d8f6ff",
+            "cta_heading": "E-Commerce einfach gemacht",
+            "cta_description": "<p>Zeit zum Wechseln oder Optimieren? Oder benötigst du zunächst eine realistische Einschätzung von Aufwand, Risiken und Chancen? In diesen Fällen helfen dir unsere Eshop Guides weiter.</p>",
+            "show_button_1": true,
+            "button_label_1": "Einfach Termin vereinbaren",
+            "button_link_1": "#contact",
+            "button_style_1": "simple",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "aside"
+      ],
+      "settings": {
+        "custom_blog": "shopify-deutschland",
+        "posts_per_page": 10,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_tag": "h1",
+        "heading_size": "h2",
+        "text": "",
+        "text_align": "center",
+        "filter_tags": "",
+        "enable_featured_posts": true,
+        "count_posts": 3,
+        "enable_navigation": true,
+        "post_layout": "plain",
+        "featured_image_ratio": "landscape",
+        "featured_show_tags": true,
+        "featured_show_date": false,
+        "featured_show_author": false,
+        "featured_show_excerpt": true,
+        "card_color_scheme": "",
+        "background_card": true,
+        "image_ratio": "landscape",
+        "show_image": true,
+        "show_logo": false,
+        "show_tags": true,
+        "tags_on_image": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "padding_top": "no-indent",
+        "padding_bottom": "l"
+      }
+    },
+    "image_with_text_enmcqL": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_bAYcmW": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bAYcmW"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Richtig Lust mit einem Eshop Guide zu sprechen?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Du hast Fragen, Anregungen oder einen Projektwunsch? Dominik steht schon bereit und freut sich auf deine Kontaktaufnahme. </p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Dominik_6fa9a078-5d7d-45dd-9223-1e263782e505.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "Some text",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Dominik Löwisch-Rückstein ",
+        "additional_custom_text": "Shopify Experte",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach schreiben.",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "rich_text_6HKjiR",
+    "main",
+    "image_with_text_enmcqL"
+  ]
+}

@@ -1,0 +1,122 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_d6AYJj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_b3yA39": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Wir melden uns innerhalb von 24 Stunden zurück.",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_jj3emL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Einfach kontaktiert, schnell geantwortet.",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_jaNgwm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir haben keine Karteileichen, unser Team ist auf Zack: Schick uns dein Anliegen, und wir antworten in spätestens einem Tag (Mo. – Fr.).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_b3yA39",
+        "heading_jj3emL",
+        "text_jaNgwm"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "position": "center",
+        "color_scheme": "",
+        "header_overlay": false,
+        "header_transparent": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Kontaktformular",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "heading_form": "",
+        "heading_form_size": "h5",
+        "text_form": "",
+        "additional_text": "Additional text for contact form.",
+        "button_style": "primary",
+        "overlay_opacity": 0.5,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "contact_pipedrive_DUhtcU": {
+      "type": "contact-pipedrive",
+      "settings": {
+        "pipedrive_id": "310imvNg3a1iWT8QLQoCGCYbfAQMBCgG8aNwltZxg5mDjCEL6HChKjOlceukDwsDx",
+        "section_title": "",
+        "heading_tag": "h2",
+        "text": "",
+        "heading_size": "h3",
+        "text_size": "normal"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_d6AYJj",
+    "form",
+    "contact_pipedrive_DUhtcU"
+  ]
+}

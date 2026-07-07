@@ -1,0 +1,3239 @@
+{{ 'section-pricing-table.css' | asset_url | stylesheet_tag }}
+
+{% render 'anchor', anchor_id: section.settings.anchor_id %}
+
+{%- style -%}
+  {% render 'section-padding' %}
+  {% render 'section-margin' %}
+  #shopify-section-{{ section.id }} .pricing-table__item-list ul{
+    gap:.4rem;
+  }
+  #shopify-section-{{ section.id }} .pricing-table__item-list ul li{
+    display:flex;
+  }
+
+  /* Tabs style */
+  #shopify-section-{{ section.id }} .tab-button-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #shopify-section-{{ section.id }} .tab-button {
+    color:{{ section.settings.btn_text_color }};
+    border-radius: 10rem;
+    border: solid {{ section.settings.btn_border_color }} 1px;
+    padding: .5rem 2rem;
+    background-color:{{ section.settings.btn_bg }};
+  }
+
+  #shopify-section-{{ section.id }} .tab-button-active {
+    border-radius: 10rem;
+    background-color: {{ section.settings.btn_active_bg }};
+    padding: .5rem 2rem;
+    color:{{ section.settings.btn_active_text_color }};
+  }
+
+  #shopify-section-{{ section.id }} .tab-content{
+    height:0 !important;
+    visibility: hidden;
+  }
+
+  #shopify-section-{{ section.id }} .pricing-tab__item-title {
+    font-weight: bolder;
+    font-size: calc(var(--font-body-scale) * 1.5rem);
+  }
+
+  #shopify-section-{{ section.id }} .pricing-tab__items {
+    background: transparent !important;
+  }
+
+  #shopify-section-{{ section.id }} .carousel-cell {
+    width: 30%;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    margin:1.5%;
+    box-shadow:none;
+  }
+  #shopify-section-{{ section.id }} .highlight-border{
+    border: solid {{ section.settings.tab_border_color }} 1px;
+  }
+
+  #shopify-section-{{ section.id }} .section-text-wrapper{
+    padding: 2rem;
+  }
+
+  {% if section.settings.header_min_height > 0 %}
+    @media screen and (min-width: 576px) {
+      #shopify-section-{{ section.id }} .pricing-table__item-header {
+        min-height: {{ section.settings.header_min_height }}px;
+      }
+    }
+  {% endif %}
+
+  @media only screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .carousel-cell {
+      width: 90%;
+      margin:5%;
+    }
+  }
+{%- endstyle -%}
+
+<div class="pricing-table color-{{ section.settings.color_scheme }} background section-{{ section.id }}-padding
+  {% if section.settings.enable_border %} section-border {% if section.settings.border_full %} section-border-full {% endif %} {% endif %}" style="overflow: visible;">
+  <div class="container" {% if section.settings.enable_fullscreen %}style="padding: 0;"{% endif %}>
+    <div class="section-text-wrapper">
+    {% render 'section-text',
+      section: section,
+      class: 'pricing-table',
+      text_align: section.settings.text_align
+    %}
+   </div>
+    <div class="content pricing-table__content">
+      <div class="pricing-tab-container">
+        {% comment %} Tab Nav {% endcomment %}
+        <div class="tab-button-wrapper">
+          {% assign index = 0 %}
+          {% for block in section.blocks %}
+            {% if block.type == "tab" and block.settings.title != blank %}
+              <a class="button {% if index == 0 %}tab-button-active{% else %}tab-button{% endif %}" data-tab="tab{{ forloop.index }}">
+                {{ block.settings.title }}
+              </a>
+              {% assign index = index | append : 1 %}
+            {% else %}
+              {% continue %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% comment %} Tab Nav {% endcomment %}
+
+        {% comment %} Tab Body {% endcomment %}
+        <div class="tab-folder">
+          {% assign index = 0 %}
+          {% for block in section.blocks %}
+            {% if block.type == "tab" and block.settings.title != blank %}
+              {% assign id = block.settings.id %}
+              <div id="tab{{ forloop.index }}"  class="tab {% if index != 0  %}tab-content{% endif %}">
+                <div class="pricing-tab__items carousel" data-flickity='{ "groupCells": true, "prevNextButtons": false, "pageDots": false }'>
+                  {% for block in section.blocks %}
+                    {% if block.type == "price" or  block.type == "custom"  %}
+                      {% if block.settings.id == id %}
+                        {% style %}
+                          #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }}  a.pricing-table__button{
+                            margin-top:2rem;
+                            width:100%;
+                            opacity:1;
+                            background-color: {{ block.settings.button_background }};
+                            color: {{ block.settings.button_text_color }} !important;
+                          }
+                          #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }}  a.pricing-table2__button{
+                            margin-top:2rem;
+                            width:100%;
+                            opacity:1;
+                            background-color: {{ block.settings.button_background2 }};
+                            color: {{ block.settings.button_text_color2 }} !important;
+                          }
+                          #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }}{
+                            padding: 2.4rem 0;
+                          }
+                          #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }} .pricing-table__badge{
+                            background-color: {{ block.settings.badge_bg }};
+                            color: {{ block.settings.badge_color }};
+                            font-weight: 500;
+                            top:4.8rem;
+                          }
+                          {% if block.settings.heading_icon != "none" or block.settings.heading_svg_icon != "none" %}
+                            #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }} .pricing-table__item-price {
+                              display: grid;
+                              grid-template-columns: 12% 88%;
+                            }
+                          {% endif %}
+                          {% if block.settings.button_style == "simple_link"%}
+                            #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }} .pricing-table2__button {
+                              justify-content: center;
+                              min-height: 4.8rem;
+                              background-color: white !important;
+                            }
+                          {% endif %}
+                          {% if block.settings.button_style1 == "simple_link"%}
+                            #shopify-section-{{ section.id }} .carousel-cell-{{ block.id }} .pricing-table__button {
+                              justify-content: center;
+                              min-height: 4.8rem;
+                              background-color: white !important;
+                            }
+                          {% endif %}
+                        {% endstyle %}
+                        <div class="carousel-cell carousel-cell-{{ block.id }} pricing-table__item pricing-table__item_shadow  color-{{ block.settings.color_scheme }} {% if block.settings.highlight %} highlight-border {% endif %}" >
+                          <div class="pricing-table__item-header p-2_4">
+                            {% if block.settings.badge_text != blank %}
+                              <span class="pricing-table__badge subtitle subtitle--secondary">
+                                    {% if block.settings.icon != 'none' %}
+                                      <i class="icon icon-pack icon-{{ block.settings.badge_icon }}"></i>
+                                    {% endif %}
+                                {{ block.settings.badge_text }}
+                              </span>
+                            {% endif %}
+                            {% if block.settings.heading_price != blank %}
+                              <{{ block.settings.heading_tag }} class="title pricing-table__item-title pricing-tab__item-title {% if block.settings.badge_text != blank %} pricing-table__item-title_with-badge {% endif %}">
+                                {{ block.settings.heading_price }}
+                              </{{ block.settings.heading_tag }}>
+                            {% endif %}
+                            {% if block.settings.heading != blank %}
+                              <div style="gap: 10px;" class="pricing-table__item-price mt-4 {{ section.settings.heading_size_price }}
+                                {% if block.settings.color_scheme.settings.color_accent_gradient != empty and block.type == 'custom' %} text-gradient {% endif %}">                         
+                                {% if block.settings.heading_icon != "none" or block.settings.heading_svg_icon != "none" %}
+                                  <div class="icon-head">
+                                    {% style %}
+                                      .icon-head {
+                                        justify-content: center;
+                                        display: flex; 
+                                        width: 40px; 
+                                        height: 40px; 
+                                        border-radius: 5px; 
+                                        background-color: {{ block.settings.icon_background }};
+                                        align-items: center;
+                                      }
+                                    {% endstyle %}
+                                    {%
+                                      render "icon-selector",
+                                      icon_type:block.settings.heading_icon_type,
+                                      icon_pack_icon: block.settings.heading_icon,
+                                      svg_icon: block.settings.heading_svg_icon,
+                                      width: "24",
+                                      height: "24",
+                                      color: block.settings.icon_color,
+                                      section: block
+                                    %}
+                                  </div>
+                                {% endif %}
+                                {{ block.settings.heading }}
+                              </div>
+                            {% endif %}
+                            {% if block.settings.description != blank %}
+                              <p class="pricing-table__item-description">
+                                {{ block.settings.description }}
+                              </p>
+                            {% endif %}
+                            <div class="spacer"></div>
+                            {% if block.settings.show_button or block.settings.show_button2 %}
+                              <div class="button-container">
+                                {%- if block.settings.show_button -%}
+                                  {% render 'button',
+                                    block_id: block.id,
+                                    section_id: section.id,
+                                    link: block.settings.button_link,
+                                    label: block.settings.button_label,
+                                    style: block.settings.button_style1,
+                                    class: 'pricing-table'
+                                  %}
+                                {% endif %}
+                                {%- if block.settings.show_button2 -%}
+                                  {% render 'button',
+                                    block_id: block.id,
+                                    section_id: section.id,
+                                    link: block.settings.button_link2,
+                                    label: block.settings.button_label2,
+                                    style: block.settings.button_style,
+                                    class: 'pricing-table2'
+                                  %}
+                                {% endif %}
+                              </div>
+                            {% endif %}
+                          </div>
+
+
+                          {% if block.type == 'price' and block.settings.features_list != blank %}
+                            <div class="pricing-table__item-list p-2_4 {% if block.settings.footer_text != blank %}bottom-border-line{% endif %}">
+                              {% if block.settings.features_list_heading != blank %}
+                                <p class="pricing-table__item-description">{{ block.settings.features_list_heading }}</p>
+                              {% endif %}
+                              {{ block.settings.features_list }}
+                            </div>
+                          {% endif %}
+
+                          {% if block.settings.footer_text != blank %}      
+                          <div style="padding: 0 2.4rem;">
+                              <p class="pricing-table__item-description">
+                                {{ block.settings.footer_text }}
+                              </p>
+                          </div>
+                          {% endif %}
+
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+
+              </div>
+              {% assign index = index | append : 1 %}
+            {% else %}
+              {% continue %}
+            {% endif %}
+            <script>
+              (() => {
+                function registerEventListeners() {
+                  setTimeout(function () {
+
+
+                const carouselCells = document.querySelectorAll('#tab{{ forloop.index }} .carousel-cell');
+                var HighestTotalCellHeight = 0;
+                var HighestMargin = 0;
+                  
+                if (carouselCells) {
+                  // Find the highest total height of the carousel cells
+                  carouselCells.forEach((cell) => {
+                    let cellHeight = cell.offsetHeight;
+                    if (HighestTotalCellHeight < cellHeight) {
+                      HighestTotalCellHeight = cellHeight;
+                    }
+                  });
+
+                  // Set the height of the carousel cells to the highest total height
+                  carouselCells.forEach((cell) => {
+                    
+                    let cellHeight = cell.offsetHeight;
+                    if (HighestTotalCellHeight > cellHeight) {
+                      cell.style.height = `${HighestTotalCellHeight}px`;
+                      window.dispatchEvent(new Event('resize'));
+                    }
+                  });
+                }
+                  },1000)
+                }
+                document.addEventListener('DOMContentLoaded', registerEventListeners);
+                document.addEventListener('shopify:section:load', registerEventListeners);
+              })();
+            </script>
+          {% endfor %}
+        </div>
+        {% comment %} Tab Body {% endcomment %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let tab_buttons = document.querySelectorAll("#shopify-section-{{ section.id }} .tab-button-wrapper a.button");
+  tab_buttons.forEach(button => {
+    button.addEventListener("click",function () {
+      resetTabButtons(tab_buttons);
+      activateButton(button);
+
+      let tabs = document.querySelectorAll("#shopify-section-{{ section.id }} .tab-folder div.tab");
+      resetTabs(tabs);
+
+      let tabId = button.getAttribute("data-tab");
+      let tab = document.querySelector("#shopify-section-{{ section.id }} .tab-folder #" + tabId);
+      activateTab(tab);
+    })
+  })
+</script>
+
+{% schema %}
+{
+  "name": "Pricing tabs",
+  "tag": "section",
+  "class": "pricing-table-section",
+  "enabled_on": {
+    "templates": ["*"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-1",
+      "label": "t:sections.all.color_scheme.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_fullscreen",
+      "label": "Full screen",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_border",
+      "label": "t:sections.all.enable_border.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "border_full",
+      "label": "t:sections.all.border_full.label",
+      "default": false
+    },
+    {
+      "type": "number",
+      "id": "header_min_height",
+      "label": "min-height Header (px)",
+      "default": 500,
+      "info": "use 0 to disable"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.all.subheading.label"
+    },
+    {
+      "type": "select",
+      "id": "subheading_tag",
+      "label": "Subheading tag",
+      "options": [
+        { "value": "p", "label": "p" },
+        { "value": "h1", "label": "h1" },
+        { "value": "h2", "label": "h2" },
+        { "value": "h3", "label": "h3" },
+        { "value": "h4", "label": "h4" },
+        { "value": "h5", "label": "h5" },
+        { "value": "h6", "label": "h6" }
+      ],
+      "default": "p"
+    },
+    {
+      "type": "select",
+      "id": "subheading_style",
+      "options": [
+        {
+          "value": "subtitle",
+          "label": "t:sections.all.subheading_style.options__1.label"
+        },
+        {
+          "value": "subtitle subtitle--secondary",
+          "label": "t:sections.all.subheading_style.options__2.label"
+        }
+      ],
+      "default": "subtitle",
+      "label": "t:sections.all.subheading_style.label"
+    },
+    {
+      "type": "select",
+      "id": "subheading_icon_type",
+      "label":"t:sections.all.subheading_icon.label",
+      "info":"Select the icon type you want to use",
+      "default": "icon_pack",
+      "options": [
+        {
+          "value": "icon_pack",
+          "label": "Theme icons"
+        },
+        {
+          "value": "svg",
+          "label": "Custom icons"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "subheading_icon",
+      "default": "none",
+      "label": "Theme icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.icon_pack.options__1.label"
+        },
+        {
+          "value": "arrow-bar",
+          "label": "t:sections.all.icon_pack.options__2.label"
+        },
+        {
+          "value": "bag-1",
+          "label": "t:sections.all.icon_pack.options__3.label"
+        },
+        {
+          "value": "bag-2",
+          "label": "t:sections.all.icon_pack.options__4.label"
+        },
+        {
+          "value": "bag-3",
+          "label": "t:sections.all.icon_pack.options__119.label"
+        },
+        {
+          "value": "bar-chart",
+          "label": "t:sections.all.icon_pack.options__5.label"
+        },
+        {
+          "value": "bars-upward",
+          "label": "t:sections.all.icon_pack.options__6.label"
+        },
+        {
+          "value": "baseball",
+          "label": "t:sections.all.icon_pack.options__7.label"
+        },
+        {
+          "value": "battery-1",
+          "label": "t:sections.all.icon_pack.options__8.label"
+        },
+        {
+          "value": "battery-2",
+          "label": "t:sections.all.icon_pack.options__9.label"
+        },
+        {
+          "value": "battery-3",
+          "label": "t:sections.all.icon_pack.options__10.label"
+        },
+        {
+          "value": "book",
+          "label": "t:sections.all.icon_pack.options__11.label"
+        },
+        {
+          "value": "card",
+          "label": "t:sections.all.icon_pack.options__12.label"
+        },
+        {
+          "value": "card-holder",
+          "label": "t:sections.all.icon_pack.options__13.label"
+        },
+        {
+          "value": "chart",
+          "label": "t:sections.all.icon_pack.options__14.label"
+        },
+        {
+          "value": "chart-2",
+          "label": "t:sections.all.icon_pack.options__113.label"
+        },
+        {
+          "value": "chart-3",
+          "label": "t:sections.all.icon_pack.options__114.label"
+        },
+        {
+          "value": "chats",
+          "label": "t:sections.all.icon_pack.options__15.label"
+        },
+        {
+          "value": "check-1",
+          "label": "t:sections.all.icon_pack.options__16.label"
+        },
+        {
+          "value": "check-2",
+          "label": "t:sections.all.icon_pack.options__17.label"
+        },
+        {
+          "value": "check-3",
+          "label": "t:sections.all.icon_pack.options__18.label"
+        },
+        {
+          "value": "check-4",
+          "label": "t:sections.all.icon_pack.options__19.label"
+        },
+        {
+          "value": "circle",
+          "label": "t:sections.all.icon_pack.options__20.label"
+        },
+        {
+          "value": "circles",
+          "label": "t:sections.all.icon_pack.options__21.label"
+        },
+        {
+          "value": "clock-1",
+          "label": "t:sections.all.icon_pack.options__115.label"
+        },
+        {
+          "value": "clock-2",
+          "label": "t:sections.all.icon_pack.options__116.label"
+        },
+        {
+          "value": "close",
+          "label": "t:sections.all.icon_pack.options__22.label"
+        },
+        {
+          "value": "cloud-server",
+          "label": "t:sections.all.icon_pack.options__23.label"
+        },
+        {
+          "value": "computer",
+          "label": "t:sections.all.icon_pack.options__24.label"
+        },
+        {
+          "value": "computer-mouse",
+          "label": "t:sections.all.icon_pack.options__120.label"
+        },
+        {
+          "value": "confetti",
+          "label": "t:sections.all.icon_pack.options__25.label"
+        },
+        {
+          "value": "delivery",
+          "label": "t:sections.all.icon_pack.options__26.label"
+        },
+        {
+          "value": "delivery-box",
+          "label": "t:sections.all.icon_pack.options__27.label"
+        },
+        {
+          "value": "devices",
+          "label": "t:sections.all.icon_pack.options__28.label"
+        },
+        {
+          "value": "directions",
+          "label": "t:sections.all.icon_pack.options__29.label"
+        },
+        {
+          "value": "dumbbell",
+          "label": "t:sections.all.icon_pack.options__30.label"
+        },
+        {
+          "value": "eye",
+          "label": "t:sections.all.icon_pack.options__31.label"
+        },
+        {
+          "value": "facebook",
+          "label": "t:sections.all.icon_pack.options__32.label"
+        },
+        {
+          "value": "file-1",
+          "label": "t:sections.all.icon_pack.options__33.label"
+        },
+        {
+          "value": "file-2",
+          "label": "t:sections.all.icon_pack.options__34.label"
+        },
+        {
+          "value": "flag",
+          "label": "t:sections.all.icon_pack.options__35.label"
+        },
+        {
+          "value": "folder-1",
+          "label": "t:sections.all.icon_pack.options__36.label"
+        },
+        {
+          "value": "folder-2",
+          "label": "t:sections.all.icon_pack.options__37.label"
+        },
+        {
+          "value": "food",
+          "label": "t:sections.all.icon_pack.options__38.label"
+        },
+        {
+          "value": "hand-1",
+          "label": "t:sections.all.icon_pack.options__39.label"
+        },
+        {
+          "value": "hand-2",
+          "label": "t:sections.all.icon_pack.options__40.label"
+        },
+        {
+          "value": "hand-3",
+          "label": "t:sections.all.icon_pack.options__41.label"
+        },
+        {
+          "value": "headphones",
+          "label": "t:sections.all.icon_pack.options__42.label"
+        },
+        {
+          "value": "instagram",
+          "label": "t:sections.all.icon_pack.options__43.label"
+        },
+        {
+          "value": "laptop-1",
+          "label": "t:sections.all.icon_pack.options__44.label"
+        },
+        {
+          "value": "laptop-2",
+          "label": "t:sections.all.icon_pack.options__45.label"
+        },
+        {
+          "value": "leaf",
+          "label": "t:sections.all.icon_pack.options__46.label"
+        },
+        {
+          "value": "lightning-bolt-1",
+          "label": "t:sections.all.icon_pack.options__47.label"
+        },
+        {
+          "value": "lightning-bolt-2",
+          "label": "t:sections.all.icon_pack.options__48.label"
+        },
+        {
+          "value": "like",
+          "label": "t:sections.all.icon_pack.options__49.label"
+        },
+        {
+          "value": "link",
+          "label": "t:sections.all.icon_pack.options__50.label"
+        },
+        {
+          "value": "lock-1",
+          "label": "t:sections.all.icon_pack.options__51.label"
+        },
+        {
+          "value": "lock-2",
+          "label": "t:sections.all.icon_pack.options__52.label"
+        },
+        {
+          "value": "logout",
+          "label": "t:sections.all.icon_pack.options__53.label"
+        },
+        {
+          "value": "luggage",
+          "label": "t:sections.all.icon_pack.options__54.label"
+        },
+        {
+          "value": "mark",
+          "label": "t:sections.all.icon_pack.options__55.label"
+        },
+        {
+          "value": "medicine",
+          "label": "t:sections.all.icon_pack.options__56.label"
+        },
+        {
+          "value": "microphone",
+          "label": "t:sections.all.icon_pack.options__57.label"
+        },
+        {
+          "value": "moon",
+          "label": "t:sections.all.icon_pack.options__58.label"
+        },
+        {
+          "value": "pencil",
+          "label": "t:sections.all.icon_pack.options__59.label"
+        },
+        {
+          "value": "phone-1",
+          "label": "t:sections.all.icon_pack.options__60.label"
+        },
+        {
+          "value": "phone-2",
+          "label": "t:sections.all.icon_pack.options__61.label"
+        },
+        {
+          "value": "phone-3",
+          "label": "t:sections.all.icon_pack.options__62.label"
+        },
+        {
+          "value": "phone-4",
+          "label": "t:sections.all.icon_pack.options__63.label"
+        },
+        {
+          "value": "pinterest",
+          "label": "t:sections.all.icon_pack.options__64.label"
+        },
+        {
+          "value": "plug",
+          "label": "t:sections.all.icon_pack.options__65.label"
+        },
+        {
+          "value": "presentation-1",
+          "label": "t:sections.all.icon_pack.options__66.label"
+        },
+        {
+          "value": "presentation-2",
+          "label": "t:sections.all.icon_pack.options__67.label"
+        },
+        {
+          "value": "pulse",
+          "label": "t:sections.all.icon_pack.options__68.label"
+        },
+        {
+          "value": "recycle",
+          "label": "t:sections.all.icon_pack.options__69.label"
+        },
+        {
+          "value": "rocket",
+          "label": "t:sections.all.icon_pack.options__70.label"
+        },
+        {
+          "value": "search",
+          "label": "t:sections.all.icon_pack.options__71.label"
+        },
+        {
+          "value": "sending",
+          "label": "t:sections.all.icon_pack.options__117.label"
+        },
+        {
+          "value": "server-1",
+          "label": "t:sections.all.icon_pack.options__72.label"
+        },
+        {
+          "value": "server-2",
+          "label": "t:sections.all.icon_pack.options__73.label"
+        },
+        {
+          "value": "settings",
+          "label": "t:sections.all.icon_pack.options__74.label"
+        },
+        {
+          "value": "shield",
+          "label": "t:sections.all.icon_pack.options__75.label"
+        },
+        {
+          "value": "shopping-basket",
+          "label": "t:sections.all.icon_pack.options__76.label"
+        },
+        {
+          "value": "shuffle",
+          "label": "t:sections.all.icon_pack.options__77.label"
+        },
+        {
+          "value": "snapchat",
+          "label": "t:sections.all.icon_pack.options__78.label"
+        },
+        {
+          "value": "sound-waves",
+          "label": "t:sections.all.icon_pack.options__79.label"
+        },
+        {
+          "value": "speaker",
+          "label": "t:sections.all.icon_pack.options__80.label"
+        },
+        {
+          "value": "squares-1",
+          "label": "t:sections.all.icon_pack.options__81.label"
+        },
+        {
+          "value": "squares-2",
+          "label": "t:sections.all.icon_pack.options__82.label"
+        },
+        {
+          "value": "stack",
+          "label": "t:sections.all.icon_pack.options__83.label"
+        },
+        {
+          "value": "star",
+          "label": "t:sections.all.icon_pack.options__84.label"
+        },
+        {
+          "value": "stopwatch",
+          "label": "t:sections.all.icon_pack.options__85.label"
+        },
+        {
+          "value": "sun",
+          "label": "t:sections.all.icon_pack.options__86.label"
+        },
+        {
+          "value": "tag",
+          "label": "t:sections.all.icon_pack.options__87.label"
+        },
+        {
+          "value": "telephone-tower",
+          "label": "t:sections.all.icon_pack.options__88.label"
+        },
+        {
+          "value": "tik-tok",
+          "label": "t:sections.all.icon_pack.options__89.label"
+        },
+        {
+          "value": "tree",
+          "label": "t:sections.all.icon_pack.options__90.label"
+        },
+        {
+          "value": "trend",
+          "label": "t:sections.all.icon_pack.options__91.label"
+        },
+        {
+          "value": "trophy",
+          "label": "t:sections.all.icon_pack.options__92.label"
+        },
+        {
+          "value": "tumblr",
+          "label": "t:sections.all.icon_pack.options__93.label"
+        },
+        {
+          "value": "tv",
+          "label": "t:sections.all.icon_pack.options__94.label"
+        },
+        {
+          "value": "twitter",
+          "label": "t:sections.all.icon_pack.options__95.label"
+        },
+        {
+          "value": "user-1",
+          "label": "t:sections.all.icon_pack.options__96.label"
+        },
+        {
+          "value": "user-2",
+          "label": "t:sections.all.icon_pack.options__97.label"
+        },
+        {
+          "value": "user-3",
+          "label": "t:sections.all.icon_pack.options__98.label"
+        },
+        {
+          "value": "user-4",
+          "label": "t:sections.all.icon_pack.options__99.label"
+        },
+        {
+          "value": "user-5",
+          "label": "t:sections.all.icon_pack.options__118.label"
+        },
+        {
+          "value": "video",
+          "label": "t:sections.all.icon_pack.options__100.label"
+        },
+        {
+          "value": "vimeo",
+          "label": "t:sections.all.icon_pack.options__101.label"
+        },
+        {
+          "value": "wallet",
+          "label": "t:sections.all.icon_pack.options__102.label"
+        },
+        {
+          "value": "watch",
+          "label": "t:sections.all.icon_pack.options__103.label"
+        },
+        {
+          "value": "water-1",
+          "label": "t:sections.all.icon_pack.options__104.label"
+        },
+        {
+          "value": "water-2",
+          "label": "t:sections.all.icon_pack.options__105.label"
+        },
+        {
+          "value": "water-3",
+          "label": "t:sections.all.icon_pack.options__106.label"
+        },
+        {
+          "value": "wave-1",
+          "label": "t:sections.all.icon_pack.options__107.label"
+        },
+        {
+          "value": "wave-2",
+          "label": "t:sections.all.icon_pack.options__108.label"
+        },
+        {
+          "value": "wifi-1",
+          "label": "t:sections.all.icon_pack.options__109.label"
+        },
+        {
+          "value": "wifi-2",
+          "label": "t:sections.all.icon_pack.options__110.label"
+        },
+        {
+          "value": "window",
+          "label": "t:sections.all.icon_pack.options__111.label"
+        },
+        {
+          "value": "youtube",
+          "label": "t:sections.all.icon_pack.options__112.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "subheading_svg_icon",
+      "default": "none",
+      "label":"Custom icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.icon_pack.options__1.label"
+        },
+        {
+          "value": "icon-EG-cart",
+          "label": "cart"
+        },
+        {
+          "value": "icon-EG-chart",
+          "label": "chart"
+        },
+        {
+          "value": "icon-EG-checkbox",
+          "label": "checkbox"
+        },
+        {
+          "value": "icon-EG-code",
+          "label": "code"
+        },
+        {
+          "value": "icon-EG-graph",
+          "label": "graph"
+        },
+        {
+          "value": "icon-EG-mail",
+          "label": "mail"
+        },
+        {
+          "value": "icon-EG-medal",
+          "label": "medal"
+        },
+        {
+          "value": "icon-EG-migration",
+          "label": "migration"
+        },
+        {
+          "value": "icon-EG-pricetag",
+          "label": "price tag"
+        },
+        {
+          "value": "icon-EG-quality-assurance",
+          "label": "quality assurance"
+        },
+        {
+          "value": "icon-EG-rocket",
+          "label": "rocket"
+        },
+        {
+          "value": "icon-EG-search",
+          "label": "search"
+        },
+        {
+          "value": "icon-EG-storefront",
+          "label": "storefront"
+        },
+                {
+          "value": "icon-EG-attention",
+          "label": "attention"
+        },
+        {
+          "value": "icon-EG-check",
+          "label": "check"
+        },
+        {
+          "value": "icon-EG-done",
+          "label": "done"
+        },
+        {
+          "value": "icon-EG-down",
+          "label": "down"
+        },
+        {
+          "value": "icon-EG-fail",
+          "label": "fail"
+        },
+        {
+          "value": "icon-EG-flag",
+          "label": "flag"
+        },
+        {
+          "value": "icon-EG-happy",
+          "label": "happy"
+        },
+        {
+          "value": "icon-EG-heart",
+          "label": "heart"
+        },
+        {
+          "value": "icon-EG-idea",
+          "label": "idea"
+        },
+        {
+          "value": "icon-EG-jackpot",
+          "label": "jackpot"
+        },
+        {
+          "value": "icon-EG-money",
+          "label": "money"
+        },
+        {
+          "value": "icon-EG-monitor",
+          "label": "monitor"
+        },
+        {
+          "value": "icon-EG-process",
+          "label": "process"
+        },
+        {
+          "value": "icon-EG-repeat",
+          "label": "repeat"
+        },
+        {
+          "value": "icon-EG-shit",
+          "label": "shit"
+        },
+        {
+          "value": "icon-EG-speed",
+          "label": "speed"
+        },
+        {
+          "value": "icon-EG-star",
+          "label": "star"
+        },
+        {
+          "value": "icon-EG-swear",
+          "label": "swear"
+        },
+        {
+          "value": "icon-EG-task",
+          "label": "task"
+        },
+        {
+          "value": "icon-EG-thumb",
+          "label": "thumb"
+        },
+        {
+          "value": "icon-EG-time",
+          "label": "time"
+        },
+        {
+          "value": "icon-EG-unknown",
+          "label": "unknown"
+        },
+        {
+          "value": "icon-NEG-EG-attention",
+          "label": "attention (white)"
+        },
+        {
+          "value": "icon-NEG-EG-check",
+          "label": "check (white)"
+        },
+        {
+          "value": "icon-NEG-EG-done",
+          "label": "done (white)"
+        },
+        {
+          "value": "icon-NEG-EG-down",
+          "label": "down (white)"
+        },
+        {
+          "value": "icon-NEG-EG-fail",
+          "label": "fail (white)"
+        },
+        {
+          "value": "icon-NEG-EG-flag",
+          "label": "flag (white)"
+        },
+        {
+          "value": "icon-NEG-EG-happy",
+          "label": "happy (white)"
+        },
+        {
+          "value": "icon-NEG-EG-heart",
+          "label": "heart (white)"
+        },
+        {
+          "value": "icon-NEG-EG-idea",
+          "label": "idea (white)"
+        },
+        {
+          "value": "icon-NEG-EG-jackpot",
+          "label": "jackpot (white)"
+        },
+        {
+          "value": "icon-NEG-EG-money",
+          "label": "money (white)"
+        },
+        {
+          "value": "icon-NEG-EG-monitor",
+          "label": "monitor (white)"
+        },
+        {
+          "value": "icon-NEG-EG-process",
+          "label": "process (white)"
+        },
+        {
+          "value": "icon-NEG-EG-repeat",
+          "label": "repeat (white)"
+        },
+        {
+          "value": "icon-NEG-EG-shit",
+          "label": "shit (white)"
+        },
+        {
+          "value": "icon-NEG-EG-speed",
+          "label": "speed (white)"
+        },
+        {
+          "value": "icon-NEG-EG-star",
+          "label": "star (white)"
+        },
+        {
+          "value": "icon-NEG-EG-swear",
+          "label": "swear (white)"
+        },
+        {
+          "value": "icon-NEG-EG-task",
+          "label": "task (white)"
+        },
+        {
+          "value": "icon-NEG-EG-thumb",
+          "label": "thumb (white)"
+        },
+        {
+          "value": "icon-NEG-EG-time",
+          "label": "time (white)"
+        },
+        {
+          "value": "icon-NEG-EG-unknown",
+          "label": "unknown (white)"
+        },
+        {
+          "value": "icon-NEG-EG-cart",
+          "label": "cart (white)"
+        },
+        {
+          "value": "icon-NEG-EG-chart",
+          "label": "chart (white)"
+        },
+        {
+          "value": "icon-NEG-EG-checkbox",
+          "label": "checkbox (white)"
+        },
+        {
+          "value": "icon-NEG-EG-code",
+          "label": "code (white)"
+        },
+        {
+          "value": "icon-NEG-EG-graph",
+          "label": "graph (white)"
+        },
+        {
+          "value": "icon-NEG-EG-mail",
+          "label": "mail (white)"
+        },
+        {
+          "value": "icon-NEG-EG-medal",
+          "label": "medal (white)"
+        },
+        {
+          "value": "icon-NEG-EG-migration",
+          "label": "migration (white)"
+        },
+        {
+          "value": "icon-NEG-EG-pricetag",
+          "label": "price tag (white)"
+        },
+        {
+          "value": "icon-NEG-EG-quality-assurance",
+          "label": "quality assurance (white)"
+        },
+        {
+          "value": "icon-NEG-EG-rocket",
+          "label": "rocket (white)"
+        },
+        {
+          "value": "icon-NEG-EG-search",
+          "label": "search (white)"
+        },
+        {
+          "value": "icon-NEG-EG-storefront",
+          "label": "storefront (white)"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color"
+    },
+    {
+      "type": "header",
+      "content": "Heading Scribble",
+      "info": "To use the scribble effect, you need to select the scribbled part of the heading text by '#scribble-start#' and '#scribble-end#'. These Placeholders will get replaced by the scribble effect."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_scribble",
+      "label": "Enable Scribble",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "scribble_style",
+      "label": "Select Scribble Style",
+      "options": [
+        { 
+          "value": "circle1", 
+          "label": "Circle 1" 
+        },
+        { 
+          "value": "circle2", 
+          "label": "Circle 2" 
+        },
+        { 
+          "value": "circle3", 
+          "label": "Circle 3" 
+        },
+        { 
+          "value": "circle4", 
+          "label": "Circle 4" 
+        },
+        { 
+          "value": "lines1", 
+          "label": "Lines 1" 
+        },
+        { 
+          "value": "lines2", 
+          "label": "Lines 2" 
+        },
+        { 
+          "value": "lines3", 
+          "label": "Lines 3" 
+        }
+      ],
+      "default": "circle1"
+    },
+    {
+      "type": "range",
+      "id": "scribble_stroke_width",
+      "min": 0,
+      "max": 50,
+      "default": 10,
+      "step": 1,
+      "label": "Scribble Stroke Width"
+    },
+    {
+      "type": "color",
+      "id": "scribble_color",
+      "label": "Scribble Color",
+      "default": "#222222"
+    },
+    {
+      "type": "range",
+      "id": "scribble_size",
+      "min": 75,
+      "max": 150,
+      "default": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Scribble Size"
+    },
+    {
+      "type": "range",
+      "id": "scribble_top",
+      "min": 25,
+      "max": 125,
+      "default": 50,
+      "step": 1,
+      "unit": "%",
+      "label": "Vertical Scribble Position"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.all.heading.label",
+      "info": "t:sections.all.heading.info"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "p", "label": "p" },
+        { "value": "h1", "label": "h1" },
+        { "value": "h2", "label": "h2" },
+        { "value": "h3", "label": "h3" },
+        { "value": "h4", "label": "h4" },
+        { "value": "h5", "label": "h5" },
+        { "value": "h6", "label": "h6" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_line",
+      "options": [
+        {
+          "value": "simple",
+          "label": "t:sections.all.heading_line.options__1.label"
+        },
+        {
+          "value": "rounded",
+          "label": "t:sections.all.heading_line.options__2.label"
+        },
+        {
+          "value": "background",
+          "label": "t:sections.all.heading_line.options__3.label"
+        },
+        {
+          "value": "none",
+          "label": "t:sections.all.heading_line.options__4.label"
+        }
+      ],
+      "default": "simple",
+      "label": "t:sections.all.heading_line.label"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "t:sections.all.line_color.label",
+      "default": "#1566E0"
+    },
+    {
+      "type": "checkbox",
+      "id": "word_break",
+      "label": "t:sections.all.word_break.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "heading_animation",
+      "options": [
+        {
+          "value": "typewriter",
+          "label": "t:sections.all.heading_animation.options__1.label"
+        },
+        {
+          "value": "rolling",
+          "label": "t:sections.all.heading_animation.options__2.label"
+        },
+        {
+          "value": "appearing",
+          "label": "t:sections.all.heading_animation.options__3.label"
+        },
+        {
+          "value": "none",
+          "label": "t:sections.all.heading_animation.options__4.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.heading_animation.label",
+      "info": "t:sections.all.heading_animation.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "word_break_an",
+      "label": "t:sections.all.word_break_an.label",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.all.text.label"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "t:sections.all.text_align.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.text_align.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.text_align.options__2.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_size_price",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        }
+      ],
+      "default": "h3",
+      "label": "t:sections.pricing-table.heading_size_price.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-margin.header.content"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_top.label"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_bottom.label"
+    },
+    {
+      "type": "header",
+      "content": "Styles"
+    },
+    {
+      "type": "color",
+      "id": "btn_active_bg",
+      "label": "Active Button color",
+      "default":"#f7d2c2"
+    },
+    {
+      "type": "color",
+      "id": "btn_active_text_color",
+      "label": "Active Button text color",
+      "default":"#67737c"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Button Background color",
+      "default":"#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "Button text color",
+      "default":"#67737c"
+    },
+    {
+      "type": "color",
+      "id": "btn_border_color",
+      "label": "Button border color",
+      "default":"#f7d2c2"
+    },
+    {
+      "type": "color",
+      "id": "tab_border_color",
+      "label": "Tab border color",
+      "default":"#d05d26"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Tab",
+          "label": "Tab title"
+        },
+        {
+          "type": "text",
+          "id": "id",
+          "default": "tab_id",
+          "label": "id"
+        }
+      ]
+    },
+    {
+      "type": "price",
+      "name": "t:sections.pricing-table.blocks.price.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight tab",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "id",
+          "default": "tab_id",
+          "label": "Tab id",
+          "info":"Make sure to paste the correct ID for the tab, otherwise it will not display properly."
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "default": "background-2",
+          "label": "t:sections.all.color_scheme.label"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "t:sections.pricing-table.blocks.price.settings.badge_text.label"
+        },
+        {
+					"type": "select",
+					"id": "badge_icon",
+					"options": [
+            {
+              "value": "none",
+              "label": "t:sections.all.icon_pack.options__1.label"
+            },
+            {
+              "value": "arrow-bar",
+              "label": "t:sections.all.icon_pack.options__2.label"
+            },
+            {
+              "value": "bag-1",
+              "label": "t:sections.all.icon_pack.options__3.label"
+            },
+            {
+              "value": "bag-2",
+              "label": "t:sections.all.icon_pack.options__4.label"
+            },
+            {
+              "value": "bar-chart",
+              "label": "t:sections.all.icon_pack.options__5.label"
+            },
+            {
+              "value": "bars-upward",
+              "label": "t:sections.all.icon_pack.options__6.label"
+            },
+            {
+              "value": "baseball",
+              "label": "t:sections.all.icon_pack.options__7.label"
+            },
+            {
+              "value": "battery-1",
+              "label": "t:sections.all.icon_pack.options__8.label"
+            },
+            {
+              "value": "battery-2",
+              "label": "t:sections.all.icon_pack.options__9.label"
+            },
+            {
+              "value": "battery-3",
+              "label": "t:sections.all.icon_pack.options__10.label"
+            },
+            {
+              "value": "book",
+              "label": "t:sections.all.icon_pack.options__11.label"
+            },
+            {
+              "value": "card",
+              "label": "t:sections.all.icon_pack.options__12.label"
+            },
+            {
+              "value": "card-holder",
+              "label": "t:sections.all.icon_pack.options__13.label"
+            },
+            {
+              "value": "chart",
+              "label": "t:sections.all.icon_pack.options__14.label"
+            },
+            {
+              "value": "chats",
+              "label": "t:sections.all.icon_pack.options__15.label"
+            },
+            {
+              "value": "check-1",
+              "label": "t:sections.all.icon_pack.options__16.label"
+            },
+            {
+              "value": "check-2",
+              "label": "t:sections.all.icon_pack.options__17.label"
+            },
+            {
+              "value": "check-3",
+              "label": "t:sections.all.icon_pack.options__18.label"
+            },
+            {
+              "value": "check-4",
+              "label": "t:sections.all.icon_pack.options__19.label"
+            },
+            {
+              "value": "circle",
+              "label": "t:sections.all.icon_pack.options__20.label"
+            },
+            {
+              "value": "circles",
+              "label": "t:sections.all.icon_pack.options__21.label"
+            },
+            {
+              "value": "close",
+              "label": "t:sections.all.icon_pack.options__22.label"
+            },
+            {
+              "value": "cloud-server",
+              "label": "t:sections.all.icon_pack.options__23.label"
+            },
+            {
+              "value": "computer",
+              "label": "t:sections.all.icon_pack.options__24.label"
+            },
+            {
+              "value": "confetti",
+              "label": "t:sections.all.icon_pack.options__25.label"
+            },
+            {
+              "value": "delivery",
+              "label": "t:sections.all.icon_pack.options__26.label"
+            },
+            {
+              "value": "delivery-box",
+              "label": "t:sections.all.icon_pack.options__27.label"
+            },
+            {
+              "value": "devices",
+              "label": "t:sections.all.icon_pack.options__28.label"
+            },
+            {
+              "value": "directions",
+              "label": "t:sections.all.icon_pack.options__29.label"
+            },
+            {
+              "value": "dumbbell",
+              "label": "t:sections.all.icon_pack.options__30.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.all.icon_pack.options__31.label"
+            },
+            {
+              "value": "facebook",
+              "label": "t:sections.all.icon_pack.options__32.label"
+            },
+            {
+              "value": "file-1",
+              "label": "t:sections.all.icon_pack.options__33.label"
+            },
+            {
+              "value": "file-2",
+              "label": "t:sections.all.icon_pack.options__34.label"
+            },
+            {
+              "value": "flag",
+              "label": "t:sections.all.icon_pack.options__35.label"
+            },
+            {
+              "value": "folder-1",
+              "label": "t:sections.all.icon_pack.options__36.label"
+            },
+            {
+              "value": "folder-2",
+              "label": "t:sections.all.icon_pack.options__37.label"
+            },
+            {
+              "value": "food",
+              "label": "t:sections.all.icon_pack.options__38.label"
+            },
+            {
+              "value": "hand-1",
+              "label": "t:sections.all.icon_pack.options__39.label"
+            },
+            {
+              "value": "hand-2",
+              "label": "t:sections.all.icon_pack.options__40.label"
+            },
+            {
+              "value": "hand-3",
+              "label": "t:sections.all.icon_pack.options__41.label"
+            },
+            {
+              "value": "headphones",
+              "label": "t:sections.all.icon_pack.options__42.label"
+            },
+            {
+              "value": "instagram",
+              "label": "t:sections.all.icon_pack.options__43.label"
+            },
+            {
+              "value": "laptop-1",
+              "label": "t:sections.all.icon_pack.options__44.label"
+            },
+            {
+              "value": "laptop-2",
+              "label": "t:sections.all.icon_pack.options__45.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.all.icon_pack.options__46.label"
+            },
+            {
+              "value": "lightning-bolt-1",
+              "label": "t:sections.all.icon_pack.options__47.label"
+            },
+            {
+              "value": "lightning-bolt-2",
+              "label": "t:sections.all.icon_pack.options__48.label"
+            },
+            {
+              "value": "like",
+              "label": "t:sections.all.icon_pack.options__49.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.all.icon_pack.options__50.label"
+            },
+            {
+              "value": "lock-1",
+              "label": "t:sections.all.icon_pack.options__51.label"
+            },
+            {
+              "value": "lock-2",
+              "label": "t:sections.all.icon_pack.options__52.label"
+            },
+            {
+              "value": "logout",
+              "label": "t:sections.all.icon_pack.options__53.label"
+            },
+            {
+              "value": "luggage",
+              "label": "t:sections.all.icon_pack.options__54.label"
+            },
+            {
+              "value": "mark",
+              "label": "t:sections.all.icon_pack.options__55.label"
+            },
+            {
+              "value": "medicine",
+              "label": "t:sections.all.icon_pack.options__56.label"
+            },
+            {
+              "value": "microphone",
+              "label": "t:sections.all.icon_pack.options__57.label"
+            },
+            {
+              "value": "moon",
+              "label": "t:sections.all.icon_pack.options__58.label"
+            },
+            {
+              "value": "pencil",
+              "label": "t:sections.all.icon_pack.options__59.label"
+            },
+            {
+              "value": "phone-1",
+              "label": "t:sections.all.icon_pack.options__60.label"
+            },
+            {
+              "value": "phone-2",
+              "label": "t:sections.all.icon_pack.options__61.label"
+            },
+            {
+              "value": "phone-3",
+              "label": "t:sections.all.icon_pack.options__62.label"
+            },
+            {
+              "value": "phone-4",
+              "label": "t:sections.all.icon_pack.options__63.label"
+            },
+            {
+              "value": "pinterest",
+              "label": "t:sections.all.icon_pack.options__64.label"
+            },
+            {
+              "value": "plug",
+              "label": "t:sections.all.icon_pack.options__65.label"
+            },
+            {
+              "value": "presentation-1",
+              "label": "t:sections.all.icon_pack.options__66.label"
+            },
+            {
+              "value": "presentation-2",
+              "label": "t:sections.all.icon_pack.options__67.label"
+            },
+            {
+              "value": "pulse",
+              "label": "t:sections.all.icon_pack.options__68.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.all.icon_pack.options__69.label"
+            },
+            {
+              "value": "rocket",
+              "label": "t:sections.all.icon_pack.options__70.label"
+            },
+            {
+              "value": "search",
+              "label": "t:sections.all.icon_pack.options__71.label"
+            },
+            {
+              "value": "server-1",
+              "label": "t:sections.all.icon_pack.options__72.label"
+            },
+            {
+              "value": "server-2",
+              "label": "t:sections.all.icon_pack.options__73.label"
+            },
+            {
+              "value": "settings",
+              "label": "t:sections.all.icon_pack.options__74.label"
+            },
+            {
+              "value": "shield",
+              "label": "t:sections.all.icon_pack.options__75.label"
+            },
+            {
+              "value": "shopping-basket",
+              "label": "t:sections.all.icon_pack.options__76.label"
+            },
+            {
+              "value": "shuffle",
+              "label": "t:sections.all.icon_pack.options__77.label"
+            },
+            {
+              "value": "snapchat",
+              "label": "t:sections.all.icon_pack.options__78.label"
+            },
+            {
+              "value": "sound-waves",
+              "label": "t:sections.all.icon_pack.options__79.label"
+            },
+            {
+              "value": "speaker",
+              "label": "t:sections.all.icon_pack.options__80.label"
+            },
+            {
+              "value": "squares-1",
+              "label": "t:sections.all.icon_pack.options__81.label"
+            },
+            {
+              "value": "squares-2",
+              "label": "t:sections.all.icon_pack.options__82.label"
+            },
+            {
+              "value": "stack",
+              "label": "t:sections.all.icon_pack.options__83.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.all.icon_pack.options__84.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.all.icon_pack.options__85.label"
+            },
+            {
+              "value": "sun",
+              "label": "t:sections.all.icon_pack.options__86.label"
+            },
+            {
+              "value": "tag",
+              "label": "t:sections.all.icon_pack.options__87.label"
+            },
+            {
+              "value": "telephone-tower",
+              "label": "t:sections.all.icon_pack.options__88.label"
+            },
+            {
+              "value": "tik-tok",
+              "label": "t:sections.all.icon_pack.options__89.label"
+            },
+            {
+              "value": "tree",
+              "label": "t:sections.all.icon_pack.options__90.label"
+            },
+            {
+              "value": "trend",
+              "label": "t:sections.all.icon_pack.options__91.label"
+            },
+            {
+              "value": "trophy",
+              "label": "t:sections.all.icon_pack.options__92.label"
+            },
+            {
+              "value": "tumblr",
+              "label": "t:sections.all.icon_pack.options__93.label"
+            },
+            {
+              "value": "tv",
+              "label": "t:sections.all.icon_pack.options__94.label"
+            },
+            {
+              "value": "twitter",
+              "label": "t:sections.all.icon_pack.options__95.label"
+            },
+            {
+              "value": "user-1",
+              "label": "t:sections.all.icon_pack.options__96.label"
+            },
+            {
+              "value": "user-2",
+              "label": "t:sections.all.icon_pack.options__97.label"
+            },
+            {
+              "value": "user-3",
+              "label": "t:sections.all.icon_pack.options__98.label"
+            },
+            {
+              "value": "user-4",
+              "label": "t:sections.all.icon_pack.options__99.label"
+            },
+            {
+              "value": "video",
+              "label": "t:sections.all.icon_pack.options__100.label"
+            },
+            {
+              "value": "vimeo",
+              "label": "t:sections.all.icon_pack.options__101.label"
+            },
+            {
+              "value": "wallet",
+              "label": "t:sections.all.icon_pack.options__102.label"
+            },
+            {
+              "value": "watch",
+              "label": "t:sections.all.icon_pack.options__103.label"
+            },
+            {
+              "value": "water-1",
+              "label": "t:sections.all.icon_pack.options__104.label"
+            },
+            {
+              "value": "water-2",
+              "label": "t:sections.all.icon_pack.options__105.label"
+            },
+            {
+              "value": "water-3",
+              "label": "t:sections.all.icon_pack.options__106.label"
+            },
+            {
+              "value": "wave-1",
+              "label": "t:sections.all.icon_pack.options__107.label"
+            },
+            {
+              "value": "wave-2",
+              "label": "t:sections.all.icon_pack.options__108.label"
+            },
+            {
+              "value": "wifi-1",
+              "label": "t:sections.all.icon_pack.options__109.label"
+            },
+            {
+              "value": "wifi-2",
+              "label": "t:sections.all.icon_pack.options__110.label"
+            },
+            {
+              "value": "window",
+              "label": "t:sections.all.icon_pack.options__111.label"
+            },
+            {
+              "value": "youtube",
+              "label": "t:sections.all.icon_pack.options__112.label"
+            }
+          ],
+					"default": "none",
+					"label": "t:sections.all.icon_pack.label"
+				},
+        {
+          "type": "color",
+          "id": "badge_bg",
+          "label": "t:sections.pricing-table.blocks.price.settings.badge_bg.label",
+          "default": "#f7d2c2"
+        },
+        {
+          "type": "color",
+          "id": "badge_color",
+          "label": "t:sections.pricing-table.blocks.price.settings.badge_color.label",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.all.heading.label",
+          "default": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_icon_type",
+          "label":"t:sections.all.subheading_icon.label",
+          "info":"Select the icon type you want to use",
+          "default": "icon_pack",
+          "options": [
+            {
+              "value": "icon_pack",
+              "label": "Theme icons"
+            },
+            {
+              "value": "svg",
+              "label": "Custom icons"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "heading_icon",
+          "default": "none",
+          "label": "Theme icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.all.icon_pack.options__1.label"
+            },
+            {
+              "value": "arrow-bar",
+              "label": "t:sections.all.icon_pack.options__2.label"
+            },
+            {
+              "value": "bag-1",
+              "label": "t:sections.all.icon_pack.options__3.label"
+            },
+            {
+              "value": "bag-2",
+              "label": "t:sections.all.icon_pack.options__4.label"
+            },
+            {
+              "value": "bag-3",
+              "label": "t:sections.all.icon_pack.options__119.label"
+            },
+            {
+              "value": "bar-chart",
+              "label": "t:sections.all.icon_pack.options__5.label"
+            },
+            {
+              "value": "bars-upward",
+              "label": "t:sections.all.icon_pack.options__6.label"
+            },
+            {
+              "value": "baseball",
+              "label": "t:sections.all.icon_pack.options__7.label"
+            },
+            {
+              "value": "battery-1",
+              "label": "t:sections.all.icon_pack.options__8.label"
+            },
+            {
+              "value": "battery-2",
+              "label": "t:sections.all.icon_pack.options__9.label"
+            },
+            {
+              "value": "battery-3",
+              "label": "t:sections.all.icon_pack.options__10.label"
+            },
+            {
+              "value": "book",
+              "label": "t:sections.all.icon_pack.options__11.label"
+            },
+            {
+              "value": "card",
+              "label": "t:sections.all.icon_pack.options__12.label"
+            },
+            {
+              "value": "card-holder",
+              "label": "t:sections.all.icon_pack.options__13.label"
+            },
+            {
+              "value": "chart",
+              "label": "t:sections.all.icon_pack.options__14.label"
+            },
+            {
+              "value": "chart-2",
+              "label": "t:sections.all.icon_pack.options__113.label"
+            },
+            {
+              "value": "chart-3",
+              "label": "t:sections.all.icon_pack.options__114.label"
+            },
+            {
+              "value": "chats",
+              "label": "t:sections.all.icon_pack.options__15.label"
+            },
+            {
+              "value": "check-1",
+              "label": "t:sections.all.icon_pack.options__16.label"
+            },
+            {
+              "value": "check-2",
+              "label": "t:sections.all.icon_pack.options__17.label"
+            },
+            {
+              "value": "check-3",
+              "label": "t:sections.all.icon_pack.options__18.label"
+            },
+            {
+              "value": "check-4",
+              "label": "t:sections.all.icon_pack.options__19.label"
+            },
+            {
+              "value": "circle",
+              "label": "t:sections.all.icon_pack.options__20.label"
+            },
+            {
+              "value": "circles",
+              "label": "t:sections.all.icon_pack.options__21.label"
+            },
+            {
+              "value": "clock-1",
+              "label": "t:sections.all.icon_pack.options__115.label"
+            },
+            {
+              "value": "clock-2",
+              "label": "t:sections.all.icon_pack.options__116.label"
+            },
+            {
+              "value": "close",
+              "label": "t:sections.all.icon_pack.options__22.label"
+            },
+            {
+              "value": "cloud-server",
+              "label": "t:sections.all.icon_pack.options__23.label"
+            },
+            {
+              "value": "computer",
+              "label": "t:sections.all.icon_pack.options__24.label"
+            },
+            {
+              "value": "computer-mouse",
+              "label": "t:sections.all.icon_pack.options__120.label"
+            },
+            {
+              "value": "confetti",
+              "label": "t:sections.all.icon_pack.options__25.label"
+            },
+            {
+              "value": "delivery",
+              "label": "t:sections.all.icon_pack.options__26.label"
+            },
+            {
+              "value": "delivery-box",
+              "label": "t:sections.all.icon_pack.options__27.label"
+            },
+            {
+              "value": "devices",
+              "label": "t:sections.all.icon_pack.options__28.label"
+            },
+            {
+              "value": "directions",
+              "label": "t:sections.all.icon_pack.options__29.label"
+            },
+            {
+              "value": "dumbbell",
+              "label": "t:sections.all.icon_pack.options__30.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.all.icon_pack.options__31.label"
+            },
+            {
+              "value": "facebook",
+              "label": "t:sections.all.icon_pack.options__32.label"
+            },
+            {
+              "value": "file-1",
+              "label": "t:sections.all.icon_pack.options__33.label"
+            },
+            {
+              "value": "file-2",
+              "label": "t:sections.all.icon_pack.options__34.label"
+            },
+            {
+              "value": "flag",
+              "label": "t:sections.all.icon_pack.options__35.label"
+            },
+            {
+              "value": "folder-1",
+              "label": "t:sections.all.icon_pack.options__36.label"
+            },
+            {
+              "value": "folder-2",
+              "label": "t:sections.all.icon_pack.options__37.label"
+            },
+            {
+              "value": "food",
+              "label": "t:sections.all.icon_pack.options__38.label"
+            },
+            {
+              "value": "hand-1",
+              "label": "t:sections.all.icon_pack.options__39.label"
+            },
+            {
+              "value": "hand-2",
+              "label": "t:sections.all.icon_pack.options__40.label"
+            },
+            {
+              "value": "hand-3",
+              "label": "t:sections.all.icon_pack.options__41.label"
+            },
+            {
+              "value": "headphones",
+              "label": "t:sections.all.icon_pack.options__42.label"
+            },
+            {
+              "value": "instagram",
+              "label": "t:sections.all.icon_pack.options__43.label"
+            },
+            {
+              "value": "laptop-1",
+              "label": "t:sections.all.icon_pack.options__44.label"
+            },
+            {
+              "value": "laptop-2",
+              "label": "t:sections.all.icon_pack.options__45.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.all.icon_pack.options__46.label"
+            },
+            {
+              "value": "lightning-bolt-1",
+              "label": "t:sections.all.icon_pack.options__47.label"
+            },
+            {
+              "value": "lightning-bolt-2",
+              "label": "t:sections.all.icon_pack.options__48.label"
+            },
+            {
+              "value": "like",
+              "label": "t:sections.all.icon_pack.options__49.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.all.icon_pack.options__50.label"
+            },
+            {
+              "value": "lock-1",
+              "label": "t:sections.all.icon_pack.options__51.label"
+            },
+            {
+              "value": "lock-2",
+              "label": "t:sections.all.icon_pack.options__52.label"
+            },
+            {
+              "value": "logout",
+              "label": "t:sections.all.icon_pack.options__53.label"
+            },
+            {
+              "value": "luggage",
+              "label": "t:sections.all.icon_pack.options__54.label"
+            },
+            {
+              "value": "mark",
+              "label": "t:sections.all.icon_pack.options__55.label"
+            },
+            {
+              "value": "medicine",
+              "label": "t:sections.all.icon_pack.options__56.label"
+            },
+            {
+              "value": "microphone",
+              "label": "t:sections.all.icon_pack.options__57.label"
+            },
+            {
+              "value": "moon",
+              "label": "t:sections.all.icon_pack.options__58.label"
+            },
+            {
+              "value": "pencil",
+              "label": "t:sections.all.icon_pack.options__59.label"
+            },
+            {
+              "value": "phone-1",
+              "label": "t:sections.all.icon_pack.options__60.label"
+            },
+            {
+              "value": "phone-2",
+              "label": "t:sections.all.icon_pack.options__61.label"
+            },
+            {
+              "value": "phone-3",
+              "label": "t:sections.all.icon_pack.options__62.label"
+            },
+            {
+              "value": "phone-4",
+              "label": "t:sections.all.icon_pack.options__63.label"
+            },
+            {
+              "value": "pinterest",
+              "label": "t:sections.all.icon_pack.options__64.label"
+            },
+            {
+              "value": "plug",
+              "label": "t:sections.all.icon_pack.options__65.label"
+            },
+            {
+              "value": "presentation-1",
+              "label": "t:sections.all.icon_pack.options__66.label"
+            },
+            {
+              "value": "presentation-2",
+              "label": "t:sections.all.icon_pack.options__67.label"
+            },
+            {
+              "value": "pulse",
+              "label": "t:sections.all.icon_pack.options__68.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.all.icon_pack.options__69.label"
+            },
+            {
+              "value": "rocket",
+              "label": "t:sections.all.icon_pack.options__70.label"
+            },
+            {
+              "value": "search",
+              "label": "t:sections.all.icon_pack.options__71.label"
+            },
+            {
+              "value": "sending",
+              "label": "t:sections.all.icon_pack.options__117.label"
+            },
+            {
+              "value": "server-1",
+              "label": "t:sections.all.icon_pack.options__72.label"
+            },
+            {
+              "value": "server-2",
+              "label": "t:sections.all.icon_pack.options__73.label"
+            },
+            {
+              "value": "settings",
+              "label": "t:sections.all.icon_pack.options__74.label"
+            },
+            {
+              "value": "shield",
+              "label": "t:sections.all.icon_pack.options__75.label"
+            },
+            {
+              "value": "shopping-basket",
+              "label": "t:sections.all.icon_pack.options__76.label"
+            },
+            {
+              "value": "shuffle",
+              "label": "t:sections.all.icon_pack.options__77.label"
+            },
+            {
+              "value": "snapchat",
+              "label": "t:sections.all.icon_pack.options__78.label"
+            },
+            {
+              "value": "sound-waves",
+              "label": "t:sections.all.icon_pack.options__79.label"
+            },
+            {
+              "value": "speaker",
+              "label": "t:sections.all.icon_pack.options__80.label"
+            },
+            {
+              "value": "squares-1",
+              "label": "t:sections.all.icon_pack.options__81.label"
+            },
+            {
+              "value": "squares-2",
+              "label": "t:sections.all.icon_pack.options__82.label"
+            },
+            {
+              "value": "stack",
+              "label": "t:sections.all.icon_pack.options__83.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.all.icon_pack.options__84.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.all.icon_pack.options__85.label"
+            },
+            {
+              "value": "sun",
+              "label": "t:sections.all.icon_pack.options__86.label"
+            },
+            {
+              "value": "tag",
+              "label": "t:sections.all.icon_pack.options__87.label"
+            },
+            {
+              "value": "telephone-tower",
+              "label": "t:sections.all.icon_pack.options__88.label"
+            },
+            {
+              "value": "tik-tok",
+              "label": "t:sections.all.icon_pack.options__89.label"
+            },
+            {
+              "value": "tree",
+              "label": "t:sections.all.icon_pack.options__90.label"
+            },
+            {
+              "value": "trend",
+              "label": "t:sections.all.icon_pack.options__91.label"
+            },
+            {
+              "value": "trophy",
+              "label": "t:sections.all.icon_pack.options__92.label"
+            },
+            {
+              "value": "tumblr",
+              "label": "t:sections.all.icon_pack.options__93.label"
+            },
+            {
+              "value": "tv",
+              "label": "t:sections.all.icon_pack.options__94.label"
+            },
+            {
+              "value": "twitter",
+              "label": "t:sections.all.icon_pack.options__95.label"
+            },
+            {
+              "value": "user-1",
+              "label": "t:sections.all.icon_pack.options__96.label"
+            },
+            {
+              "value": "user-2",
+              "label": "t:sections.all.icon_pack.options__97.label"
+            },
+            {
+              "value": "user-3",
+              "label": "t:sections.all.icon_pack.options__98.label"
+            },
+            {
+              "value": "user-4",
+              "label": "t:sections.all.icon_pack.options__99.label"
+            },
+            {
+              "value": "user-5",
+              "label": "t:sections.all.icon_pack.options__118.label"
+            },
+            {
+              "value": "video",
+              "label": "t:sections.all.icon_pack.options__100.label"
+            },
+            {
+              "value": "vimeo",
+              "label": "t:sections.all.icon_pack.options__101.label"
+            },
+            {
+              "value": "wallet",
+              "label": "t:sections.all.icon_pack.options__102.label"
+            },
+            {
+              "value": "watch",
+              "label": "t:sections.all.icon_pack.options__103.label"
+            },
+            {
+              "value": "water-1",
+              "label": "t:sections.all.icon_pack.options__104.label"
+            },
+            {
+              "value": "water-2",
+              "label": "t:sections.all.icon_pack.options__105.label"
+            },
+            {
+              "value": "water-3",
+              "label": "t:sections.all.icon_pack.options__106.label"
+            },
+            {
+              "value": "wave-1",
+              "label": "t:sections.all.icon_pack.options__107.label"
+            },
+            {
+              "value": "wave-2",
+              "label": "t:sections.all.icon_pack.options__108.label"
+            },
+            {
+              "value": "wifi-1",
+              "label": "t:sections.all.icon_pack.options__109.label"
+            },
+            {
+              "value": "wifi-2",
+              "label": "t:sections.all.icon_pack.options__110.label"
+            },
+            {
+              "value": "window",
+              "label": "t:sections.all.icon_pack.options__111.label"
+            },
+            {
+              "value": "youtube",
+              "label": "t:sections.all.icon_pack.options__112.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "heading_svg_icon",
+          "default": "none",
+          "label":"Custom icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.all.icon_pack.options__1.label"
+            },
+            {
+              "value": "icon-EG-cart",
+              "label": "cart"
+            },
+            {
+              "value": "icon-EG-chart",
+              "label": "chart"
+            },
+            {
+              "value": "icon-EG-checkbox",
+              "label": "checkbox"
+            },
+            {
+              "value": "icon-EG-code",
+              "label": "code"
+            },
+            {
+              "value": "icon-EG-graph",
+              "label": "graph"
+            },
+            {
+              "value": "icon-EG-mail",
+              "label": "mail"
+            },
+            {
+              "value": "icon-EG-medal",
+              "label": "medal"
+            },
+            {
+              "value": "icon-EG-migration",
+              "label": "migration"
+            },
+            {
+              "value": "icon-EG-pricetag",
+              "label": "price tag"
+            },
+            {
+              "value": "icon-EG-quality-assurance",
+              "label": "quality assurance"
+            },
+            {
+              "value": "icon-EG-rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "icon-EG-search",
+              "label": "search"
+            },
+            {
+              "value": "icon-EG-storefront",
+              "label": "storefront"
+            },
+                    {
+              "value": "icon-EG-attention",
+              "label": "attention"
+            },
+            {
+              "value": "icon-EG-check",
+              "label": "check"
+            },
+            {
+              "value": "icon-EG-done",
+              "label": "done"
+            },
+            {
+              "value": "icon-EG-down",
+              "label": "down"
+            },
+            {
+              "value": "icon-EG-fail",
+              "label": "fail"
+            },
+            {
+              "value": "icon-EG-flag",
+              "label": "flag"
+            },
+            {
+              "value": "icon-EG-happy",
+              "label": "happy"
+            },
+            {
+              "value": "icon-EG-heart",
+              "label": "heart"
+            },
+            {
+              "value": "icon-EG-idea",
+              "label": "idea"
+            },
+            {
+              "value": "icon-EG-jackpot",
+              "label": "jackpot"
+            },
+            {
+              "value": "icon-EG-money",
+              "label": "money"
+            },
+            {
+              "value": "icon-EG-monitor",
+              "label": "monitor"
+            },
+            {
+              "value": "icon-EG-process",
+              "label": "process"
+            },
+            {
+              "value": "icon-EG-repeat",
+              "label": "repeat"
+            },
+            {
+              "value": "icon-EG-shit",
+              "label": "shit"
+            },
+            {
+              "value": "icon-EG-speed",
+              "label": "speed"
+            },
+            {
+              "value": "icon-EG-star",
+              "label": "star"
+            },
+            {
+              "value": "icon-EG-swear",
+              "label": "swear"
+            },
+            {
+              "value": "icon-EG-task",
+              "label": "task"
+            },
+            {
+              "value": "icon-EG-thumb",
+              "label": "thumb"
+            },
+            {
+              "value": "icon-EG-time",
+              "label": "time"
+            },
+            {
+              "value": "icon-EG-unknown",
+              "label": "unknown"
+            },
+            {
+              "value": "icon-NEG-EG-attention",
+              "label": "attention (white)"
+            },
+            {
+              "value": "icon-NEG-EG-check",
+              "label": "check (white)"
+            },
+            {
+              "value": "icon-NEG-EG-done",
+              "label": "done (white)"
+            },
+            {
+              "value": "icon-NEG-EG-down",
+              "label": "down (white)"
+            },
+            {
+              "value": "icon-NEG-EG-fail",
+              "label": "fail (white)"
+            },
+            {
+              "value": "icon-NEG-EG-flag",
+              "label": "flag (white)"
+            },
+            {
+              "value": "icon-NEG-EG-happy",
+              "label": "happy (white)"
+            },
+            {
+              "value": "icon-NEG-EG-heart",
+              "label": "heart (white)"
+            },
+            {
+              "value": "icon-NEG-EG-idea",
+              "label": "idea (white)"
+            },
+            {
+              "value": "icon-NEG-EG-jackpot",
+              "label": "jackpot (white)"
+            },
+            {
+              "value": "icon-NEG-EG-money",
+              "label": "money (white)"
+            },
+            {
+              "value": "icon-NEG-EG-monitor",
+              "label": "monitor (white)"
+            },
+            {
+              "value": "icon-NEG-EG-process",
+              "label": "process (white)"
+            },
+            {
+              "value": "icon-NEG-EG-repeat",
+              "label": "repeat (white)"
+            },
+            {
+              "value": "icon-NEG-EG-shit",
+              "label": "shit (white)"
+            },
+            {
+              "value": "icon-NEG-EG-speed",
+              "label": "speed (white)"
+            },
+            {
+              "value": "icon-NEG-EG-star",
+              "label": "star (white)"
+            },
+            {
+              "value": "icon-NEG-EG-swear",
+              "label": "swear (white)"
+            },
+            {
+              "value": "icon-NEG-EG-task",
+              "label": "task (white)"
+            },
+            {
+              "value": "icon-NEG-EG-thumb",
+              "label": "thumb (white)"
+            },
+            {
+              "value": "icon-NEG-EG-time",
+              "label": "time (white)"
+            },
+            {
+              "value": "icon-NEG-EG-unknown",
+              "label": "unknown (white)"
+            },
+            {
+              "value": "icon-NEG-EG-cart",
+              "label": "cart (white)"
+            },
+            {
+              "value": "icon-NEG-EG-chart",
+              "label": "chart (white)"
+            },
+            {
+              "value": "icon-NEG-EG-checkbox",
+              "label": "checkbox (white)"
+            },
+            {
+              "value": "icon-NEG-EG-code",
+              "label": "code (white)"
+            },
+            {
+              "value": "icon-NEG-EG-graph",
+              "label": "graph (white)"
+            },
+            {
+              "value": "icon-NEG-EG-mail",
+              "label": "mail (white)"
+            },
+            {
+              "value": "icon-NEG-EG-medal",
+              "label": "medal (white)"
+            },
+            {
+              "value": "icon-NEG-EG-migration",
+              "label": "migration (white)"
+            },
+            {
+              "value": "icon-NEG-EG-pricetag",
+              "label": "price tag (white)"
+            },
+            {
+              "value": "icon-NEG-EG-quality-assurance",
+              "label": "quality assurance (white)"
+            },
+            {
+              "value": "icon-NEG-EG-rocket",
+              "label": "rocket (white)"
+            },
+            {
+              "value": "icon-NEG-EG-search",
+              "label": "search (white)"
+            },
+            {
+              "value": "icon-NEG-EG-storefront",
+              "label": "storefront (white)"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "icon_background",
+          "label": "Icon background color"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon color"
+        },
+        {
+          "type": "text",
+          "id": "heading_price",
+          "label": "t:sections.pricing-table.blocks.price.settings.heading_price.label",
+          "default": "$200"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "p"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "t:sections.pricing-table.blocks.price.settings.description.label",
+          "default": "Some description"
+        },
+        {
+          "type": "textarea",
+          "id": "footer_text",
+          "label": "Footer",
+          "default": "Some footer"
+        },
+        {
+          "type": "text",
+          "id": "features_list_heading",
+          "label": "Features list heading",
+          "default": "Features list heading:"
+        },
+        {
+          "type": "richtext",
+          "id": "features_list",
+          "label": "t:sections.pricing-table.blocks.price.settings.features_list.label",
+          "default": "<ul><li>Feature item</li><li>Feature item</li><li>Feature item</li><li>Feature item</li></ul>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_shadow",
+          "label": "t:sections.pricing-table.blocks.price.settings.show_shadow.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_button",
+          "default": true,
+          "label": "Show Button 1"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "default": "#d05d26",
+          "label": "Button Background 1"
+        },
+        {
+          "type": "select",
+          "id": "button_style1",
+          "options": [
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "primary",
+              "label": "t:sections.all.button.button_style.options__1.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "secondary",
+              "label": "t:sections.all.button.button_style.options__2.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "tertiary",
+              "label": "t:sections.all.button.button_style.options__3.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple",
+              "label": "t:sections.all.button.button_style.options__4.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple_secondary",
+              "label": "t:sections.all.button.button_style.options__5.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple_link",
+              "label": "t:sections.all.button.button_style.options__6.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button 1",
+          "label": "Button label 1"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "default": "#ffffff",
+          "label": "Button label color 1"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_button2",
+          "default": false,
+          "label": "Show Button 2"
+        },
+        {
+          "type": "color",
+          "id": "button_background2",
+          "default": "#d05d26",
+          "label": "Button Background 2"
+        },
+        {
+          "type": "text",
+          "id": "button_label2",
+          "default": "Button 2",
+          "label": "Button label 2"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "primary",
+              "label": "t:sections.all.button.button_style.options__1.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "secondary",
+              "label": "t:sections.all.button.button_style.options__2.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__1.label",
+              "value": "tertiary",
+              "label": "t:sections.all.button.button_style.options__3.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple",
+              "label": "t:sections.all.button.button_style.options__4.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple_secondary",
+              "label": "t:sections.all.button.button_style.options__5.label"
+            },
+            {
+              "group": "t:sections.all.button.button_style.group__2.label",
+              "value": "simple_link",
+              "label": "t:sections.all.button.button_style.options__6.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color2",
+          "default": "#ffffff",
+          "label": "Button label color 2"
+        },
+        {
+          "type": "url",
+          "id": "button_link2",
+          "label": "Button link 2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing Tabs",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "title": "One time",
+            "id":"tab_01"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "title": "Monthly",
+            "id":"tab_02"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "title": "Yearly",
+            "id":"tab_03"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$200 - $300",
+            "id":"tab_01"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$150 - $300",
+            "id":"tab_01",
+            "highlight":true
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$100 - $1000",
+            "id":"tab_01"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$1200 - $1300",
+            "id":"tab_02"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$1150 - $1300",
+            "id":"tab_02",
+            "highlight":true
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$1000 - $1100",
+            "id":"tab_02"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$1000 - $2000",
+            "id":"tab_03"
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$1500 - $1800",
+            "id":"tab_03",
+            "highlight":true
+          }
+        },
+        {
+          "type": "price",
+          "settings": {
+            "heading_price": "$10,000 - $20,000",
+            "id":"tab_03"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
+{% endschema %}

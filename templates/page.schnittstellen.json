@@ -1,0 +1,1409 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "hero_jcbzxC": {
+      "type": "hero",
+      "blocks": {
+        "subtitle_Fey9bh": {
+          "type": "subtitle",
+          "settings": {
+            "subheading": "Onlineshop Schnittstellen",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon_type": "svg",
+            "subheading_icon": "star",
+            "subheading_svg_icon": "icon-EG-code",
+            "icon_color": "#15576d"
+          }
+        },
+        "title_Lizi83": {
+          "type": "title",
+          "settings": {
+            "heading": "Eshop Partnerbörse: Vernetzt durch unsere Onlineshop-Schnittstellen",
+            "heading_tag": "h1",
+            "heading_size": "h1",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false
+          }
+        },
+        "description_h4cTkE": {
+          "type": "description",
+          "settings": {
+            "description": "Allein im DACH-Raum existieren über 700 ERP-Anbieter. Dazu gesellen sich mindestens 20 mehr oder weniger relevante Shopsysteme. Macht nach den Gesetzen der Kombinatorik also 14.000 mögliche Kombinationen von Onlinestore und Enterprise-Ressource-Planning.<br><br>\nKönnen diese Softwares überhaupt miteinander kommunizieren? Oft nicht. Und genau dafür gibt es unsere Schnittstellen-Nerds. Wir bringen zusammen, was zusammengehört."
+          }
+        },
+        "buttons_YRiDb4": {
+          "type": "buttons",
+          "settings": {
+            "show_button_1": true,
+            "button_label_1": "Einfach Schnittstelle anfragen.",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_Fey9bh",
+        "title_Lizi83",
+        "description_h4cTkE",
+        "buttons_YRiDb4"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "horizontal",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "background_color": "#d8f6ff",
+        "color_scheme": "background-3",
+        "full_screen": false,
+        "image": "shopify://shop_images/schnittstelle.png",
+        "show_video": false,
+        "overlay_opacity": 0.4,
+        "image_ratio": "1/1",
+        "object_fit": "contain",
+        "desktop_image_position": "after",
+        "mobile_image_position": "after",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "multicolumn_ynnHdV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cVGPq7": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-graph",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Effizienzsteigerung durch Automatisierungen",
+            "heading_tag": "h3",
+            "text": "<p>Manuelle Datenübertragung ist zeitaufwendig. Ein Shopsystem, das über eine API an Logistik und Buchhaltung angeschlossen ist, sorgt für deutlich mehr Performanz und spart etliche Arbeitsstunden.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(190, 253, 95, 1), rgba(190, 253, 95, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_P7NDwg": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-pricetag",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Schnelle und fehlerfreie Transaktionsverarbeitung",
+            "heading_tag": "h3",
+            "text": "<p>Werden Informationen von Hand hin- und hergeschoben, ist es nicht nur zeitraubend, sondern auch extrem fehleranfällig. Schnittstellen eliminieren sämtliche Fehler bei der Übertragung.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 0.5) 90%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_9Hm4By": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-medal",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Reduzierte Komplexität und weniger repetitive Vorgänge",
+            "heading_tag": "h3",
+            "text": "<p>Wenn zwei Programme in der Lage sind, miteinander zu kommunizieren, entfallen viele Aufgaben. Sowohl die hochkomplexen, an die sich nur Profis wagen, als auch die No-Brainer für Auszubildende im ersten Lehrjahr.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1), rgba(139, 246, 149, 0.5) 99%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_8yJybV": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Vollständig integrierte Systemlandschaft",
+            "heading_tag": "h3",
+            "text": "<p>Wirklich effizient wird die Arbeit erst, wenn alle Komponenten einer Systemlandschaft reibungslos miteinander kommunizieren – egal ob ERP, PIM oder CRM-System. Die richtigen Schnittstellen sorgen für das perfekte Zusammenspiel.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_cVGPq7",
+        "column_P7NDwg",
+        "column_9Hm4By",
+        "column_8yJybV"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 70,
+        "color_scheme": "scheme-375efabf-1879-43f1-a1af-9506648e85a1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#00486f",
+        "scribble_size": 120,
+        "scribble_top": 50,
+        "heading": "Beziehungsglück mit Onlineshop-Schnittstellen: Was Unternehmen sich #scribble-start#wünschen#scribble-end#",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "logo_list_wEw8W4": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_KJbRWj": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Dynamics-365-Logo.png",
+            "image_width": 50
+          }
+        },
+        "logo_ArFtBr": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/SAP.png",
+            "image_width": 140
+          }
+        },
+        "logo_64FQfA": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/PayPal.png",
+            "image_width": 155
+          }
+        },
+        "logo_iTgxK6": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Orlando.png",
+            "image_width": 140
+          }
+        },
+        "logo_9JajJg": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Amazon_logo.png",
+            "image_width": 90
+          }
+        },
+        "logo_6YQfVa": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Tradebyte.svg",
+            "image_width": 140
+          }
+        },
+        "logo_wCfbn3": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Pipedrive.png",
+            "image_width": 125
+          }
+        },
+        "logo_NKrzEb": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/magento2.png",
+            "image_width": 140
+          }
+        },
+        "logo_dbdw4P": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/microsoft-dynamics-nav.png",
+            "image_width": 140
+          }
+        }
+      },
+      "block_order": [
+        "logo_KJbRWj",
+        "logo_ArFtBr",
+        "logo_64FQfA",
+        "logo_iTgxK6",
+        "logo_9JajJg",
+        "logo_6YQfVa",
+        "logo_wCfbn3",
+        "logo_NKrzEb",
+        "logo_dbdw4P"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "vertical-carousel",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Hier wirkt unsere Schnittstellen-Magie bereits",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Im Gleichklang: APIs im Einsatz",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 3000,
+        "speed_slider_2": 4000,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "hero_tabs_HnwPfn": {
+      "type": "hero-tabs",
+      "blocks": {
+        "tab_KhBjrM": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Schnittstellen",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "scheme-5d73faf6-1389-497c-bf99-536a51029f18",
+            "image": "shopify://shop_images/Schnittstellen-Synesty.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Schnittstellen für sämtliche Software",
+            "heading_tag": "h3",
+            "heading_size": "h3",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star",
+            "description": "Was zusammenkommen soll, spielt keine Rolle. Wir verbinden nicht nur Shopify, sondern auch andere Shopsysteme mit externen Programmen – egal ob SAP, Orlando, Navision oder Tradebyte.",
+            "show_button_1": false,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_YLULgx": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Synesty",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/Synesty.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Professionelles Tool mit Synesty",
+            "heading_tag": "h3",
+            "heading_size": "h3",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star",
+            "description": "Unsere Middleware heißt Synesty. Das Tool aus Deutschland erlaubt es uns, anbieterunabhängige Lösungen zu entwickeln, die sich zeitnah an neue Bedingungen anpassen oder skalieren lassen.",
+            "show_button_1": false,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_qRm6jN": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Maßgeschneidert",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/Schnittstellen.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Natürlich maßgeschneidert",
+            "heading_tag": "h3",
+            "heading_size": "h3",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "none",
+            "description": "Unsere Schnittstellen-Lösungen entwickeln wir exakt nach deinen spezifischen Anforderungen. Du bestimmst, welche Informationen übertragen und wo Berichte erstellt werden sollen.",
+            "show_button_1": false,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_9UFKN7": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Datensicherheit",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/Datenschutz.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Absolut datensicher",
+            "heading_tag": "h3",
+            "heading_size": "h3",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "none",
+            "description": "Als deutsches Programm erfüllt Synesty die strengen Datenschutzrichtlinien der EU und besitzt ausschließlich Server in Europa. Rechtsverstöße musst du hier also nicht befürchten.",
+            "show_button_1": false,
+            "button_label_1": "Label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_KhBjrM",
+        "tab_YLULgx",
+        "tab_qRm6jN",
+        "tab_9UFKN7"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "heading": "Matchmaker: Onlineshop-Schnittstellen am besten von den Eshop Guides",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": true,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "button_color": "#d8f6ff",
+        "button_text_color": "#14486f"
+      }
+    },
+    "multicolumn_P6pfbd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FJLywx": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "50 + Systeme",
+            "heading_tag": "p",
+            "text": "<p>bereits erfolgreich vernetzt</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_8ftLaU": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "nur 4 – 8 Wochen",
+            "heading_tag": "p",
+            "text": "<p>bis zur individuell programmierten Schnittstelle</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_8U4a3r": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "schon ab 5.000 €",
+            "heading_tag": "p",
+            "text": "<p>für deine maßgeschneiderte Lösung</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_FJLywx",
+        "column_8ftLaU",
+        "column_8U4a3r"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "tertiary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h2",
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_P9TexB": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_jVnYKG": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jVnYKG"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Wingman gesucht?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Sag uns einfach, was verbunden werden soll und wir erledigen den Rest. Gerne auch mit dem uralten ERP-System von Microsoft, das noch nie von der Cloud gehört hat.</p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Alex.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11.5,
+        "video_overlay_margin_bottom": 4.5,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Alex Witter",
+        "additional_custom_text": "Schnittstellen-Nerd",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach Termin vereinbaren.",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "s",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_tWGb7h": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FBacAQ": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "bag-1",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "Kommunikationsfähigkeit",
+            "heading_tag": "h3",
+            "text": "<p>Wir reden nicht um den heißen Brei, sondern sprechen Klartext. Selbst dann, wenn es um die unangenehmen Themen geht. Schließlich ist Ehrlichkeit die Grundlage jeder guten Beziehung.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_CQwDXE": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "bag-1",
+            "svg_icon": "icon-EG-swear",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "Zuverlässigkeit",
+            "heading_tag": "h3",
+            "text": "<p>Wenn wir dir unsere Zusage geben, dann kannst du dich zu 100 Prozent darauf verlassen. Egal, ob bei Terminen, Budgets oder Features für deine Lösung. Lieber legen wir eine unbezahlte Überstunde ein, als unser Wort zu brechen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_AhcG6a": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "bag-1",
+            "svg_icon": "icon-EG-happy",
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "solid",
+            "heading": "Partnerschaftlichkeit",
+            "heading_tag": "h3",
+            "text": "<p>Am Ende läuft für uns immer alles darauf hinaus, dass du zufrieden bist. Bereits im Erstgespräch sollst du dich gut aufgehoben fühlen, auf lange Sicht stehen wir zuverlässig an deiner Seite. Halbgares Abfiedeln kennen wir nicht.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_FBacAQ",
+        "column_CQwDXE",
+        "column_AhcG6a"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 17,
+        "scribble_color": "#d8f6ff",
+        "scribble_size": 121,
+        "scribble_top": 50,
+        "heading": "Besser als Paartherapie: Was uns #scribble-start#auszeichnet#scribble-end#",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_WNMwj7": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_CWm4gJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Zusammen glücklich geworden",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_YBUMn6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stimmen aus der Eshop-Schnittstellen-Welt",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_aPVMtr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir können dir viel erzählen. Deswegen machen wir es jetzt wie in diesen nervigen Werbeclips und lassen glückliche Paare zu Wort kommen. Mit dem Unterschied, dass es sich bei uns ausschließlich um echte Schnittstellen-Kund:innen handelt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_CWm4gJ",
+        "heading_YBUMn6",
+        "text_aPVMtr"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "s"
+      }
+    },
+    "testimonials_xTNVdy": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_PcJtnw": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "scheme-5d73faf6-1389-497c-bf99-536a51029f18",
+            "badge_text": "Shopify Migration",
+            "slide_text": "\"Ganz tolles Team! Wir haben es mithilfe von Eshop-Guide binnen 2 Monaten geschafft, unsere beiden Shops komplett zu relaunchen. Eine sehr große Hilfe dabei war die sehr ergebnisorientierte und zielführende Arbeitsweise, insbesondere auch in Zusammenarbeit mit anderen Dienstleistern und Agenturen. Zusätzlich hat Eshop Guide innerhalb von nicht einmal 10 Tagen eine komplette API-Anbindung an unser ERP und Amazon auf die Beine gestellt, die fehlerfrei funktioniert. Kann man vollumfänglich weiterempfehlen!\"",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_image": "shopify://shop_images/3_Petromax_Logo_Shopify_Plus.png",
+            "box_color": "#f2f3f4",
+            "slide_name": "Nils Merker",
+            "slide_position": "Petromax"
+          }
+        },
+        "testimonials_slide_WBNgFx": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "\"Die Zusammenarbeit mit Alex von Eshop Guide war perfekt. Auf jede meiner Emails wurde innerhalb eines Tages spätestens geantwortet und die Integration der Schnittstelle von unserem Großhändler wurde einwandfrei und genau nach Plan gelöst. Ich würde für Integrationen von Schnittstellen und Coding immer wieder zurück auf diese Firma zukommen.\"",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_image": "shopify://shop_images/Maar_Shop.png",
+            "box_color": "#f2f3f4",
+            "slide_name": "Julian Klemmer",
+            "slide_position": "Maar Handels GmbH"
+          }
+        },
+        "testimonials_slide_Hihahg": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "\"Wir haben gemeinsam mit Alex ein Schnittstellenprojekt umgesetzt, bei dem es um die Anbindung an unseren Fulfiller ging. Die Schnittstelle übergibt Bestellungen aus Shopify an den Fulfiller, aktualisiert Warenbestände und Aufträge nachdem sie ausgeführt wurden.\nWir haben uns von Beginn an bestens aufgehoben gefühlt und sind sehr zufrieden mit der Umsetzung. Die Reaktionsschnelligkeit und Problemlösungskompetenz von Alex waren hervorragend und wir würden jederzeit wieder zusammenarbeiten.\"",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_image": "shopify://shop_images/Completeorganics.png",
+            "box_color": "#f2f3f4",
+            "slide_name": "Janis Englert",
+            "slide_position": "Completeorganics"
+          }
+        },
+        "testimonials_slide_twDiVa": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "background-3",
+            "badge_text": "Shopify Migration",
+            "slide_text": "\"I had the pleasure of working with Eshop Guide on a not so trivial project. We needed to synchronize a legacy ERP system with Shopify. Alex and his team not only immediately understood our requirements and found a suitable solution ... they also made valuable suggestions and quickly implemented the interface to our complete satisfaction. We would definitely work with Eshop Guide again!\"",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "box_color": "#15c8e4",
+            "slide_name": "Christian",
+            "slide_position": "Zenbivy"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_PcJtnw",
+        "testimonials_slide_WBNgFx",
+        "testimonials_slide_Hihahg",
+        "testimonials_slide_twDiVa"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "full_slider",
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "background-1",
+        "slide_text_size": "h6",
+        "enable_navigation": true,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_blog_zPqxJg": {
+      "type": "featured-blog",
+      "blocks": {
+        "featured_article_N6canT": {
+          "type": "featured_article",
+          "settings": {
+            "article": "shopify-deutschland/microsoft-business-central-shopify-connector"
+          }
+        },
+        "featured_article_GidJ8b": {
+          "type": "featured_article",
+          "settings": {
+            "article": "shopify-deutschland/odoo-shopify"
+          }
+        }
+      },
+      "block_order": [
+        "featured_article_N6canT",
+        "featured_article_GidJ8b"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "blog": "shopify-deutschland",
+        "color_scheme": "",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 6,
+        "card_color_scheme": "",
+        "subheading": "Shopify-Wissen",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "This Sh...opify Hub is next level",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Ich will sie alle sehen",
+        "custom_view_all_link": "",
+        "button_style": "simple",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_CEx3EV": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_TBmyNA": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TBmyNA"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-c0e32b1c-3a95-4898-bc50-c9dd2c0a7512",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Immer noch schüchtern?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Aber warum denn? Schnittstellen machen die Arbeit effizienter und helfen deinem Unternehmen, viel Zeit und Geld zu sparen. Lass uns einfach über deine API reden.</p>",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Tim.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11.5,
+        "video_overlay_margin_bottom": 4.5,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Tim Segermann",
+        "additional_custom_text": "Schnittstellen-Nerd",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Stell uns jetzt zur Rede.",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "collapsible_content_kgG4HQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_qUc4RJ": {
+          "type": "accordion",
+          "settings": {
+            "question": "Zwischen welchen Systemen könnt ihr eine Onlineshop-Schnittstelle bauen?",
+            "heading_tag": "p",
+            "answer": "<p>Prinzipiell für jede Software, die irgendwie in der Lage ist, mit der Außenwelt zu kommunizieren. Als Agentur haben wir uns zwar auf Shopify spezialisiert, aber mit unseren APIs bedienen wir auch andere Systeme wie Magento oder Shopware.</p><p>Auf der anderen Seite der Leitung kann es sich um weitestgehend jedes ERP-, PIM- oder CRM-System, oder um ein Buchhaltungs- oder Logistiktool handeln. Ob SAP, Navision, Orlando oder Microsoft dahinterstecken, spielt keine Rolle.</p>",
+            "opened": true
+          }
+        },
+        "accordion_nygC4Q": {
+          "type": "accordion",
+          "settings": {
+            "question": "Wie lang beträgt die Entwicklungszeit für eine Onlineshop-Schnittstelle bei Eshop Guide?",
+            "heading_tag": "p",
+            "answer": "<p>Die Entwicklungszeit richtet sich vor allem nach dem Aufwand für deine Lösung. Allerdings arbeiten wir immer mit maximaler Effizienz. Für die meisten Projekte kannst du – inklusive Testphase und Aufräumarbeiten – daher mit vier Wochen rechnen. Wenn es anspruchsvoller wird, dauert es maximal acht Wochen.</p>",
+            "opened": false
+          }
+        },
+        "accordion_mEmNqg": {
+          "type": "accordion",
+          "settings": {
+            "question": "Wie teuer ist es, sich von Eshop Guide eine Onlineshop-Schnittstelle entwickeln zu lassen?",
+            "heading_tag": "p",
+            "answer": "<p>Auch hier kommt es darauf an, was dir vorschwebt, denn acht Wochen Entwicklungsarbeit sind natürlich teurer als vier Wochen. Grundsätzlich solltest du mit Kosten von mindestens 5.000 Euro rechnen. Aber keine Sorge: Bevor du auch nur einen Cent an uns zahlst, reden wir ausführlich über dein Projekt und erstellen dir erst dann ein individuelles Angebot.</p>",
+            "opened": false
+          }
+        },
+        "accordion_khpx3B": {
+          "type": "accordion",
+          "settings": {
+            "question": "Kommt es während der Entwicklungszeit zu Ausfällen bei meiner Software?",
+            "heading_tag": "p",
+            "answer": "<p>Auf gar keinen Fall. Wir entwickeln die API unabhängig von deiner Systemlandschaft und testen sie ausgiebig, bevor wir sie live schalten. Ist sie dann implementiert, überwachen wir in der Anfangsphase alle Transaktionen, bis wir absolut sicher sind, dass alles reibungslos funktioniert.</p>",
+            "opened": false
+          }
+        },
+        "accordion_HQycAc": {
+          "type": "accordion",
+          "settings": {
+            "question": "Welche langfristigen Support-Optionen für Onlineshop-Schnittstellen gibt es bei Eshop Guide und was kosten sie?",
+            "heading_tag": "p",
+            "answer": "<p>Teure Support-Pakete gibt es bei uns nicht, denn die sind auch gar nicht notwendig. Solange du nicht auf eine völlig neue Software umstellst oder sich an deinen Programmen Grundsätzliches ändert, arbeitet die Schnittstelle still und zuverlässig vor sich hin.</p><p>Allerdings hast du die Möglichkeit, dich für 50 EUR im Monat über uns auf unserem Synesty-Account registrieren zu lassen. Dafür übernehmen wir für dich dann das komplette Controlling der API und benachrichtigen dich umgehend, wenn sich Schwierigkeiten ergeben sollten.</p><p>Außerdem ist es natürlich immer möglich, uns für Änderungswünsche und Updates zu kontaktieren. Einfach kurz durchrufen und wir klären, was du brauchst.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qUc4RJ",
+        "accordion_nygC4Q",
+        "accordion_mEmNqg",
+        "accordion_khpx3B",
+        "accordion_HQycAc"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "background",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Wir sorgen für finale Harmonie",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 13,
+        "scribble_color": "#f2e6ff",
+        "scribble_size": 113,
+        "scribble_top": 50,
+        "heading": "Die Onlineshop-#scribble-start#Schnittstellen#scribble-end#-FAQ",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_jcbzxC",
+    "multicolumn_ynnHdV",
+    "logo_list_wEw8W4",
+    "hero_tabs_HnwPfn",
+    "multicolumn_P6pfbd",
+    "image_with_text_P9TexB",
+    "multicolumn_tWGb7h",
+    "rich_text_WNMwj7",
+    "testimonials_xTNVdy",
+    "featured_blog_zPqxJg",
+    "image_with_text_CEx3EV",
+    "collapsible_content_kgG4HQ"
+  ]
+}

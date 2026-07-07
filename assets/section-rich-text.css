@@ -1,0 +1,63 @@
+.rich-text {
+  margin: auto;
+  text-align: center;
+}
+.rich-text--align-left {
+  text-align: left;
+}
+.rich-text--align-left .rich-text__heading,
+.rich-text--align-left .rich-text__text {
+  margin-right: auto;
+}
+.rich-text--align-right {
+  text-align: right;
+}
+.rich-text--align-right .rich-text__heading,
+.rich-text--align-right .rich-text__text {
+  margin-left: auto;
+}
+.rich-text--align-center {
+  text-align: center;
+}
+.rich-text--align-center .rich-text__heading,
+.rich-text--align-center .rich-text__text {
+  margin-inline: auto;
+}
+.rich-text__heading {
+  max-width: 60rem;
+}
+.rich-text__text {
+  max-width: 45rem;
+}
+.rich-text__text p {
+  margin: 0;
+}
+.rich-text--full-width {
+  max-width: initial;
+  width: 100%;
+}
+.rich-text:not(.rich-text--full-width) .rich-text__blocks {
+  border-radius: 0.4rem;
+  padding-inline: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .rich-text:not(.rich-text--full-width) .rich-text__blocks {
+    padding-inline: 4rem;
+  }
+}
+.rich-text__blocks {
+  margin: auto;
+}
+.rich-text__blocks > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.rich-text__blocks * {
+  overflow-wrap: break-word;
+}
+.rich-text__blocks > * + * {
+  margin-top: 1.6rem;
+}
+.rich-text__blocks > * + a {
+  margin-top: 2.4rem;
+}

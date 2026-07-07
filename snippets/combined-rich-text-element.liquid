@@ -1,0 +1,79 @@
+{%- comment -%}
+  Renders a single element inside the combined rich text section.
+{%- endcomment -%}
+
+{%- assign element = element_key -%}
+
+{%- if element == 'subheading' -%}
+  {%- if block.settings.subheading != blank -%}
+    <{{ block.settings.subheading_tag }}
+      class="rich-text__subheading subtitle"
+    >
+      {{ block.settings.subheading | escape }}
+    </{{ block.settings.subheading_tag }}>
+  {%- endif -%}
+{%- elsif element == 'heading' -%}
+  {%- if block.settings.heading != blank -%}
+    <{{ block.settings.heading_tag }}
+      class="rich-text__heading title--section {% if block.settings.heading_size == 'medium' %}h2{% else %}h1{% endif %}"
+    >
+      {{ block.settings.heading }}
+    </{{ block.settings.heading_tag }}>
+  {%- endif -%}
+{%- elsif element contains 'combo_' -%}
+  {%- assign combo_index = element | remove: 'combo_' -%}
+  {%- assign combo_heading_key = 'combo_' | append: combo_index | append: '_heading' -%}
+  {%- assign combo_text_key = 'combo_' | append: combo_index | append: '_text' -%}
+  {%- assign combo_heading_tag_key = 'combo_' | append: combo_index | append: '_heading_tag' -%}
+  {%- assign combo_heading = block.settings[combo_heading_key] -%}
+  {%- assign combo_text = block.settings[combo_text_key] -%}
+  {%- if combo_heading != blank or combo_text != blank -%}
+    {%- assign combo_heading_tag = block.settings[combo_heading_tag_key] | default: 'h5' -%}
+    <div class="rich-text__text">
+      {%- if combo_heading != blank -%}
+        <{{ combo_heading_tag }} class="rich-text__combo-heading">
+          {{ combo_heading }}
+        </{{ combo_heading_tag }}>
+      {%- endif -%}
+      {{ combo_text }}
+    </div>
+  {%- endif -%}
+{%- elsif element == 'button' -%}
+  {%- if block.settings.button_label != blank -%}
+    <a
+      {%- if block.settings.button_link == blank -%}
+        aria-disabled="true"
+      {%- else -%}
+        href="{{ block.settings.button_link }}"
+      {%- endif -%}
+      class="button button--{{ block.settings.button_style | default: 'primary' }} focus-inset"
+    >
+      {{ block.settings.button_label | escape }}
+    </a>
+  {%- endif -%}
+{%- elsif element == 'highlight' -%}
+  {%- if block.settings.highlight_text != blank -%}
+    {%- liquid
+      assign padding_value = '1.5rem'
+      case block.settings.highlight_padding
+        when 'xs'
+          assign padding_value = '0.5rem'
+        when 's'
+          assign padding_value = '1rem'
+        when 'm'
+          assign padding_value = '1.5rem'
+        when 'l'
+          assign padding_value = '2rem'
+        when 'xl'
+          assign padding_value = '3rem'
+      endcase
+    -%}
+    <div
+      class="highlight-text"
+      style="background-color: {{ block.settings.highlight_background_color }}; padding: {{ padding_value }}; border-radius: 0.5rem;"
+    >
+      {{ block.settings.highlight_text }}
+    </div>
+  {%- endif -%}
+{%- endif -%}
+

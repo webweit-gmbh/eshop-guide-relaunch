@@ -1,0 +1,112 @@
+{% comment %}
+  	Renders animated image collage image
+  	Accepts:
+  	- image: {Object} Slider image
+  	- section: {Object} Section
+  	- block: {Object} Block
+  - width (For bottom layout)
+  	Usage:
+  {% render 'aic-item', image: block.settings.image, section: section %}
+{% endcomment %}
+
+<div
+  class="aic__slide aic__slide--{{ block.id }}"
+>
+  {% if width and section.settings.section_type == 'bottom' %}
+    <style>
+      	.aic__slide--{{ block.id }} {
+      		width: {{ width | divided_by: 1.75 | round: 2 }}px;
+      	}
+      @media screen and (min-width: 750px) {
+      	.aic__slide--{{ block.id }} {
+      		width: {{ width | divided_by: 1.5 | round: 2 }}px;
+      	}
+      }
+      @media screen and (min-width: 1200px) {
+      .aic__slide--{{ block.id }} {
+      		width: {{ width }}px;
+      	}
+      }
+    </style>
+  {% endif %}
+  {% if image != blank %}
+    {% assign height = width | divided_by: image.aspect_ratio | round: 2 %}
+    <picture
+      class="aic__image"
+    >
+      {% liquid
+        assign aspect_ratio = image.aspect_ratio
+
+        case section.settings.image_ratio
+          when 'portrait'
+            assign image_ratio = 1.4
+          when 'square'
+            assign image_ratio = 1
+          else
+            assign image_ratio = 0.5
+        endcase
+      %}
+
+      {% if aspect_ratio > image_ratio and image.width > image.height %}
+        {% capture sizes %}
+						calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+					{% endcapture %}
+      {% elsif aspect_ratio > image_ratio and image.width < image.height %}
+        {% capture sizes %}
+						calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+					{% endcapture %}
+      {% else %}
+        {% capture sizes %} 
+						calc((100vw - 40px))
+					{% endcapture %}
+      {% endif %}
+      {%- capture style -%}object-fit: cover;{%- endcapture -%}
+      {% liquid
+        assign width_2x = width | times: 2
+        assign width_3x = width | times: 3
+        assign width_750 = width | divided_by: 1.5 | round: 3
+        assign width_750_2x = width_750 | times: 2
+        assign width_750_3x = width_750 | times: 3
+        assign width_mobile = width | divided_by: 1.75 | round: 3
+        assign width_mobile_2x = width_mobile | times: 2
+        assign width_mobile_3x = width_mobile | times: 3
+        if section_index == 1 or section_index == null
+          if index == 1 or index == 2
+            assign loading = 'eager'
+          else
+            assign loading = ''
+          endif
+        else
+          assign loading = ''
+        endif
+      %}
+      <source
+        media="(min-width: 1200px)"
+        srcset="{{ image | image_url: width: width }} 1x, {{ image | image_url: width: width_2x }} 2x, {{ image | image_url: width: width_3x }} 3x"
+      >
+      <source
+        media="(min-width: 750px)"
+        srcset="{{ image | image_url: width: width_750 }} 1x, {{ image | image_url: width: width_750_2x }} 2x, {{ image | image_url: width: width_750_3x }} 3x"
+      >
+      <source
+        media="(max-width: 750px)"
+        srcset="{{ image | image_url: width: width_mobile }} 1x, {{ image | image_url: width: width_mobile_2x }} 2x, {{ image | image_url: width: width_mobile_3x }} 3x"
+      >
+      {{
+        image
+        | image_url: width: image.width
+        | image_tag:
+          loading: loading,
+          sizes: sizes,
+          widths: '360, 535, 600, 720, 940, 1066',
+          width: width,
+          height: height,
+          style: style
+      }}
+    </picture>
+  {% else %}
+    <div class="aic__image aic__image--placeholder">
+      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {% endif %}
+</div>

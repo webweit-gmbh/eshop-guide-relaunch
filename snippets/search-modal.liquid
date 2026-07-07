@@ -1,0 +1,46 @@
+{% if section.settings.collection_list != blank or section.settings.product_list != blank %}
+  <div class="search__modal">
+    <div class="search__items">
+      {% if section.settings.collection_list != blank %}
+        <ul class="search__categories list-unstyled" role="list">
+          {%- for collection in section.settings.collection_list -%}
+            <li class="search__categories-item">
+              <a
+                class="search__categories-link"
+                {% if collection.all_products_count > 0 %}
+                  href="{{ collection.url }}"
+                {% endif %}
+              >
+                {{ collection.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {% endif %}
+      {% if section.settings.product_list != blank %}
+        <div class="subtitle search__products-title">{{ 'general.search.popular_products' | t }}</div>
+        <ul class="search__products list-unstyled">
+          {% for product in section.settings.product_list %}
+            <li
+              class="
+                search__products-item collection-product-card
+                quickview{%- if settings.quickview_hover -%}--hover{% endif %}
+              "
+            >
+              {% render 'product-card-simple',
+                product_card_product: product,
+                media_ratio: section.settings.image_ratio,
+                media_fit: section.settings.image_fit,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_desc: section.settings.show_desc,
+                section_id: section.id,
+                add_id: forloop.index
+              %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

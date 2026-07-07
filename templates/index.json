@@ -1,0 +1,2008 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "aa66337f-82f0-4c84-aea6-b5ef91ad5d40": {
+      "type": "animated-image-collage",
+      "blocks": {
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Luisa_Cerano.png",
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Elho.png",
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Titus.png",
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AniForte.png",
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Giesswein.png",
+            "image_width": 420
+          }
+        },
+        "column_UNXEAH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Judith_Williams_1045e845-a7dc-48a7-b585-a57c0170298a.png",
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Petromax.png",
+            "image_width": 420
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-2",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-4",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-5",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-6",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-7",
+        "column_UNXEAH",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "anchor_id": "",
+        "section_type": "right",
+        "color_scheme": "background-4",
+        "background_image": "shopify://shop_images/Grafik_von_Olga.png",
+        "background_gradient": "",
+        "header_overlay": false,
+        "header_transparent": false,
+        "column_to_show": 3,
+        "opacity_overlay": 0.3,
+        "full_width": true,
+        "icon_type": "icon_pack",
+        "icon_pack": "none",
+        "svg_icon": "none",
+        "icon_color_scheme": "background-2",
+        "icon_style": "contrast",
+        "icon_fill_type": "solid",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "subheading": "4,9 von 5 Sterne | 98 % Weiterempfehlungen | 700+ Unternehmen",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon_type": "svg",
+        "subheading_icon": "star",
+        "subheading_svg_icon": "icon-EG-star",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle3",
+        "scribble_stroke_width": 11,
+        "scribble_color": "#0175b4",
+        "scribble_size": 109,
+        "scribble_top": 50,
+        "heading": "Kein Schnickschnack, kein Ghosting: Die Shopify-Agentur für #scribble-start#wirklich#scribble-end# abgeschlossene Projekte.",
+        "heading_tag": "h1",
+        "heading_size": "h2",
+        "heading_line": "background",
+        "line_color": "#dcb9f3",
+        "word_break": true,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "E-Commerce einfach gemacht.\n<br>\n<br>✓ Expert:innen für achtstellige Jahresumsätze\n<br>✓ Effizient dank modularer Shopify-Lösungen\n<br>✓ In-House Entwickler- und Schnittstellen-Teams\n<br>✓ Beratung, Migration, Relaunch & Trainings",
+        "enable_subscribe": false,
+        "button_label_subscribe": "Label",
+        "color_scheme_subscribe": "background-2",
+        "enable_box_shadow": true,
+        "button_style_subscribe": "primary",
+        "show_button": true,
+        "button_label": "Kontakt aufnehmen",
+        "button_link": "#contact",
+        "button_style": "primary",
+        "show_button_2": true,
+        "button_label_2": "Referenzen checken",
+        "button_link_2": "shopify://blogs/referenzen",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "logo_list_hV6RrB": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_pt3yxA": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/judith-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_f7nFLF": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/petromax-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_MLf3Lg": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Vorwerk.png",
+            "image_width": 140
+          }
+        },
+        "logo_aQahn9": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/luisa_cerano-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_U4DYeT": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/giesswein-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_kpMXf3": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/titus-grey.png",
+            "image_width": 105
+          }
+        },
+        "logo_G4i66i": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/nobilia-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_qYtXCN": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/elho-grey.png",
+            "image_width": 300
+          }
+        },
+        "logo_amTb6x": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/wincent_weiss-grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_PERxTF": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/enpal_1.png",
+            "image_width": 140
+          }
+        },
+        "logo_NmU6eW": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Nitro_grey_d8ed6018-8c58-4af6-8182-a0351b5f31cb.png",
+            "image_width": 140
+          }
+        },
+        "logo_MAneHr": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Bugatti_grey_bf6d3094-09e6-4f69-bc13-144b9fab5aad.png",
+            "image_width": 140
+          }
+        },
+        "logo_736mjP": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/MAC_grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_tRFRVw": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Braineffect_grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_LjN7NF": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/Dreame_gey.png",
+            "image_width": 140
+          }
+        },
+        "logo_iwQNPw": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/ORTLIEB_grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_tkXfpf": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/VOSSEN_grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_RmTY9p": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/NewBalance_grey.png",
+            "image_width": 140
+          }
+        },
+        "logo_fN3jHf": {
+          "type": "logo",
+          "settings": {
+            "open_in_new_tab": true,
+            "link": "",
+            "image_1": "shopify://shop_images/allbirds_gry.png",
+            "image_width": 140
+          }
+        }
+      },
+      "block_order": [
+        "logo_pt3yxA",
+        "logo_f7nFLF",
+        "logo_MLf3Lg",
+        "logo_aQahn9",
+        "logo_U4DYeT",
+        "logo_kpMXf3",
+        "logo_G4i66i",
+        "logo_qYtXCN",
+        "logo_amTb6x",
+        "logo_PERxTF",
+        "logo_NmU6eW",
+        "logo_MAneHr",
+        "logo_736mjP",
+        "logo_tRFRVw",
+        "logo_LjN7NF",
+        "logo_iwQNPw",
+        "logo_tkXfpf",
+        "logo_RmTY9p",
+        "logo_fN3jHf"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "horizontal-carousel",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h3",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 3000,
+        "speed_slider_2": 4000,
+        "padding_top": "m",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "hero_tabs_tJxUWJ": {
+      "type": "hero-tabs",
+      "blocks": {
+        "tab_dVP9Jd": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Shopify Migration",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/migration_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Shopify Migration",
+            "heading_tag": "h2",
+            "heading_size": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "none",
+            "description": "Serverprobleme? Unflexible Designs? Fehlende Selbstständigkeit? Lass alles hinter dir. Migriere mit unserer Hilfe zu Shopify und spare danach bis zu 65 % deiner laufenden Lizenz- und Agenturkosten.<br><br>\n\n✓ Reibungslose Migration von allen Systemen (Shopware, Magento etc.)<br>\n✓ Nahtlose Integration in bestehende Infrastruktur wie ERP, WaWi, PIM etc.<br>\n✓ Optimierungspotenziale nutzen dank Best-in-Class-Lösungen<br>\n✓ Wissenstransfer und gemeinsame Weiterentwicklung nach Livegang<br><br>",
+            "show_button_1": true,
+            "button_label_1": "Einfach migrieren.",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": true,
+            "button_label_2": "Erstmal mehr Infos",
+            "button_link_2": "shopify://pages/shopify-migration",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_8hEmbU": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Shop-Relaunch",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/optimierung.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "cover",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Shop-Relaunch",
+            "heading_tag": "h2",
+            "heading_size": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star",
+            "description": "Die Firma wächst und der Shop hält das Wachstum nicht aus? Pagespeed leidet? Das Design kennt keine UX? Und der Checkout ist zu kompliziert?\n<br><br>\n\nPlane einen Relaunch und hole mehr aus deinem Shop heraus. Wir liefern die Hebel dafür.\n<br><br>\n\n✓ Unser Expertenwissen ergänzt eure Inhouse-Skills<br>\n✓ Effizient, verlässlich und effektiv durch Analysen & Benchmarks der wichtigsten KPIs<br>\n✓ Agile und maßgeschneiderte Lösungen für komplexe Projekte",
+            "show_button_1": true,
+            "button_label_1": "Einfach relaunchen.",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": true,
+            "button_label_2": "Brauche mehr Details",
+            "button_link_2": "shopify://pages/shop-relaunch",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_mrTMBd": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Shopify Plus",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/shopify-plus.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "contain",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Shopify Plus Agentur",
+            "heading_tag": "h2",
+            "heading_size": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star",
+            "description": "Du setzt auf Skalierbarkeit mit Shopify Plus? Wir ebnen den Weg zu mehr Performance. <br><br>\n\n✓ Zugang zu den besten Automatisierungs- und Skalierung-Tools<br>\n✓ Spezialisierte Beratung für Internationalisierung<br>\n✓ Hohe Anforderungen für langfristige Partnerschaften",
+            "show_button_1": true,
+            "button_label_1": "Einfach zu Shopify Plus.",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": true,
+            "button_label_2": "Näheres zu Shopify Plus",
+            "button_link_2": "shopify://pages/shopify-plus-agentur",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        },
+        "tab_nQfF69": {
+          "type": "tab",
+          "settings": {
+            "button_text": "Shopify Apps",
+            "layout": "horizontal",
+            "header_overlay": false,
+            "header_transparent": false,
+            "block_type": "subtle",
+            "color_scheme": "",
+            "image": "shopify://shop_images/apps.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "image_ratio": "1/1",
+            "object_fit": "contain",
+            "desktop_image_position": "after",
+            "mobile_image_position": "after",
+            "mobile_image_overlay": "overlay",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "bottom",
+            "padding_top": "xs",
+            "padding_bottom": "m",
+            "icon": "none",
+            "icon_size": 60,
+            "heading": "Shopify Apps",
+            "heading_tag": "h2",
+            "heading_size": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false,
+            "subheading": "",
+            "subheading_tag": "p",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "none",
+            "description": "Du willst eine Integration zu Drittanbietern verbessern oder erweitern? Es soll technisch einwandfrei laufen und sich perfekt integrieren lassen? Wir bauen auch Apps.\n<br><br>\n✓ Public Apps für den Shopify Store inkl. Polaris Komponenten<br>\n✓ Built for Shopify Badges<br>\n✓ Option zu Kundensupport-Paketen",
+            "show_button_1": true,
+            "button_label_1": "Einfach Shopify Apps.",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": true,
+            "button_label_2": "Zum Apps-Überblick",
+            "button_link_2": "shopify://pages/shopify-apps",
+            "button_style_2": "simple",
+            "show_caption_1": false,
+            "caption_text_1": "Label",
+            "caption_icon_1": "check-2",
+            "show_caption_2": false,
+            "caption_text_2": "Label",
+            "caption_icon_2": "check-2",
+            "show_caption_3": false,
+            "caption_text_3": "Label",
+            "caption_icon_3": "check-2",
+            "user_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_dVP9Jd",
+        "tab_8hEmbU",
+        "tab_mrTMBd",
+        "tab_nQfF69"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "heading": "Die Shopify-Expert:innen mit der richtigen Portion Realismus.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Als ultimative Shopify-Agentur brennen wir für das Shopify-Thema und können gar nicht anders, als dich korrekt zu beraten.",
+        "text_align": "left",
+        "button_color": "#98cce9",
+        "button_text_color": "#14486f"
+      }
+    },
+    "testimonials_chNMcd": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_QEkcNQ": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": true,
+            "color_scheme_badge": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+            "badge_text": "Shopify Migration und Relaunch",
+            "slide_text": "„In allen Dimensionen braucht es die richtigen Partner. Man kann es also schon als Glück bezeichnen, dass wir auf Eshop Guide gestoßen sind. Denn uns war ziemlich schnell klar: Das passt. Fachlich wie menschlich.“",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "image": "shopify://shop_images/Giesswein_iPhone_Zusammengestellt.png",
+            "logo_image": "shopify://shop_images/Giesswein_grey.png",
+            "box_color": "#ffffff",
+            "slide_name": "Markus Giesswein",
+            "slide_position": "Geschäftsführer | GIESSWEIN"
+          }
+        },
+        "testimonials_slide_bmdWaa": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Bei TITUS setzen wir Projekte als agile Sprints um. Eshop Guide verwendet genau dieselbe Methode. Deshalb ging die Umsetzung nicht nur reibungslos über die Bühne, sondern auch in Rekordzeit. Dank agiler Sprints konnten wir den Launch dreimal vorziehen.”",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "image": "shopify://shop_images/Titus_Mockup_Schraeg_2.png",
+            "logo_image": "shopify://shop_images/TITUS_Hexagon_V2a_Black_4c_RGB_1000x805px_cc39c7bb-d82f-45fa-8451-4a4b24e6a6f0.png",
+            "box_color": "#ffffff",
+            "slide_name": "Michael Höcker",
+            "slide_position": "Head of E-Commerce & Marketing | TITUS"
+          }
+        },
+        "testimonials_slide_HggHEH": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": true,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "“Es gab keine Hänger und keine Wartezeiten bei akuten Problemen. Vom Kick-off bis zum Live-Gang unseres neuen Shops dauerte es nur vier Monate. Das ist beeindruckend schnell.“",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "image": "shopify://shop_images/Luisa_Cerano_Macbook_Mockup_6628b05e-186d-4e35-9709-851c84c44974.png",
+            "logo_image": "shopify://shop_images/Luisa_Cerano_Logo_05bb52ed-1e14-4aec-972e-5d8db8ef857b.png",
+            "box_color": "#ffffff",
+            "slide_name": "Simon Dress",
+            "slide_position": "Head of IT | Luisa Cerano"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_QEkcNQ",
+        "testimonials_slide_bmdWaa",
+        "testimonials_slide_HggHEH"
+      ],
+      "custom_css": [],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "background-1",
+        "subheading": "Testimonials",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle2",
+        "scribble_stroke_width": 16,
+        "scribble_color": "#f2e6ff",
+        "scribble_size": 131,
+        "scribble_top": 50,
+        "heading": "Im #scribble-start#Projekt#scribble-end# und auch danach: Deine konsistente Zufriedenheit zeichnet uns  aus.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "none",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Entdecke die Kund:innenstimmen",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "slide_text_size": "recommended",
+        "enable_navigation": true,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "numbers_RFbJTx": {
+      "type": "numbers",
+      "blocks": {
+        "column_yjhUUH": {
+          "type": "column",
+          "settings": {
+            "number": "700+",
+            "heading": "",
+            "heading_tag": "p",
+            "description": "erfolgreich umgesetzte Shopify-Projekte",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(190, 253, 95, 1), rgba(190, 253, 95, 0.5) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_wdRFxF": {
+          "type": "column",
+          "settings": {
+            "number": "4.9/ 5 ★★★★★",
+            "heading": "",
+            "heading_tag": "p",
+            "description": "auf ProvenExpert",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(54, 212, 255, 0.5) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_NMhpB4": {
+          "type": "column",
+          "settings": {
+            "number": "50+",
+            "heading": "",
+            "heading_tag": "p",
+            "description": "Angestellte Shopify-Expert:innen",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1), rgba(139, 246, 149, 0.5) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color_first": "",
+            "icon_size": 30,
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yjhUUH",
+        "column_wdRFxF",
+        "column_NMhpB4"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "text_align": "left",
+        "number_size": "small",
+        "icon_size": "recommended",
+        "card_heading_size": "h4",
+        "number_size_first": "small",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_3Kpapg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_BWy8bk": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Pioniere durch und durch:",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_HJUWnb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Die Shopify-Agentur mit den meisten Referenzen im DACH.",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_PzA7H4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir geben nicht gerne an, ABER: Mit über 800 Shopify-Tutorials sind wir zudem die Shopify-Expert:innen im DACH mit dem größten Shopify-Wissen. </p>",
+            "placement": "left"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BWy8bk",
+        "heading_HJUWnb",
+        "text_PzA7H4"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_PnCrKH": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_FX4dPN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Ergebnisse:",
+            "heading_tag": "p",
+            "text": "",
+            "background_gradient": ""
+          }
+        },
+        "column_eFwWmp": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "arrow-bar",
+            "svg_icon": "icon-EG-chart",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "31%",
+            "heading_tag": "p",
+            "text": "verbesserte Conversion Rate",
+            "background_gradient": ""
+          }
+        },
+        "column_jqBLTi": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "rocket",
+            "svg_icon": "icon-EG-speed",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "1,3 Sekunden",
+            "heading_tag": "p",
+            "text": "Pagespeed auf contentstarken Seiten",
+            "background_gradient": ""
+          }
+        },
+        "column_QDJcRE": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "phone-4",
+            "svg_icon": "icon-EG-happy",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "0 Anrufe",
+            "heading_tag": "p",
+            "text": "bei der Service-Hotline aufgrund tech. Probleme",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FX4dPN",
+        "column_eFwWmp",
+        "column_jqBLTi",
+        "column_QDJcRE"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": true,
+        "color_scheme": "background-1",
+        "background_image": "shopify://shop_images/Rectangle_76.png",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Von Shopware 5 zu Shopify Plus",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Nach Migration zu Shopify: TITUS verzeichnet massiven Conversion-Rate-Sprung",
+        "inner_heading_tag": "h3",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Nach dem Wechsel von Shopware zu Shopify Plus hat TITUS nicht nur technische Hürden überwunden, sondern die Performance seines Onlineshops auf ein neues Level gehoben. In nur acht Wochen konnten wir die Migration abschließen – mit beeindruckenden Ergebnissen. TITUS ist jetzt perfekt für die digitale Halfpipe gerüstet!<br/><strong><br/>Strahlende Zahlen</strong></p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "top",
+        "formate_picker": "video",
+        "image": "shopify://shop_images/TITUS_-_iPhone_-_Shopify_1024x1024_aafad7a9-45a8-4df1-9316-6c5cc712e414.webp",
+        "video_object_fit": false,
+        "video": "shopify://files/videos/TITUS Startseite 535x1080 .mp4",
+        "video_overlay_image": "shopify://shop_images/Iphone_Mock_Up_frontal_Notsch_f25e2c0a-3844-474f-b81e-5d6d3d66bd0b.png",
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "portrait",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "heading_width": 15,
+        "additional_custom_text": "Some text",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "So rollt TITUS auf Shopify Plus.",
+        "button_link": "shopify://blogs/referenzen/titus-wechsel-zu-shopify",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "steps_aNfDGQ": {
+      "type": "steps",
+      "blocks": {
+        "step_RwrqB3": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Elho_Produktseite.png",
+            "image_width": 500,
+            "number": "1",
+            "heading": "Authentisch kennenlernen",
+            "heading_tag": "h3",
+            "text": "<strong>Cultural Fit etablieren</strong> <br>Menschen arbeiten mit Menschen und deswegen ist eine gemeinsame Wellenlänge entscheidend für unsere langfristige Partnerschaft. <br><br> <strong>Lösungen skizzieren</strong> <br>Im unverbindlichen Austausch oder auch bezahlten Workshops bewerten wir Anforderungen und Ziele und stellen Lösungen sowie Rahmenbedingungen der möglichen Zusammenarbeit vor.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_4zmicw": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/GIESSWEIN_Schraeg.png",
+            "image_width": 630,
+            "number": "2",
+            "heading": "Fundament legen",
+            "heading_tag": "h3",
+            "text": "<strong>Projekt starten</strong> <br>Wir starten unsere Zusammenarbeit als Projekt oder agil. Alle Stakeholder bilden ein gemeinsames Projektteam, das zuverlässig und lösungsorientiert unter unserer Leitung arbeitet.<br><br> <strong>Tief eintauchen</strong> <br>Im Zuge des Projektes lernen wir eure Marke, Produkte, Kultur, Kundschaft und Rahmenbedingungen noch besser kennen. So können wir nach dem initialen Projekt noch effizienter ins gemeinsame Wachstum gehen.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_rfGc6N": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Titus_61777c06-a181-448b-81df-ca7e67b51fab.png",
+            "image_width": 500,
+            "number": "3",
+            "heading": "Gemeinsam wachsen",
+            "heading_tag": "h3",
+            "text": "<strong>Support & Enablement</strong> <br>Mit einer persönlichen Ansprechperson und agiler Umsetzung geht es nach dem Projekt nahtlos weiter. Dabei konzentrieren wir uns gemeinsam auf die Weiterentwicklung und den Support bei komplexen Themen, da ihr den Alltag dank Shopify und unseren Trainings selbstständig bewältigt.<br><br> <strong>Strategie & Expertise</strong> <br>Für ein noch effizienteres Wachstum unterstützen euch dedizierte E-Commerce-Expert:innen. Dabei planen wir gemeinsam auf Basis eurer Ziele, priorisieren und implementieren auch über Shopify hinaus (etwa E-Mail-Marketing, Performance-Marketing, SEO, A/B-Testing etc.)",
+            "show_button": false,
+            "button_style": "primary",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_RwrqB3",
+        "step_4zmicw",
+        "step_rfGc6N"
+      ],
+      "custom_css": [
+        ".steps__content--collapsible .step__number span {color: rgb(var(--color-foreground-title));}"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "boxed": false,
+        "layout": "collapsible",
+        "color_scheme": "background-2",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "heading": "Der Mittelstand kennt Wachstum. Wir kennen Wachstum mit Shopify",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "background",
+        "line_color": "#d0bcd4",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Jahrelange Partnerschaften mit den erfolgreichsten E-Commerce-Unternehmen kommen nicht von ungefähr. Wir beherrschen jede Etappe und so sieht der Weg üblicherweise aus:",
+        "text_align": "left",
+        "columns_to_show": 3,
+        "image_ratio": "square",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "image_with_text_W8L7ty": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_yNc7XP": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Ergebnisse:",
+            "heading_tag": "p",
+            "text": "",
+            "background_gradient": ""
+          }
+        },
+        "column_CE8Dw8": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "arrow-bar",
+            "svg_icon": "icon-EG-graph",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "50 %",
+            "heading_tag": "p",
+            "text": "verbesserte Conversion-Rate",
+            "background_gradient": ""
+          }
+        },
+        "column_NpaaTy": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "laptop-1",
+            "svg_icon": "icon-EG-money",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "⅓",
+            "heading_tag": "p",
+            "text": "geringere Entwicklungskosten",
+            "background_gradient": ""
+          }
+        },
+        "column_MbgGpk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "phone-4",
+            "svg_icon": "icon-EG-check",
+            "icon_color": "",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "15 %",
+            "heading_tag": "p",
+            "text": "Umsatzwachstum im 1. Jahr",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yNc7XP",
+        "column_CE8Dw8",
+        "column_NpaaTy",
+        "column_MbgGpk"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": true,
+        "color_scheme": "background-1",
+        "background_image": "shopify://shop_images/Rectangle_77.png",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Von Shopware 5 zu Shopify Plus",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "AniForte nach Wechsel zu Shopify einfach 50 % mehr Conversions",
+        "inner_heading_tag": "h3",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>AniForte stand vor der Wahl: hoher Aufwand und Kosten bei Shopware oder ein effizienter Wechsel zu Shopify Plus. Die klare Antwort lieferte überzeugende Zahlen und das umfassende App-Angebot von Shopify. Tierisch gut, oder?<strong><br/><br/>Daumen hoch für</strong></p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "top",
+        "formate_picker": "video",
+        "image": "shopify://shop_images/Aniforte_Produktseite.png",
+        "video_object_fit": true,
+        "video": "shopify://files/videos/AniForte Startseite 535 x 1080 .mp4",
+        "video_overlay_image": "shopify://shop_images/Iphone_Mock_Up_frontal_Notsch_f25e2c0a-3844-474f-b81e-5d6d3d66bd0b.png",
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "portrait",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "heading_width": 15,
+        "additional_custom_text": "Some text",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "AniFortes Sprung ins Wachstum.",
+        "button_link": "shopify://blogs/referenzen/aniforte-wechsel-shopify-plus",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "s",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_4epnm4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wbnXBg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zu viele, um Zufall zu sein.",
+            "heading_tag": "h4",
+            "heading_size": "medium"
+          }
+        },
+        "text_fTk7BL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unser Erfolge als Shopify-Agentur: Über 700+ erfolgreich abgeschlossene Shopify-Projekte</p>",
+            "placement": "left"
+          }
+        },
+        "button_Gb3Vrj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Einfach noch mehr tolle Referenzen.",
+            "button_link": "shopify://blogs/referenzen",
+            "button_style": "primary",
+            "placement": "left"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wbnXBg",
+        "text_fTk7BL",
+        "button_Gb3Vrj"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_DmmT6X": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_D4H8JL": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "scheme-375efabf-1879-43f1-a1af-9506648e85a1",
+            "icon_fill_type": "gradient",
+            "heading": "Zu viele, um Zufall zu sein",
+            "heading_tag": "h4",
+            "text": "<p>Über 700+ erfolgreich abgeschlossene Shopify-Projekte</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Noch mehr tolle Referenzen",
+            "button_link": "shopify://blogs/referenzen",
+            "button_style": "secondary"
+          }
+        },
+        "column_XBniJw": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": true,
+            "button_right": false,
+            "button_label": "Noch mehr tolle Referenzen",
+            "button_link": "shopify://blogs/referenzen",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_D4H8JL",
+        "column_XBniJw"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "solid",
+        "layout_style": "primary",
+        "content_alignment_horizontal": true,
+        "button_full_width": true,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 0,
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": true,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "contain",
+        "card_heading_size": "h3",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "s",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_z3WAfb": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_WD3DjM": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Oder kontaktiere uns direkt:",
+            "heading_tag": "p",
+            "text": "📞 0234 5200 9735 <br>💬 Live-Chat (Mo. bis Fr. 10–17 Uhr)",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WD3DjM"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "text_last",
+        "enable_column": false,
+        "color_scheme": "scheme-68a3d7e4-6a10-44cb-b105-f20261e20a87",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h3",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Du willst ein gutes Shopify-Projekt mit realistischen Zielen und Zeitplänen?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "rounded",
+        "inner_line_color": "#0175b4",
+        "inner_word_break": false,
+        "description": "<p>Such dir einfach einen Termin aus und überzeuge dich von unserer Authentizität.</p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "center",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Patrick_2.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 130,
+        "add_text": "",
+        "enable_custom_additional_text_style": true,
+        "additional_custom_text_heading": "Patrick Rosenblatt",
+        "heading_width": 15,
+        "additional_custom_text": "Shopify Experte & Geschäftsführer",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach Termin buchen.",
+        "button_link": "#contact",
+        "button_style": "tertiary",
+        "show_button_2": false,
+        "button_label_2": "Oder kontaktiere uns direkt: 📞 0234 5200 9735",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rolling_text_WW9FxP": {
+      "type": "rolling-text",
+      "blocks": {
+        "text_PCG87b": {
+          "type": "text",
+          "settings": {
+            "rolling_text": "<p><strong>BUSINESS CASE ODER NICHT. WIR SAGEN, WIE ES IST.    BUSINESS CASE ODER NICHT. WIR SAGEN, WIE ES IST.    </strong></p>",
+            "font-size": 40,
+            "rolling_text_link": "",
+            "marquee_direction": "right",
+            "marquee_speed": 25,
+            "font_color": "#00486f",
+            "background_color": "",
+            "enable_link_button": false,
+            "button_text": "",
+            "button_type": "primary",
+            "button_position": "center",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_PCG87b"
+      ],
+      "custom_css": [],
+      "settings": {
+        "anchor_id": "",
+        "heading_text": "",
+        "heading_tag": "h4"
+      }
+    },
+    "multicolumn_KwkrLg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QhTbfU": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-storefront",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Du fragst dich, ob deine Marke auf Shopify adäquat präsentiert werden kann? </p><p><strong>Wir zeigen dir, wie.</strong></p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_cH8B7a": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Du möchtest wissen, ob deine Anforderungen bei Shopify umgesetzt werden können? </p><p><strong>Wir antworten ehrlich.</strong></p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_4aXnam": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "icon-EG-rocket",
+            "icon_size": 30,
+            "icon_color": "",
+            "icon_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "heading_tag": "h3",
+            "text": "<p>Du willst einen zuverlässigen Shopify-Partner, der erreichbar ist? <br/></p><p><strong>Wir</strong> <strong>sind’s.</strong></p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_QhTbfU",
+        "column_cH8B7a",
+        "column_4aXnam"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "primary",
+        "content_alignment_horizontal": true,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "row",
+        "icon_padding": 40,
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "subheading": "Über Uns",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ein guter (Eshop) Guide kommt selten allein.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Du bestimmst das Ziel, wir führen dich hin.\n\nWir sind Eshop Guide, Shopify-Agentur, Shopify-Enthusiasten, Kommunikationsprofis, angenehme Menschen. Seit über einem Jahrzehnt ebnen wir den Weg für Unternehmen in die digitale Transformation. Shopify ist der Zug, auf den wir dabei immer setzen.",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "icon_background_remove": false,
+        "image_width": "small",
+        "image_ratio": "square",
+        "object_fit": "contain",
+        "card_heading_size": "h4",
+        "padding_top": "xs",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_QaGGhn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_a6493b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Über 700+ erfolgreich abgeschlossene Shopify-Projekte",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_a6493b"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs",
+        "padding_top": "s",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rolling_text_4exYgc": {
+      "type": "rolling-text",
+      "blocks": {
+        "text_LeHtAh": {
+          "type": "text",
+          "settings": {
+            "rolling_text": "<p><strong>PROJEKTE, DIE WIRKLICH ABGESCHLOSSEN WERDEN.    PROJEKTE, DIE WIRKLICH ABGESCHLOSSEN WERDEN.     PROJEKTE, DIE WIRKLICH ABGESCHLOSSEN WERDEN.    PROJEKTE, DIE WIRKLICH ABGESCHLOSSEN WERDEN.</strong></p>",
+            "font-size": 30,
+            "rolling_text_link": "",
+            "marquee_direction": "right",
+            "marquee_speed": 15,
+            "font_color": "#00486f",
+            "background_color": "",
+            "enable_link_button": false,
+            "button_text": "",
+            "button_type": "primary",
+            "button_position": "center",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_LeHtAh"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "heading_text": "",
+        "heading_tag": "h3"
+      }
+    },
+    "image_with_text_pCJytB": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Das Eshop Guide-Manifest",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Was treibt die Menschen bei uns an?",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Bei Eshop Guide dreht sich alles um eines: Wissensdurst. Während andere Shopify-Agenturen ihre Prioritäten auf Umsatzmaximierung setzen, liegt unser Fokus auf der Begeisterung für Shopify.</p><p>Wir lieben es, das volle Potenzial von Shopify auszuschöpfen und Projekte umzusetzen, die nicht nur technisch brillant sind, sondern auch langfristig funktionieren. Kreative Tricks, um Budgets aufzublähen, sind nicht unser Stil – dafür fehlt uns einfach die Fähigkeit, anders als ehrlich und transparent zu arbeiten. Unser Ziel? Rundum zufriedene Kundschaft und Projekte, die wirklich begeistern.</p>",
+        "description_text_size": "body-large",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Eshop-Guide.jpg",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "heading_width": 15,
+        "additional_custom_text": "Some text",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Zur Shopify-Nerds Story.",
+        "button_link": "shopify://pages/ueber-uns",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_b8PWVP": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_QqyKYQ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Die Shopify-Agentur mit Shopify-Wissen",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_qGmHrW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Die heißesten Themen der Community findest du in unserem Wissens-Hub",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_CpcXAn": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Bei Eshop Guide dreht sich alles um eines: Wissensdurst. Während andere ihre Prioritäten auf Umsatzmaximierung setzen, liegt unser Fokus auf der Begeisterung für Shopify.</p><p>Wir lieben es, das volle Potenzial von Shopify auszuschöpfen und Projekte umzusetzen, die nicht nur technisch brillant sind, sondern auch langfristig funktionieren. Kreative Tricks, um Budgets aufzublähen, sind nicht unser Stil – dafür fehlt uns einfach die Fähigkeit, anders als ehrlich und transparent zu arbeiten. Unser Ziel? Rundum zufriedene Kundschaft und Projekte, die wirklich begeistern.</p>",
+            "placement": "left"
+          }
+        },
+        "button_gwPKjV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zum geballten Wissen hier entlang.",
+            "button_link": "shopify://blogs/shopify-deutschland",
+            "button_style": "secondary",
+            "placement": "left"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_QqyKYQ",
+        "heading_qGmHrW",
+        "text_CpcXAn",
+        "button_gwPKjV"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "columns": "single",
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_EeqMft": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "blog": "shopify-deutschland",
+        "color_scheme": "background-1",
+        "post_layout": "columns",
+        "enable_carousel": false,
+        "navigation_color_scheme": "background-1",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 3,
+        "card_color_scheme": "scheme-6251fb50-60ea-49fc-8946-e4530a44657b",
+        "subheading": "Die heißesten Themen der Community",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": true,
+        "scribble_style": "circle2",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#befd5f",
+        "scribble_size": 118,
+        "scribble_top": 50,
+        "heading": "#scribble-start#Eshop#scribble-end# Trending",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Zum geballten Wissen hier entlang",
+        "custom_view_all_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "s",
+        "margin_bottom": "s"
+      }
+    },
+    "newsletter_RUMVJ3": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "newsletter_form": "mailchimp",
+        "align_content": "left",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Ein E-Gipfel besteigt sich nicht ohne E-Wissen.",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Werde Teil unserer Eshop-Community und lerne regelmäßig von führenden Expert:innen der Branche, wie es besser geht.",
+        "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1), rgba(139, 246, 149, 0.5) 100%)",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "padding_top": "xs",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_rLyNy9": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "anchor_id": "",
+        "custom_liquid": "<script type=\"module\" src=\"https://cdn.sitecockpit.com/cdn/app.js\" data-easy-vision-key=\"b2a70ef5-497f-4ebc-b926-b6ff3ffbfe14\"></script>"
+      }
+    }
+  },
+  "order": [
+    "aa66337f-82f0-4c84-aea6-b5ef91ad5d40",
+    "logo_list_hV6RrB",
+    "hero_tabs_tJxUWJ",
+    "testimonials_chNMcd",
+    "numbers_RFbJTx",
+    "rich_text_3Kpapg",
+    "image_with_text_PnCrKH",
+    "steps_aNfDGQ",
+    "image_with_text_W8L7ty",
+    "rich_text_4epnm4",
+    "multicolumn_DmmT6X",
+    "image_with_text_z3WAfb",
+    "rolling_text_WW9FxP",
+    "multicolumn_KwkrLg",
+    "rich_text_QaGGhn",
+    "rolling_text_4exYgc",
+    "image_with_text_pCJytB",
+    "rich_text_b8PWVP",
+    "featured_blog_EeqMft",
+    "newsletter_RUMVJ3",
+    "custom_liquid_rLyNy9"
+  ]
+}

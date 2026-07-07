@@ -1,0 +1,509 @@
+.countdown-section > .container .countdown {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.countdown_padding {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+@media (min-width: 750px) {
+  .countdown_padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown_padding {
+    min-height: 60rem;
+  }
+}
+@media (min-width: 1360px) {
+  .countdown_padding {
+    min-height: 80rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+.countdown__bg {
+  position: absolute;
+  inset: 0;
+}
+.countdown__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.countdown__bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.countdown__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 3.2rem;
+  border-radius: 1.2rem;
+  background-color: rgb(var(--color-background));
+}
+.countdown__wrapper_shadow {
+  box-shadow: 0px 8px 40px 0px rgba(var(--color-shadow), 0.08);
+}
+@media screen and (min-width: 576px) {
+  .countdown__wrapper {
+    padding: 4.8rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown__wrapper {
+    flex-direction: row;
+    align-items: center;
+    padding: 6.4rem 4.8rem;
+    gap: 4.5rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown__wrapper {
+    padding: 7.3rem 6.4rem;
+  }
+}
+.countdown__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 55rem;
+  width: 100%;
+}
+.countdown__subheading {
+  margin-bottom: 1.6rem;
+}
+.countdown__heading {
+  margin: 0;
+}
+.countdown__heading a {
+  text-decoration: none;
+  transition: color var(--duration-default);
+}
+.countdown__heading a:hover {
+  color: rgb(var(--color-accent));
+}
+.countdown__heading--simple span[style*="text-decoration:underline"] {
+  display: inline-block;
+  text-decoration-color: var(--color-line) !important;
+  text-underline-offset: 6%;
+}
+.countdown__heading--rounded span[style*="text-decoration:underline"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  text-decoration: none !important;
+  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown__heading--rounded span[style*="text-decoration:underline"] {
+    padding-bottom: 0.7rem;
+  }
+}
+.countdown__heading--rounded span[style*="text-decoration:underline"].title--rounded-xs {
+  padding-bottom: 0.5rem;
+}
+.countdown__heading--background {
+  position: relative;
+  z-index: 1;
+}
+.countdown__heading--background span[style*="text-decoration:underline"] {
+  position: relative;
+  display: inline-block;
+  text-decoration: none !important;
+  padding: 0 0.8rem;
+  background-color: var(--color-line);
+  border-radius: 0.6rem;
+  z-index: -1;
+}
+.countdown__heading--word_break span[style*="text-decoration:underline"] {
+  display: inline;
+}
+.countdown__text {
+  margin-top: 0.8rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown__text {
+    margin-top: 1.6rem;
+  }
+}
+.countdown__button {
+  margin-top: 1.6rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown__button {
+    margin-top: 2.4rem;
+  }
+}
+.countdown__main {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  width: 100%;
+  z-index: 3;
+}
+@media screen and (min-width: 576px) {
+  .countdown__main {
+    width: 80%;
+    gap: 2.4rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown__main {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown__main--font-recommended {
+    gap: 6.4rem;
+  }
+}
+.countdown__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+@media screen and (min-width: 990px) {
+  .countdown__block {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .countdown__block {
+    min-width: 14rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .countdown__block {
+    min-width: 16rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown__block {
+    min-width: 18rem;
+  }
+}
+.countdown__block_num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-weight: var(--font-heading-weight);
+}
+.countdown .countdown_block_days,
+.countdown .countdown_block_hours,
+.countdown .countdown_block_minutes,
+.countdown .countdown_block_seconds {
+  margin: 0;
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  letter-spacing: calc(var(--font-heading-letter-spacing) * 0.1);
+  line-height: 112%;
+  color: rgb(var(--color-accent));
+}
+.countdown .countdown_block_days.recommended,
+.countdown .countdown_block_hours.recommended,
+.countdown .countdown_block_minutes.recommended,
+.countdown .countdown_block_seconds.recommended {
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 6.4rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    margin-bottom: -1.2rem;
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 12rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 13rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .countdown .countdown_block_days.recommended,
+  .countdown .countdown_block_hours.recommended,
+  .countdown .countdown_block_minutes.recommended,
+  .countdown .countdown_block_seconds.recommended {
+    font-size: 14.4rem;
+  }
+}
+.countdown .countdown_block_days.large,
+.countdown .countdown_block_hours.large,
+.countdown .countdown_block_minutes.large,
+.countdown .countdown_block_seconds.large {
+  font-size: 2.8rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    font-size: 6.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    margin-bottom: -1.2rem;
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown .countdown_block_days.large,
+  .countdown .countdown_block_hours.large,
+  .countdown .countdown_block_minutes.large,
+  .countdown .countdown_block_seconds.large {
+    font-size: 12rem;
+  }
+}
+.countdown .countdown_block_days.normal,
+.countdown .countdown_block_hours.normal,
+.countdown .countdown_block_minutes.normal,
+.countdown .countdown_block_seconds.normal {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    font-size: 6.4rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    margin-bottom: -1.2rem;
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown .countdown_block_days.normal,
+  .countdown .countdown_block_hours.normal,
+  .countdown .countdown_block_minutes.normal,
+  .countdown .countdown_block_seconds.normal {
+    font-size: 10rem;
+  }
+}
+.countdown .countdown_block_days.medium,
+.countdown .countdown_block_hours.medium,
+.countdown .countdown_block_minutes.medium,
+.countdown .countdown_block_seconds.medium {
+  font-size: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    font-size: 6.4rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .countdown .countdown_block_days.medium,
+  .countdown .countdown_block_hours.medium,
+  .countdown .countdown_block_minutes.medium,
+  .countdown .countdown_block_seconds.medium {
+    margin-bottom: -1.2rem;
+    font-size: 8rem;
+  }
+}
+.countdown__end-info {
+  position: relative;
+  display: none;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  z-index: 3;
+}
+@media screen and (min-width: 990px) {
+  .countdown__end-info {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown__end-info {
+    width: auto;
+    text-align: center;
+  }
+}
+.countdown__end-info h3,
+.countdown__end-info p {
+  margin: 0;
+  color: rgb(var(--color-foreground-title));
+}
+.countdown__end-info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+.countdown .italic {
+  font-style: italic;
+  position: relative;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+[data-scheme=dark] .countdown__heading--simple span[style*="text-decoration:underline"] {
+  text-decoration-color: #4A4A4C !important;
+}
+[data-scheme=dark] .countdown__heading--background span[style*="text-decoration:underline"] {
+  background-color: #4A4A4C;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-scheme=auto] .countdown__heading--simple span[style*="text-decoration:underline"] {
+    text-decoration-color: #4A4A4C !important;
+  }
+  [data-scheme=auto] .countdown__heading--background span[style*="text-decoration:underline"] {
+    background-color: #4A4A4C;
+  }
+}

@@ -1,0 +1,896 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .rich-text__columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .rich-text__columns {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+{%- endstyle -%}
+
+{% if section.blocks.size == 0 %}
+  <div class="rich-text container rich-text--align-center color-background-1">
+    <div class="rich-text__blocks">
+      <p>{{ 'general.onboarding.no_content' | t }}</p>
+    </div>
+  </div>
+{% endif %}
+
+{%- for block in section.blocks -%}
+  {%- assign block_alignment = block.settings.alignment | default: 'center' -%}
+  {%- assign block_color_scheme = block.settings.color_scheme | default: 'background-1' -%}
+  {%- assign block_full_width = block.settings.full_width -%}
+  {%- assign block_full_width_text = block.settings.full_width_text -%}
+  {%- assign columns = block.settings.columns | default: 'single' -%}
+  {%- if columns == 'multi' -%}
+    {%- assign is_multi = true -%}
+  {%- else -%}
+    {%- assign is_multi = false -%}
+  {%- endif -%}
+
+  {%- assign element_registry = '' -%}
+
+  {%- assign subheading_text = block.settings.subheading -%}
+  {%- if subheading_text != blank -%}
+    {%- assign subheading_order = block.settings.subheading_order | default: '01' -%}
+    {%- assign subheading_placement = block.settings.subheading_placement | default: 'full' -%}
+    {%- capture element_registry -%}{{- element_registry -}}{{ subheading_order }}__subheading__{{ subheading_placement }}|{%- endcapture -%}
+  {%- endif -%}
+
+  {%- assign heading_text = block.settings.heading -%}
+  {%- if heading_text != blank -%}
+    {%- assign heading_order = block.settings.heading_order | default: '02' -%}
+    {%- assign heading_placement = block.settings.heading_placement | default: 'full' -%}
+    {%- capture element_registry -%}{{- element_registry -}}{{ heading_order }}__heading__{{ heading_placement }}|{%- endcapture -%}
+  {%- endif -%}
+
+  {%- for combo_index in (1..4) -%}
+    {%- assign combo_heading_key = 'combo_' | append: combo_index | append: '_heading' -%}
+    {%- assign combo_text_key = 'combo_' | append: combo_index | append: '_text' -%}
+    {%- assign combo_heading = block.settings[combo_heading_key] -%}
+    {%- assign combo_text = block.settings[combo_text_key] -%}
+    {%- if combo_heading != blank or combo_text != blank -%}
+      {%- assign combo_order_key = 'combo_' | append: combo_index | append: '_order' -%}
+      {%- assign combo_order = block.settings[combo_order_key] | default: '10' -%}
+      {%- assign combo_placement_key = 'combo_' | append: combo_index | append: '_placement' -%}
+      {%- assign combo_placement = block.settings[combo_placement_key] | default: 'left' -%}
+      {%- assign element_key = 'combo_' | append: combo_index -%}
+      {%- capture element_registry -%}{{- element_registry -}}{{ combo_order }}__{{ element_key }}__{{ combo_placement }}|{%- endcapture -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign button_label = block.settings.button_label -%}
+  {%- if button_label != blank -%}
+    {%- assign button_order = block.settings.button_order | default: '40' -%}
+    {%- assign button_placement = block.settings.button_placement | default: 'left' -%}
+    {%- capture element_registry -%}{{- element_registry -}}{{ button_order }}__button__{{ button_placement }}|{%- endcapture -%}
+  {%- endif -%}
+
+  {%- assign highlight_text = block.settings.highlight_text -%}
+  {%- if highlight_text != blank -%}
+    {%- assign highlight_order = block.settings.highlight_order | default: '50' -%}
+    {%- assign highlight_placement = block.settings.highlight_placement | default: 'right' -%}
+    {%- capture element_registry -%}{{- element_registry -}}{{ highlight_order }}__highlight__{{ highlight_placement }}|{%- endcapture -%}
+  {%- endif -%}
+
+  {%- assign element_entries = element_registry | split: '|' | compact | sort -%}
+
+  <div id="block-{{ block.id }}" class="combined-rich-text-block">
+    {% render 'anchor', anchor_id: block.settings.anchor_id %}
+    <div class="rich-text {% if block_full_width %}rich-text--full-width {% else %}container{% endif %} rich-text--align-{{ block_alignment }} color-{{ block_color_scheme }}" {{ block.shopify_attributes }}>
+      <div class="rich-text__blocks {% if block_full_width %}container{% endif %} section-block-{{ block.id }}-padding">
+        {%- assign left_queue = '' -%}
+        {%- assign right_queue = '' -%}
+        {%- assign has_pending_columns = false -%}
+
+        {%- for entry in element_entries -%}
+          {%- assign entry_parts = entry | split: '__' -%}
+          {%- assign element_key = entry_parts[1] -%}
+          {%- assign placement = entry_parts[2] | default: 'full' -%}
+
+          {%- if is_multi == false -%}
+            {%- assign placement = 'full' -%}
+          {%- endif -%}
+
+          {%- if is_multi and placement != 'full' -%}
+            {%- if placement == 'right' -%}
+              {%- capture right_queue -%}{{- right_queue -}}{{ element_key }}|{%- endcapture -%}
+            {%- else -%}
+              {%- capture left_queue -%}{{- left_queue -}}{{ element_key }}|{%- endcapture -%}
+            {%- endif -%}
+            {%- assign has_pending_columns = true -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {%- if has_pending_columns -%}
+            {%- assign left_items = left_queue | split: '|' | compact -%}
+            {%- assign right_items = right_queue | split: '|' | compact -%}
+            <div class="rich-text__columns">
+              <div class="rich-text__column rich-text__column--left">
+                {%- for element_name in left_items -%}
+                  {% render 'combined-rich-text-element', block: block, element_key: element_name %}
+                {%- endfor -%}
+              </div>
+              <div class="rich-text__column rich-text__column--right">
+                {%- for element_name in right_items -%}
+                  {% render 'combined-rich-text-element', block: block, element_key: element_name %}
+                {%- endfor -%}
+              </div>
+            </div>
+            {%- assign left_queue = '' -%}
+            {%- assign right_queue = '' -%}
+            {%- assign has_pending_columns = false -%}
+          {%- endif -%}
+
+          {% render 'combined-rich-text-element', block: block, element_key: element_key %}
+        {%- endfor -%}
+
+        {%- if has_pending_columns -%}
+          {%- assign left_items = left_queue | split: '|' | compact -%}
+          {%- assign right_items = right_queue | split: '|' | compact -%}
+          <div class="rich-text__columns">
+            <div class="rich-text__column rich-text__column--left">
+              {%- for element_name in left_items -%}
+                {% render 'combined-rich-text-element', block: block, element_key: element_name %}
+              {%- endfor -%}
+            </div>
+            <div class="rich-text__column rich-text__column--right">
+              {%- for element_name in right_items -%}
+                {% render 'combined-rich-text-element', block: block, element_key: element_name %}
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- liquid
+    assign margin_top = block.settings.margin_top | default: 'no-indent'
+    assign margin_bottom = block.settings.margin_bottom | default: 'no-indent'
+    assign padding_top = block.settings.padding_top | default: 'm'
+    assign padding_bottom = block.settings.padding_bottom | default: 'm'
+
+    assign margin_top_mobile = '0'
+    assign margin_top_tablet = '0'
+    assign margin_top_desktop = '0'
+    case margin_top
+      when 'xl'
+        assign margin_top_mobile = '10rem'
+        assign margin_top_tablet = '13.6rem'
+        assign margin_top_desktop = '15.2rem'
+      when 'l'
+        assign margin_top_mobile = '6.4rem'
+        assign margin_top_tablet = '8rem'
+        assign margin_top_desktop = '12rem'
+      when 'm'
+        assign margin_top_mobile = '4.8rem'
+        assign margin_top_tablet = '5.6rem'
+        assign margin_top_desktop = '5.6rem'
+      when 's'
+        assign margin_top_mobile = '3.2rem'
+        assign margin_top_tablet = '3.2rem'
+        assign margin_top_desktop = '3.2rem'
+      when 'xs'
+        assign margin_top_mobile = '2.4rem'
+        assign margin_top_tablet = '2.4rem'
+        assign margin_top_desktop = '2.4rem'
+      else
+        assign margin_top_mobile = '0'
+        assign margin_top_tablet = '0'
+        assign margin_top_desktop = '0'
+    endcase
+
+    assign margin_bottom_mobile = '0'
+    assign margin_bottom_tablet = '0'
+    assign margin_bottom_desktop = '0'
+    case margin_bottom
+      when 'xl'
+        assign margin_bottom_mobile = '10rem'
+        assign margin_bottom_tablet = '13.6rem'
+        assign margin_bottom_desktop = '15.2rem'
+      when 'l'
+        assign margin_bottom_mobile = '6.4rem'
+        assign margin_bottom_tablet = '8rem'
+        assign margin_bottom_desktop = '12rem'
+      when 'm'
+        assign margin_bottom_mobile = '4.8rem'
+        assign margin_bottom_tablet = '5.6rem'
+        assign margin_bottom_desktop = '5.6rem'
+      when 's'
+        assign margin_bottom_mobile = '3.2rem'
+        assign margin_bottom_tablet = '3.2rem'
+        assign margin_bottom_desktop = '3.2rem'
+      when 'xs'
+        assign margin_bottom_mobile = '2.4rem'
+        assign margin_bottom_tablet = '2.4rem'
+        assign margin_bottom_desktop = '2.4rem'
+      else
+        assign margin_bottom_mobile = '0'
+        assign margin_bottom_tablet = '0'
+        assign margin_bottom_desktop = '0'
+    endcase
+
+    assign padding_top_mobile = '4.8rem'
+    assign padding_top_tablet = '5.6rem'
+    assign padding_top_desktop = '5.6rem'
+    case padding_top
+      when 'xl'
+        assign padding_top_mobile = '10rem'
+        assign padding_top_tablet = '13.6rem'
+        assign padding_top_desktop = '15.2rem'
+      when 'l'
+        assign padding_top_mobile = '6.4rem'
+        assign padding_top_tablet = '8rem'
+        assign padding_top_desktop = '12rem'
+      when 'm'
+        assign padding_top_mobile = '4.8rem'
+        assign padding_top_tablet = '5.6rem'
+        assign padding_top_desktop = '5.6rem'
+      when 's'
+        assign padding_top_mobile = '3.2rem'
+        assign padding_top_tablet = '3.2rem'
+        assign padding_top_desktop = '3.2rem'
+      when 'xs'
+        assign padding_top_mobile = '2.4rem'
+        assign padding_top_tablet = '2.4rem'
+        assign padding_top_desktop = '2.4rem'
+      when 'no-indent'
+        assign padding_top_mobile = '0'
+        assign padding_top_tablet = '0'
+        assign padding_top_desktop = '0'
+    endcase
+
+    assign padding_bottom_mobile = '4.8rem'
+    assign padding_bottom_tablet = '5.6rem'
+    assign padding_bottom_desktop = '5.6rem'
+    case padding_bottom
+      when 'xl'
+        assign padding_bottom_mobile = '10rem'
+        assign padding_bottom_tablet = '13.6rem'
+        assign padding_bottom_desktop = '15.2rem'
+      when 'l'
+        assign padding_bottom_mobile = '6.4rem'
+        assign padding_bottom_tablet = '8rem'
+        assign padding_bottom_desktop = '12rem'
+      when 'm'
+        assign padding_bottom_mobile = '4.8rem'
+        assign padding_bottom_tablet = '5.6rem'
+        assign padding_bottom_desktop = '5.6rem'
+      when 's'
+        assign padding_bottom_mobile = '3.2rem'
+        assign padding_bottom_tablet = '3.2rem'
+        assign padding_bottom_desktop = '3.2rem'
+      when 'xs'
+        assign padding_bottom_mobile = '2.4rem'
+        assign padding_bottom_tablet = '2.4rem'
+        assign padding_bottom_desktop = '2.4rem'
+      when 'no-indent'
+        assign padding_bottom_mobile = '0'
+        assign padding_bottom_tablet = '0'
+        assign padding_bottom_desktop = '0'
+    endcase
+  -%}
+
+  {% style %}
+    #block-{{ block.id }} {
+      padding-top: {{ margin_top_mobile }};
+      padding-bottom: {{ margin_bottom_mobile }};
+    }
+    .section-block-{{ block.id }}-padding {
+      padding-top: {{ padding_top_mobile }};
+      padding-bottom: {{ padding_bottom_mobile }};
+    }
+    @media screen and (min-width: 750px) {
+      #block-{{ block.id }} {
+        padding-top: {{ margin_top_tablet }};
+        padding-bottom: {{ margin_bottom_tablet }};
+      }
+      .section-block-{{ block.id }}-padding {
+        padding-top: {{ padding_top_tablet }};
+        padding-bottom: {{ padding_bottom_tablet }};
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      #block-{{ block.id }} {
+        padding-top: {{ margin_top_desktop }};
+        padding-bottom: {{ margin_bottom_desktop }};
+      }
+      .section-block-{{ block.id }}-padding {
+        padding-top: {{ padding_top_desktop }};
+        padding-bottom: {{ padding_bottom_desktop }};
+      }
+    }
+  {% endstyle %}
+
+  {% if block_full_width_text %}
+    {% style %}
+      #block-{{ block.id }} .rich-text__heading,
+      #block-{{ block.id }} .rich-text__text {
+        max-width: 100%;
+      }
+    {% endstyle %}
+  {% endif %}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "Combined rich text",
+  "tag": "section",
+  "class": "spaced-section copy-richtext-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "richtext-group",
+      "name": "Rich text block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "anchor_id",
+          "label": "Anchor ID"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "default": "background-1",
+          "label": "t:sections.all.color_scheme.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "default": true,
+          "label": "t:sections.rich-text.settings.full_width.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width_text",
+          "default": false,
+          "label": "Text full width"
+        },
+        {
+          "type": "select",
+          "id": "columns",
+          "label": "Layout",
+          "options": [
+            { "value": "single", "label": "Single column" },
+            { "value": "multi", "label": "Multi-column" }
+          ],
+          "default": "single"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            { "value": "left", "label": "t:sections.rich-text.settings.alignment.options__1.label" },
+            { "value": "center", "label": "t:sections.rich-text.settings.alignment.options__2.label" },
+            { "value": "right", "label": "t:sections.rich-text.settings.alignment.options__3.label" }
+          ],
+          "default": "center",
+          "label": "t:sections.rich-text.settings.alignment.label"
+        },
+        {
+          "type": "header",
+          "content": "Spacing"
+        },
+        {
+          "type": "select",
+          "id": "margin_top",
+          "options": [
+            { "value": "no-indent", "label": "No margin" },
+            { "value": "xs", "label": "Extra small" },
+            { "value": "s", "label": "Small" },
+            { "value": "m", "label": "Medium" },
+            { "value": "l", "label": "Large" },
+            { "value": "xl", "label": "Extra large" }
+          ],
+          "default": "no-indent",
+          "label": "Margin top"
+        },
+        {
+          "type": "select",
+          "id": "margin_bottom",
+          "options": [
+            { "value": "no-indent", "label": "No margin" },
+            { "value": "xs", "label": "Extra small" },
+            { "value": "s", "label": "Small" },
+            { "value": "m", "label": "Medium" },
+            { "value": "l", "label": "Large" },
+            { "value": "xl", "label": "Extra large" }
+          ],
+          "default": "no-indent",
+          "label": "Margin bottom"
+        },
+        {
+          "type": "select",
+          "id": "padding_top",
+          "options": [
+            { "value": "no-indent", "label": "No padding" },
+            { "value": "xs", "label": "Extra small" },
+            { "value": "s", "label": "Small" },
+            { "value": "m", "label": "Medium" },
+            { "value": "l", "label": "Large" },
+            { "value": "xl", "label": "Extra large" }
+          ],
+          "default": "m",
+          "label": "Padding top"
+        },
+        {
+          "type": "select",
+          "id": "padding_bottom",
+          "options": [
+            { "value": "no-indent", "label": "No padding" },
+            { "value": "xs", "label": "Extra small" },
+            { "value": "s", "label": "Small" },
+            { "value": "m", "label": "Medium" },
+            { "value": "l", "label": "Large" },
+            { "value": "xl", "label": "Extra large" }
+          ],
+          "default": "m",
+          "label": "Padding bottom"
+        },
+        {
+          "type": "header",
+          "content": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "select",
+          "id": "subheading_tag",
+          "label": "Subheading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "p"
+        },
+        {
+          "type": "select",
+          "id": "subheading_placement",
+          "label": "Subheading placement",
+          "default": "full",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "subheading_order",
+          "label": "Subheading order",
+          "default": "01",
+          "options": [
+            { "value": "01", "label": "01" },
+            { "value": "02", "label": "02" },
+            { "value": "03", "label": "03" },
+            { "value": "04", "label": "04" },
+            { "value": "05", "label": "05" },
+            { "value": "06", "label": "06" },
+            { "value": "07", "label": "07" },
+            { "value": "08", "label": "08" },
+            { "value": "09", "label": "09" },
+            { "value": "10", "label": "10" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Main heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "medium", "label": "Medium" },
+            { "value": "large", "label": "Large" }
+          ],
+          "default": "medium",
+          "label": "Heading size"
+        },
+        {
+          "type": "select",
+          "id": "heading_placement",
+          "label": "Heading placement",
+          "default": "full",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "heading_order",
+          "label": "Heading order",
+          "default": "02",
+          "options": [
+            { "value": "01", "label": "01" },
+            { "value": "02", "label": "02" },
+            { "value": "03", "label": "03" },
+            { "value": "04", "label": "04" },
+            { "value": "05", "label": "05" },
+            { "value": "06", "label": "06" },
+            { "value": "07", "label": "07" },
+            { "value": "08", "label": "08" },
+            { "value": "09", "label": "09" },
+            { "value": "10", "label": "10" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Heading + text combos"
+        },
+        {
+          "type": "text",
+          "id": "combo_1_heading",
+          "label": "Combo 1 heading"
+        },
+        {
+          "type": "select",
+          "id": "combo_1_heading_tag",
+          "label": "Combo 1 heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h5"
+        },
+        {
+          "type": "richtext",
+          "id": "combo_1_text",
+          "label": "Combo 1 text"
+        },
+        {
+          "type": "select",
+          "id": "combo_1_placement",
+          "label": "Combo 1 placement",
+          "default": "left",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "combo_1_order",
+          "label": "Combo 1 order",
+          "default": "10",
+          "options": [
+            { "value": "05", "label": "05" },
+            { "value": "10", "label": "10" },
+            { "value": "15", "label": "15" },
+            { "value": "20", "label": "20" },
+            { "value": "25", "label": "25" },
+            { "value": "30", "label": "30" },
+            { "value": "35", "label": "35" },
+            { "value": "40", "label": "40" },
+            { "value": "45", "label": "45" },
+            { "value": "50", "label": "50" },
+            { "value": "55", "label": "55" },
+            { "value": "60", "label": "60" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "combo_2_heading",
+          "label": "Combo 2 heading"
+        },
+        {
+          "type": "select",
+          "id": "combo_2_heading_tag",
+          "label": "Combo 2 heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h5"
+        },
+        {
+          "type": "richtext",
+          "id": "combo_2_text",
+          "label": "Combo 2 text"
+        },
+        {
+          "type": "select",
+          "id": "combo_2_placement",
+          "label": "Combo 2 placement",
+          "default": "left",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "combo_2_order",
+          "label": "Combo 2 order",
+          "default": "20",
+          "options": [
+            { "value": "05", "label": "05" },
+            { "value": "10", "label": "10" },
+            { "value": "15", "label": "15" },
+            { "value": "20", "label": "20" },
+            { "value": "25", "label": "25" },
+            { "value": "30", "label": "30" },
+            { "value": "35", "label": "35" },
+            { "value": "40", "label": "40" },
+            { "value": "45", "label": "45" },
+            { "value": "50", "label": "50" },
+            { "value": "55", "label": "55" },
+            { "value": "60", "label": "60" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "combo_3_heading",
+          "label": "Combo 3 heading"
+        },
+        {
+          "type": "select",
+          "id": "combo_3_heading_tag",
+          "label": "Combo 3 heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h5"
+        },
+        {
+          "type": "richtext",
+          "id": "combo_3_text",
+          "label": "Combo 3 text"
+        },
+        {
+          "type": "select",
+          "id": "combo_3_placement",
+          "label": "Combo 3 placement",
+          "default": "left",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "combo_3_order",
+          "label": "Combo 3 order",
+          "default": "30",
+          "options": [
+            { "value": "05", "label": "05" },
+            { "value": "10", "label": "10" },
+            { "value": "15", "label": "15" },
+            { "value": "20", "label": "20" },
+            { "value": "25", "label": "25" },
+            { "value": "30", "label": "30" },
+            { "value": "35", "label": "35" },
+            { "value": "40", "label": "40" },
+            { "value": "45", "label": "45" },
+            { "value": "50", "label": "50" },
+            { "value": "55", "label": "55" },
+            { "value": "60", "label": "60" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "combo_4_heading",
+          "label": "Combo 4 heading"
+        },
+        {
+          "type": "select",
+          "id": "combo_4_heading_tag",
+          "label": "Combo 4 heading tag",
+          "options": [
+            { "value": "p", "label": "p" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" }
+          ],
+          "default": "h5"
+        },
+        {
+          "type": "richtext",
+          "id": "combo_4_text",
+          "label": "Combo 4 text"
+        },
+        {
+          "type": "select",
+          "id": "combo_4_placement",
+          "label": "Combo 4 placement",
+          "default": "left",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "combo_4_order",
+          "label": "Combo 4 order",
+          "default": "40",
+          "options": [
+            { "value": "05", "label": "05" },
+            { "value": "10", "label": "10" },
+            { "value": "15", "label": "15" },
+            { "value": "20", "label": "20" },
+            { "value": "25", "label": "25" },
+            { "value": "30", "label": "30" },
+            { "value": "35", "label": "35" },
+            { "value": "40", "label": "40" },
+            { "value": "45", "label": "45" },
+            { "value": "50", "label": "50" },
+            { "value": "55", "label": "55" },
+            { "value": "60", "label": "60" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.all.button.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.all.button.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            { "value": "primary", "label": "t:sections.all.button.button_style.options__1.label" },
+            { "value": "secondary", "label": "t:sections.all.button.button_style.options__2.label" },
+            { "value": "tertiary", "label": "t:sections.all.button.button_style.options__3.label" }
+          ],
+          "default": "primary",
+          "label": "t:sections.all.button.button_style.label"
+        },
+        {
+          "type": "select",
+          "id": "button_placement",
+          "label": "Button placement",
+          "default": "left",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_order",
+          "label": "Button order",
+          "default": "40",
+          "options": [
+            { "value": "20", "label": "20" },
+            { "value": "30", "label": "30" },
+            { "value": "40", "label": "40" },
+            { "value": "50", "label": "50" },
+            { "value": "60", "label": "60" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Highlight"
+        },
+        {
+          "type": "richtext",
+          "id": "highlight_text",
+          "label": "Highlight text"
+        },
+        {
+          "type": "color",
+          "id": "highlight_background_color",
+          "label": "Background color",
+          "default": "#F5F5F5"
+        },
+        {
+          "type": "select",
+          "id": "highlight_padding",
+          "label": "Padding",
+          "options": [
+            { "value": "xs", "label": "Extra small" },
+            { "value": "s", "label": "Small" },
+            { "value": "m", "label": "Medium" },
+            { "value": "l", "label": "Large" },
+            { "value": "xl", "label": "Extra large" }
+          ],
+          "default": "m"
+        },
+        {
+          "type": "select",
+          "id": "highlight_placement",
+          "label": "Highlight placement",
+          "default": "right",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "left", "label": "Left column" },
+            { "value": "right", "label": "Right column" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "highlight_order",
+          "label": "Highlight order",
+          "default": "50",
+          "options": [
+            { "value": "30", "label": "30" },
+            { "value": "40", "label": "40" },
+            { "value": "50", "label": "50" },
+            { "value": "60", "label": "60" },
+            { "value": "70", "label": "70" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Combined rich text",
+      "blocks": [
+        {
+          "type": "richtext-group"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,221 @@
+{% comment %}
+   Renders section text
+   Accepts:
+   section: {Object} Section
+  class: {String} Class (optional)
+   Usage:
+   {% render 'section-text', section: section, class: '' %}
+{% endcomment %}
+
+{% if section.settings.heading_line == 'rounded' %}
+  {% assign color = section.settings.line_color | remove: '#' %}
+    {% style %}
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+          <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+          <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+          <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+          <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+          <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+          <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      [data-scheme="dark"] {
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+            <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+            <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+            <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+            <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+            <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+            <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        [data-scheme="auto"] {
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+              <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+              <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+              <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+              <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+              <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+              <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+        }
+      }
+    {% endstyle %}
+{% endif %}
+
+{%- if section.settings.subheading != blank or section.settings.heading != blank -%}
+  <div class="{% if class %}{{ class }}__titles{% endif %} titles 
+    {% if section.settings.heading == blank and section.settings.text == blank %} titles_margin-medium {% endif %}
+    {% if text_align %} titles--{{ text_align }} {% endif %}">
+    {%- if section.settings.subheading != blank -%}
+      <{{ section.settings.subheading_tag | default: "p" }} class="{% if class %}{{ class }}__subtitle{% endif %} subtitle {{ section.settings.subheading_style }}" {% if section.settings.subheading_icon_type == "svg" and section.settings.subheading_style == "subtitle" %} style=" align-items: flex-start;"{% endif %}>
+        {% if section.settings.subheading_logo != blank %}
+          <img src="{{ section.settings.subheading_logo | img_url }}" alt="{{ section.settings.subheading_logo }}" height="auto" width="32">
+        {% else %}
+          {% if section.settings.subheading_icon != "none" or section.settings.subheading_svg_icon != "none" %}
+          {%
+                  render "icon-selector",
+                  icon_type:section.settings.subheading_icon_type,
+                  icon_pack_icon: section.settings.subheading_icon,
+                  svg_icon: section.settings.subheading_svg_icon,
+                  width: "18",
+                  height: "18",
+                  color:section.settings.icon_color,
+                  section:section
+          %}
+        {% endif %}
+        {% endif %}
+        {{ section.settings.subheading }}
+      </{{ section.settings.subheading_tag | default: "p" }}>
+    {% endif %}
+    {%- if section.settings.heading != blank -%}
+      {% if section.settings.heading_style != blank and section.settings.heading_style != "none" %}
+            <div class="heading--secondary">
+      {% endif %}
+      <{{ section.settings.heading_tag | default: "h2" }}
+        class="{{ section.settings.heading_size | default: 'h2' }} {% if class %}{{ class }}__title{% endif %} title title--{{ section.settings.heading_line }} 
+        {% if section.settings.word_break and section.settings.heading_line != 'none' %} title--word_break {% endif %}
+        {% if section.settings.word_break_an and section.settings.heading_animation != 'none' %} title--word_break_an {% endif %}
+        js-anim-{{ section.settings.heading_animation }}"
+        style="--color-line: {{ section.settings.line_color }}"
+        data-content="{{ section.settings.heading | escape }}"
+      >
+        {% assign heading = section.settings.heading %}
+        {% if section.settings.enable_scribble and heading contains '#scribble-start#' and heading contains '#scribble-end#' %}
+          {% assign scribble_text_start = heading | split: '#scribble-start#' | last %}
+          {% assign scribble_text = scribble_text_start | split: '#scribble-end#' | first %}
+          {% assign text_before_scribble = heading | split: '#scribble-start#' | first %}
+          {% assign text_after_scribble = scribble_text_start | split: '#scribble-end#' %}
+
+          {% style %}
+            #shopify-section-{{ section.id }} .scribble-container svg {
+              height: {{ section.settings.scribble_size }}%;
+              width: {{ section.settings.scribble_size }}%;
+              top: {{ section.settings.scribble_top }}%;
+            }
+          {% endstyle %}
+
+          {{ text_before_scribble }}
+          <span class="scribble-container">
+            {{ scribble_text }}
+            {% render 'scribble-svg', scribble_style: section.settings.scribble_style, stroke_color: section.settings.scribble_color, stroke_width: section.settings.scribble_stroke_width %}
+          </span>
+          {% if text_after_scribble.size > 1 %}
+            {{ text_after_scribble | last }}
+          {% endif %}
+        {% else %}
+          {{ heading }}
+        {% endif %}
+      </{{ section.settings.heading_tag | default: "h2" }}>
+      {% if section.settings.heading_style != blank and section.settings.heading_style != "none" %}
+          </div>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endif %}
+{%- if section.settings.text != blank -%}
+  <div class="{% if class %}{{ class }}__description{% endif %} description body-large {% if text_align %} description--{{ text_align }} {% endif %}">
+    {{ section.settings.text }}
+  </div>
+{% endif %}

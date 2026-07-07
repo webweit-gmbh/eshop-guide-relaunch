@@ -1,0 +1,107 @@
+{% render 'anchor', anchor_id: section.settings.anchor_id %}
+
+<div class="container pb-5 pt-2">
+  <div class="rich-text">
+    {% if section.settings.section_title != blank %}
+      <div class="text-center">
+        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.section_title | escape }}</{{ section.settings.heading_tag }}>
+      </div>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <div class="body-{{ section.settings.text_size }} rte-setting text-center">{{ section.settings.text }}</div>
+    {% endif %}
+  </div>
+  {% render 'contactform', id: section.settings.pipedrive_id %}
+</div>
+
+{% schema %}
+  {
+    "name": "Contact Pipedrive",
+    "settings": [
+      {
+        "type": "text",
+        "id": "anchor_id",
+        "label": "Anchor ID"
+      },
+      {
+				"type": "text",
+				"id": "pipedrive_id",
+				"label": "Pipedrive ID",
+				"default": "310imvNg3a1iWT8QLQoCGCYbfAQMBCgG8aNwltZxg5mDjCEL6HChKjOlceukDwsDx",
+				"info": "Only use ID from Pipedrive formular"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Talk about your brand"
+      },
+      {
+        "type": "select",
+        "id": "heading_tag",
+        "label": "Heading tag",
+        "options": [
+          { "value": "p", "label": "p" },
+          { "value": "h1", "label": "h1" },
+          { "value": "h2", "label": "h2" },
+          { "value": "h3", "label": "h3" },
+          { "value": "h4", "label": "h4" },
+          { "value": "h5", "label": "h5" },
+          { "value": "h6", "label": "h6" }
+        ],
+        "default": "h2"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "label": "Heading Size",
+        "default": "h3",
+        "options": [
+          {
+            "label": "Small",
+            "value": "h4"
+          },
+          {
+            "label": "Medium",
+            "value": "h3"
+          },
+          {
+            "label": "Large",
+            "value": "h2"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text Size",
+        "default": "normal",
+        "options": [
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "normal"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Contact Pipedrive"
+      }
+    ]
+  }
+{% endschema %}

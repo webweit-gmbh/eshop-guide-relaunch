@@ -1,0 +1,188 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_q74AUX": {
+      "type": "rich-text",
+      "blocks": {
+        "button_8m7NhB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Die besten Shopify Apps in einer Liste - jetzt downloaden!",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_8m7NhB"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": false,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_BMxi7Q": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_AEFENk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "icon-EG-jackpot",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Spare Zeit & Nerven",
+            "heading_tag": "p",
+            "text": "Vermeide langes Suchen und Ausprobieren.",
+            "background_gradient": ""
+          }
+        },
+        "column_y8mFin": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "icon-EG-quality-assurance",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Nutze bewährte Tools",
+            "heading_tag": "p",
+            "text": "Unsere Auswahl enthält nur Apps, die wirklich funktionieren.",
+            "background_gradient": ""
+          }
+        },
+        "column_JFy4Um": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon": "none",
+            "svg_icon": "icon-EG-graph",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "Optimiere von Anfang an",
+            "heading_tag": "p",
+            "text": "Baue direkt eine solide Basis für dein Business auf.",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_AEFENk",
+        "column_y8mFin",
+        "column_JFy4Um"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Erfolgreich bei Shopify - kostenlose PDF",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "Starte deinen Shopify-Shop mit den richtigen Apps!",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Seit über 8 Jahren unterstützen wir Unternehmen dabei, erfolgreiche Shopify-Shops aufzubauen. In dieser Liste findest du die <strong>besten Shopify-Apps</strong>, die dir den Einstieg erleichtern – basierend auf unserer Erfahrung aus über 700 Projekten.</p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Dies_2.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11.5,
+        "video_overlay_margin_bottom": 4.5,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "heading_width": 15,
+        "additional_custom_text": "Some text",
+        "subheading_width": 15,
+        "caption_background": "#ffffff",
+        "caption_opacity": 1,
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Einfach PDF herunterladen!",
+        "button_link": "https://drive.google.com/uc?export=download&id=1Kz98SdeDfQ9SqPtpQWicwB-azr_f-zno",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_q74AUX",
+    "image_with_text_BMxi7Q"
+  ]
+}

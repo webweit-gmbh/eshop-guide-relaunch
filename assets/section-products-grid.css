@@ -1,0 +1,6 @@
+.products-grid .collection-wrapper {
+  border: none;
+}
+.products-grid .products-grid {
+  grid-column: span 2;
+}

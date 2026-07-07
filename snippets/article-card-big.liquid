@@ -1,0 +1,94 @@
+{% if article.metafields.custom.author_image != blank %}
+  {%- assign author_image = article.metafields.custom.author_image -%}
+{% elsif section_author_image != blank %}
+  {%- assign author_image = section_author_image -%}
+{% endif %}
+
+<article
+  class="article-card article-card-big article-card-big--{{ image_ratio }}"
+  aria-labelledby="Article-{{ article.id }}"
+>
+  {%- if show_image == true and article.image -%}
+    <div class="article-card__image media">
+      {% capture sizes %}
+				(min-width: 990px) 940px, (min-width: 750px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+			{% endcapture %}
+      {{
+        article.image
+        | image_url: width: 1066
+        | image_tag: loading: '', sizes: sizes, widths: '165, 360, 535, 720, 940, 1066'
+      }}
+    </div>
+  {%- endif -%}
+  <div class="article-content motion-reduce">
+    <div class="article-card__info">
+      {%- if show_tags and article.tags != blank -%}
+        <ul class="article-card__tags">
+          {% for tag in article.tags %}
+            <li class="article-card__tag body-small">
+              <a href="{{ blog.url }}/tagged/{{ tag | handle }}">
+                <span title="{{ tag }}">{{ tag }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {%- endif -%}
+      <header class="article-card__header">
+        <h2
+          class="article-card__title {% if post_heading_size %} {{ post_heading_size }} {% else %} h5 {% endif %}"
+          id="Article-{{ article.id }}"
+        >
+          <a href="{{ article.url }}">
+            {{ article.title | escape }}
+          </a>
+        </h2>
+        {%- if show_excerpt and article.excerpt_or_content.size > 0 -%}
+          <p class="article-card__excerpt body-large">
+            {{ article.excerpt_or_content | strip_html | truncate: 120 }}
+          </p>
+        {%- endif -%}
+      </header>
+
+      <div class="article-card__bottom">
+        {% if author_image or show_author or show_date %}
+          <div class="article-card__author">
+            {% if author_image and show_author %}
+              <div class="article-card__author-image">
+                {{
+                  author_image
+                  | image_url: width: block.settings.author_image.width
+                  | image_tag: loading: '', widths: '50, 100'
+                }}
+              </div>
+            {% endif %}
+            <div class="article-card__author-info">
+              {%- if show_author -%}
+                <span class="article-card__author-name">{{- article.author -}}</span>
+              {%- endif -%}
+              <div class="article-card__meta">
+                {%- if show_date -%}
+                  <span class="article-card__date body-small">
+                    {{ 'general.blog.update' | t }}
+                    {{- article.published_at | time_tag: format: 'abbreviated_date' -}}
+                  </span>
+                {%- endif -%}
+                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                  <span class="article-card__comments body-small">
+                    {{- 'blogs.article.comments' | t: count: article.comments_count -}}
+                  </span>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {% else %}
+          {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+            <span class="article-card__comments">
+              {{- 'blogs.article.comments' | t: count: article.comments_count -}}
+            </span>
+          {%- endif -%}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <a class="article-card-link" href="{{ article.url }}" aria-label="{{ "accessibility.article_link" | t }}"></a>
+</article>

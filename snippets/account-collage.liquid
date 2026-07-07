@@ -1,0 +1,20 @@
+<div class="customer__marquees">
+  {% assign columns = 3 %}
+  {% assign counter = 1 %}
+  {% assign limit = section.blocks.size | divided_by: columns %}
+  {% comment %} For every column there's a single marquee {% endcomment %}
+  {% for i in (1..columns) %}
+    <div class="customer__marquee aic__marquee marquee content" data-slides="{{ limit }}">
+      {% comment %} Every marquee must start with a slide, not necessarily with the first index, but with a following one. {% endcomment %}
+      {% for y in (counter..section.blocks.size) limit: limit %}
+        {% for block in section.blocks %}
+          {% if forloop.index == y %}
+            {% render 'aic-item', image: block.settings.image, section: section, block: block %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% comment %} E.g. counter = 1, limit = 3, so in the 1st marquee there will be 1st, 2nd, 3rd slides, and in the 2nd marquee there will be 4th, 5th, 6th slides, and so on {% endcomment %}
+    {% assign counter = counter | plus: limit %}
+  {% endfor %}
+</div>

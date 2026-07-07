@@ -1,0 +1,338 @@
+{% for block in blocks %}
+  {% assign mega_menu_tabs_trigger = block.settings.mega_menu_tabs_trigger | handle | strip %}
+  {% if link.handle == mega_menu_tabs_trigger and block.type == 'mega_menu_tabs' %}
+    <div class="mega-menu__tabs">
+      {% if block.settings.enable_tab_1 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper mega-menu__tab-wrapper--active">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_1 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_1,
+                    icon_pack_icon: block.settings.icon_pack_1,
+                    svg_icon: block.settings.svg_icon_1,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_1 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_1 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_1 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_1 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_1 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_1.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if block.settings.enable_tab_2 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_2 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_2,
+                    icon_pack_icon: block.settings.icon_pack_2,
+                    svg_icon: block.settings.svg_icon_2,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_2 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_2 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_2 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_2 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_2 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_2.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if block.settings.enable_tab_3 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_3 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_3,
+                    icon_pack_icon: block.settings.icon_pack_3,
+                    svg_icon: block.settings.svg_icon_3,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_3 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_3 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_3 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_3 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_3 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_3.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if block.settings.enable_tab_4 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_4 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_4,
+                    icon_pack_icon: block.settings.icon_pack_4,
+                    svg_icon: block.settings.svg_icon_4,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_4 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_4 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_4 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_4 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_4 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_4.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if block.settings.enable_tab_5 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_5 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_5,
+                    icon_pack_icon: block.settings.icon_pack_5,
+                    svg_icon: block.settings.svg_icon_5,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_5 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_5 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_5 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_5 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_5 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_5.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if block.settings.enable_tab_6 %}
+        <div class="mega-menu__tab">
+          <div class="mega-menu__tab-wrapper">
+            <div class="mega-menu__tab-info">
+              {%- if block.settings.icon_6 != 'none' -%}
+                <div class="mega-menu__icon mega-menu__icon--{{- block.settings.icon_size }} {% if block.settings.box_shadow %}mega-menu__icon--shadow {% endif %} mega-menu__icon--{{- block.settings.icon_style }} mega-menu__icon--{{- block.settings.icon_fill_type }} color-{{ block.settings.icon_color_scheme }}">
+                  {% render 'icon-selector',
+                    icon_type: block.settings.icon_type_6,
+                    icon_pack_icon: block.settings.icon_pack_6,
+                    svg_icon: block.settings.svg_icon_6,
+                    width: '25',
+                    height: '25',
+                    icon_pack_icon_style: block.settings.icon_style,
+                    icon_pack_icon_fill_type: block.settings.icon_fill_type,
+                    section:section
+                  %}
+                </div>
+              {%- endif -%}
+              <div class="mega-menu__tab-inner">
+                {%- if block.settings.heading_6 != blank -%}
+                  <div class="mega-menu__tab-heading">
+                    {{ block.settings.heading_6 }}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.description_6 -%}
+                  <p class="mega-menu__tab-text body-small">
+                    {{ block.settings.description_6 }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.menu_6 != blank -%}
+                  <ul class="mega-menu__tab-list list-unstyled" role="list">
+                    {%- for link in block.settings.menu_6.links -%}
+                      <li class="mega-menu__tab-list-item body-small">
+                        <a
+                          href="{{ link.url }}"
+                          class="mega-menu__tab-list-link focus-inset"
+                          aria-disabled="true"
+                          aria-label="{{ link.title | escape }}"
+                        >
+                          {{- link.title | escape -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    {% if block.settings.enable_promo %}
+      <div class="mega-menu__promo">
+        <div class="mega-menu__promo-info">
+          {%- if block.settings.promo_heading != blank -%}
+            <div class="mega-menu__promo-heading">
+              {{ block.settings.promo_heading }}
+            </div>
+          {%- endif -%}
+          {%- if block.settings.promo_description -%}
+            <p class="mega-menu__promo-text body-small">
+              {{ block.settings.promo_description }}
+            </p>
+          {%- endif -%}
+        </div>
+        <a
+          {% if block.settings.promo_link.url != blank %}
+            href="{{ block.settings.promo_link }}"
+          {% endif %}
+          class="mega-menu__tab-link button button--{{ block.settings.promo_button_style }} button--arrow focus-inset"
+          {% if block.settings.promo_link.url == blank %}
+            aria-disabled="true"
+          {% endif %}
+          aria-label="{{ block.settings.promo_link_label }}"
+        >
+          <span>
+            {{- block.settings.promo_link_label -}}
+          </span>
+          {% render 'icon-button-arrow' %}
+        </a>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,791 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" data-scheme="{{ settings.color_scheme }}">
+  <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+    </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d4675dba-40fd-4cac-9ec8-d25f55043dea" type="text/javascript" async></script>
+    <!-- Google Tag Manager -->
+      <script data-cookieconsent="ignore">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KH84V9');</script>
+    <!-- End Google Tag Manager -->
+
+    <script type="text/javascript" data-cookieconsent="marketing">
+_linkedin_partner_id = "9585337";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9585337&fmt=gif" />
+</noscript>
+
+    <!-- LeadFeeder Tracking -->
+    <script type="text/plain" data-cookieconsent="marketing"> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('Xbp1oaE9r6gaEdVj'); </script>
+    <!-- End LeadFeeder Tracking -->
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="stylesheet" href="{{ 'flickity.min.css' | asset_url }}">
+
+    <script src="{{ 'flickity.pkgd.min.js' | asset_url }}"></script>
+    <script type="text/plain" data-cookieconsent="marketing">window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 4140456,playbookUuid: '67252926-7564-4898-aebf-3baf39fec8cd',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
+    
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    {%- unless settings.type_header_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    <title>{{ page_title }}</title>
+
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% render 'meta-tags' %}
+
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+
+    {{ content_for_header }}
+
+    {%- liquid
+      assign body_font_ligh = settings.type_body_font | font_modify: 'weight', '300'
+      assign body_font_regular = settings.type_body_font | font_modify: 'weight', '400'
+      assign body_font_medium = settings.type_body_font | font_modify: 'weight', '500'
+      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+      assign heading_font_italic = settings.type_header_font | font_modify: 'style', 'italic'
+    %}
+
+    {% style %}
+          {{ settings.type_body_font | font_face: font_display: 'swap' }}
+          {{ settings.type_header_font | font_face: font_display: 'swap' }}
+          {{ settings.type_subtitle_font | font_face: font_display: 'swap' }}
+          {{ settings.type_subtitle_font_2 | font_face: font_display: 'swap' }}
+          {{ settings.type_button_font | font_face: font_display: 'swap' }}
+          {{ settings.type_header_font_card | font_face: font_display: 'swap' }}
+          {{ settings.type_text_font_card | font_face: font_display: 'swap' }}
+          {{ settings.type_header_menu_font | font_face: font_display: 'swap' }}
+          {{ settings.type_footer_menu_font | font_face: font_display: 'swap' }}
+          {{ settings.type_popups_heading_font | font_face: font_display: 'swap' }}
+          {{ settings.type_popups_text_font | font_face: font_display: 'swap' }}
+          {{ settings.type_additional_font | font_face: font_display: 'swap' }}
+          {{ body_font_ligh | font_face: font_display: 'swap' }}
+          {{ body_font_regular | font_face: font_display: 'swap' }}
+          {{ body_font_medium | font_face: font_display: 'swap' }}
+          {{ body_font_bold | font_face: font_display: 'swap' }}
+          {{ body_font_italic | font_face: font_display: 'swap' }}
+          {{ heading_font_italic | font_face: font_display: 'swap' }}
+          {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+            html {
+                 scroll-behavior: smooth;
+            }
+          {% for scheme in settings.color_schemes -%}
+          	{% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
+            {% if forloop.index == 1 -%}
+              :root,
+            {%- endif %}
+          	[data-scheme=light] .color-{{ scheme.id }} {
+          		--color-background: {{ scheme.settings.colors_background_1.red }},{{ scheme.settings.colors_background_1.green }},{{ scheme.settings.colors_background_1.blue }};
+              --color-background-secondary: {{ scheme.settings.colors_background_2.red }},{{ scheme.settings.colors_background_2.green }},{{ scheme.settings.colors_background_2.blue }};
+          		{% if scheme.settings.background_gradient != empty %}
+          			--gradient-background: {{ scheme.settings.background_gradient }};
+          		{% else %}
+          			--gradient-background: {{ scheme.settings.colors_background_1 }};
+          		{% endif %}
+          		--color-foreground: {{ scheme.settings.colors_text.red }}, {{ scheme.settings.colors_text.green }}, {{ scheme.settings.colors_text.blue }};
+          		--color-foreground-secondary: {{ scheme.settings.colors_secondary_text.red }}, {{ scheme.settings.colors_secondary_text.green }}, {{ scheme.settings.colors_secondary_text.blue }};
+          		--color-foreground-title: {{ scheme.settings.colors_text_title.red }}, {{ scheme.settings.colors_text_title.green }}, {{ scheme.settings.colors_text_title.blue }};
+
+          		--color-button-text: {{ scheme.settings.colors_solid_button_labels.red }}, {{ scheme.settings.colors_solid_button_labels.green }}, {{ scheme.settings.colors_solid_button_labels.blue }};
+          		--color-button-text-hover: {{ scheme.settings.colors_solid_button_labels_hover.red }}, {{ scheme.settings.colors_solid_button_labels_hover.green }}, {{ scheme.settings.colors_solid_button_labels_hover.blue }};
+          		--color-button: {{ scheme.settings.colors_solid_button_background.red }}, {{ scheme.settings.colors_solid_button_background.green }}, {{ scheme.settings.colors_solid_button_background.blue }};
+          		--color-button-hover: {{ scheme.settings.colors_solid_button_background_hover.red }}, {{ scheme.settings.colors_solid_button_background_hover.green }}, {{ scheme.settings.colors_solid_button_background_hover.blue }};
+
+          		--color-button-secondary: {{ scheme.settings.colors_outline_button_labels.red }}, {{ scheme.settings.colors_outline_button_labels.green }}, {{ scheme.settings.colors_outline_button_labels.blue }};
+          		--color-button-secondary-hover: {{ scheme.settings.colors_outline_button_labels_hover.red }}, {{ scheme.settings.colors_outline_button_labels_hover.green }}, {{ scheme.settings.colors_outline_button_labels_hover.blue }};
+          		--color-button-secondary-text: {{ scheme.settings.colors_secondary_button_labels.red }}, {{ scheme.settings.colors_secondary_button_labels.green }}, {{ scheme.settings.colors_secondary_button_labels.blue }};
+          		--color-button-secondary-text-hover: {{ scheme.settings.colors_secondary_button_labels_hover.red }}, {{ scheme.settings.colors_secondary_button_labels_hover.green }}, {{ scheme.settings.colors_secondary_button_labels_hover.blue }};
+
+          		--color-button-tertiary-text: {{ scheme.settings.colors_tertiary_button_labels.red }}, {{ scheme.settings.colors_tertiary_button_labels.green }}, {{ scheme.settings.colors_tertiary_button_labels.blue }};
+          		--color-button-tertiary-text-hover: {{ scheme.settings.colors_tertiary_button_labels_hover.red }}, {{ scheme.settings.colors_tertiary_button_labels_hover.green }}, {{ scheme.settings.colors_tertiary_button_labels_hover.blue }};
+          		--color-button-tertiary: {{ scheme.settings.colors_tertiary_button_background.red }}, {{ scheme.settings.colors_tertiary_button_background.green }}, {{ scheme.settings.colors_tertiary_button_background.blue }};
+          		--color-button-tertiary-hover: {{ scheme.settings.colors_tertiary_button_background_hover.red }}, {{ scheme.settings.colors_tertiary_button_background_hover.green }}, {{ scheme.settings.colors_tertiary_button_background_hover.blue }};
+
+          		--color-overlay: {{ scheme.settings.colors_background_overlay.red }}, {{ scheme.settings.colors_background_overlay.green }}, {{ scheme.settings.colors_background_overlay.blue }};
+          		--color-border-input: {{ scheme.settings.colors_input_border.red }}, {{ scheme.settings.colors_input_border.green }}, {{ scheme.settings.colors_input_border.blue }};
+          		--color-background-input: {{ scheme.settings.colors_input_background.red }}, {{ scheme.settings.colors_input_background.green }}, {{ scheme.settings.colors_input_background.blue }};
+              --color-border: {{ scheme.settings.color_border.red }}, {{ scheme.settings.color_border.green }}, {{ scheme.settings.color_border.blue }};
+              --color-accent: {{ scheme.settings.color_accent.red }},{{ scheme.settings.color_accent.green }},{{ scheme.settings.color_accent.blue }};
+              {% if scheme.settings.color_accent_gradient != empty %}
+                --gradient-accent: {{ scheme.settings.color_accent_gradient }};
+              {% else %}
+                --gradient-accent: {{ scheme.settings.color_accent }};
+              {% endif %}
+          	}
+          	@media (prefers-color-scheme: light) {
+              {% if forloop.index == 1 -%}
+                    :root,
+              {%- endif %}
+          		[data-scheme=auto] .color-{{ scheme.id }} {
+          			--color-background: {{ scheme.settings.colors_background_1.red }},{{ scheme.settings.colors_background_1.green }},{{ scheme.settings.colors_background_1.blue }};
+                --color-background-secondary: {{ scheme.settings.colors_background_2.red }},{{ scheme.settings.colors_background_2.green }},{{ scheme.settings.colors_background_2.blue }};
+          			{% if scheme.settings.background_gradient != empty %}
+          				--gradient-background: {{ scheme.settings.background_gradient }};
+          			{% else %}
+          				--gradient-background: {{ scheme.settings.colors_background_1 }};
+          			{% endif %}
+          			--color-foreground: {{ scheme.settings.colors_text.red }}, {{ scheme.settings.colors_text.green }}, {{ scheme.settings.colors_text.blue }};
+          			--color-foreground-secondary: {{ scheme.settings.colors_secondary_text.red }}, {{ scheme.settings.colors_secondary_text.green }}, {{ scheme.settings.colors_secondary_text.blue }};
+          			--color-foreground-title: {{ scheme.settings.colors_text_title.red }}, {{ scheme.settings.colors_text_title.green }}, {{ scheme.settings.colors_text_title.blue }};
+
+          			--color-button-text: {{ scheme.settings.colors_solid_button_labels.red }}, {{ scheme.settings.colors_solid_button_labels.green }}, {{ scheme.settings.colors_solid_button_labels.blue }};
+          			--color-button-text-hover: {{ scheme.settings.colors_solid_button_labels_hover.red }}, {{ scheme.settings.colors_solid_button_labels_hover.green }}, {{ scheme.settings.colors_solid_button_labels_hover.blue }};
+          			--color-button: {{ scheme.settings.colors_solid_button_background.red }}, {{ scheme.settings.colors_solid_button_background.green }}, {{ scheme.settings.colors_solid_button_background.blue }};
+          			--color-button-hover: {{ scheme.settings.colors_solid_button_background_hover.red }}, {{ scheme.settings.colors_solid_button_background_hover.green }}, {{ scheme.settings.colors_solid_button_background_hover.blue }};
+
+          			--color-button-secondary: {{ scheme.settings.colors_outline_button_labels.red }}, {{ scheme.settings.colors_outline_button_labels.green }}, {{ scheme.settings.colors_outline_button_labels.blue }};
+          			--color-button-secondary-hover: {{ scheme.settings.colors_outline_button_labels_hover.red }}, {{ scheme.settings.colors_outline_button_labels_hover.green }}, {{ scheme.settings.colors_outline_button_labels_hover.blue }};
+          			--color-button-secondary-text: {{ scheme.settings.colors_secondary_button_labels.red }}, {{ scheme.settings.colors_secondary_button_labels.green }}, {{ scheme.settings.colors_secondary_button_labels.blue }};
+          			--color-button-secondary-text-hover: {{ scheme.settings.colors_secondary_button_labels_hover.red }}, {{ scheme.settings.colors_secondary_button_labels_hover.green }}, {{ scheme.settings.colors_secondary_button_labels_hover.blue }};
+
+          			--color-button-tertiary-text: {{ scheme.settings.colors_tertiary_button_labels.red }}, {{ scheme.settings.colors_tertiary_button_labels.green }}, {{ scheme.settings.colors_tertiary_button_labels.blue }};
+          			--color-button-tertiary-text-hover: {{ scheme.settings.colors_tertiary_button_labels_hover.red }}, {{ scheme.settings.colors_tertiary_button_labels_hover.green }}, {{ scheme.settings.colors_tertiary_button_labels_hover.blue }};
+          			--color-button-tertiary: {{ scheme.settings.colors_tertiary_button_background.red }}, {{ scheme.settings.colors_tertiary_button_background.green }}, {{ scheme.settings.colors_tertiary_button_background.blue }};
+          			--color-button-tertiary-hover: {{ scheme.settings.colors_tertiary_button_background_hover.red }}, {{ scheme.settings.colors_tertiary_button_background_hover.green }}, {{ scheme.settings.colors_tertiary_button_background_hover.blue }};
+
+          			--color-overlay: {{ scheme.settings.colors_background_overlay.red }}, {{ scheme.settings.colors_background_overlay.green }}, {{ scheme.settings.colors_background_overlay.blue }};
+          			--color-border-input: {{ scheme.settings.colors_input_border.red }}, {{ scheme.settings.colors_input_border.green }}, {{ scheme.settings.colors_input_border.blue }};
+          			--color-background-input: {{ scheme.settings.colors_input_background.red }}, {{ scheme.settings.colors_input_background.green }}, {{ scheme.settings.colors_input_background.blue }};
+          			--color-border: {{ scheme.settings.color_border.red }}, {{ scheme.settings.color_border.green }}, {{ scheme.settings.color_border.blue }};
+                --color-accent: {{ scheme.settings.color_accent.red }},{{ scheme.settings.color_accent.green }},{{ scheme.settings.color_accent.blue }};
+                {% if scheme.settings.color_accent_gradient != empty %}
+                  --gradient-accent: {{ scheme.settings.color_accent_gradient }};
+                {% else %}
+                  --gradient-accent: {{ scheme.settings.color_accent }};
+                {% endif %}
+          		}
+          	}
+          {% endfor %}
+
+          {{ scheme_classes | prepend: 'body' }} {
+          color: rgba(var(--color-foreground));
+          //background-color: rgb(var(--color-background));
+           background: rgb(var(--color-background));
+          background: var(--gradient-background);
+       background-attachment: fixed;
+          }
+
+          :root {
+            --column-count: 1;
+          	--announcement-height: 0px;
+            --ann-height: 0px;
+          	--header-height: 0px;
+          	--breadcrumbs-height: 0px;
+            --margin-header: 0px;
+
+          	--spaced-section: 5rem;
+
+            {% if settings.type_body_font_custom == 'instrument_sans' %}
+              --font-body-family: 'Instrument Sans', sans-serif;
+              --font-body-style: normal;
+              --font-body-weight: 500;
+            {% else %}
+              --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+              --font-body-style: {{ settings.type_body_font.style }};
+              --font-body-weight: {{ settings.type_body_font.weight }};
+            {% endif %}
+
+          	--font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
+          	--font-body-line-height: {{ settings.type_body_line_height }};
+            --font-body-letter-spacing: {{ settings.type_body_letter_spacing }}em;
+
+            {% if settings.type_header_font_custom == 'instrument_sans' %}
+              --font-heading-family: 'Instrument Sans', sans-serif;
+              --font-heading-style: normal;
+              --font-heading-weight: 600;
+            {% else %}
+              --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+              --font-heading-style: {{ settings.type_header_font.style }};
+              --font-heading-weight: {{ settings.type_header_font.weight }};
+            {% endif %}
+
+          	--font-heading-letter-spacing: {{ settings.type_header_letter_spacing }}em;
+          	--font-heading-line-height: {{ settings.type_header_line_height }};
+            --font-heading-text-transform: {{ settings.heading_text_transform }};
+
+            {% if settings.type_header_font_custom == 'instrument_sans' %}
+              --font-subtitle-family: 'Instrument Sans', sans-serif;
+              --font-subtitle-style: normal;
+              --font-subtitle-weight: 700;
+            {% else %}
+              --font-subtitle-family: {{ settings.type_subtitle_font.family }}, {{ settings.type_subtitle_font.fallback_families }};
+              --font-subtitle-style: {{ settings.type_subtitle_font.style }};
+              --font-subtitle-weight: {{ settings.type_subtitle_font.weight }};
+            {% endif %}
+          	--font-subtitle-text-transform: {{ settings.subtitle_text_transform }};
+          	--font-subtitle-scale: {{ settings.subtitle_scale | divided_by: 100.0 }};
+
+            {% if settings.type_subtitle_font_2_custom == 'instrument_sans' %}
+              --font-subtitle-secondary-family: 'Instrument Sans', sans-serif;
+              --font-subtitle-secondary-style: normal;
+              --font-subtitle-secondary-weight: 500;
+            {% else %}
+              --font-subtitle-secondary-family: {{ settings.type_subtitle_font_2.family }}, {{ settings.type_subtitle_font_2.fallback_families }};
+              --font-subtitle-secondary-style: {{ settings.type_subtitle_font_2.style }};
+              --font-subtitle-secondary-weight: {{ settings.type_subtitle_font_2.weight }};
+            {% endif %}
+          	--font-subtitle-secondary-text-transform: {{ settings.subtitle_text_transform_2 }};
+          	--font-subtitle-secondary-scale: {{ settings.subtitle_scale_2 | divided_by: 100.0 }};
+
+          	--font-heading-h1-scale: {{ settings.heading_h1_scale | divided_by: 100.0 }};
+          	--font-heading-h2-scale: {{ settings.heading_h2_scale | divided_by: 100.0 }};
+          	--font-heading-h3-scale: {{ settings.heading_h3_scale | divided_by: 100.0 }};
+          	--font-heading-h4-scale: {{ settings.heading_h4_scale | divided_by: 100.0 }};
+          	--font-heading-h5-scale: {{ settings.heading_h5_scale | divided_by: 100.0 }};
+
+            {% if settings.type_header_font_card_custom == 'instrument_sans' %}
+              --font-heading-card-family: 'Instrument Sans', sans-serif;
+              --font-heading-card-style: normal;
+              --font-heading-card-weight: 600;
+            {% else %}
+              --font-heading-card-family: {{ settings.type_header_font_card.family }}, {{ settings.type_header_font_card.fallback_families }};
+              --font-heading-card-style: {{ settings.type_header_font_card.style }};
+              --font-heading-card-weight: {{ settings.type_header_font_card.weight }};
+            {% endif %}
+
+            {% if settings.type_text_font_card_custom == 'instrument_sans' %}
+              --font-text-card-family: 'Instrument Sans', sans-serif;
+              --font-text-card-style:  normal;
+              --font-text-card-weight: 500;
+            {% else %}
+          	  --font-text-card-family: {{ settings.type_text_font_card.family }}, {{ settings.type_text_font_card.fallback_families }};
+              --font-text-card-style: {{ settings.type_text_font_card.style }};
+              --font-text-card-weight: {{ settings.type_text_font_card.weight }};
+            {% endif %}
+          	--font-heading-card-scale: {{ settings.heading_scale_card | divided_by: 100.0 }};
+          	--font-text-card-scale: {{ settings.text_scale_card | divided_by: 100.0 }};
+
+            {% if settings.type_button_font_custom == 'instrument_sans' %}
+              --font-button-family: 'Instrument Sans', sans-serif;
+              --font-button-style: normal;
+              --font-button-weight: 600;
+            {% else %}
+              --font-button-family: {{ settings.type_button_font.family }}, {{ settings.type_button_font.fallback_families }};
+              --font-button-style: {{ settings.type_button_font.style }};
+              --font-button-weight: {{ settings.type_button_font.weight }};
+            {% endif %}
+            --font-button-text-transform: {{ settings.button_text_transform }};
+          	--font-button-letter-spacing: -0.03em;
+          	--font-subtitle-letter-spacing: 0.04em;
+          	--font-subtitle-secondary-letter-spacing: -0.04em;
+
+            {% if settings.type_header_menu_font_custom == 'instrument_sans' %}
+              --font-header-menu-family: 'Instrument Sans', sans-serif;
+              --font-header-menu-style: normal;
+              --font-header-menu-weight: 500;
+            {% else %}
+              --font-header-menu-family: {{ settings.type_header_menu_font.family }}, {{ settings.type_header_menu_font.fallback_families }};
+              --font-header-menu-style: {{ settings.type_header_menu_font.style }};
+              --font-header-menu-weight: {{ settings.type_header_menu_font.weight }};
+            {% endif %}
+            --font-header-menu-text-transform: {{ settings.header_menu_text_transform }};
+
+          	{% if settings.type_footer_menu_font_custom == 'instrument_sans' %}
+              --font-footer-menu-family: 'Instrument Sans', sans-serif;
+              --font-footer-menu-style: normal;
+              --font-footer-menu-weight: 600;
+            {% else %}
+              --font-footer-menu-family: {{ settings.type_footer_menu_font.family }}, {{ settings.type_footer_menu_font.fallback_families }};
+              --font-footer-menu-style: {{ settings.type_footer_menu_font.style }};
+              --font-footer-menu-weight: {{ settings.type_footer_menu_font.weight }};
+            {% endif %}
+            --font-footer-link-size: {{ settings.link_size_footer }}px;
+          	--font-footer-bottom-link-size: {{ settings.link_size_footer_bottom }}px;
+
+          	{% if settings.type_popups_heading_font_custom == 'instrument_sans' %}
+              --font-popups-heading-family: 'Instrument Sans', sans-serif;
+              --font-popups-heading-style: normal;
+              -font-popups-heading-weight: 600;
+            {% else %}
+              --font-popups-heading-family: {{ settings.type_popups_heading_font.family }}, {{ settings.type_popups_heading_font.fallback_families }};
+              --font-popups-heading-style: {{ settings.type_popups_heading_font.style }};
+              --font-popups-heading-weight: {{ settings.type_popups_heading_font.weight }};
+            {% endif %}
+            {% if settings.type_popups_text_font_custom == 'instrument_sans' %}
+              --font-popups-text-family: 'Instrument Sans', sans-serif;
+              --font-popups-text-style: normal;
+              --font-popups-text-weight: 500;
+            {% else %}
+              --font-popups-text-family: {{ settings.type_popups_text_font.family }}, {{ settings.type_popups_text_font.fallback_families }};
+              --font-popups-text-style: {{ settings.type_popups_text_font.style }};
+              --font-popups-text-weight: {{ settings.type_popups_text_font.weight }};
+            {% endif %}
+            --font-popup-heading-scale: {{ settings.popup_heading_scale | divided_by: 100.0 }};
+            --font-popup-desc-scale: {{ settings.popup_desc_scale | divided_by: 100.0 }};
+            --font-popup-text-scale: {{ settings.popup_text_scale | divided_by: 100.0 }};
+            --font-notification-heading-scale: {{ settings.notification_heading_scale | divided_by: 100.0 }};
+            --font-notification-text-scale: {{ settings.notification_text_scale | divided_by: 100.0 }};
+
+            {% if settings.type_additional_font_custom == 'instrument_sans' %}
+              --font-additional-family: 'Instrument Sans', sans-serif;
+              --font-additional-style: normal;
+              --font-additional-weight: 500;
+            {% else %}
+              --font-additional-family: {{ settings.type_additional_font.family }}, {{ settings.type_additional_font.fallback_families }};
+              --font-additional-style: {{ settings.type_additional_font.style }};
+              --font-additional-weight: {{ settings.type_additional_font.weight }};
+            {% endif %}
+          	--border-radius-button: {{ settings.button_border_radius }}px;
+          	--payment-terms-background-color: {{ settings.colors_background_1 }};
+          	--color-card-price-new: {{ settings.card_new_price_color.red }}, {{ settings.card_new_price_color.green }}, {{ settings.card_new_price_color.blue }};
+          	--color-card-price-old: {{ settings.card_old_price_color.red }}, {{ settings.card_old_price_color.green }}, {{ settings.card_old_price_color.blue }};
+
+            --color-shadow: var(--color-foreground);
+          }
+
+          @media screen and (min-width: 990px) {
+          	:root {
+          		--spaced-section: 16rem;
+          	}
+          }
+
+          *,
+          *::before,
+          *::after {
+          box-sizing: inherit;
+          }
+
+          html {
+          box-sizing: border-box;
+          font-size: 10px;
+          height: 100%;
+          }
+
+          body {
+          position: relative;
+          display: flex;
+       flex-direction: column;
+          min-height: 100%;
+          margin: 0;
+          font-size: calc(var(--font-body-scale) * 1.2rem);
+          line-height: 1.4;
+          font-family: var(--font-body-family);
+          font-style: var(--font-body-style);
+          font-weight: var(--font-body-weight);
+          overflow-x: hidden;
+          }
+
+          @media screen and (min-width: 750px) {
+            body {
+              font-size: calc(var(--font-body-scale) * 1.3rem);
+            }
+          }
+
+          @media screen and (min-width: 1600px) {
+            body {
+              font-size: calc(var(--font-body-scale) * 1.4rem);
+            }
+          }
+    {% endstyle %}
+    {% render 'color-scheme-vars' %}
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+    {{ 'odometer-theme-default.css' | asset_url | stylesheet_tag }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-font.css.liquid' | asset_url | stylesheet_tag }}
+    {%- if settings.enable_styles -%}
+      {{ 'section-reviews.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
+    {%- if settings.predictive_search_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+
+    {%- unless settings.type_body_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+    {%- unless settings.type_header_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+
+    <script src="{{ 'jquery-3.6.0.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'gsap.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'jquery-marquee.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'product-card.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'odometer.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'typewriter.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'animated-titles.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'underlined-titles.js' | asset_url }}" defer="defer"></script>
+
+    {% if settings.show_back_to_top %}
+      <script src="{{ 'scroll-top.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
+
+    <script>
+      let cscoDarkMode = {};
+
+      (function () {
+        const body = document.querySelector('html[data-scheme]');
+
+        cscoDarkMode = {
+          init: function (e) {
+            this.initMode(e);
+            window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+              this.initMode(e);
+            });
+
+            window.addEventListener('load', () => {
+              const toggleBtns = document.querySelectorAll('.header__toggle-scheme');
+              toggleBtns.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  if ('auto' === body.getAttribute('data-scheme')) {
+                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                      cscoDarkMode.changeScheme('light', true);
+                    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+                      cscoDarkMode.changeScheme('dark', true);
+                    }
+                  } else {
+                    if ('dark' === body.getAttribute('data-scheme')) {
+                      cscoDarkMode.changeScheme('light', true);
+                    } else {
+                      cscoDarkMode.changeScheme('dark', true);
+                    }
+                  }
+                });
+              });
+            });
+          },
+          initMode: function (e) {
+            let siteScheme = false;
+            switch (
+              '{{ settings.color_scheme }}' // Field. User’s system preference.
+            ) {
+              case 'dark':
+                siteScheme = 'dark';
+                break;
+              case 'light':
+                siteScheme = 'light';
+                break;
+              case 'system':
+                siteScheme = 'auto';
+                break;
+            }
+            if ('{{ settings.dark_mode_toggle }}') {
+              // Field. Enable dark/light mode toggle.
+              if ('light' === localStorage.getItem('_color_schema')) {
+                siteScheme = 'light';
+              }
+              if ('dark' === localStorage.getItem('_color_schema')) {
+                siteScheme = 'dark';
+              }
+            }
+            if (siteScheme && siteScheme !== body.getAttribute('data-scheme')) {
+              this.changeScheme(siteScheme, false);
+            }
+          },
+          changeScheme: function (siteScheme, cookie) {
+            body.classList.add('scheme-toggled');
+            body.setAttribute('data-scheme', siteScheme);
+            if (cookie) {
+              localStorage.setItem('_color_schema', siteScheme);
+            }
+            setTimeout(() => {
+              body.classList.remove('scheme-toggled');
+            }, 100);
+          },
+        };
+      })();
+
+      cscoDarkMode.init();
+
+      document.addEventListener('shopify:section:load', function () {
+        setTimeout(() => {
+          cscoDarkMode.init();
+        }, 100);
+      });
+
+      </script>
+
+      <script type="module" defer>
+          // js/sections/count up text
+          import { animate as animate4, inView as inView4 } from "{{ 'impact-vendor.min.js' | asset_url }}";
+          var ImpactText = class extends HTMLElement {
+              connectedCallback() {
+                  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+                      return;
+                  }
+                  inView4(this, ({ target }) => this._onBecameVisible(target), { margin: "-100px" });
+              }
+              async _onBecameVisible(target) {
+                  animate4(target, { opacity: 1, transform: ["translateY(10px)", "translateY(0)"] }, { duration: 0.3 });
+                  if (this.hasAttribute("count-up")) {
+                      const itemToSearch = this.childElementCount === 0 ? this : this.firstElementChild, matches = itemToSearch.textContent.trim().match(/\d+(?:[,. ]\d+)*/);
+                      if (!matches) {
+                          return;
+                      }
+                      itemToSearch.innerHTML = itemToSearch.textContent.replace(/\d+(?:[,. ]\d+)*/, `<span>${matches[0]}</span>`);
+                      const numberSpan = itemToSearch.querySelector("span");
+                      numberSpan.style.textAlign = matches[0] === matches["input"] ? null : "end";
+                      if (!itemToSearch.classList.contains("text-gradient")) {
+                          numberSpan.style.display = "inline-block";
+                          numberSpan.style.minWidth = `${numberSpan.clientWidth}px`;
+                      }
+                      const toReplace = matches[0].replace(/[,\. ]+/, ""), charactersMatches = [...matches[0].matchAll(/[,\. ]+/g)];
+                      await animate4((progress) => {
+                          let formattedString = Math.round(progress * parseInt(toReplace)).toString();
+                          charactersMatches.forEach((character) => {
+                              if (formattedString.length >= matches[0].length - character.index) {
+                                  formattedString = formattedString.slice(0, character.index) + character[0] + formattedString.slice(character.index);
+                              }
+                          });
+                          numberSpan.textContent = progress === 1 ? matches[0] : formattedString;
+                      }, { duration: parseFloat(this.getAttribute("count-up")), easing: [0.16, 1, 0.3, 1] }).finished;
+                      numberSpan.style.minWidth = null;
+                  }
+              }
+          };
+          if (!window.customElements.get("impact-text")) {
+              window.customElements.define("impact-text", ImpactText);
+          }
+    </script>
+
+    <!-- Hotjar Tracking Code for www.eshop-guide.de -->
+    <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:746967,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+  </head>
+
+  <body class="template-{{ template.name }} template-{{ template | replace: '.', '-' }}">
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH84V9"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <a class="skip-to-content-link button button--primary visually-hidden" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {% sections 'header-group' %}
+    {% sections 'overlay-group' %}
+    {% if settings.show_breadcrumbs %}
+      {% render 'breadcrumbs' %}
+    {% endif %}
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+    {% sections 'footer-group' %}
+
+    {% if settings.show_back_to_top %}
+      {% render 'scroll-top' %}
+    {% endif %}
+
+    {%- if request.page_type != 'cart' and settings.cart_type == 'drawer' -%}
+      {%- render 'cart-drawer' -%}
+    {%- endif -%}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+    </ul>
+
+    <script>
+      
+			window.routes = {
+				cart_add_url: '{{ routes.cart_add_url }}',
+				cart_change_url: '{{ routes.cart_change_url }}',
+				cart_update_url: '{{ routes.cart_update_url }}',
+				cart_url: '{{ routes.cart_url }}',
+				predictive_search_url: '{{ routes.predictive_search_url }}'
+			};
+
+			window.cartStrings = {
+				error: `{{ 'sections.cart.cart_error' | t }}`,
+				quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t }}`,
+				empty: `{{ 'general.cart.empty_cart' | t }}`,
+				shop_now: `{{ 'customer.account.account_button_shop' | t }}`,
+				collections_url: `{{ routes.collections_url | sort_by: 'best-selling' }}`
+			}
+
+			window.variantStrings = {
+				addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+				soldOut: `{{ 'products.product.sold_out' | t }}`,
+				unavailable: `{{ 'products.product.unavailable' | t }}`,
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`
+			}
+
+			window.theme = {
+				moneyFormat: {{ shop.money_format | json }},
+				quickviewMore: `{{ 'general.card.view__more' | t }}`,
+        reviews: `{{ 'products.product.reviews' | t }}`
+			}
+
+			const calcVh = () => {
+				const vh = window.innerHeight * 0.01;
+				document.documentElement.style.setProperty("--vh", `${vh}px`);
+			}
+			window.addEventListener("load", calcVh);
+			window.addEventListener("resize", calcVh);
+    </script>
+
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+{% comment %} pipedrive contact modal {% endcomment %}
+    <dialog id="pipedrive_modal">
+      <div id="pipedrive_modal-close">{% render 'icon-close' %}</div>
+      <div class="contact-popup">
+        <div class="contact-popup-content grey-box form-vertical contact-popup-content-padding">
+          <div class="contact-popup-header-container">
+              <div class="contact-popup-logo">
+                {% if settings.pipedrive_logo_image != blank %}
+                  {% style %}
+                    .contact-popup-logo {
+                      width: {{ settings.pd_logo_width_mobile }}px;
+                    }
+                    @media screen and (min-width: 750px) {
+                      .contact-popup-logo {
+                        width: {{ settings.pd_logo_width_desktop }}px;
+                      }
+                    }
+                  {% endstyle %}
+                  {{ settings.pipedrive_logo_image | image_url: width: '320' | image_tag }}
+                {% endif %}
+              </div>
+              <div style="display: flex; align-items:center;" class="rich-text__heading--medium">
+                <h2 class="h3">{{settings.contact_popup_headline}}</h2>
+              </div>
+          </div>
+
+          {% if settings.pipedrive_id != blank %}
+            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ settings.pipedrive_id }}">
+              <script src="https://webforms.pipedrive.com/f/loader"></script>
+            </div>
+          {% endif %}
+
+          {% if settings.proven_expert_leads != blank %}
+            <div class="quotes-wrapper proven-expert-lead-page">
+              {{settings.proven_expert_leads}}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let button = document.querySelectorAll('a[href="#{{ settings.pipedrive_form_id }}"]');
+        let modal_close = document.querySelector('#pipedrive_modal-close');
+        let pipedrive_modal = document.querySelector('dialog#pipedrive_modal');
+
+        button.forEach(button => {
+          button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (pipedrive_modal) {
+              pipedrive_modal.showModal();
+            }
+          });
+        })
+
+        if (modal_close) {
+          modal_close.addEventListener("click", function() {
+            if (pipedrive_modal) {
+              pipedrive_modal.close();
+            }
+          });
+        }
+
+        if (pipedrive_modal) {
+          pipedrive_modal.addEventListener('click', function (event) {
+            let rect = pipedrive_modal.getBoundingClientRect();
+            let isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height &&
+              rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+            if (!isInDialog) {
+              pipedrive_modal.close();
+            }
+          });
+        }
+      });
+    </script>
+    <script>
+    (() => {
+      function registerEventListeners() {
+       const carouselCells = document.querySelectorAll('.carousel-cell');
+       let HighestTotalHeight = 0;
+
+       if (carouselCells) {
+        // Find the highest total height of the carousel cells
+        carouselCells.forEach((cell) => {
+          const title = cell.querySelector('.title');
+          const item = cell.querySelector('.pricing-table__item-price');
+          const description = cell.querySelector('.pricing-table__item-description');
+          let totalHeight = title.offsetHeight + item.offsetHeight + description.offsetHeight;
+          if (HighestTotalHeight < totalHeight) {
+            HighestTotalHeight = totalHeight;
+          }
+        });
+
+        // Set the height of the carousel cells to the highest total height
+        carouselCells.forEach((cell) => {
+          const title = cell.querySelector('.title');
+          const item = cell.querySelector('.pricing-table__item-price');
+          const description = cell.querySelector('.pricing-table__item-description');
+          let totalHeight = title.offsetHeight + item.offsetHeight + description.offsetHeight;
+          if (HighestTotalHeight > totalHeight) {
+            let diff = HighestTotalHeight - totalHeight;
+            cell.querySelector('.spacer').style.height = `${diff}px`;
+          }
+        });
+
+      }
+      }
+      document.addEventListener('DOMContentLoaded', registerEventListeners);
+      document.addEventListener('shopify:section:load', registerEventListeners);
+    })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_E6PcPd": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "anchor_id": "",
+        "custom_liquid": "<div id=\"mc_embed_shell\">\n  <style type=\"text/css\">\n    @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');\n\n    #mc_embed_signup {\n      background: transparent;\n      font-family: 'Instrument Sans', Helvetica, Arial, sans-serif;\n      width: 100%;\n      max-width: 540px;\n      margin: 0 auto;\n      padding: 40px 32px;\n      box-sizing: border-box;\n      text-align: center;\n    }\n\n    #mc_embed_signup h2 {\n      color: #00486F;\n      font-family: 'Instrument Sans', sans-serif;\n      font-weight: 700;\n      font-size: 26px;\n      line-height: 1.25;\n      margin: 0 0 8px 0;\n    }\n\n    #mc_embed_signup .mc-intro {\n      color: #00486F;\n      font-size: 15px;\n      line-height: 1.5;\n      margin: 0 0 24px 0;\n      opacity: 0.85;\n    }\n\n    #mc_embed_signup .indicates-required {\n      color: #00486F;\n      font-size: 12px;\n      opacity: 0.6;\n      margin-bottom: 16px;\n    }\n\n    #mc_embed_signup .asterisk {\n      color: #FF3140;\n    }\n\n    #mc_embed_signup .mc-field-group {\n      text-align: left;\n      margin: 0 auto 16px auto;\n      max-width: 380px;\n    }\n\n    #mc_embed_signup .mc-field-group label {\n      display: block;\n      color: #00486F;\n      font-weight: 600;\n      font-size: 14px;\n      margin-bottom: 6px;\n    }\n\n    #mc_embed_signup .mc-field-group input.email {\n      width: 100%;\n      box-sizing: border-box;\n      padding: 12px 14px;\n      font-family: 'Instrument Sans', sans-serif;\n      font-size: 15px;\n      color: #00486F;\n      background: #FFFFFF;\n      border: 1.5px solid #98CCE9;\n      border-radius: 10px;\n      outline: none;\n      transition: border-color 0.2s ease;\n    }\n\n    #mc_embed_signup .mc-field-group input.email:focus {\n      border-color: #00486F;\n    }\n\n    #mc_embed_signup .button {\n      display: inline-block;\n      width: 100%;\n      max-width: 380px;\n      padding: 13px 24px;\n      margin-top: 4px;\n      font-family: 'Instrument Sans', sans-serif;\n      font-weight: 600;\n      font-size: 15px;\n      color: #FFFFFF;\n      background: #00486F;\n      border: none;\n      border-radius: 10px;\n      cursor: pointer;\n      transition: background 0.2s ease;\n    }\n\n    #mc_embed_signup .button:hover {\n      background: #4790B7;\n    }\n\n    #mc_embed_signup .clear {\n      text-align: center;\n    }\n  </style>\n\n  <div id=\"mc_embed_signup\">\n    <form action=\"https://myshopify.us11.list-manage.com/subscribe/post?u=ed2349c4878dab1c69678f8b4&amp;id=fa61eff54f&amp;f_id=001115e1f0\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\">\n      <div id=\"mc_embed_signup_scroll\">\n        <h2>Bleib auf dem Laufenden</h2>\n        <p class=\"mc-intro\">Melde dich an und erhalte unsere neuesten Insights rund um Shopify und E-Commerce direkt in dein Postfach.</p>\n        <div class=\"indicates-required\"><span class=\"asterisk\">*</span> Pflichtfeld</div>\n        <div class=\"mc-field-group\">\n          <label for=\"mce-EMAIL\">E-Mail Adresse <span class=\"asterisk\">*</span></label>\n          <input type=\"email\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" required=\"\" value=\"\">\n        </div>\n        <div id=\"mce-responses\" class=\"clear\">\n          <div class=\"response\" id=\"mce-error-response\" style=\"display: none;\"></div>\n          <div class=\"response\" id=\"mce-success-response\" style=\"display: none;\"></div>\n        </div>\n        <div aria-hidden=\"true\" style=\"position: absolute; left: -5000px;\"><input type=\"text\" name=\"b_ed2349c4878dab1c69678f8b4_fa61eff54f\" tabindex=\"-1\" value=\"\"></div>\n        <div class=\"clear\"><input type=\"submit\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\" value=\"Anmelden\"></div>\n      </div>\n    </form>\n  </div>\n  <script type=\"text/javascript\" src=\"//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\"></script>\n  <script type=\"text/javascript\">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[12]='MMERGE12';ftypes[12]='text';fnames[2]='MMERGE2';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='dropdown';fnames[4]='COMPANY';ftypes[4]='text';fnames[5]='ADDRESS';ftypes[5]='address';fnames[6]='SIGNUP_URL';ftypes[6]='text';fnames[7]='PAGE_TAG';ftypes[7]='text';fnames[8]='PAGE_URL';ftypes[8]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>\n</div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_E6PcPd"
+  ]
+}

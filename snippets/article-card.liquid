@@ -1,0 +1,169 @@
+{% comment %}
+  	Renders an article card for a given blog with settings to either show the image or not.
+
+  	Accepts:
+  	- blog: {Object} Blog object
+  	- article: {Object} Article object
+  	- show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+  	- show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+  	- show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+
+  	Usage:
+  {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+{% endcomment %}
+
+{% if article.metafields.custom.author_image != blank %}
+  {%- assign author_image = article.metafields.custom.author_image -%}
+{% elsif section_author_image != blank %}
+  {%- assign author_image = section_author_image -%}
+{% endif %}
+
+<article
+  class="
+    article-card article-card--{{ image_ratio }}
+    {% if overlay == true %} article-card--overlay {% endif %}
+    {% if background or overlay == true %} color-{{ color_scheme }} {% endif %}
+  "
+  aria-labelledby="Article-{{ article.id }}"
+>
+  {%- if show_image == true and article.image -%}
+    <div class="article-card__image media">
+      {% capture sizes %}
+				(min-width: 990px) 940px, (min-width: 750px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+			{% endcapture %}
+      {{
+        article.image
+        | image_url: width: 1066
+        | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 720, 940, 1066'
+      }}
+    </div>
+  {%- endif -%}
+  {%- if show_tags and article.tags != blank and overlay == false and tags_on_image == true -%}
+    <ul
+      class="
+        article-card__tags
+        {% if show_image == false or article.image == blank %}
+        	article-card__tags_static
+        	{% if background %}
+        		article-card__tags_background
+        	{% endif %}
+        {% endif %}
+      "
+    >
+      {% for tag in article.tags %}
+        <li class="article-card__tag body-small {% if show_image == true and article.image != blank %} color-background-1 {% endif %}">
+          <a
+            href="{{ blog.url }}/tagged/{{ tag | handle }}"
+            {% if background or overlay == true %}
+              class="color-{{ color_scheme }}"
+            {% endif %}
+          >
+            <span title="{{ tag }}">{{ tag }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {%- endif -%}
+  <div class="article-content article-content--flex motion-reduce {% if background or overlay == true %} article-content--background {% endif %}">
+    {% if show_logo and article.metafields.custom.logo != blank %}
+      <div class="article-card__logo">
+        {{ article.metafields.custom.logo | image_url: width: 600 | image_tag: loading: 'lazy' }}
+      </div>
+    {% endif %}
+    <div class="article-card__info">
+      {%- if show_tags and article.tags != blank and overlay == true and tags_on_image == true -%}
+        <ul
+          class="
+            article-card__tags
+            {% if show_image == false or article.image == blank %}
+            	{% if background %}
+            		article-card__tags_background
+            	{% endif %}
+            {% endif %}
+          "
+        >
+          {% for tag in article.tags %}
+            <li class="article-card__tag body-small {% if show_image == true and article.image != blank %} color-background-1 {% endif %}">
+              <a
+                href="{{ blog.url }}/tagged/{{ tag | handle }}"
+                {% if background or overlay == true %}
+                  class="color-{{ color_scheme }}"
+                {% endif %}
+              >
+                <span title="{{ tag }}">{{ tag }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {%- endif -%}
+      <header class="article-card__header">
+        {%- if show_tags and article.tags != blank and tags_on_image == false -%}
+          <ul class="article-card__inline-tags">
+            {% for tag in article.tags %}
+              <li class="article-card__tag body-small">
+                <a href="{{ blog.url }}/tagged/{{ tag | handle }}">
+                  <span title="{{ tag }}">{{ tag }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {%- endif -%}
+
+        <h2
+          class="article-card__title {% if post_heading_size %} {{ post_heading_size }} {% else %} h6 {% endif %}"
+          id="Article-{{ article.id }}"
+        >
+          <a href="{{ article.url }}">
+            {{ article.title | escape }}
+          </a>
+        </h2>
+        {%- if show_excerpt and article.excerpt_or_content.size > 0 -%}
+          <p class="article-card__excerpt">
+            {{ article.excerpt_or_content | strip_html | truncate: 150 }}
+          </p>
+        {%- endif -%}
+      </header>
+
+      <div class="article-card__bottom">
+        {% if author_image or show_author or show_date %}
+          <div class="article-card__author">
+            {% if author_image and show_author %}
+              <div class="article-card__author-image">
+                {{
+                  author_image
+                  | image_url: width: block.settings.author_image.width
+                  | image_tag: loading: 'lazy', widths: '50, 100'
+                }}
+              </div>
+            {% endif %}
+            <div class="article-card__author-info">
+              {%- if show_author -%}
+                <span class="article-card__author-name">{{- article.author -}}</span>
+              {%- endif -%}
+              <div class="article-card__meta">
+                {%- if show_date -%}
+                  <span class="article-card__date body-small">
+                    {{ 'general.blog.update' | t }}
+                    {{- article.published_at | time_tag: format: 'abbreviated_date' -}}
+                  </span>
+                {%- endif -%}
+                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                  <span class="article-card__comments body-small">
+                    {{- 'blogs.article.comments' | t: count: article.comments_count -}}
+                  </span>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {% else %}
+          {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+            <span class="article-card__comments">
+              {{- 'blogs.article.comments' | t: count: article.comments_count -}}
+            </span>
+          {%- endif -%}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <a class="article-card-link" href="{{ article.url }}" aria-label="{{ "accessibility.article_link" | t }}"></a>
+</article>

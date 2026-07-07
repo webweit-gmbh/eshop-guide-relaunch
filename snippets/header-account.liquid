@@ -1,0 +1,56 @@
+<details-disclosure class="header__account">
+  <details>
+    <summary
+      class="header__icon header__icon--account link--text focus-inset modal__toggle"
+      aria-haspopup="dialog"
+      role="button"
+    >
+      {% render 'icon-account' %}
+    </summary>
+    <div class="header__account-modal modal__toggle color-background-1" role="dialog" aria-modal="true">
+      {%- if customer -%}
+        <div class="header__account-account">
+          <div class="header__account-name">{{ customer.name }}</div>
+          <ul class="header__account-body">
+            <li class="header__account-link">
+              <a href="{{ routes.account_url }}">
+                {{ 'customer.account_fallback' | t }}
+              </a>
+            </li>
+            <li class="header__account-address">
+              <a href="{{ routes.account_addresses_url }}">{{ 'customer.addresses.book' | t }}</a>
+            </li>
+          </ul>
+          <a
+            class="header__account-logout button button--primary focus-inset"
+            href="{{ routes.account_logout_url }}"
+          >
+            {{ 'customer.log_out' | t }}
+          </a>
+        </div>
+
+      {%- else -%}
+        <a
+          href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+          class="button button--primary header__account-login link  focus-inset"
+        >
+          {%- liquid
+            if customer
+              echo 'customer.account_fallback' | t
+            else
+              echo 'customer.log_in' | t
+            endif
+          -%}
+        </a>
+
+        <a
+          class="header__account-register link button button--arrow button--simple"
+          href="{{ routes.account_register_url }}"
+        >
+          <span>{{ 'customer.login_page.create_account' | t }}</span>
+          {% render 'icon-button-arrow' %}
+        </a>
+      {%- endif -%}
+    </div>
+  </details>
+</details-disclosure>

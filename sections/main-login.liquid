@@ -1,0 +1,221 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{% if section.blocks.size > 0 %}
+  <script src="{{ 'animated-image-collage.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+<div class="color-{{ section.settings.color_scheme }} login-section-wrapper section--has-overlay {% if section.settings.header_transparent %} section--header-light {% endif %}">
+  <div
+    class="customer login container {% if section.blocks.size > 0 %}customer--collage{% endif %}"
+  >
+    <div class="login__wrapper">
+      <div class="login__col">
+        {% if section.settings.image != blank %}
+          {%- capture style -%}
+						object-position: {{ section.settings.image.presentation.focal_point }};
+					{%- endcapture -%}
+          {{
+            section.settings.image.preview_image
+            | image_url: width: 2500
+            | image_tag:
+              loading: '',
+              widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946, 2100, 2200, 2300, 2400, 2500',
+              style: style
+          }}
+        {% endif %}
+      </div>
+      <div class="login__col">
+        <div class="login__reset color-background-1" id="recover">
+          <div class="page-header">
+            <div class="page-header__inner">
+              <h2 class="title--page login__title h4" tabindex="-1">
+                {{ 'customer.recover_password.title' | t }}
+              </h2>
+            </div>
+          </div>
+          <div>
+            <p>
+              {{ 'customer.recover_password.subtext' | t }}
+            </p>
+
+            {%- form 'recover_customer_password' -%}
+              {% assign recover_success = form.posted_successfully? %}
+              <div class="field field--email">
+                <input
+                  type="email"
+                  value=""
+                  name="email"
+                  id="RecoverEmail"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}
+                    aria-invalid="true"
+                    aria-describedby="RecoverEmail-email-error"
+                    autofocus
+                  {% endif %}
+                  placeholder="Your Email"
+                >
+                <label for="RecoverEmail">{{ 'customer.login_page.email' | t }}</label>
+              </div>
+
+              <div class="login__buttons">
+                <button class="button button--primary login__sign-in focus-inset">
+                  {{ 'customer.login_page.submit' | t }}
+                </button>
+
+                <a class="button button--simple_link login__sign-in anchor focus-inset" href="#login">
+                  {{ 'customer.login_page.cancel' | t }}
+                </a>
+              </div>
+            {%- endform -%}
+          </div>
+        </div>
+
+        <div class="login__form color-background-1" id="login">
+          <div class="page-header">
+            <div class="page-header__inner">
+              <h1 class="title--page login__title h4" tabindex="-1">
+                {{ 'customer.login_page.welcome' | t }}
+                {% render 'icon-hand-line' %}
+              </h1>
+            </div>
+          </div>
+          {%- if recover_success == true -%}
+            <h3 class="form__message" tabindex="-1" autofocus>
+              {{ 'customer.recover_password.success' | t }}
+            </h3>
+          {%- endif -%}
+          {%- form 'customer_login', novalidate: 'novalidate' -%}
+            <div class="field field--email login__field">
+              <input
+                type="email"
+                name="customer[email]"
+                class="field__input"
+                id="CustomerEmail"
+                autocomplete="email"
+                autocorrect="off"
+                autocapitalize="off"
+                required
+                {% if form.errors contains 'form' %}
+                  aria-invalid="true"
+                  aria-describedby="LoginForm-email-error"
+                {% endif %}
+                placeholder="{{ 'customer.login_page.email_placeholder' | t }}"
+              >
+              <label for="CustomerEmail">{{ 'customer.login_page.email' | t }}</label>
+              {% unless template.name == 'register' %}
+                {{ form.errors | default_errors }}
+              {% endunless %}
+            </div>
+
+            {%- if form.password_needed -%}
+              <div class="field field--pass login__field">
+                <div class="button-pass-visibility">
+                  {% render 'icon-eye' %}
+                  {% render 'icon-eye-close' %}
+                </div>
+                <input
+                  type="password"
+                  value=""
+                  name="customer[password]"
+                  class="field__input"
+                  id="CustomerPassword"
+                  autocomplete="current-password"
+                  placeholder="{{ 'customer.login_page.password_placeholder' | t }}"
+                  {% if form.errors contains 'form' %}
+                    aria-invalid="true"
+                  {% endif %}
+                  required
+                >
+                <label for="CustomerPassword">{{ 'customer.login_page.password' | t }}</label>
+                {% unless template.name == 'register' %}
+                  {{ form.errors | default_errors }}
+                {% endunless %}
+              </div>
+            {%- endif -%}
+
+            <div class="login__buttons login__buttons--space-between">
+              <button class="button button--primary login__sign-in focus-inset">
+                {{ 'customer.login_page.title' | t }}
+              </button>
+
+              <a href="#recover" class="anchor button button--simple login__forgot-password focus-inset">
+                <span>{{ 'customer.login_page.forgot_password' | t }}</span>
+              </a>
+            </div>
+            <div class="login__create-acc">
+              <span>{{ 'customer.login_page.new_customer' | t }}</span>
+              <a href="{{ routes.account_register_url }}" class="button button--simple button--arrow focus-inset">
+                <span>{{ 'customer.login_page.create_account' | t }}</span>
+                {% render 'icon-button-arrow' %}
+              </a>
+            </div>
+          {%- endform -%}
+        </div>
+
+        {%- if shop.checkout.guest_login -%}
+          <div class="login__guest color-background-1">
+            <div class="login__title h4">{{ 'customer.login_page.guest_title' | t }}</div>
+
+            {%- form 'guest_login' -%}
+              <button class="button button--primary focus-inset">
+                {{ 'customer.login_page.guest_continue' | t }}
+              </button>
+            {%- endform -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+    {% if section.blocks.size > 0 %}
+      {% render 'account-collage', section: section %}
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  window.onload = () => {
+    typeof PasswordViewer !== 'undefined' && new PasswordViewer();
+  };
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-login.name",
+  "tag": "section",
+  "class": "spaced-section login-section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-3",
+      "label": "t:sections.all.color_scheme.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "header_transparent",
+      "label": "t:sections.all.header_transparent.label",
+      "info": "t:sections.all.header_transparent.info",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.all.image.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.main-login.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.all.image.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

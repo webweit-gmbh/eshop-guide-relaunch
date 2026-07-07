@@ -1,0 +1,1426 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_thEpqN": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_CWqjHT": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "chart-3",
+            "svg_icon": "icon-EG-speed",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "4 Monate",
+            "heading_tag": "p",
+            "text": "vom Kick-off zum Shop Launch",
+            "background_gradient": ""
+          }
+        },
+        "column_yhEzRd": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "rocket",
+            "svg_icon": "icon-EG-star",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "462 % mehr Bestellungen",
+            "heading_tag": "p",
+            "text": "über die Mailing-Automation für Warenkorbabbrüche",
+            "background_gradient": ""
+          }
+        },
+        "column_7AbfM9": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon": "phone-4",
+            "svg_icon": "icon-EG-happy",
+            "icon_color": "",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "icon_fill_type": "solid",
+            "heading": "21 % Reduktion der Absprungrate",
+            "heading_tag": "p",
+            "text": "der Warenkorb-Abbrecherinnen",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CWqjHT",
+        "column_yhEzRd",
+        "column_7AbfM9"
+      ],
+      "disabled": true,
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_last",
+        "enable_column": true,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "Harmonie von Brand, Inspiration und Shop",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "High Fashion Marke Luisa Cerano migriert zu Shopify Plus",
+        "inner_heading_tag": "h1",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p><strong>Ergebnisse:</strong></p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "{{ article.image }}",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "all-height",
+        "overlay_opacity": 0.2,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "full_width": true,
+            "object_fit": "cover",
+            "blog_show_tags": true,
+            "blog_show_excerpt": false,
+            "blog_show_author": false,
+            "blog_show_date": false,
+            "image_height": "adapt",
+            "show_share": false,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "disabled": true,
+          "settings": {
+            "author_position": "",
+            "author_info": "",
+            "blog_show_author": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "aside_akdCzB": {
+          "type": "aside",
+          "settings": {
+            "banner_show": false,
+            "overlay_opacity": 0.3,
+            "banner_heading": "Das Unternehmen",
+            "banner_color_scheme": "background-1",
+            "banner_label": "Luisa Cerano",
+            "banner_link": "#",
+            "informations_show": true,
+            "divider_color": "#4790b7",
+            "information_heading_1": "Unternehmen",
+            "information_value_1": "<p><a href=\"https://www.luisacerano.com\" target=\"_blank\" title=\"Onlineshop von Luisa Cerano\"><strong>Luisa Cerano</strong></a></p>",
+            "information_heading_2": "Branche",
+            "information_value_2": "<p><strong>Fashion</strong></p>",
+            "information_heading_3": "Alte Plattform",
+            "information_value_3": "<p><strong>Shopware 5</strong></p>",
+            "information_heading_4": "Neue Plattform",
+            "information_value_4": "<p><strong>Shopify Plus</strong></p>",
+            "information_heading_5": "Use Case",
+            "information_value_5": "<ul><li><strong>Migration</strong></li><li><strong>Responsivenes</strong></li><li><strong>Wachstum</strong></li></ul>",
+            "information_heading_6": "",
+            "information_value_6": "",
+            "information_heading_7": "Laufzeit",
+            "information_value_7": "<p><strong>4 Monate</strong></p>",
+            "information_heading_8": "Kosten",
+            "information_value_8": "<p><strong>&gt; 100.000 €</strong></p>",
+            "information_heading_9": "Highlights",
+            "information_value_9": "<ul><li><strong>Schneller Livegang</strong></li><li><strong>Warenkorbabbrecher-Mails</strong></li><li><strong>Back-In-Stock-Benachrichtigungen</strong></li></ul>",
+            "information_heading_10": "",
+            "information_value_10": "",
+            "post_show": false,
+            "posts_heading": "",
+            "posts_blog": "",
+            "tags_show": false,
+            "tags_heading": "Heading",
+            "newsletter_show": false,
+            "color_scheme": "background-1",
+            "newsletter_heading": "",
+            "newsletter_description": "Content",
+            "button_style": "primary",
+            "cta_show": true,
+            "cta_show_desktop": true,
+            "cta_show_mobile": false,
+            "cta_background_color": "#cbf3ff",
+            "cta_heading": "Hast du Lust, mit Shopify mehr zu erreichen?",
+            "cta_description": "<p>Egal ob Migration, Optimierung oder langfristige Begleitung deines Shops – wir stehen dir zur Seite.</p>",
+            "show_button_1": true,
+            "button_label_1": "Jetzt anfragen",
+            "button_link_1": "#contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer",
+        "aside_akdCzB"
+      ],
+      "settings": {
+        "header_variant": "overlay",
+        "display_content_inside": true,
+        "header_transparent": false,
+        "color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "opacity_overlay": 0.5,
+        "padding_top": "no-indent",
+        "padding_bottom": "s"
+      }
+    },
+    "rich_text_x3Jb6w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dRJ4qd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inhaltsverzeichnis",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_PPEMkm": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li><a href=\"#1\" title=\"#1\">Ein kurzer Steckbrief: Das ist Luisa Cerano</a></li><li><a href=\"#2\" title=\"#2\">Luisa Ceranos Entscheidung von Shopware 5 zu Shopify Plus</a></li><li><a href=\"#3\" title=\"#3\">Wachstum voraus: Luisa Cerano x Shopify Plus x Eshop Guide</a></li><li><a href=\"#4\" title=\"#4\">In Rekordzeit: Go-live in nur vier Monaten</a></li><li><a href=\"#5\" title=\"#5\">Intensive Betreuung nach dem Launch</a></li><li><a href=\"#6\" title=\"#6\">Neue Funktionen implementieren</a></li><li><a href=\"#7\" title=\"#7\">Was Team Luisa Cerano anderen Händler:innen empfiehlt</a></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRJ4qd",
+        "text_PPEMkm"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "background-3",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "s",
+        "margin_bottom": "s",
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_MKc39j": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_9RnQfD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Ein kurzer Steckbrief",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_6ak4RB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das ist Luisa Cerano",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_eDK4AY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Allen, die sich in Sachen Mode ein wenig auskennen und regelmäßig die Vogue lesen, ist Luisa Cerano vermutlich ein Begriff. Für alle anderen:<br/><br/>Die Luisa Cerano GmbH & Co. KG ist ein 1998 gegründetes Modeunternehmen mit Sitz in Nürtingen. Das Label ist bekannt dafür, internationale Trends aufzugreifen und in seinem eigenen Stil zu interpretieren. So entstehen Designs, die sich leicht zu den unterschiedlichsten Outfits kombinieren lassen – von feminin elegant bis sportlich lässig.</p><p>Spezialisiert hat Luisa Cerano sich dabei auf das Premiumsegment. Alle Kleidungsstücke sind von hoher Qualität und werden mit größter Sorgfalt verarbeitet. Dieser Umstand schlägt sich nicht nur auf den Preis der Produkte nieder, sondern vor allem auf die Anforderungen, die das Unternehmen an seinen Onlineshop stellt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9RnQfD",
+        "heading_6ak4RB",
+        "text_eDK4AY"
+      ],
+      "settings": {
+        "anchor_id": "1",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_with_text_eAJrYL": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p> </p>",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Luisa_Cerano_Uebersicht_Schraeg.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "all-height",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_CN6fFm": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_pgdXqm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "High Fashion, low Shopsystem",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_C6BXMG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luisa Ceranos Entscheidung von Shopware 5 zu Shopify Plus",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_dbYTaR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Noch zu Beginn des Jahres hatte Luisa Cerano seine Heimat im Web bei Shopware 5 – tatsächlich der erste Onlineshop des Unternehmens und schon ein wenig in die Jahre gekommen. Ein Umstand, der deutlich zu spüren war.</p><p>Simon Drees, der Head of IT, dazu: „Als Unternehmen, das eigentlich aus dem B2B-Bereich kommt, war der erste Onlineshop für uns eine Art Testballon. Dementsprechend wurde vieles nicht perfekt umgesetzt oder war einfach nicht mehr zeitgemäß.</p><p><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/conversion-rate-optimierung-shopify-zahlungsmethoden\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Conversion-Killer identifizieren und die Conversion Rate verbessern</em></span></a></p><p>Das Design sah überholt aus, Prozesse in der Customer Journey wie der Checkout waren nicht auf Conversions optimiert, Responsiveness gab es nicht und die Suchfunktion hatte ihren Namen ebenfalls nicht mehr verdient. Insgesamt war es einfach höchste Zeit für einen Relaunch.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pgdXqm",
+        "heading_C6BXMG",
+        "text_dbYTaR"
+      ],
+      "settings": {
+        "anchor_id": "2",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_79QnPg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xtiGMD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shopware-Update und langsames Ticketsystem",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_drR4Qd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zum einen, weil es in der Zusammenarbeit zwischen Luisa Cerano und der damaligen Partneragentur ein wenig hakte. Anfragen liefen über ein Ticketsystem. Das ist zwar übersichtlich und bequem (vorwiegend für die Agentur), allerdings reichlich ungeeignet, um agil zu reagieren und eine Vielzahl an Änderungswünschen schnell umzusetzen.<br/><br/>Zum anderen aus einem Grund, der bereits andere Unternehmen zu einem Systemwechsel bewogen hat: das Update auf Shopware 6. Denn mit der neuen Version wurden nicht nur sämtliche Shopware-Plug-ins quasi über Nacht obsolet; die veränderte Datenstruktur machte einen kompletten Relaunch des Shops unausweichlich.<br/><br/><strong>Lesetipp</strong>: <a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/shopware6-vs-shopify\"><span style=\"text-decoration:underline\">Shopware 6 vs. Shopify Plus: Ein ehrlicher Vergleich</span></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xtiGMD",
+        "text_drR4Qd"
+      ],
+      "settings": {
+        "anchor_id": "3",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_UERLGK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cJzV8K": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Wachstum voraus: Luisa Cerano x Shopify Plus x Eshop Guide</h2><p>Nun führen bekanntlich alle Wege nach Rom und in der Shopify-Welt führen sie eben zu Eshop Guide. Warum das Team von Luisa Cerano sich für das System aus Kanada und die Agentur aus Bochum und Berlin entschieden hat, begründen Katharina Grözinger, Director Digital Business, und Simon Drees, Head of IT, so:</p><h3>Ein System für den Skalierungswunsch: Shopify Plus</h3><p> „Aus dem Blickwinkel von Sales und Marketing spielte primär ein Kriterium die entscheidende Rolle“, sagt Katharina. „Nämlich die Skalierbarkeit, sowohl in Bezug auf den Traffic als auch auf den Produktanspruch. Wir rechnen weiterhin mit starkem Wachstum im B2C-Segment, da muss das Shopsystem nach vorn einfach offen sein.“</p><p>IT-Profi Simon ergänzt: „Wichtig war uns außerdem die Time-to-Market. Denn jede Woche, die an dem neuen System herumgeschraubt werden muss, bedeutet verlorenes Geld. Mit Shopify bekommen Unternehmen einen Store, der im Grunde direkt live geschaltet werden kann.<br/><br/>Funktionen lassen sich anschließend kostengünstig und ohne große Programmierkenntnisse über Integrationen und Apps ergänzen. Diese Flexibilität war ebenfalls ein entscheidender Faktor.“<em><strong><br/><br/>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/shopify-warenkorb-anpassen\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Bei Shopify ebenfalls flexibel anpassbar: Warenkorb und Checkout<br/><br/></em></span></a>Kurzum: Shopify überzeugte durch hohe Skalierbarkeit, kurze Time-to-Market und seine große Flexibilität.<br/></p><p></p><h3>Unschlagbares Portfolio: Eshop Guide</h3><p>Nachdem die Entscheidung pro Migration zu Shopify festgestanden hatte, fehlte nur noch der passende Partner. Simon zufolge lief der Auswahlprozess folgendermaßen ab:<br/><br/>„Da wir uns im Vorfeld bereits auf Shopify festgelegt hatten, schieden viele Agenturen schnell aus. Zwar präsentierten sie allesamt gute Ideen, waren aber auf andere Systeme spezialisiert. Den Tipp, zu Eshop Guide Kontakt aufzunehmen, bekamen wir von Talent Formation, die wahrscheinlich eines der besten Partnernetzwerke für digitale Transformation in Deutschland führen.<br/><br/>Eshop Guide selbst musste anschließend gar nicht mehr viel Überzeugungsarbeit leisten. Wenn jemand über 160 Referenzprojekte für Unternehmen aller Branchen und Größen im Portfolio hat, ist klar: Die wissen, wie die Planung und Umsetzung eines Onlineshops bei Shopify funktionieren.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cJzV8K"
+      ],
+      "settings": {
+        "anchor_id": "4",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "s",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "testimonials_xyVGhc": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_pzdKbU": {
+          "type": "testimonials_slide",
+          "settings": {
+            "enable_rating": false,
+            "rating": 5,
+            "enable_badge": false,
+            "color_scheme_badge": "",
+            "badge_text": "Shopify Migration",
+            "slide_text": "„Eshop Guide hat über 160 Referenzprojekte im Portfolio. Das machte die Entscheidung für uns einfach.“",
+            "box_color": "#15c8e4",
+            "slide_name": "",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_pzdKbU"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "image_left_slider",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "slide_color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "slide_text_size": "recommended",
+        "enable_navigation": false,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_YCdVJB": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Luisa_Cerano_Startseite.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_z86z34": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_xaeLCr": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "In Rekordzeit",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_hx4MyE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Go-live in nur vier Monaten",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_8bWwDm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nun aber zurück zum Projekt: System gewählt, Partner an Bord – und dann ging für Luisa Cerano alles sehr schnell. Simon berichtet:</p><p>„Am Anfang war ich ein wenig überrascht davon, wie schlank das Projektmanagement bei Eshop Guide gehalten wurde. Wir hatten zweimal in der Woche ein Meeting, bei dem wir uns in großer Runde abgestimmt haben. Einzelgespräche zu konkreten Fragen waren zwischendrin zu so gut wie jederzeit möglich. So gab es keine Hänger und keine Wartezeiten bei akuten Problemen. Vom Kick-off bis zum Live-Gang unseres neuen Shops dauerte es nur vier Monate. Das ist beeindruckend schnell.“</p><p>Katharina fügt hinzu: „Hilfreich bei der schnellen Umsetzung war auch, dass wir Bedürfnisse und Ziele von Anfang an eindeutig formuliert haben. Damit war immer klar, wo die Reise hingeht und wo die Prioritäten liegen müssen.</p><p>Zudem würde ich allen dazu raten, eine intensive Testphase vor dem Launch einzuplanen. Damit kann man sicherstellen, dass kritische Themen, die das Business beeinträchtigen, ausgeschlossen sind, wenn der Hebel einmal umgelegt ist und das Shopsystem gewechselt.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xaeLCr",
+        "heading_hx4MyE",
+        "text_8bWwDm"
+      ],
+      "settings": {
+        "anchor_id": "5",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "s"
+      }
+    },
+    "case_studies_tyfQMd": {
+      "type": "case-studies",
+      "blocks": {
+        "case_slide_wWxyh8": {
+          "type": "case_slide",
+          "settings": {
+            "image_column_width": 35,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "image_in_front_of_overlay": false,
+            "heading": "",
+            "heading_tag": "p",
+            "text": "",
+            "quote": "“Vom Kick-off bis zum Live-Gang unseres neuen Shops dauerte es nur vier Monate. Das ist beeindruckend schnell.“",
+            "quote_size": "recommended",
+            "author_name": "",
+            "author_position": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        }
+      },
+      "block_order": [
+        "case_slide_wWxyh8"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "tabs_bottom",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "image_ratio": "square",
+        "slide_color_scheme": "scheme-db7bbfb3-b246-45a9-99e9-070307146467",
+        "tabs_color_scheme": "",
+        "enable_navigation": true,
+        "navigation_color_scheme": "",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_R3LPTj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qnzNE6": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Bugs killen und Edge Cases abfangen",
+            "heading_tag": "h3",
+            "text": "<p>Softwareprofis wissen natürlich, dass auch der intensivste Betatest nicht ausreicht, um wirklich jeden Bug zu entdecken und jeden Edge Case abzudecken. Simon berichtet dazu:</p><p>„Wenn man längere Zeit mit einem Shopsystem gearbeitet hat, dann weiß man, wie es sich verhält und wo die Schwachstellen liegen. In ein neues System muss man sich dagegen erst einarbeiten und auch ein wenig reinfühlen.</p><p>Durch diese Hyper-Care-Phase hat Eshop Guide uns perfekt in ruhigere Fahrwasser begleitet. Wenn es irgendwo Probleme gab, mussten wir kein Ticket schreiben, sondern konnten einfach den kurzen Dienstweg gehen und direkt Kontakt zu unserem PM aufnehmen.“</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_YJDdbk": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Steuern im Ausland",
+            "heading_tag": "h3",
+            "text": "<p>Klar, eine Warensendung muss immer in dem Land versteuert werden, in dem der Bestellende ansässig ist. Allerdings verkauft Luisa Cerano Mode in die ganze Welt, oft an eine Zielgruppe, die sich durch einen sehr dynamischen Lebensstil auszeichnet.</p><p>Da kann es schon mal passieren, dass eine Kundin ihre Order in Italien auf den Weg schickt, nur um ihre Lieferadresse ein paar Tage später auf Griechenland zu ändern. Wo geht die Steuer hin? Frag das Kassensystem von Luisa Cerano, denn dort werden solche und ähnliche Fälle automatisiert abgearbeitet.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_AdJf9t": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Rabatte",
+            "heading_tag": "h3",
+            "text": "<p>Auch Preisnachlässe klingen zunächst unproblematisch, schließlich werden sie von Shopify nativ unterstützt. Wieder ist es die Internationalität von Luisa Cerano, die die Sache herausfordernd macht.</p><p>Denn wenn ein Unternehmen mit Fulfillment-Partnern auf dem gesamten Globus kooperiert, muss sichergestellt werden, dass ein Rabatt richtig an externe Software weitergegeben, eventuell in die Landeswährung umgerechnet und ordnungsgemäß versteuert wird. Auch mit dieser Aufgabe weiß der Shopify Plus Shop jetzt umzugehen.</p>",
+            "text_color": "",
+            "background_gradient": "",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_qnzNE6",
+        "column_YJDdbk",
+        "column_AdJf9t"
+      ],
+      "settings": {
+        "anchor_id": "6",
+        "full_width": true,
+        "section_type": "separators",
+        "layout_style": "primary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "subheading": "You never walk alone",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Intensive Betreuung nach dem Launch",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Natürlich drückt Eshop Guide seinen Kund:innen nicht einfach die Schlüssel ihres Shops in die Hand und wünscht ihnen noch einen angenehmen Tag. Außer, sie wünschen sich das so.\nIn der Regel gehört zu den Aufgaben auch immer eine intensive Betreuung nach dem Launch. Denn auch dann gibt es noch genug zu tun. Zum Beispiel:",
+        "text_align": "left",
+        "icon_size": "normal",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_AnJaWW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_edF7dq": {
+          "type": "column",
+          "settings": {
+            "icon_type": "svg",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Back-in-Stock-Benachrichtigungen",
+            "heading_tag": "h3",
+            "text": "<p>Anders als das Paar Socken beim Textil-Discounter kann exklusive Mode, wie Luisa Cerano sie führt, auch mal ausverkauft sein. Das ist natürlich ärgerlich für die Kundinnen, öffnet aber auch Möglichkeiten, die Conversion Rate zu verbessern.</p><p>Denn eine Back-in-Stock-Benachrichtigung per E-Mail erfüllt gleich drei Zwecke: Zunächst weist sie die Kundin natürlich darauf hin, dass ihr Wunschartikel wieder vorrätig ist.<br/><br/>Gleichzeitig verführt sie auch zu einer Anmeldung für den Newsletter, denn wer weiß, was man sonst noch verpasst? Zuletzt animiert sie langfristig zu schnelleren Kaufentscheidungen: Nochmal hoffen, dass das Kleid wieder hereinkommt? Nicht mit mir! </p><p>“Mit diesen Benachrichtigungen konnten wir seit dem Livegang 2.640 Signups generieren, was 19 % unseres Automation-Umsatzes ausmacht.”, so Katharina.  </p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(190, 253, 95, 1), rgba(190, 253, 95, 0.5) 100%, rgba(218, 255, 193, 0.5) 100%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_wxbBLz": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Warenkorb-Abbruch-Mailings",
+            "heading_tag": "h3",
+            "text": "<p>Eine Mail an alle Kund:innen, die ihren Warenkorb zwar befüllen, aber nicht den kompletten Checkout durchlaufen, ist für eine High Fashion Brand wie Luisa Cerano ein mächtiger Umsatzgenerator.</p><p>Denn um sich die Zeit zu vertreiben, stöbern Menschen nur allzu gerne auf Mobilgeräten durch den Store, entdecken ihr neues Lieblingsstück und lassen es sich zurücklegen – a.k.a. legen es in den Warenkorb. Bestellt wird dann daheim und mit dem guten Gefühl, sich den Einkauf nach einem langen Tag auch verdient zu haben. Die Erinnerungsmail wirkt da oft wie ein kleiner Lichtblick: Hey, auf dich wartet doch noch dein Tageshighlight!</p><p>Abbruch-Mails laufen bei Luisa Cerano im neuen Store nativ über das System von Shopify – und das wirkt: Seit dem Livegang kommen 462 Prozent mehr Bestellungen über das Mailing-System rein, die Absprungrate hat sich um 21 Prozent reduziert.</p><p>“Der Anteil des Automation Umsatzes unserer Erinnerungsmails liegt bei 38 Prozent”, so Katharina.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 1) 100%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_4nj3rp": {
+          "type": "column",
+          "settings": {
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_color": "",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Complete the Look",
+            "heading_tag": "h3",
+            "text": "<p>Mode von Luisa Cerano zeichnet sich durch ihre vielfältigen Kombinationsmöglichkeiten aus. Diesen Umstand macht sich der Shop clever zunutze und verbessert so den AOV:</p><p>Auf jeder PDP existiert eine Sektion, die sich <em>Complete the Look</em> nennt. Dort werden Besucherinnen weitere Produkte vorgeschlagen, die den aktuellen Artikel ergänzen oder eben zu einem kreativen Outfit vervollständigen. Zu einem Rock kann das etwa die passende Bluse sein, aber auch der Blazer und die Handtasche.</p><p>Cross-Selling in besonders charmant. Denn nur in den besten Boutiquen behält die Verkäuferin den kompletten Look im Hinterkopf und empfiehlt das Accessoire, das eine Kombination zu einem Outfit macht.</p>",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(139, 246, 149, 1), rgba(139, 246, 149, 0.5) 100%)",
+            "show_button": false,
+            "button_right": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_edF7dq",
+        "column_wxbBLz",
+        "column_4nj3rp"
+      ],
+      "settings": {
+        "anchor_id": "7",
+        "full_width": true,
+        "section_type": "transparent",
+        "layout_style": "tertiary",
+        "content_alignment_horizontal": false,
+        "button_full_width": false,
+        "button_on_bottom": false,
+        "icon_position": "column",
+        "icon_padding": 40,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 1,
+        "gap": "large",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Neue Funktionen implementieren",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Stand jetzt (Juli 2024) liegt der Launch des neuen Shops erst zwei Monate zurück. Für Katharina ist die Hyper-Care-Phase deshalb noch nicht vollständig abgeschlossen:\n„In den kommenden Wochen und Monaten werden wir unseren neuen Shop weiter optimieren und um zusätzliche Funktionen ergänzen, die unsere Conversion Rate verbessern oder den AOV erhöhen sollen. Wir denken hier besonders Richtung Up- und Cross-Selling.”\n<br><br>\n“Das bedeutet, auf uns kommen jede Menge kleinschrittige Tests und iterative Anpassungen zu – und wir werden uns bestimmt noch das ein oder andere Mal an Eshop Guide wenden.“\nEinige dieser neuen Funktionen sind allerdings schon live. Zum Beispiel:",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "icon_background": "",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "numbers_3FC8FL": {
+      "type": "numbers",
+      "blocks": {
+        "column_cWVVBe": {
+          "type": "column",
+          "settings": {
+            "number": "4Monate",
+            "heading": "vom Kick-off zum Shop Launch",
+            "heading_tag": "h3",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(54deg, rgba(217, 255, 194, 1) 14%, rgba(217, 255, 194, 1) 85%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_rMx6fG": {
+          "type": "column",
+          "settings": {
+            "number": "462 %",
+            "heading": "mehr Bestellungen über die Mailing-Automation für Warenkorbabbrüche",
+            "heading_tag": "h3",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(147, 230, 255, 1), rgba(147, 230, 255, 1) 50%, rgba(147, 230, 255, 1) 100%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_Ee3Vfh": {
+          "type": "column",
+          "settings": {
+            "number": "21 %",
+            "heading": "Reduzierung der Absprungrateder Warenkorb-Abbrecherinnen",
+            "heading_tag": "h3",
+            "description": "",
+            "text_color": "",
+            "background_gradient": "linear-gradient(180deg, rgba(181, 249, 187, 1), rgba(181, 249, 187, 1) 98%)",
+            "icon_type": "icon_pack",
+            "icon_pack": "none",
+            "svg_icon": "none",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cWVVBe",
+        "column_rMx6fG",
+        "column_Ee3Vfh"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 1,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "<strong>Die Luisa Cerano Migration in Zahlen</strong>",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_w84Mic": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_kLLQJm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Nicht nur ein Shop",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_hMwAcR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Markenimage perfekt in Shopify Plus umgesetzt",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_DQnm88": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Während der Umstellung des Onlineshops von Luisa Cerano auf Shopify Plus stand nicht nur die technische Migration im Fokus, sondern auch eine zentrale Sorge vieler Marken, insbesondere im Premiumsegment: Passt der neue Onlineshop zu unserem Brand-Image? <br/><br/>Diese Frage beschäftigt viele Unternehmen, die eine starke, emotional aufgeladene Marke führen. Patrick Rosenblatt, Geschäftsführer von Eshop Guide, erklärt es so: „Viele unserer Kund:innen, die hochwertige oder traditionsreiche Marken vertreten, haben die Befürchtung, dass ihr neuer Onlineshop – besonders wenn er auf Shopify basiert – zu sehr nach einem generischen 08/15-Onlineshop aussieht. Diese Sorge ist verständlich, da das Image einer Marke oft ebenso wichtig ist wie der Umsatz selbst. Ein Shop, der nicht zum Markenkern passt, könnte potenziell das gesamte Markenerlebnis trüben.“</p><h3>Mit Shopify Plus der Brand Emotion einverleiben</h3><p>Um diese Befürchtung zu entkräften, nimmt Patrick gerne das High Fashion Label als Exempel: „Luisa Cerano ist ein Paradebeispiel für eine Marke, die sehr darauf bedacht ist, dass ihr Online-Auftritt genau die richtigen emotionalen Akzente setzt. Genau deshalb haben wir einige spezielle Elemente integriert, die genau diese Anforderungen erfüllen.“</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kLLQJm",
+        "heading_hMwAcR",
+        "text_DQnm88"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_with_text_HLKXcG": {
+      "type": "image-with-text",
+      "settings": {
+        "anchor_id": "",
+        "full_width": true,
+        "layout": "image_center",
+        "enable_column": false,
+        "color_scheme": "",
+        "background_size": "cover",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_style": "none",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_subheading_style": "normal",
+        "inner_subheading_tag": "p",
+        "inner_heading": "",
+        "inner_heading_tag": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "formate_picker": "image",
+        "image": "shopify://shop_images/Iphone_Mock_Up_frontal_Luisa_Cerano_2.png",
+        "video_object_fit": false,
+        "video_overlay_margin_top": 11,
+        "video_overlay_margin_bottom": 4,
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "enable_custom_additional_text_style": false,
+        "additional_custom_text_heading": "Heading",
+        "additional_custom_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_kq9hXd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_egfcTB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lookbooks, Kampagnen-Landingpages und kategorisierte Produktübersichten",
+            "heading_tag": "h3",
+            "heading_size": "medium"
+          }
+        },
+        "text_h9JVUH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zu den maßgeschneiderten Lösungen zählen unter anderem die Nutzung von Lifestyle-Bildern, die direkt mit den entsprechenden Produkten verlinkt sind, sowie individuell gestaltete Kampagnen-Landingpages, die in hoher Bild- und Videoqualität umgesetzt wurden. „Diese Elemente ermöglichen es, die Marke Luisa Cerano in all ihrer Eleganz und Emotionalität zu präsentieren, während gleichzeitig die Funktionalität und Flexibilität von Shopify voll ausgeschöpft wird“, ergänzt Patrick.</p><h3>Die perfekte Shop-Marken-Symbiose</h3><p>Durch diese gezielte Anpassung und den Einsatz spezifischer Design-Elemente konnte Eshop Guide sicherstellen, dass der neue Onlineshop von Luisa Cerano nicht nur technisch auf dem neuesten Stand ist, sondern auch das exklusive Image der Marke perfekt transportiert. So können Unternehmen im Premiumsegment ihre Marke auch online in voller Pracht präsentieren, ohne Kompromisse eingehen zu müssen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_egfcTB",
+        "text_h9JVUH"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "",
+        "round_border": true,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_pNpQNV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_zUGwWW": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Guter Rat",
+            "subheading_tag": "p"
+          }
+        },
+        "heading_eTUdkh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was Team Luisa Cerano anderen Händler:innen empfiehlt",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_A6LHmC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bei Luisa Cerano stehen die Zeichen auf Wachstum. Der neue Shop konnte in wenigen Monaten aus der Taufe gehoben werden, erste Sonderfunktionen sind implementiert, weitere stehen in den Startlöchern.<br/><br/>Falls du mit einem ähnlichen Projekt liebäugelst, haben wir Katharina und Simon um Rat gebeten. Was darfst du keinesfalls vergessen<br/><br/>Katharina: „Spart nicht an der Zeit für die Testphase und lasst nicht nur durch die IT testen, sondern holt alle Abteilungen und wenn möglich auch ausgewählte Kund:innen mit ins Boot. Dieser holistische Blickwinkel lässt euch Probleme entdecken und beseitigen, an die Programmierende alleine nie gedacht hätten.”<br/><br/>Simon: „Wenn ihr zu Shopify wechselt, testet unbedingt euren Pagespeed. Out-of-the-box kann der teilweise alles andere als berauschend aussehen. Stellt euch darauf ein, ein Content Delivery Network (CDN) vorschalten zu müssen, um auf akzeptable Werte zu kommen.“<br/><br/><em><strong>Lesetipp:</strong></em><a href=\"https://www.eshop-guide.de/blogs/shopify-deutschland/pagespeed-optimierung\"><em><strong> </strong></em><span style=\"text-decoration:underline\"><em>Pagespeed wirksam optimieren – Methoden für den schnellen Erfolg</em></span></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zUGwWW",
+        "heading_eTUdkh",
+        "text_A6LHmC"
+      ],
+      "settings": {
+        "anchor_id": "8",
+        "color_scheme": "",
+        "round_border": false,
+        "boxed": false,
+        "full_width": true,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "rich_text_AHtfJj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NmBwez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir sind die Coco Chanels für deinen Shop",
+            "heading_tag": "h2",
+            "heading_size": "medium"
+          }
+        },
+        "text_JFeYBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Also: testen, testen, testen! Auch die Seitenladegeschwindigkeit!<br/><br/>Wenn du dann feststellst, dass dein Shop einen neuen Anstrich vertragen könnte, wie ehedem Luisa Cerano, sind wir deine Stylingberater. Wir helfen dir, dein perfektes Outfit zusammenzustellen, indem wir dich entweder ganz neu einkleiden oder die schönsten Accessoires für dich finden.<br/><br/>Soll heißen: Wir unterstützen dich bei deiner eigenen Migration zu Shopify und verpassen deinem Store auf Wunsch einen komplett neuen Look. <a href=\"https://www.eshop-guide.de/pages/shopify-migration\"><span style=\"text-decoration:underline\">Erfahre jetzt mehr</span></a>.Oder, wir stellen deinen Store bei Shopify vom Kopf auf die Füße, ergänzen ihn um Features, machen ihn performanter und optimieren ihn von Grund auf. <a href=\"https://www.eshop-guide.de/pages/shopify-shop-optimieren\"><span style=\"text-decoration:underline\">Schau dir an, wie</span></a>.</p>"
+          }
+        },
+        "button_gnPV7j": {
+          "type": "button",
+          "settings": {
+            "button_label": "Einfach Termin machen.",
+            "button_link": "#contact",
+            "button_style": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NmBwez",
+        "text_JFeYBb",
+        "button_gnPV7j"
+      ],
+      "settings": {
+        "anchor_id": "",
+        "color_scheme": "scheme-4d4a28d0-d78d-473a-a1ca-51d873eac2fb",
+        "round_border": true,
+        "boxed": false,
+        "full_width": false,
+        "full_width_text": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_pbxALY": {
+      "type": "featured-blog",
+      "settings": {
+        "anchor_id": "",
+        "blog": "referenzen",
+        "color_scheme": "background-1",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "background-1",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 9,
+        "card_color_scheme": "background-1",
+        "subheading": "",
+        "subheading_tag": "p",
+        "subheading_style": "subtitle",
+        "subheading_icon_type": "icon_pack",
+        "subheading_icon": "none",
+        "subheading_svg_icon": "none",
+        "icon_color": "",
+        "enable_scribble": false,
+        "scribble_style": "circle1",
+        "scribble_stroke_width": 10,
+        "scribble_color": "#222222",
+        "scribble_size": 100,
+        "scribble_top": 50,
+        "heading": "Weitere Referenzen",
+        "heading_tag": "h2",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": false,
+        "button_label": "Button label",
+        "custom_view_all_link": "",
+        "button_style": "primary",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_thEpqN",
+    "main",
+    "rich_text_x3Jb6w",
+    "rich_text_MKc39j",
+    "image_with_text_eAJrYL",
+    "rich_text_CN6fFm",
+    "rich_text_79QnPg",
+    "rich_text_UERLGK",
+    "testimonials_xyVGhc",
+    "image_with_text_YCdVJB",
+    "rich_text_z86z34",
+    "case_studies_tyfQMd",
+    "multicolumn_R3LPTj",
+    "multicolumn_AnJaWW",
+    "numbers_3FC8FL",
+    "rich_text_w84Mic",
+    "image_with_text_HLKXcG",
+    "rich_text_kq9hXd",
+    "rich_text_pNpQNV",
+    "rich_text_AHtfJj",
+    "featured_blog_pbxALY"
+  ]
+}

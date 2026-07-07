@@ -1,0 +1,37 @@
+# we use Shopify as our ecommerce platform
+{%- comment -%}
+# Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
+{% endcomment %}
+{% for group in robots.default_groups %}
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {{- rule -}}
+  {% endfor %}
+
+  {%- if group.user_agent.value == '*' -%}
+    {{ 'Disallow: /*?page=*' }}
+    {{ 'Disallow: /*?pos=*' }}
+    {{ 'Disallow: /*?_sid=*' }}
+    {{ 'Disallow: /*?_ss=*' }}
+    {{ 'Disallow: /*?q=*' }}
+    {{ 'Disallow: /*?id=GDPR*' }}
+
+    {{ 'Disallow: /*&page=*' }}
+    {{ 'Disallow: /*&pos=*' }}
+    {{ 'Disallow: /*&_sid=*' }}
+    {{ 'Disallow: /*&_ss=*' }}
+    {{ 'Disallow: /*&q=*' }}
+
+    {{ 'Disallow: /*/tagged/content*' }}
+    {{ 'Disallow: /*/tagged/*' }}
+    {{ 'Disallow: /*/search-results-page*' }}
+    {{ 'Disallow: /*/collections/*' }}
+
+    {{ 'Disallow: /*/pages/gdpr-compliance' }}
+  {%- endif -%}
+
+  {%- if group.sitemap != blank -%}
+    {{ group.sitemap }}
+  {%- endif -%}
+{% endfor %}

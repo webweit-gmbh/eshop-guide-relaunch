@@ -1,0 +1,21 @@
+{%- if anchor_id != blank -%}
+  <div class="anchor-link" id="{{ anchor_id }}">
+    {% style %}
+      {%- if settings.use_custom_scroll_offset -%}
+        #{{ anchor_id }} {
+          scroll-margin-top: {{ settings.mobile_scroll_offset }}px;
+        }
+
+        @media (min-width: 768px) {
+          #{{ anchor_id }} {
+            scroll-margin-top: {{ settings.desktop_scroll_offset }}px;
+          }
+        }
+      {%- else -%}
+        #{{ anchor_id }} {
+          scroll-margin-top: var(--header-height);
+        }
+      {%- endif -%}
+    {% endstyle %}
+  </div>
+{%- endif -%}

@@ -1,0 +1,41 @@
+{%- if section.settings.menu != blank -%}
+  {% render 'header-drawer', section: section %}
+{%- endif -%}
+
+{% render 'header-logo', tag: 'span' %}
+
+{% render 'header-inline-menu', section: section %}
+
+<div class="header__column">
+  <div class="header__icons">
+		{% render 'color-scheme' %}
+		
+    {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+      {% render 'header-localization' %}
+    {%- endif -%}
+
+    {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+      {% render 'header-language' %}
+    {%- endif -%}
+
+    {%- if section.settings.enable_search -%}
+      {% render 'header-search', section: section %}
+    {%- endif -%}
+    {%- if shop.customer_accounts_enabled and section.settings.hide_login_button != true -%}
+      {% render 'header-account' %}
+    {%- endif -%}
+
+    {% if section.settings.hide_cart_button != true %}
+      {% render 'header-cart' %}
+    {% endif %}
+
+    {% if section.settings.custom_button_label != blank %}
+      <div class="custom--button_wrapper desktop-only">
+        <a href="{{ section.settings.custom_button_link | default:"#" }}" class="button button--{{ section.settings.custom_button_style }} focus-inset">
+            {{ section.settings.custom_button_label }}
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+</div>

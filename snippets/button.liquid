@@ -1,0 +1,256 @@
+{% comment %}
+Renders a button. If the link contains "#gated-content_", treat it as a gated content trigger:
+- Extract GUIDE_ID
+- Use block_id or section_id to create unique DOM ids for popup
+- Add data attributes for JS to handle popup logic
+{% endcomment %}
+
+{% assign is_gated = false %}
+{% assign guide_id = '' %}
+{% if link contains '#gated-content_' %}
+  {% assign is_gated = true %}
+  {% assign guide_id = link | remove: '#gated-content_' %}
+{% endif %}
+
+{%- comment -%}
+Compute a unique ID for the popup. Priority:
+1. block_id if passed
+2. section_id if no block_id
+3. guide_id as fallback
+{%- endcomment -%}
+{% assign unique_id = block_id %}
+{% if unique_id == blank %}
+  {% assign unique_id = section_id %}
+{% endif %}
+{% if unique_id == blank %}
+  {% assign unique_id = guide_id %}
+{% endif %}
+
+<a
+  {% if is_gated == false %}
+    href="{{ link }}"
+  {% else %}
+    href="javascript:void(0);"
+    data-gated-trigger="true"
+    data-guide-id="{{ guide_id }}"
+    data-trigger-target="gated-content-backdrop-{{ unique_id }}"
+  {% endif %}
+  class="{% if class %}{{ class }}__button{% endif %} button button--{{ style }} {% if style == 'simple' or style == 'simple_secondary' or style == 'simple_link' %}button--arrow{% endif %} {% if full_link %} button--full-link {% endif %} focus-inset"
+  {% if link == blank %}
+    aria-disabled="true"
+  {% endif %}
+>
+  {% if style == 'simple' or style == 'simple_secondary' or style == 'simple_link' %}
+    <span>{{ label }}</span>
+    {% render 'icon-button-arrow' %}
+  {% else %}
+    {{ label }}
+  {% endif %}
+</a>
+
+{% if is_gated and settings.mailchimp_form_action != blank %}
+
+  {% style %}
+    #gated-content-backdrop-{{ unique_id }} #mc_embed_signup .button.button--primary {
+      margin: 0;
+      padding: 0 24px;
+      background-color: rgba(var(--color-button));
+      font-weight: 600;
+    }
+  {% endstyle %}
+  <div class="gated-content-backdrop" id="gated-content-backdrop-{{ unique_id }}" style="display:none;">
+    <div class="gated-content-popup" id="gated-content-popup-{{ unique_id }}">
+      <div class="gated-content-inner" id="gated-content-inner-{{ unique_id }}">
+        <button type="button" class="gated-content-close" aria-label="Close">&times;</button>
+        <div class="gated-popup-header-container">
+          <div class="gated-popup-logo">
+            {% if settings.gated_logo_image != blank %}
+              {% style %}
+                .gated-popup-logo {
+                  width: {{ settings.gated_logo_width_mobile }}px;
+                }
+                @media screen and (min-width: 750px) {
+                  .gated-popup-logo {
+                    width: {{ settings.gated_logo_width_desktop }}px;
+                  }
+                }
+              {% endstyle %}
+              {{ settings.gated_logo_image | image_url: width: '320' | image_tag }}
+            {% endif %}
+          </div>
+          {% if settings.gated_popup_headline != blank or settings.gated_popup_information != blank %}
+            <div style="display: flex;align-items:center;flex-direction: column;" class="rich-text__heading--medium">
+              {% if settings.gated_popup_headline != blank %}
+                <h2 class="h3">{{ settings.gated_popup_headline }}</h2>
+              {% endif %}
+              {% if settings.gated_popup_information != blank %}
+                <div class="rich-text__text">
+                  {{ settings.gated_popup_information }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <div id="mc_embed_shell-{{ unique_id }}">
+          {% style %}
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup form {
+              display: block;
+              position: relative;
+              text-align: left;
+              margin: 20px;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup .mc-field-group {
+              clear: left;
+              position: relative;
+              width: 96%;
+              padding-bottom: 3%;
+              min-height: 50px;
+              display: grid;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup .mc-field-group label {
+              display: block;
+              margin-bottom: 3px;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup .mc-field-group input {
+              display: block;
+              width: 100%;
+              padding: 8px 0;
+              text-indent: 2%;
+            }
+            #mc_embed_shell-{{ unique_id }}  #mc_embed_signup input {
+              border: 1px solid #ABB0B2;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+              border: 2px solid #e85c41;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+              display: inline-block;
+              margin: 2px 0 1em 0;
+              padding: 3px;
+              background-color: rgba(255,255,255,0.85);
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              font-size: 14px;
+              font-weight: normal;
+              z-index: 1;
+              color: #e85c41;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup div#mce-responses {
+              float: left;
+              top: -1.4em;
+              padding: 0em .5em 0em .5em;
+              overflow: hidden;
+              width: 90%;
+              margin: 0 5%;
+              clear: both;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup div.response {
+              margin: 1em 0;
+              padding: 1em .5em .5em 0;
+              font-weight: bold;
+              float: left;
+              top: -1.5em;
+              z-index: 1;
+              width: 80%;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup #mce-success-response {
+              color: #529214;
+              display: none;
+            }
+            #mc_embed_shell-{{ unique_id }} #mc_embed_signup #mce-error-response {
+              display: none;
+            }
+          {% endstyle %}
+          <div id="mc_embed_signup">
+            <form action="{{ settings.mailchimp_form_action }}" 
+                  method="post" 
+                  id="mc-embedded-subscribe-form" 
+                  name="mc-embedded-subscribe-form" class="validate" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">E-Mail-Adresse <span class="asterisk">*</span></label>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="">
+                </div>
+
+                <div class="mc-field-group" style="display: none;">
+                  <label for="mce-PAGE_TAG">Metafield-Wert</label>
+                  <input type="text" name="PAGE_TAG" class="text {{ unique_id }}" id="mce-PAGE_TAG" value="{{ guide_id }}">
+                </div>
+
+                <div hidden=""><input type="hidden" name="tags" value="9327190"></div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_ed2349c4878dab1c69678f8b4_fa61eff54f" tabindex="-1" value="">
+                </div>
+                <div class="clear">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--primary" value="Anmelden">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+          <script type="text/javascript">
+            (function($) {
+              window.fnames = window.fnames || [];
+              window.ftypes = window.ftypes || [];
+              fnames[0]='EMAIL'; ftypes[0]='email';
+              fnames[7]='PAGE_TAG'; ftypes[7]='text';
+
+              $.extend($.validator.messages, {
+                required: "Dieses Feld ist ein Pflichtfeld.",
+                email: "Bitte eine gültige E-Mail-Adresse eingeben."
+              });
+            })(jQuery);
+            var $mcj = jQuery.noConflict(true);
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var uniqueId = "{{ unique_id }}";
+    var backdrop = document.getElementById('gated-content-backdrop-' + uniqueId);
+    var closeBtn = backdrop.querySelector('.gated-content-close');
+    var pageTagInput = document.querySelector('#mce-PAGE_TAG.' + uniqueId);
+
+    function closePopup() {
+      backdrop.style.display = 'none';
+      pageTagInput.value = '';
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closePopup);
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener('click', function(e) {
+        if(e.target === backdrop) {
+          closePopup();
+        }
+      });
+    }
+
+    // Attach event only to triggers for this unique_id
+    document.querySelectorAll('[data-gated-trigger="true"][data-trigger-target="gated-content-backdrop-' + uniqueId + '"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var guideId = btn.getAttribute('data-guide-id');
+        if (guideId) {
+          pageTagInput.value = guideId;
+          backdrop.style.display = 'flex';
+        }
+      });
+    });
+  });
+  </script>
+{% endif %}

@@ -1,0 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_Cg4kLA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"mc_embed_shell\">\n    <link href=\"//cdn-images.mailchimp.com/embedcode/classic-061523.css\" rel=\"stylesheet\" type=\"text/css\">\n    <style type=\"text/css\">\n        #mc_embed_signup {\n            background: #fff;\n            clear: left;\n            font: 14px Helvetica, Arial, sans-serif;\n            width: 600px;\n        }\n    </style>\n    <div id=\"mc_embed_signup\">\n        <form action=\"https://myshopify.us11.list-manage.com/subscribe/post?u=ed2349c4878dab1c69678f8b4&amp;id=fa61eff54f&amp;f_id=009115e1f0\" \n              method=\"post\" id=\"mc-embedded-subscribe-form\" \n              name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\">\n            <div id=\"mc_embed_signup_scroll\">\n                <h2>Gated Content - V3 Final</h2>\n                \n                <!-- Email-Feld -->\n                <div class=\"mc-field-group\">\n                    <label for=\"mce-EMAIL\">E-Mail-Adresse <span class=\"asterisk\">*</span></label>\n                    <input type=\"email\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" required value=\"\">\n                </div>\n\n                <!-- PAGE_TAG (Unsichtbar und ohne Platz) -->\n                <div class=\"mc-field-group\" style=\"display: none;\">\n                    <label for=\"mce-PAGE_TAG\">Metafield-Wert</label>\n                    <input type=\"text\" name=\"PAGE_TAG\" class=\"text\" id=\"mce-PAGE_TAG\" \n                           value=\"{{ page.metafields.custom.guide_id | default: '' }}\">\n                </div>\n                \n                <div hidden=\"\"><input type=\"hidden\" name=\"tags\" value=\"9327190\"></div>\n                <div id=\"mce-responses\" class=\"clear\">\n                    <div class=\"response\" id=\"mce-error-response\" style=\"display: none;\"></div>\n                    <div class=\"response\" id=\"mce-success-response\" style=\"display: none !important;\"></div>\n                </div>\n                <div aria-hidden=\"true\" style=\"position: absolute; left: -5000px;\">\n                    <input type=\"text\" name=\"b_ed2349c4878dab1c69678f8b4_fa61eff54f\" tabindex=\"-1\" value=\"\">\n                </div>\n                <div class=\"clear\">\n                    <input type=\"submit\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\" value=\"Anmelden\">\n                </div>\n            </div>\n        </form>\n    </div>\n    <script type=\"text/javascript\" src=\"//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\"></script>\n    <script type=\"text/javascript\">\n        (function ($) {\n            window.fnames = new Array();\n            window.ftypes = new Array();\n            fnames[0] = 'EMAIL';\n            ftypes[0] = 'email';\n            fnames[7] = 'PAGE_TAG';\n            ftypes[7] = 'text';\n\n            $.extend($.validator.messages, {\n                required: \"Dieses Feld ist ein Pflichtfeld.\",\n                email: \"Bitte eine gültige E-Mail-Adresse eingeben.\"\n            });\n        })(jQuery);\n        var $mcj = jQuery.noConflict(true);\n    </script>\n</div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_Cg4kLA"
+  ]
+}

@@ -1,0 +1,53 @@
+{% comment %}
+  Renders section video
+  Accepts:
+  object: {Object} Section/block
+	class: {String} Class (optional)
+  Usage:
+  {% render 'video', object: block or section, class: '' %}
+{% endcomment %}
+
+{% if object.settings.video != blank or object.settings.video_url != blank %}
+  {% liquid
+		assign controls = true
+    assign muted = object.settings.muted_video
+
+    if object.settings.autoplay_video == true
+      assign muted = true
+			assign controls = false
+			else
+    endif
+  %}
+
+  <div
+    class="{{ class }}__video {% if object.settings.autoplay_video %} autoplay {% endif %}"
+    data-video-id="{{ object.settings.video.id }}"
+  >
+    {% if object.settings.video != blank %}
+      {{
+        object.settings.video
+        | video_tag: image_size: '1920x', autoplay: object.settings.autoplay_video, loop: object.settings.loop_video, muted: muted, controls: controls
+      }}
+    {% else %}
+      {%- if object.settings.video_url.type == 'youtube' -%}
+        <iframe
+          src="https://www.youtube.com/embed/{{ object.settings.video_url.id }}?enablejsapi=1&{%- if object.settings.autoplay_video -%}autoplay=1{%- else -%}autoplay=0{%- endif -%}{%- if muted == true -%}&mute=1{%- endif -%}&controls=0{%- if object.settings.loop_video -%}&playlist={{ object.settings.video_url.id }}&loop=1{%- endif -%}&rel=0"
+          class="js-youtube {% if muted == true %} video-muted {% endif %}"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="{{ object.settings.description_video | escape }}"
+          data-id="{{ object.settings.video_url.id }}"
+        ></iframe>
+      {%- else -%}
+        <iframe
+          src="https://player.vimeo.com/video/{{ object.settings.video_url.id }}?{%- if object.settings.autoplay_video -%}autoplay=true{%- else -%}autoplay=false{%- endif -%}{%- if muted == true -%}&mute=true{%- endif -%}&controls=false{%- if object.settings.loop_video -%}&loop=true{%- endif -%}"
+          class="js-vimeo {% if muted == true %} video-muted {% endif %}"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="{{ object.settings.description_video | escape }}"
+          data-id="{{ object.settings.video_url.id }}"
+        ></iframe>
+      {%- endif -%}
+    {% endif %}
+  </div>
+{% endif %}
